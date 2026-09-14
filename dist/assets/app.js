@@ -2,26 +2,30 @@ const lessons = [
   {
     id: 1,
     stage: "基础",
-    title: "运营全局与增长漏斗",
-    summary: "先看懂流量与转化的关系，建立运营和业务共同复盘的工作语言。",
-    duration: "35 分钟",
+    title: "先认识国际站流量逻辑",
+    summary: "新人第一课：先知道买家从哪里看到产品，以及流量为什么会来到一条产品链接。",
+    duration: "20 分钟",
     updated: "2026-09",
     prerequisites: "无",
-    outcomes: ["画出店铺从曝光到成交的完整漏斗", "识别搜索、推荐与活动流量的不同作用", "建立运营与业务每周复盘的字段清单"],
-    quick: "国际站运营的核心可以压缩为两个结果：获得有效流量，并把有效流量转成询盘和订单。所有动作都应该能对应到漏斗中的一个环节。",
+    outcomes: ["说清买家通常从哪些入口看到产品", "理解曝光、点击、访问和询盘的先后关系", "知道流量不是越多越好，匹配的流量才有价值"],
+    quick: "把国际站想成一个大型线上展会：关键词、推荐、活动和广告负责把买家带到你的展位；主图让买家愿意停下来；产品页让买家看懂；最后买家才可能发询盘。新人先建立这张简单地图，不需要急着计算复杂指标。",
     steps: [
-      ["建立统一漏斗", "按曝光、点击、访客、询盘/TM、样品/信保、成交/复购记录数据，避免只看曝光或询盘总数。"],
-      ["拆分流量来源", "分别记录搜索、系统推荐、导购会场、新品频道、榜单与付费推广，判断哪个渠道带来的是有效访客。"],
-      ["定位最大断点", "比较点击率、访客询盘率和询盘成交率，先解决损失最大的一环。"],
-      ["建立协同复盘", "运营提供产品、国家与渠道数据；业务反馈客户质量、真实需求、价格阻力和成交结果。"]
+      ["先认识“流量”", "流量就是买家通过平台入口看到或访问你的产品。没有被看见，后面的点击和询盘都不会发生。"],
+      ["认识四类常见入口", "搜索流量来自买家搜词；推荐流量来自系统分发；活动流量来自会场、新品和榜单；付费流量来自直通车等推广。"],
+      ["理解产品匹配", "平台需要判断你的产品是什么、适合谁。类目、标题、关键词、属性和图片越一致，越容易匹配到合适买家。"],
+      ["理解点击", "有曝光不等于有访问。买家通常会根据主图、标题、价格和产品相关性决定是否点击。"],
+      ["理解询盘", "有访问也不等于有询盘。产品页还要回答规格、MOQ、交期、认证、定制和信任问题。"],
+      ["先记住学习顺序", "认识流量 → 选对产品和国家 → 找词 → 做好链接和主图 → 获取流量 → 看数据优化。后面的课程会逐步展开。"]
     ],
+    decisionTitle: "新人先记住",
     decisions: [
-      ["曝光高、点击低", "关键词或展示人群不准；主图、价格带缺乏吸引力", "先检查流量相关性，再测试主图与价格表达"],
-      ["点击高、询盘低", "产品页承接不足", "检查卖点、信任证明、MOQ、交期与询盘入口"],
-      ["询盘多、成交低", "客户质量、报价或跟进存在问题", "让业务按国家、需求和丢单原因回传数据"]
+      ["曝光", "平台把产品展示给了买家", "买家看到的是否是正确产品"],
+      ["点击", "买家愿意进入产品页", "主图、标题和价格是否有吸引力"],
+      ["访问", "买家开始了解产品", "规格、卖点和信任信息是否容易看懂"],
+      ["询盘", "买家愿意进一步沟通", "产品与客户需求是否真正匹配"]
     ],
-    checklist: ["列出当前店铺前三大流量来源", "计算最近 30 天三个关键转化率", "与业务确认主推产品和主推国家", "记录一个最需要优先解决的漏斗断点"],
-    assignment: "使用最近 30 天数据画出店铺漏斗，并为最大断点提出一个只执行 7 天的改进动作。",
+    checklist: ["能用自己的话解释什么是流量", "能说出搜索、推荐、活动和付费四类入口", "知道曝光不等于点击", "知道点击不等于询盘", "能复述后续学习顺序"],
+    assignment: "不用看数据，先画一张简单路径图：买家从哪里看到你的产品、为什么会点击、进入产品页后最想确认什么。",
     sources: [{label:"知识星球原文（会员）", url:"https://t.zsxq.com/2TxTS"}]
   },
   {
@@ -188,9 +192,9 @@ lessons.push(
     duration: "75 分钟",
     updated: "2026-09",
     prerequisites: "第 01、05、07—09 课",
-    outcomes: ["完成店铺数据概览", "定位低转化产品的主要问题", "输出有优先级的优化清单"],
+    outcomes: ["完成从曝光到成交的完整漏斗分析", "完成店铺数据概览", "定位低转化产品的主要问题", "输出有优先级的优化清单"],
     quick: "数据分析不等于罗列数字。先确认目标和口径，再按店铺 → 国家 → 渠道 → 产品 → 搜索词逐层下钻，每个结论都必须对应一个可执行动作和复查日期。",
-    steps: [["做数据概览", "记录日均访客、曝光、点击、自然/付费占比、询盘/TM、GMV 和目标完成度。"],["检查国家分布", "对比访客国家、询盘国家和成交国家是否符合主推定位。"],["分析漏斗", "分别计算点击率、访客询盘率和询盘成交率，找最大损失环节。"],["下钻到产品", "区分高曝光低点击、高点击低询盘和有询盘低成交三类。"],["核对流量来源", "自然、推荐、活动和付费流量要分开判断，避免用汇总数据掩盖问题。"],["形成行动清单", "给问题标注影响、证据、负责人、动作、截止日和复查指标。"]],
+    steps: [["建立完整漏斗", "按曝光、点击、访客、询盘/TM、样品/信保、成交/复购记录同一周期数据。"],["做数据概览", "记录日均访客、曝光、点击、自然/付费占比、询盘/TM、GMV 和目标完成度。"],["检查国家分布", "对比访客国家、询盘国家和成交国家是否符合主推定位。"],["分析漏斗", "分别计算点击率、访客询盘率和询盘成交率，找最大损失环节。"],["下钻到产品", "区分高曝光低点击、高点击低询盘和有询盘低成交三类。"],["核对流量来源", "自然、推荐、活动和付费流量要分开判断，避免用汇总数据掩盖问题。"],["形成行动清单", "给问题标注影响、证据、负责人、动作、截止日和复查指标。"]],
     decisions: [["自然流量占比过低", "过度依赖广告或自然覆盖弱", "补关键词与内容质量，逐步验证自然流量"],["国家偏离主推市场", "词、人群或系统扩量偏差", "调整词、国家和素材本地化"],["低转化产品长期消耗", "承接或产品竞争力不足", "修正后设观察期，仍无改善则停止投入"]],
     checklist: ["统计口径与时间范围一致", "自然和付费分开", "国家、产品和词完成下钻", "结论有数据证据", "每个问题都有负责人和复查日期"],
     assignment: "用最近一个完整月完成店铺诊断，输出 3 个最高优先级问题，每个问题只安排一个首要动作。",
@@ -345,9 +349,9 @@ function lessonPage(lesson){
     <header class="lesson-header"><div class="lesson-kicker"><span>LESSON ${pad(lesson.id)}</span>${lesson.stage}</div><h1>${lesson.title}</h1><p class="lede">${lesson.summary}</p><div class="lesson-meta"><span>学习时长：${lesson.duration}</span><span>先修：${lesson.prerequisites}</span><span>更新：${lesson.updated}</span></div></header>
     <div class="lesson-layout"><article>
       <section class="lesson-section"><h2>学完你能做到</h2><ul class="outcomes">${lesson.outcomes.map(x=>`<li>${x}</li>`).join("")}</ul></section>
-      <section class="lesson-section"><h2>3 分钟先看懂</h2><div class="quick-read"><strong>核心判断</strong><p>${lesson.quick}</p>${lesson.id===1?`<div class="funnel"><span>曝光</span><span>点击</span><span>访客</span><span>询盘 / TM</span><span>样品 / 信保</span><span>成交 / 复购</span></div>`:""}</div></section>
+      <section class="lesson-section"><h2>3 分钟先看懂</h2><div class="quick-read"><strong>核心判断</strong><p>${lesson.quick}</p>${lesson.id===1?`<div class="funnel beginner-flow"><span>被看见</span><span>愿意点</span><span>看懂产品</span><span>愿意咨询</span></div>`:""}</div></section>
       ${lesson.steps.length?`<section class="lesson-section"><h2>实操 SOP</h2><div class="steps">${lesson.steps.map(s=>`<div class="step"><h3>${s[0]}</h3><p>${s[1]}</p></div>`).join("")}</div></section>`:""}
-      ${lesson.decisions.length?`<section class="lesson-section"><h2>数据判断与动作</h2><table class="decision-table"><thead><tr><th>表现</th><th>可能原因</th><th>优先动作</th></tr></thead><tbody>${rows}</tbody></table></section>`:""}
+      ${lesson.decisions.length?`<section class="lesson-section"><h2>${lesson.decisionTitle||"数据判断与动作"}</h2><table class="decision-table"><thead><tr><th>${lesson.id===1?"阶段":"表现"}</th><th>${lesson.id===1?"是什么意思":"可能原因"}</th><th>${lesson.id===1?"新人先问什么":"优先动作"}</th></tr></thead><tbody>${rows}</tbody></table></section>`:""}
       ${lesson.checklist.length?`<section class="lesson-section"><h2>本课检查表</h2><ul class="checklist">${lesson.checklist.map(x=>`<li>${x}</li>`).join("")}</ul></section>`:""}
       <section class="lesson-section"><h2>课后任务</h2><div class="assignment">${lesson.assignment}</div></section>
     </article><aside class="lesson-aside">
