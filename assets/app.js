@@ -7,11 +7,11 @@ const lessons = [
     duration: "20 分钟",
     updated: "2026-09",
     prerequisites: "无",
-    outcomes: ["说清买家通常从哪些入口看到产品", "理解曝光、点击、访问和询盘的先后关系", "知道流量不是越多越好，匹配的流量才有价值"],
+    outcomes: ["找到后台的流量来源页面", "说清常见流量入口分别代表什么", "理解曝光、点击、访问和询盘的先后关系"],
     quick: "把国际站想成一个大型线上展会：关键词、推荐、活动和广告负责把买家带到你的展位；主图让买家愿意停下来；产品页让买家看懂；最后买家才可能发询盘。新人先建立这张简单地图，不需要急着计算复杂指标。",
     steps: [
       ["先认识“流量”", "流量就是买家通过平台入口看到或访问你的产品。没有被看见，后面的点击和询盘都不会发生。"],
-      ["认识四类常见入口", "搜索流量来自买家搜词；推荐流量来自系统分发；活动流量来自会场、新品和榜单；付费流量来自直通车等推广。"],
+      ["先按后台认识入口", "先认识搜索、系统推荐、导购会场、频道、互动、自营销、直接访问、店内和站外等来源。第一课只要知道买家从哪里来，不急着分析每一项涨跌。"],
       ["理解产品匹配", "平台需要判断你的产品是什么、适合谁。类目、标题、关键词、属性和图片越一致，越容易匹配到合适买家。"],
       ["理解点击", "有曝光不等于有访问。买家通常会根据主图、标题、价格和产品相关性决定是否点击。"],
       ["理解询盘", "有访问也不等于有询盘。产品页还要回答规格、MOQ、交期、认证、定制和信任问题。"],
@@ -24,7 +24,7 @@ const lessons = [
       ["访问", "买家开始了解产品", "规格、卖点和信任信息是否容易看懂"],
       ["询盘", "买家愿意进一步沟通", "产品与客户需求是否真正匹配"]
     ],
-    checklist: ["能用自己的话解释什么是流量", "能说出搜索、推荐、活动和付费四类入口", "知道曝光不等于点击", "知道点击不等于询盘", "能复述后续学习顺序"],
+    checklist: ["能在后台找到“数据参谋 → 流量参谋 → 流量来源”", "能说出搜索、系统推荐、频道、互动和站外等入口的基本含义", "知道曝光不等于点击", "知道点击不等于询盘", "能复述后续学习顺序"],
     assignment: "不用看数据，先画一张简单路径图：买家从哪里看到你的产品、为什么会点击、进入产品页后最想确认什么。",
     sources: [{label:"知识星球原文（会员）", url:"https://t.zsxq.com/2TxTS"}]
   },
@@ -341,6 +341,60 @@ function dashboard(){
   app.querySelectorAll("[data-library-open]").forEach(b=>b.onclick=()=>{location.hash=`library-${b.dataset.libraryOpen}`;});
 }
 
+function trafficSourcePrimer(){
+  const groups=[
+    ["搜索与平台分发",[
+      ["搜索","买家输入关键词后，从搜索结果进入你的产品或店铺。"],
+      ["系统推荐","平台根据买家兴趣、产品匹配度等，把产品推荐到相关位置。"],
+      ["导购会场","买家从平台组织的主题会场、行业会场或采购场景进入。"]
+    ]],
+    ["频道入口",[
+      ["New Arrival","新品频道带来的访问。"],
+      ["Top-ranking suppliers","买家从优质供应商榜单进入。"],
+      ["Top-ranking products","买家从热门或排名产品入口进入。"],
+      ["Weekly Deals","买家从每周优惠频道进入。"],
+      ["Saving spotlight 惠采购","买家从优惠、集采类频道进入。"]
+    ]],
+    ["互动与采购行为",[
+      ["直播","买家通过直播间或直播中的商品入口进入。"],
+      ["站内互动","买家从平台内的互动内容或互动活动进入。"],
+      ["RFQ","买家发布采购需求后，从 RFQ 报价或相关页面进入。"],
+      ["信保订单","买家从信用保障订单相关页面再次访问。"],
+      ["询盘 & TM","买家从询盘记录或 TradeManager 对话回到产品和店铺。"]
+    ]],
+    ["自营销",[
+      ["买家人气挑战赛","由平台营销活动带来的互动访问。"],
+      ["Tips 视频","买家看了短视频内容后进入。"],
+      ["客户通 IM 营销","通过站内即时消息触达客户后带来的访问。"],
+      ["客户通 EDM 营销","通过邮件营销触达客户后带来的访问。"]
+    ]],
+    ["其他路径",[
+      ["直接访问","买家通过网址、收藏夹或直接打开店铺进入。"],
+      ["店内","买家已经在你的店铺里，又从一个页面进入另一个页面。"],
+      ["站外","买家从 Google、社媒、外部网站或分享链接进入。"],
+      ["其他","系统暂时无法准确归入以上类别的访问。"]
+    ]]
+  ];
+  return `<section class="lesson-section traffic-primer">
+    <div class="section-heading"><p class="eyebrow">先找入口，再认来源</p><h2>跟着后台认识流量来源</h2><p>这两张图放在第一课最合适：第一张解决“在哪里看”，第二张解决“这里都有哪些流量入口”。</p></div>
+    <figure class="course-figure">
+      <div class="figure-head"><span>01</span><div><strong>入口在哪里</strong><p>后台路径：数据参谋 → 流量参谋 → 流量来源</p></div></div>
+      <img src="assets/lesson-1-traffic-path.png" alt="国际站后台从数据参谋进入流量参谋和流量来源的路径" loading="lazy">
+      <figcaption>先让新人照着路径找到页面，不要求他们马上分析表格。</figcaption>
+    </figure>
+    <figure class="course-figure">
+      <div class="figure-head"><span>02</span><div><strong>后台有哪些流量来源</strong><p>这张表就是店铺实际可见的流量入口清单，数字已隐去，先看每一行的名称。</p></div></div>
+      <div class="screenshot-scroll" tabindex="0" aria-label="可上下滚动查看完整流量来源截图"><img src="assets/lesson-1-traffic-sources.png" alt="国际站后台常见流量来源清单" loading="lazy"></div>
+      <figcaption>上下滚动可查看完整清单；下面用新人能懂的话逐项解释。</figcaption>
+    </figure>
+    <div class="source-guide" aria-label="流量入口解释">
+      ${groups.map(([title,items])=>`<section class="source-group"><h3>${title}</h3>${items.map(([name,meaning])=>`<div class="source-item"><strong>${name}</strong><p>${meaning}</p></div>`).join("")}</section>`).join("")}
+    </div>
+    <div class="metric-note"><strong>第一课只看懂 4 个结果：</strong><span>店铺访问人数＝来了多少人</span><span>店内询盘人数＝多少人发了询盘</span><span>店内 TM 咨询人数＝多少人发起即时沟通</span><span>商机转化率＝访问后产生商机的比例</span><p>先会认入口和结果就够了。怎么根据涨跌判断问题，留到后面的“数据诊断与增长漏斗”课程。</p></div>
+    <p class="paid-traffic-note">补充：直通车属于付费推广流量，通常在营销模块单独管理，第 08 课再展开。</p>
+  </section>`;
+}
+
 function lessonPage(lesson){
   crumbs.textContent=`第 ${pad(lesson.id)} 课 / ${lesson.title}`;
   const rows=lesson.decisions.map(r=>`<tr>${r.map(c=>`<td>${c}</td>`).join("")}</tr>`).join("");
@@ -350,6 +404,7 @@ function lessonPage(lesson){
     <div class="lesson-layout"><article>
       <section class="lesson-section"><h2>学完你能做到</h2><ul class="outcomes">${lesson.outcomes.map(x=>`<li>${x}</li>`).join("")}</ul></section>
       <section class="lesson-section"><h2>3 分钟先看懂</h2><div class="quick-read"><strong>核心判断</strong><p>${lesson.quick}</p>${lesson.id===1?`<div class="funnel beginner-flow"><span>被看见</span><span>愿意点</span><span>看懂产品</span><span>愿意咨询</span></div>`:""}</div></section>
+      ${lesson.id===1?trafficSourcePrimer():""}
       ${lesson.steps.length?`<section class="lesson-section"><h2>实操 SOP</h2><div class="steps">${lesson.steps.map(s=>`<div class="step"><h3>${s[0]}</h3><p>${s[1]}</p></div>`).join("")}</div></section>`:""}
       ${lesson.decisions.length?`<section class="lesson-section"><h2>${lesson.decisionTitle||"数据判断与动作"}</h2><table class="decision-table"><thead><tr><th>${lesson.id===1?"阶段":"表现"}</th><th>${lesson.id===1?"是什么意思":"可能原因"}</th><th>${lesson.id===1?"新人先问什么":"优先动作"}</th></tr></thead><tbody>${rows}</tbody></table></section>`:""}
       ${lesson.checklist.length?`<section class="lesson-section"><h2>本课检查表</h2><ul class="checklist">${lesson.checklist.map(x=>`<li>${x}</li>`).join("")}</ul></section>`:""}
