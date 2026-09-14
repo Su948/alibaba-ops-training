@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>国际站运营学习中心</title>
+  <meta name="description" content="从运营思维、产品定位到推广、数据分析与业务转化的国际站实战课程。">
+  <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1f33'/%3E%3Cpath d='M15 18h34v8H15zm0 12h25v8H15zm0 12h18v8H15z' fill='%23f4b942'/%3E%3Ccircle cx='48' cy='44' r='8' fill='%2338b2ac'/%3E%3C/svg%3E">
+  <link rel="stylesheet" href="assets/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">跳到课程内容</a>
+  <div class="app-shell">
+    <aside class="sidebar" aria-label="课程导航">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true"><span></span><span></span><span></span></div>
+        <div><strong>国际站运营</strong><small>学习中心</small></div>
+      </div>
+      <button class="mobile-close" type="button" aria-label="关闭导航">×</button>
+      <nav id="lessonNav"></nav>
+      <div class="sidebar-foot">
+        <span>本地学习进度</span>
+        <strong id="sideProgress">0 / 12</strong>
+        <div class="progress-track"><i id="sideProgressBar"></i></div>
+      </div>
+    </aside>
+
+    <main id="main" class="main">
+      <header class="topbar">
+        <button class="menu-button" type="button" aria-label="打开课程导航">☰</button>
+        <div class="breadcrumbs" id="breadcrumbs">课程地图</div>
+        <label class="search-box">
+          <span aria-hidden="true">⌕</span>
+          <input id="searchInput" type="search" placeholder="搜索课程或步骤" aria-label="搜索课程">
+        </label>
+      </header>
+      <div id="app" tabindex="-1"></div>
+    </main>
+  </div>
+  <script src="assets/app.js"></script>
+</body>
+</html>
