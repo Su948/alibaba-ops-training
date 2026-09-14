@@ -170,6 +170,7 @@ p { margin: 0 0 1em; }
 .funnel { display: grid; grid-template-columns: repeat(6, 1fr); gap: 6px; margin: 22px 0; }
 .funnel span { position: relative; padding: 12px 7px; color: var(--ink); background: var(--gold-soft); text-align: center; font-size: .82rem; font-weight: 800; }
 .funnel span:not(:last-child)::after { content: ""; position: absolute; z-index: 2; right: -7px; top: 50%; width: 9px; height: 9px; background: var(--gold-soft); transform: translateY(-50%) rotate(45deg); }
+.funnel.beginner-flow { grid-template-columns: repeat(4, 1fr); }
 .steps { counter-reset: step; }
 .step { position: relative; margin-bottom: 12px; padding: 18px 18px 18px 64px; background: var(--white); border: 1px solid var(--line); }
 .step::before { counter-increment: step; content: counter(step, decimal-leading-zero); position: absolute; left: 17px; top: 18px; color: var(--teal); font: 900 .9rem/1.2 ui-monospace, monospace; }
