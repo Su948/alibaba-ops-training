@@ -376,7 +376,7 @@ function trafficSourcePrimer(){
     ]]
   ];
   return `<section class="lesson-section traffic-primer">
-    <div class="section-heading"><p class="eyebrow">先找入口，再认来源</p><h2>跟着后台认识流量来源</h2><p>这两张图放在第一课最合适：第一张解决“在哪里看”，第二张解决“这里都有哪些流量入口”。</p></div>
+    <div class="section-heading"><p class="eyebrow">把基础概念对应到后台</p><h2>跟着后台认识流量来源</h2><p>理解曝光、点击、访问和询盘之后，再到后台找对应数据：第一张解决“在哪里看”，第二张解决“这里都有哪些流量入口”。</p></div>
     <figure class="course-figure">
       <div class="figure-head"><span>01</span><div><strong>入口在哪里</strong><p>后台路径：数据参谋 → 流量参谋 → 流量来源</p></div></div>
       <img src="assets/lesson-1-traffic-path.png" alt="国际站后台从数据参谋进入流量参谋和流量来源的路径" loading="lazy">
@@ -404,9 +404,9 @@ function lessonPage(lesson){
     <div class="lesson-layout"><article>
       <section class="lesson-section"><h2>学完你能做到</h2><ul class="outcomes">${lesson.outcomes.map(x=>`<li>${x}</li>`).join("")}</ul></section>
       <section class="lesson-section"><h2>3 分钟先看懂</h2><div class="quick-read"><strong>核心判断</strong><p>${lesson.quick}</p>${lesson.id===1?`<div class="funnel beginner-flow"><span>被看见</span><span>愿意点</span><span>看懂产品</span><span>愿意咨询</span></div>`:""}</div></section>
-      ${lesson.id===1?trafficSourcePrimer():""}
       ${lesson.steps.length?`<section class="lesson-section"><h2>实操 SOP</h2><div class="steps">${lesson.steps.map(s=>`<div class="step"><h3>${s[0]}</h3><p>${s[1]}</p></div>`).join("")}</div></section>`:""}
       ${lesson.decisions.length?`<section class="lesson-section"><h2>${lesson.decisionTitle||"数据判断与动作"}</h2><table class="decision-table"><thead><tr><th>${lesson.id===1?"阶段":"表现"}</th><th>${lesson.id===1?"是什么意思":"可能原因"}</th><th>${lesson.id===1?"新人先问什么":"优先动作"}</th></tr></thead><tbody>${rows}</tbody></table></section>`:""}
+      ${lesson.id===1?trafficSourcePrimer():""}
       ${lesson.checklist.length?`<section class="lesson-section"><h2>本课检查表</h2><ul class="checklist">${lesson.checklist.map(x=>`<li>${x}</li>`).join("")}</ul></section>`:""}
       <section class="lesson-section"><h2>课后任务</h2><div class="assignment">${lesson.assignment}</div></section>
     </article><aside class="lesson-aside">
