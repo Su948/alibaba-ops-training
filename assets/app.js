@@ -52,11 +52,11 @@ const lessons = [
     duration: "50 分钟",
     updated: "内容整理中",
     prerequisites: "第 02 课",
-    outcomes: ["找到真正可比的对标店铺", "拆解产品、价格和视觉结构", "形成竞品机会清单"],
+    outcomes: ["找到真正可比的对标店铺", "用工具快速建立候选池并人工复核", "拆解产品、价格和视觉结构", "形成竞品机会清单"],
     quick: "对标的目标不是复制页面，而是识别同行已经验证的需求、表达方式和价格带，再结合自己的供应优势做差异化。",
-    steps: [["设定可比条件", "按类目、产品形态、目标国家、公司规模和价格带限定范围。"],["建立候选池", "从平台搜索、榜单和工具收集店铺与产品。"],["拆解关键字段", "记录标题词、主图表达、MOQ、价格带、认证、交期和交易信号。"],["形成机会判断", "标出可跟进、需验证和不适合的方向。"]],
+    steps: [["设定可比条件", "按类目、产品形态、目标国家、公司规模和价格带限定范围。"],["建立候选池", "先从平台搜索和榜单找店铺，再用瞬悉、来搜、SuperAli 等工具辅助收集店铺与产品信息。工具负责提效，不能替代人工判断。"],["拆解关键字段", "记录标题词、主图表达、MOQ、价格带、认证、交期和交易信号。"],["形成机会判断", "标出可跟进、需验证和不适合的方向。"]],
     decisions: [["订单多、价格低", "供应链或规模优势明显", "不要盲目价格跟随"],["曝光强、询盘弱", "需求或承接可能有问题", "只借鉴流量词，不直接跟品"],["细分词稳定成交", "采购意图可能更清晰", "进入关键词和样品验证"]],
-    checklist: ["至少收集 10 家候选店铺", "确定 3 家核心对标", "完成 20 个产品拆解", "写出 3 个差异化方向"],
+    checklist: ["至少收集 10 家候选店铺", "工具采集结果已人工复核", "确定 3 家核心对标", "完成 20 个产品拆解", "写出 3 个差异化方向"],
     assignment: "选择 3 家真正可比的店铺，完成竞品拆解表并写出一条产品机会假设。",
     sources: [{label:"对标店铺（会员）",url:"https://t.zsxq.com/KXBDI"},{label:"优秀同行产品（会员）",url:"https://t.zsxq.com/hpBmo"}]
   }
@@ -261,7 +261,7 @@ const libraries = {
     title: "工具库",
     intro: "工具按使用场景归类。插件只辅助采集和加工，最终判断仍以业务与数据为准。",
     items: [
-      ["国际站常用插件汇总", "同行分析、信息采集和运营辅助工具集合。", "https://t.zsxq.com/zypwP", "会员资料"],
+      ["国际站常用插件汇总", "同行分析、信息采集和运营辅助工具集合，包含瞬悉、来搜、SuperAli 等使用方向。", "https://t.zsxq.com/zypwP", "会员资料"],
       ["一键抹除工具", "清理图片元素，辅助制作产品图。", "https://t.zsxq.com/BDh5D", "作图"],
       ["AliPrice", "跨境平台价格与历史信息辅助查看。", "https://t.zsxq.com/2EiHI", "浏览器插件"],
       ["店鲸灵", "店铺与产品信息辅助分析。", "https://t.zsxq.com/jlj2P", "浏览器插件"],
@@ -395,6 +395,38 @@ function trafficSourcePrimer(){
   </section>`;
 }
 
+function lessonSupplement(lessonId){
+  if(lessonId===3){
+    return `<section class="lesson-section"><h2>工具怎么用才不会跑偏</h2><div class="tool-note-grid">
+      <article><strong>瞬悉</strong><p>辅助观察同行店铺和产品数据，适合建立第一批候选名单。</p></article>
+      <article><strong>来搜</strong><p>辅助搜索和对比国际站产品，用于补充平台搜索结果。</p></article>
+      <article><strong>SuperAli</strong><p>辅助收集店铺与产品信息，减少手工抄录时间。</p></article>
+    </div><div class="method-note"><strong>统一原则：</strong>工具只负责“收集”，最终是否值得对标，必须回到产品匹配度、目标国家、价格带、供应能力和真实交易信号。</div></section>`;
+  }
+  if(lessonId===12){
+    return `<section class="lesson-section"><h2>可直接复用的 AI 商品卖点任务卡</h2><div class="prompt-card">
+      <div class="prompt-card-head"><div><strong>先补齐产品证据，再让 AI 输出</strong><p>把方括号内容替换成自己的真实资料。</p></div><button type="button" data-copy-prompt>复制提示词</button></div>
+      <pre data-prompt-text>你是一名熟悉 B2B 采购决策的英文商品内容编辑。
+
+产品名称：[填写产品]
+核心规格与参数：[填写]
+目标国家和客户类型：[填写]
+客户最关心的问题：[填写]
+可证明的优势、认证或交付能力：[填写]
+
+请生成 20 条英文商品卖点，每条不超过 128 个字符，并用表格输出：
+1. 英文卖点
+2. 中文翻译
+3. 对应的客户需求
+4. 使用位置建议（标题 / 主图 / 详情页 / 广告）
+
+限制：不得编造参数、认证、交期或效果；不要使用 best、No.1 等无法证明的绝对化表达；重复卖点需要合并。</pre>
+      <div class="prompt-checks"><span>输入有真实参数</span><span>卖点对应买家需求</span><span>人工复核事实</span><span>再用于正式页面</span></div>
+    </div></section>`;
+  }
+  return "";
+}
+
 function lessonPage(lesson){
   crumbs.textContent=`第 ${pad(lesson.id)} 课 / ${lesson.title}`;
   const rows=lesson.decisions.map(r=>`<tr>${r.map(c=>`<td>${c}</td>`).join("")}</tr>`).join("");
@@ -405,6 +437,7 @@ function lessonPage(lesson){
       <section class="lesson-section"><h2>学完你能做到</h2><ul class="outcomes">${lesson.outcomes.map(x=>`<li>${x}</li>`).join("")}</ul></section>
       <section class="lesson-section"><h2>3 分钟先看懂</h2><div class="quick-read"><strong>核心判断</strong><p>${lesson.quick}</p>${lesson.id===1?`<div class="funnel beginner-flow"><span>被看见</span><span>愿意点</span><span>看懂产品</span><span>愿意咨询</span></div>`:""}</div></section>
       ${lesson.steps.length?`<section class="lesson-section"><h2>实操 SOP</h2><div class="steps">${lesson.steps.map(s=>`<div class="step"><h3>${s[0]}</h3><p>${s[1]}</p></div>`).join("")}</div></section>`:""}
+      ${lessonSupplement(lesson.id)}
       ${lesson.decisions.length?`<section class="lesson-section"><h2>${lesson.decisionTitle||"数据判断与动作"}</h2><table class="decision-table"><thead><tr><th>${lesson.id===1?"阶段":"表现"}</th><th>${lesson.id===1?"是什么意思":"可能原因"}</th><th>${lesson.id===1?"新人先问什么":"优先动作"}</th></tr></thead><tbody>${rows}</tbody></table></section>`:""}
       ${lesson.id===1?trafficSourcePrimer():""}
       ${lesson.checklist.length?`<section class="lesson-section"><h2>本课检查表</h2><ul class="checklist">${lesson.checklist.map(x=>`<li>${x}</li>`).join("")}</ul></section>`:""}
@@ -414,6 +447,15 @@ function lessonPage(lesson){
       <div class="aside-card"><h3>学习状态</h3><button class="complete-button ${completed.has(lesson.id)?"done":""}" data-complete>${completed.has(lesson.id)?"✓ 已完成":"标记为已完成"}</button></div>
     </aside></div>`;
   app.querySelector("[data-complete]").onclick=()=>{completed.has(lesson.id)?completed.delete(lesson.id):completed.add(lesson.id);saveProgress();lessonPage(lesson);};
+  const copyPrompt=app.querySelector("[data-copy-prompt]");
+  if(copyPrompt){
+    copyPrompt.onclick=async()=>{
+      const text=app.querySelector("[data-prompt-text]").textContent;
+      try{await navigator.clipboard.writeText(text);copyPrompt.textContent="已复制";}
+      catch{copyPrompt.textContent="请手动复制";}
+      window.setTimeout(()=>copyPrompt.textContent="复制提示词",1800);
+    };
+  }
 }
 
 function libraryPage(key){

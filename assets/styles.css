@@ -196,6 +196,19 @@ p { margin: 0 0 1em; }
 .metric-note span { padding: 7px 9px; color: var(--ink); background: var(--teal-soft); font-size: .82rem; font-weight: 700; }
 .metric-note p { margin: 6px 0 0; color: #c5d0d7; font-size: .88rem; }
 .paid-traffic-note { margin: 10px 0 0; padding: 12px 14px; color: #584815; background: var(--gold-soft); border-left: 4px solid var(--gold); font-size: .88rem; }
+.tool-note-grid { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 12px; }
+.tool-note-grid article { padding: 18px; background: var(--white); border: 1px solid var(--line); border-top: 4px solid var(--teal); }
+.tool-note-grid strong { font-size: 1rem; }
+.tool-note-grid p { margin: 7px 0 0; color: var(--ink-2); font-size: .88rem; }
+.method-note { margin-top: 12px; padding: 14px 16px; color: #584815; background: var(--gold-soft); border-left: 4px solid var(--gold); font-size: .9rem; }
+.prompt-card { overflow: hidden; background: var(--navy); border: 1px solid var(--navy); }
+.prompt-card-head { display: flex; justify-content: space-between; gap: 18px; align-items: center; padding: 18px; color: #fff; }
+.prompt-card-head strong { color: var(--gold); }
+.prompt-card-head p { margin: 4px 0 0; color: #c5d0d7; font-size: .86rem; }
+.prompt-card-head button { flex: 0 0 auto; padding: 9px 12px; border: 1px solid var(--gold); color: var(--navy); background: var(--gold); font-weight: 900; cursor: pointer; }
+.prompt-card pre { margin: 0; padding: 20px; overflow-x: auto; white-space: pre-wrap; color: var(--ink); background: #f7f9fa; font: 500 .9rem/1.75 ui-monospace, SFMono-Regular, Menlo, monospace; }
+.prompt-checks { display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 1px; background: #39505e; }
+.prompt-checks span { padding: 10px; color: #dbe6eb; background: var(--navy); text-align: center; font-size: .78rem; }
 .steps { counter-reset: step; }
 .step { position: relative; margin-bottom: 12px; padding: 18px 18px 18px 64px; background: var(--white); border: 1px solid var(--line); }
 .step::before { counter-increment: step; content: counter(step, decimal-leading-zero); position: absolute; left: 17px; top: 18px; color: var(--teal); font: 900 .9rem/1.2 ui-monospace, monospace; }
@@ -243,6 +256,8 @@ p { margin: 0 0 1em; }
   .source-group:last-child { grid-column: auto; }
   .source-item { grid-template-columns: 1fr; gap: 4px; }
   .screenshot-scroll { max-height: 420px; }
+  .tool-note-grid, .prompt-checks { grid-template-columns: 1fr; }
+  .prompt-card-head { align-items: flex-start; }
 }
 @media print {
   .sidebar, .topbar, .complete-button, .back-link { display: none !important; }
