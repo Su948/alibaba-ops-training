@@ -40,9 +40,19 @@ const lessons = [
     quick: "主推市场不是访客最多的市场，而是需求匹配、竞争可控、询盘质量、成交能力和获客成本综合最优的市场。顺序不能反：先确认自己能稳定交付什么产品，再去找最认这类产品的国家。产品和国家对不上，后面的关键词、主图和投放都在替同行交学费。",
     steps: [
       ["盘清自己能交付什么", "把供应链、认证、MOQ、交期、定制能力、包装方式和可接受的价格带逐项写下来。这一步决定你能接什么单，不由愿望决定。"],
-      ["选出候选主推产品", "按四个维度打分：市场有需求、自己有优势、竞争可切入、利润能覆盖获客成本。每个维度只取 5、3、1 三档（标准见下方打分卡），先留 5 个候选，再按总分收敛到 3 个。",
-        `<details class="step-more"><summary>展开看完整案例：5 个候选怎么收敛到 3 个</summary><div class="step-more-body">
-          <p class="step-more-note">以一家按摩类产品供应商为例，按下方「第 2 步怎么打分」的三档标准给 5 个候选打分。表内为教学示例，不对应任何真实店铺数据。</p>
+      ["选出候选主推产品", "按四个维度打分：市场有需求、自己有优势、竞争可切入、利润能覆盖获客成本。每个维度只取 5、3、1 三档（三档标准和案例都在下面的展开区），先留 5 个候选，再按总分收敛到 3 个。",
+        `<details class="step-more"><summary>展开看三档打分标准与完整案例</summary><div class="step-more-body">
+          <p class="step-more-label">一、先定三档标准</p>
+          <p class="step-more-note">只写四个维度，真到打分时还是会卡住：什么算「有需求」？什么算「有优势」？直接把每个维度拆成三档，只取 5、3、1 三个值，满分 20 分。</p>
+          <div class="source-table-wrap"><table class="decision-table score-table"><thead><tr><th>维度</th><th>5 分</th><th>3 分</th><th>1 分</th></tr></thead><tbody>
+            <tr><td>市场有需求</td><td>近 90 天有稳定搜索量，且已有 3 个以上不同买家的真实询盘</td><td>有搜索量，询盘零星</td><td>只有零星搜索，几乎没人问</td></tr>
+            <tr><td>自己有优势</td><td>自有工厂或独家供应，有认证，MOQ 和交期能压过同行</td><td>有稳定供应商，价格和交期处于中位</td><td>贸易拼货，价格和交期都没把握</td></tr>
+            <tr><td>竞争可切入</td><td>头部链接没有垄断，主图和详情普遍粗糙</td><td>有强对手，但存在认证、定制或小单的差异空间</td><td>头部集中打价格战，找不到差异点</td></tr>
+            <tr><td>利润能覆盖获客成本</td><td>毛利能覆盖多倍点击成本，一次成交就回本</td><td>毛利偏薄，必须压住点击成本才不亏</td><td>毛利太低，靠广告基本不可能回本</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>分档口径：</strong>16—20 分进核心；11—15 分进验证；10 分及以下暂缓。分数只用来排序，不能替代对单个客户的判断；每季度按最新数据重打一次。<br><strong>别和第 7 步混用：</strong>这张卡打的是「做哪个产品」；第 7 步是把产品和国家组合起来再打一次（五维、1—5 分），回答的是「这个产品先打哪个国家」。两张卡的口径不同，不要合并成一张。</div>
+          <p class="step-more-label">二、再看一个完整案例</p>
+          <p class="step-more-note">以一家按摩类产品供应商为例，按上面的三档标准给 5 个候选打分。表内为教学示例，不对应任何真实店铺数据。</p>
           <div class="source-table-wrap"><table class="decision-table score-table case-table"><thead><tr><th>候选产品</th><th>市场有需求</th><th>自己有优势</th><th>竞争可切入</th><th>利润覆盖</th><th>总分</th><th>结论</th></tr></thead><tbody>
             <tr><td>颈部按摩仪（充电款）</td><td>5</td><td>5</td><td>3</td><td>5</td><td>18</td><td>核心</td></tr>
             <tr><td>头皮按摩器</td><td>3</td><td>5</td><td>5</td><td>5</td><td>18</td><td>核心</td></tr>
@@ -429,17 +439,7 @@ function trafficSourcePrimer(){
 
 function lessonSupplement(lessonId){
   if(lessonId===2){
-    return `<section class="lesson-section"><h2>第 2 步怎么打分：四个维度、三档标准</h2>
-      <p class="drill-intro">只写四个维度，真到打分时还是会卡住：什么算「有需求」？什么算「有优势」？直接把每个维度拆成三档，只取 5、3、1 三个值，满分 20 分。</p>
-      <div class="source-table-wrap"><table class="decision-table score-table"><thead><tr><th>维度</th><th>5 分</th><th>3 分</th><th>1 分</th></tr></thead><tbody>
-        <tr><td>市场有需求</td><td>近 90 天有稳定搜索量，且已有 3 个以上不同买家的真实询盘</td><td>有搜索量，询盘零星</td><td>只有零星搜索，几乎没人问</td></tr>
-        <tr><td>自己有优势</td><td>自有工厂或独家供应，有认证，MOQ 和交期能压过同行</td><td>有稳定供应商，价格和交期处于中位</td><td>贸易拼货，价格和交期都没把握</td></tr>
-        <tr><td>竞争可切入</td><td>头部链接没有垄断，主图和详情普遍粗糙</td><td>有强对手，但存在认证、定制或小单的差异空间</td><td>头部集中打价格战，找不到差异点</td></tr>
-        <tr><td>利润能覆盖获客成本</td><td>毛利能覆盖多倍点击成本，一次成交就回本</td><td>毛利偏薄，必须压住点击成本才不亏</td><td>毛利太低，靠广告基本不可能回本</td></tr>
-      </tbody></table></div>
-      <div class="method-note"><strong>分档口径：</strong>16—20 分进核心；11—15 分进验证；10 分及以下暂缓。分数只用来排序，不能替代对单个客户的判断；每季度按最新数据重打一次。<br><strong>别和第 7 步混用：</strong>这张卡打的是「做哪个产品」；第 7 步是把产品和国家组合起来再打一次（五维、1—5 分），回答的是「这个产品先打哪个国家」。两张卡的口径不同，不要合并成一张。</div>
-    </section>
-    <section class="lesson-section"><h2>后台去哪里查这几组数据</h2><div class="source-guide">
+    return `<section class="lesson-section"><h2>后台去哪里查这几组数据</h2><div class="source-guide">
       <section class="source-group"><h3>访客从哪里来</h3><div class="source-item"><strong>数据参谋 → 流量参谋 → 流量来源</strong><p>看访客数、访问次数，切到国家/地区维度取 Top 10。第一课已经带你找到过这个页面。</p></div><div class="source-item"><strong>流量承接及去向</strong><p>看访客在本店访问了哪些产品、哪些行业，用来判断某国访客是不是在看同一批款。</p></div></section>
       <section class="source-group"><h3>谁在问、谁在买</h3><div class="source-item"><strong>数据参谋 · 商机口径</strong><p>询盘人数、TM 咨询人数按国家的分布，用来对比「访客多但没人问」的国家。</p></div><div class="source-item"><strong>数据参谋 · 交易口径</strong><p>信保订单数、成交金额、成交买家数按国家的分布，用来确认真实的成交国家。</p></div></section>
       <section class="source-group"><h3>广告怎么按国家投</h3><div class="source-item"><strong>直通车 → 标签维度 → 地域标签</strong><p>地域标签用来给已验证的国家加价、给长期比价的国家降价。扣费方式和出价规则留到第 08、09 课展开。</p></div></section>
