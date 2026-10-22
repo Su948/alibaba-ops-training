@@ -40,7 +40,23 @@ const lessons = [
     quick: "主推市场不是访客最多的市场，而是需求匹配、竞争可控、询盘质量、成交能力和获客成本综合最优的市场。顺序不能反：先确认自己能稳定交付什么产品，再去找最认这类产品的国家。产品和国家对不上，后面的关键词、主图和投放都在替同行交学费。",
     steps: [
       ["盘清自己能交付什么", "把供应链、认证、MOQ、交期、定制能力、包装方式和可接受的价格带逐项写下来。这一步决定你能接什么单，不由愿望决定。"],
-      ["选出候选主推产品", "按四个维度打分：市场有需求、自己有优势、竞争可切入、利润能覆盖获客成本。每个维度只取 5、3、1 三档（标准见下方打分卡），先留 5 个候选，再按总分收敛到 3 个。"],
+      ["选出候选主推产品", "按四个维度打分：市场有需求、自己有优势、竞争可切入、利润能覆盖获客成本。每个维度只取 5、3、1 三档（标准见下方打分卡），先留 5 个候选，再按总分收敛到 3 个。",
+        `<details class="step-more"><summary>展开看完整案例：5 个候选怎么收敛到 3 个</summary><div class="step-more-body">
+          <p class="step-more-note">以一家按摩类产品供应商为例，按下方「第 2 步怎么打分」的三档标准给 5 个候选打分。表内为教学示例，不对应任何真实店铺数据。</p>
+          <div class="source-table-wrap"><table class="decision-table score-table case-table"><thead><tr><th>候选产品</th><th>市场有需求</th><th>自己有优势</th><th>竞争可切入</th><th>利润覆盖</th><th>总分</th><th>结论</th></tr></thead><tbody>
+            <tr><td>颈部按摩仪（充电款）</td><td>5</td><td>5</td><td>3</td><td>5</td><td>18</td><td>核心</td></tr>
+            <tr><td>头皮按摩器</td><td>3</td><td>5</td><td>5</td><td>5</td><td>18</td><td>核心</td></tr>
+            <tr><td>眼部按摩仪</td><td>5</td><td>3</td><td>1</td><td>3</td><td>12</td><td>验证</td></tr>
+            <tr><td>按摩坐垫</td><td>3</td><td>3</td><td>3</td><td>3</td><td>12</td><td>验证</td></tr>
+            <tr><td>足浴按摩盆</td><td>1</td><td>3</td><td>1</td><td>1</td><td>6</td><td>暂缓</td></tr>
+          </tbody></table></div>
+          <div class="case-reason">
+            <div><strong>为什么砍掉足浴按摩盆</strong><p>需求本来就不高，自有供应没优势，头部在打价格战，毛利也撑不住点击成本——三项落在最低档。放进主推只会拖住预算。</p></div>
+            <div><strong>为什么头皮按摩器反而进了核心</strong><p>需求只算中等（3 分），但自有供应强、竞品页面粗糙、毛利足够。这种「需求中等 + 自己能赢」的组合，常常比高需求红海更容易出结果。</p></div>
+            <div><strong>为什么眼部按摩仪只做验证</strong><p>需求明确，但头部集中、差异化空间小。先用小预算跑两周询盘质量，达标再提为核心，不达标就退回暂缓。</p></div>
+          </div>
+          <div class="method-note"><strong>三个主推的搭配：</strong>2 个核心产品保证产出，1 个验证产品留增长机会。不要 5 个全上（预算摊薄，每个都做不深），也不要只留 1 个核心（没有后备，一波动就断档）。</div>
+        </div></details>`],
       ["查访客的国家分布", "路径：数据参谋 → 流量参谋 → 流量来源，取近 90 天数据，切到国家/地区维度，记下 Top 10 国家的访客数和占比。"],
       ["查询盘和 TM 的国家分布", "切到商机口径，看询盘人数、TM 咨询人数按国家的分布。重点标出「访客多、询盘少」的国家，那通常是承接问题，不是流量问题。"],
       ["查成交国家与客单", "看信保订单数、成交金额、成交买家数按国家的分布。新店还没成交，就用样品单、报价记录和深度沟通记录替代，并在表格里标注为代理指标。"],
@@ -423,22 +439,6 @@ function lessonSupplement(lessonId){
       </tbody></table></div>
       <div class="method-note"><strong>分档口径：</strong>16—20 分进核心；11—15 分进验证；10 分及以下暂缓。分数只用来排序，不能替代对单个客户的判断；每季度按最新数据重打一次。<br><strong>别和第 7 步混用：</strong>这张卡打的是「做哪个产品」；第 7 步是把产品和国家组合起来再打一次（五维、1—5 分），回答的是「这个产品先打哪个国家」。两张卡的口径不同，不要合并成一张。</div>
     </section>
-    <section class="lesson-section"><h2>一个完整案例：5 个候选收敛到 3 个主推</h2>
-      <p class="drill-intro">以一家按摩类产品供应商为例，按上面的三档标准给 5 个候选打分。表内为教学示例，不对应任何真实店铺数据。</p>
-      <div class="source-table-wrap"><table class="decision-table score-table case-table"><thead><tr><th>候选产品</th><th>市场有需求</th><th>自己有优势</th><th>竞争可切入</th><th>利润覆盖</th><th>总分</th><th>结论</th></tr></thead><tbody>
-        <tr><td>颈部按摩仪（充电款）</td><td>5</td><td>5</td><td>3</td><td>5</td><td>18</td><td>核心</td></tr>
-        <tr><td>头皮按摩器</td><td>3</td><td>5</td><td>5</td><td>5</td><td>18</td><td>核心</td></tr>
-        <tr><td>眼部按摩仪</td><td>5</td><td>3</td><td>1</td><td>3</td><td>12</td><td>验证</td></tr>
-        <tr><td>按摩坐垫</td><td>3</td><td>3</td><td>3</td><td>3</td><td>12</td><td>验证</td></tr>
-        <tr><td>足浴按摩盆</td><td>1</td><td>3</td><td>1</td><td>1</td><td>6</td><td>暂缓</td></tr>
-      </tbody></table></div>
-      <div class="case-reason">
-        <div><strong>为什么砍掉足浴按摩盆</strong><p>需求本来就不高，自有供应没优势，头部在打价格战，毛利也撑不住点击成本——三项落在最低档。放进主推只会拖住预算。</p></div>
-        <div><strong>为什么头皮按摩器反而进了核心</strong><p>需求只算中等（3 分），但自有供应强、竞品页面粗糙、毛利足够。这种「需求中等 + 自己能赢」的组合，常常比高需求红海更容易出结果。</p></div>
-        <div><strong>为什么眼部按摩仪只做验证</strong><p>需求明确，但头部集中、差异化空间小。先用小预算跑两周询盘质量，达标再提为核心，不达标就退回暂缓。</p></div>
-      </div>
-      <div class="method-note"><strong>三个主推的搭配：</strong>2 个核心产品保证产出，1 个验证产品留增长机会。不要 5 个全上（预算摊薄，每个都做不深），也不要只留 1 个核心（没有后备，一波动就断档）。</div>
-    </section>
     <section class="lesson-section"><h2>后台去哪里查这几组数据</h2><div class="source-guide">
       <section class="source-group"><h3>访客从哪里来</h3><div class="source-item"><strong>数据参谋 → 流量参谋 → 流量来源</strong><p>看访客数、访问次数，切到国家/地区维度取 Top 10。第一课已经带你找到过这个页面。</p></div><div class="source-item"><strong>流量承接及去向</strong><p>看访客在本店访问了哪些产品、哪些行业，用来判断某国访客是不是在看同一批款。</p></div></section>
       <section class="source-group"><h3>谁在问、谁在买</h3><div class="source-item"><strong>数据参谋 · 商机口径</strong><p>询盘人数、TM 咨询人数按国家的分布，用来对比「访客多但没人问」的国家。</p></div><div class="source-item"><strong>数据参谋 · 交易口径</strong><p>信保订单数、成交金额、成交买家数按国家的分布，用来确认真实的成交国家。</p></div></section>
@@ -495,7 +495,7 @@ function lessonPage(lesson){
     <div class="lesson-layout"><article>
       <section class="lesson-section"><h2>学完你能做到</h2><ul class="outcomes">${lesson.outcomes.map(x=>`<li>${x}</li>`).join("")}</ul></section>
       <section class="lesson-section"><h2>3 分钟先看懂</h2><div class="quick-read"><strong>核心判断</strong><p>${lesson.quick}</p>${lesson.id===1?`<div class="funnel beginner-flow"><span>被看见</span><span>愿意点</span><span>看懂产品</span><span>愿意咨询</span></div>`:""}</div></section>
-      ${lesson.steps.length?`<section class="lesson-section"><h2>实操 SOP</h2><div class="steps">${lesson.steps.map(s=>`<div class="step"><h3>${s[0]}</h3><p>${s[1]}</p></div>`).join("")}</div></section>`:""}
+      ${lesson.steps.length?`<section class="lesson-section"><h2>实操 SOP</h2><div class="steps">${lesson.steps.map(s=>`<div class="step"><h3>${s[0]}</h3><p>${s[1]}</p>${s[2]||""}</div>`).join("")}</div></section>`:""}
       ${lessonSupplement(lesson.id)}
       ${lesson.decisions.length?`<section class="lesson-section"><h2>${lesson.decisionTitle||"数据判断与动作"}</h2><table class="decision-table"><thead><tr><th>${lesson.id===1?"阶段":"表现"}</th><th>${lesson.id===1?"是什么意思":"可能原因"}</th><th>${lesson.id===1?"新人先问什么":"优先动作"}</th></tr></thead><tbody>${rows}</tbody></table></section>`:""}
       ${lesson.id===1?trafficSourcePrimer():""}

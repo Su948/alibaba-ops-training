@@ -238,6 +238,14 @@ p { margin: 0 0 1em; }
 .step { position: relative; margin-bottom: 12px; padding: 18px 18px 18px 64px; background: var(--white); border: 1px solid var(--line); }
 .step::before { counter-increment: step; content: counter(step, decimal-leading-zero); position: absolute; left: 17px; top: 18px; color: var(--teal); font: 900 .9rem/1.2 ui-monospace, monospace; }
 .step p { margin: 5px 0 0; color: var(--ink-2); }
+.step-more { margin-top: 12px; padding-top: 10px; border-top: 1px dashed var(--line); }
+.step-more > summary { cursor: pointer; color: var(--teal); font-size: .88rem; font-weight: 800; list-style: none; }
+.step-more > summary::-webkit-details-marker { display: none; }
+.step-more > summary::after { content: " ▾"; }
+.step-more[open] > summary::after { content: " ▴"; }
+.step-more-body { margin-top: 14px; }
+.step p.step-more-note { margin: 0 0 12px; font-size: .88rem; }
+.step-more .method-note { margin-top: 12px; }
 .decision-table { width: 100%; border-collapse: collapse; background: var(--white); }
 .decision-table th, .decision-table td { padding: 12px 14px; border: 1px solid var(--line); text-align: left; vertical-align: top; }
 .decision-table th { background: #e9eef0; font-size: .84rem; }
@@ -278,6 +286,8 @@ p { margin: 0 0 1em; }
    .decision-table { display: block; overflow-x: auto; }
    .decision-table.score-table, .decision-table.case-table { display: table; overflow: visible; }
    .source-table-wrap { -webkit-overflow-scrolling: touch; }
+   .step:has(.step-more) { padding: 14px 14px 14px 44px; }
+   .step:has(.step-more)::before { left: 14px; top: 14px; }
    .source-summary { grid-template-columns: auto 1fr; }
   .source-summary em { grid-column: 1 / -1; }
   .source-guide { grid-template-columns: 1fr; }
