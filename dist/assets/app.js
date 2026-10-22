@@ -298,7 +298,7 @@ const lessons = [
           <p class="step-more-label">三个工具各管一段</p>
           <div class="tool-note-grid">
             <article><strong>瞬悉</strong><p>辅助观察同行店铺和产品数据，适合建立第一批候选名单。</p></article>
-            <article><strong>来搜</strong><p>辅助搜索和对比国际站产品，用于补充平台搜索结果。</p></article>
+             <article><strong>来搜</strong><p>两个用途：一是补充平台搜索结果、对比国际站产品；二是<strong>导出买家进店来源词</strong>——后台只给全站口径的词，单个买家是被哪个词带进来的，要靠它拿。第 04 课会用到第二个用途。</p></article>
             <article><strong>SuperAli</strong><p>辅助收集店铺与产品信息，减少手工抄录时间。</p></article>
           </div>
           <p class="step-more-label">采集完必须过这四道复核</p>
@@ -398,14 +398,14 @@ lessons.push(
           <div class="method-note"><strong>判断一个种子词合不合格：</strong>把它丢到 Google 和国际站首页各搜一次，出来的如果是同类产品的采购页，合格；出来的是科普、评测、维修，不合格。这一步和第 02 课判断采购意图是同一个动作。</div>
           <p class="step-more-label">新店和老店的起点不一样</p>
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>起点</th><th>新店</th><th>老店</th></tr></thead><tbody>
-             <tr><td>输入从哪来</td><td>产品名称、用途、场景、同行标题</td><td>访客详情表头的「全站偏好关键词」、产品360「关键词分析」页签</td></tr>
+             <tr><td>输入从哪来</td><td>产品名称、用途、场景、同行标题</td><td>买家进店来源词（来搜／脚本导出）、产品360「关键词分析」页签</td></tr>
             <tr><td>第一件事做什么</td><td>起种子词，再往外扩</td><td>把已有的词分成有商机和无商机，再看缺口</td></tr>
             <tr><td>最容易犯的错</td><td>凭感觉起词，收了一堆没人搜的表达</td><td>天天扩新词，却不看已经有商机的词有没有被用足</td></tr>
             <tr><td>优势</td><td>没有历史包袱，可以直接按意图分类</td><td>有真实转化数据，能验证词到底值不值</td></tr>
           </tbody></table></div>
           <div class="method-note"><strong>老店先别扩词。</strong>把「已经带来过商机的词」列出来，看看它们分别放在了标题、详情还是广告里。很多时候不是词不够，是好词没被用足——扩十个新词，不如把一个已验证的词铺到三个位置。</div>
         </div></details>`],
-      ["老店：把有商机词和无商机词分开用", "访客详情里那一列，表头写的不是「来源词」，而是「全站偏好关键词」（课程里口语仍叫来源词）——用它就能分出有商机词和无商机词。要按单个产品看词，则去产品360 的「关键词分析」页签。这两份数据不是用来看报表的，是用来决定加词、砍词和改页面的。",
+      ["老店：把有商机词和无商机词分开用", "把买家维度的进店来源词导出来（来搜或自研脚本），按「这个词带来的买家有没有发询盘／有没有来 TM」分成有商机词和无商机词——这一步必须用买家维度的数据，后台访客详情里那一列「全站偏好关键词」是全店口径，分不出来。要按单个产品看词，则去产品360 的「关键词分析」页签。这两份数据不是用来看报表的，是用来决定加词、砍词和改页面的。",
         `<details class="step-more"><summary>展开看三类词各自怎么用</summary><div class="step-more-body">
           <p class="step-more-label">按有没有产生商机，词只分三类</p>
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>词的类型</th><th>怎么认定</th><th>动作</th></tr></thead><tbody>
@@ -431,13 +431,15 @@ lessons.push(
            <figure class="course-figure">
              <div class="figure-head"><span>02</span><div><strong>访客详情这一页长什么样</strong><p>数据参谋 → 访客详情（图内关键词与数字已隐去）</p></div></div>
              <img src="assets/lesson-04-visitor-keywords.png" alt="国际站数据参谋访客详情页，含搜索词筛选、统计周期与国家筛选，以及七个数据列" loading="lazy">
-             <figcaption>看三处就够：<strong>左上「搜索词」框</strong>（筛某一类词）、<strong>「统计周期」</strong>（最近7天／最近31天／自定义）、<strong>第五列「全站偏好关键词」</strong>（前面依次是访客、国家及地区、浏览次数、停留时长）——课程口语叫来源词，就是这一列。一行是一个访客，不是一次浏览；同一个访客来三次，这里仍然只占一行。</figcaption>
+              <figcaption>看三处就够：<strong>左上「搜索词」框</strong>（筛某一类词）、<strong>「统计周期」</strong>（最近7天／最近31天／自定义）、<strong>第五列「全站偏好关键词」</strong>（前面依次是访客、国家及地区、浏览次数、停留时长）。一行是一个访客，不是一次浏览；同一个访客来三次，这里仍然只占一行。<br><strong>但这一列的名字要看仔细：它叫「全站」偏好关键词，是店铺口径的偏好词，不是这个买家进店时搜的那个词。</strong>课程里说的「来源词」，指的是<strong>单个买家的进店来源词</strong>——那个在后台这一页拿不到，要用来搜这类工具或自研脚本导出才有。两者的区别决定了后面怎么打标，别混着用。</figcaption>
            </figure>
-          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>取法</th><th>适合什么情况</th><th>拿到什么</th></tr></thead><tbody>
-            <tr><td>页面逐条看</td><td>词量少、核对单条访客</td><td>来源词、国家、浏览行为，适合抽样验证</td></tr>
-            <tr><td>插件或自研脚本导出</td><td>要按词统计、要跑几十上百条</td><td>整月访客明细 Excel，可排序可汇总，能按「是否询盘／是否 TM」打标</td></tr>
-          </tbody></table></div>
-                     <div class="method-note"><strong>这一页的四个筛选器，新人常按错。</strong><br><strong>搜索词：</strong>表格上方那个输入框，用来筛某一类词（不是列名）。<br><strong>统计周期：</strong>只有「最近7天／最近31天／自定义时间段」三档，<strong>没有「近30天」这一项</strong>——要凑整月就自己选自定义时间段，别拿 31 天当 30 天去和月报比。<br><strong>国家及地区、产品负责人：</strong>用来把范围收窄到某个市场或某个业务员，做季度复盘时才需要动它。<br>表头里那一列叫「全站偏好关键词」，是指这个访客在本店看过的词，不是他搜索的全部历史。</div>
+           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>取法</th><th>适合什么情况</th><th>拿到什么</th></tr></thead><tbody>
+             <tr><td>后台访客详情逐条看</td><td>词量少、只想核对某条访客的浏览行为</td><td>全站偏好关键词、国家、浏览次数、停留时长。<strong>注意这是全站口径，不是他的进店来源词</strong>——只能当辅助参考</td></tr>
+             <tr><td>来搜等第三方工具</td><td>要按单个买家看进店来源词，词量不大、想边看边判断</td><td><strong>买家维度的进店来源词</strong>，能看到这个人是搜哪个词进来的，适合核对高价值买家</td></tr>
+             <tr><td>自研脚本导出</td><td>要按词统计、要跑几十上百条、要按月攒</td><td>整月访客明细 Excel，<strong>每个买家带进店来源词</strong>，可排序可汇总，能按「是否询盘／是否 TM」打标</td></tr>
+           </tbody></table></div>
+           <div class="method-note"><strong>三者的关系，一句话分清：</strong>后台给你的是<strong>全店偏好的词</strong>，能看出「这店最近被哪些词带流量」；工具和脚本导出给你的是<strong>某个买家进店搜的词</strong>，能看出「这单生意是被哪个词带进来的」。判断词好不好，要看后者；看整体趋势，前者就够。</div>
+                     <div class="method-note"><strong>这一页的四个筛选器，新人常按错。</strong><br><strong>搜索词：</strong>表格上方那个输入框，用来筛某一类词（不是列名）。<br><strong>统计周期：</strong>只有「最近7天／最近31天／自定义时间段」三档，<strong>没有「近30天」这一项</strong>——要凑整月就自己选自定义时间段，别拿 31 天当 30 天去和月报比。<br><strong>国家及地区、产品负责人：</strong>用来把范围收窄到某个市场或某个业务员，做季度复盘时才需要动它。<br>表头里那一列叫「全站偏好关键词」，<strong>是店铺口径的偏好词，不是这个买家进店搜的那个词</strong>——想拿单个买家的进店来源词，得来搜或脚本导出，这一页给不了。</div>
            <div class="method-note"><strong>页面上没有导出按钮，别指望点一下就能下载。</strong>访客详情能查、能筛，但要批量拿到明细，得用脚本导出。这件事本身就该固化成每月动作——不是为了看报表，是为了攒自己的历史：平台只保留近 31 天，不导出就永远只有最近一个月。</div>
           <div class="method-note"><strong>导出只是原料，汇总成台账才是资产。</strong>把明细按「来源词 × 国家」汇总成一张月度台账，字段固定下来：访客数、询盘访客数、TM 访客数、商机数、是否产生商机、词类、处理动作。用模板库的《08-访客来源词台账》记录，每月 1 号导上月数据，连续攒三个月就能看出哪些词在退、哪些词在起。<br>汇总脚本团队会统一做，但在脚本出来之前，先用表格手工汇总也比不攒强——平台只留 31 天，数据过期不会等人。</div>
           <div class="method-note"><strong>词取出来之后，只做三件事。</strong><br><strong>① 打标：</strong>按有没有产生询盘或 TM，分成有商机词和无商机词。<br><strong>② 拿去搜：</strong>把每个词丢到 Google 和国际站首页各搜一次，看搜出来的是批发询价页还是零售维修页——这一步决定它该进核心词还是进屏蔽词。<br><strong>③ 归类：</strong>按六类意图分好，喂回自己的词库，再决定放进标题、详情还是推广。</div>
@@ -826,6 +828,11 @@ lessons.push(
             <li><strong>三、自然段还没满 7 天</strong><span>用广告盖住还没验证的基础，是最贵的一种试错——钱花了，问题还在</span></li>
           </ul></div>
           <div class="method-note"><strong>开广告的正确起点：</strong>先写一句假设，比如「换成场景首图后，点击率能追上类目中位数，所以值得用精准词加速验证」。写不出这句，说明还没到开的时机。</div>
+          <figure class="course-figure">
+            <div class="figure-head"><span>01</span><div><strong>开计划的第一屏长这样</strong><p>营销中心 → 首页「计划监测」区（计划名与数值已隐去）</p></div></div>
+            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看计划监测截图"><img src="assets/lesson-07-promotion-entry.png" alt="营销中心首页的计划监测区，含消耗最高、最新创建、商机最高三个排序页签和右上角的新建推广计划按钮" loading="lazy"></div>
+            <figcaption>冷启动那 7 天要盯的就是这一屏。<strong>三个排序页签</strong>是现成的三种视角：按「消耗最高」查钱花在哪、按「最新创建」看你新开的那个计划、按「商机最高」看谁在出结果。右上角「新建推广计划」是这一课的终点动作，但<strong>五道闸门没过之前，这个按钮先别按</strong>。</figcaption>
+          </figure>
         </div></details>`],
       ["三天一循环看三个信号", "固定三个节点做判断，不要每天盯盘改来改去。每次只改一个变量，改完至少观察 3 天。",
         `<details class="step-more"><summary>展开看三个节点各做什么决定</summary><div class="step-more-body">
@@ -1114,8 +1121,14 @@ lessons.push(
             <tr><td>点击</td><td>点击率、点击成本</td><td>主图、标题词序、价格展示</td></tr>
             <tr><td>曝光</td><td>曝光量、覆盖词数</td><td>收录、类目、词太小、账户资格</td></tr>
           </tbody></table></div>
-          <div class="method-note"><strong>为什么倒着看：</strong>成交差的时候，最直觉的反应是「流量不够」，于是加预算。但如果卡在报价，加预算只会让更多人来问、然后同样谈不成——问题没解决，钱花了。</div>
-        </div></details>`],
+           <div class="method-note"><strong>为什么倒着看：</strong>成交差的时候，最直觉的反应是「流量不够」，于是加预算。但如果卡在报价，加预算只会让更多人来问、然后同样谈不成——问题没解决，钱花了。</div>
+           <figure class="course-figure">
+             <div class="figure-head"><span>01</span><div><strong>数据概览的趋势区与口径切换</strong><p>数据参谋 → 数据概览（纵轴与数值已隐去）</p></div></div>
+             <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看数据概览趋势区截图"><img src="assets/lesson-10-data-overview.png" alt="数据参谋数据概览的趋势分析区，右上有全部、询盘人数、TM咨询人数三个口径切换，图例为我的效果、行业平均、同行优秀" loading="lazy"></div>
+             <figcaption>右上三个圆点是<strong>口径切换</strong>：全部／询盘人数／TM咨询人数——同一段时间换口径，曲线的形状就变了，所以对比之前先确认对方看的是哪个口径。图例里<strong>「我的效果／行业平均／同行优秀」</strong>三条线是这页最有用的东西：只看自己的曲线在涨没用，要跟行业平均比。</figcaption>
+           </figure>
+           <div class="method-note"><strong>这里有个坑，先讲清楚：数据概览默认看不到曝光、点击和访客。</strong>默认「运营常用」模式下，指标行给的是<strong>商机人数、全店商机量、TM咨询人数、询盘人数、信保交易订单个数、信保交易金额</strong>——全是结果层，没有曝光、没有点击、没有访客。想看完整的「曝光→点击→访客→询盘→商机」漏斗，要先把这一页的视图和模式换掉：筛选行右边有<strong>「图形／三列表」</strong>切换和<strong>「运营常用」</strong>模式下拉，切到三列表能一次看到这一页到底提供了哪些指标，缺哪一项再从模式里换。<strong>别去这一页找「自定义列」</strong>——那个按钮在营销中心的推广页（第 08 课图 01 右上角就有），这两处不是同一个东西。</div>
+         </div></details>`],
       ["分清店铺级和单链接问题", "同一个症状，可能是整店的问题，也可能只是一条链接的问题。判断错了，就会用整店改版去解决一个链接的小毛病。",
         `<details class="step-more"><summary>展开看怎么区分</summary><div class="step-more-body">
           <div class="mindmap"><div class="mm-root">先判断是铺开的问题，还是局部的问题</div><ul class="mm-list">
@@ -1124,12 +1137,17 @@ lessons.push(
             <li><strong>新链接都不起量，老链接还行</strong><span>冷启动流程问题，回第 07 课看两段式有没有做对</span></li>
             <li><strong>询盘集中在少数产品</strong><span>正常现象。要看的是这少数产品有没有被喂够资源，而不是强行拉平</span></li>
           </ul></div>
-          <div class="method-note"><strong>一个快速算法：</strong>把询盘按产品排序，看前 20% 的产品贡献了多少询盘。如果超过 70%，属正常集中；如果不到 40%，说明没有主推，资源撒得太散。</div>
-        </div></details>`],
+           <div class="method-note"><strong>一个快速算法：</strong>把询盘按产品排序，看前 20% 的产品贡献了多少询盘。如果超过 70%，属正常集中；如果不到 40%，说明没有主推，资源撒得太散。</div>
+           <figure class="course-figure">
+             <div class="figure-head"><span>02</span><div><strong>产品分析列表：判断「是哪一个链接」的地方</strong><p>数据参谋 → 产品参谋 → 产品分析（产品名与数值已隐去）</p></div></div>
+             <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看产品分析列表截图"><img src="assets/lesson-10-product-analysis.png" alt="产品分析列表，含产品、访问人数、询盘人数、TM咨询人数、全店曝光次数、全店点击次数、产品360、操作八列，行末有分析与诊断按钮" loading="lazy"></div>
+             <figcaption><strong>一行一个产品，八列一次看完</strong>：产品、访问人数、询盘人数、TM 咨询人数、全店曝光次数、全店点击次数、产品360、操作。要不要拆到单链接，就看这张表——如果<a href="#lesson-10">第 3 步</a>说的「多数链接点击率都低」成立，这里逐行都低；如果只有一两行低，问题就锁在那两条。行末两个按钮别混：<strong>「分析」进的是产品360 抽屉</strong>（词、访客地域、竞品对标都在里面），<strong>「诊断」是平台给的体检结论</strong>，两者要看的是不同东西。</figcaption>
+           </figure>
+         </div></details>`],
       ["单链接诊断只看三件事", "词对不对、图行不行、页接不接得住。三个问题对应三个数据源，不要混着看。",
         `<details class="step-more"><summary>展开看三个问题怎么查</summary><div class="step-more-body">
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>问题</th><th>看哪里</th><th>不合格的表现</th></tr></thead><tbody>
-            <tr><td>词对不对</td><td>产品360「关键词分析」页签、访客详情的「全站偏好关键词」</td><td>词有曝光但商机跑到别的产品上</td></tr>
+            <tr><td>词对不对</td><td>产品360「关键词分析」页签、买家进店来源词（来搜／脚本导出）</td><td>词有曝光但商机跑到别的产品上</td></tr>
             <tr><td>图行不行</td><td>点击率与同类目中位数对比</td><td>曝光正常、点击明显偏低</td></tr>
             <tr><td>页接不接得住</td><td>访客停留、询盘率、询盘里反复问的问题</td><td>停留短、询盘少的理由集中在价格和 MOQ</td></tr>
           </tbody></table></div>
@@ -1208,6 +1226,12 @@ lessons.push(
             <tr><td>RFQ</td><td>买家发需求，多方同时竞争</td><td>拼匹配度、响应速度和差异化，慢一步就出局</td></tr>
           </tbody></table></div>
           <div class="method-note"><strong>最常见的错配：</strong>拿 RFQ 的长报价单去回 TM 咨询。买家只是想先问一句，收到一大段条款，通常就退出了。TM 要短、要快、要一句话钩住；RFQ 要完整、要显得读过需求。</div>
+          <div class="method-note"><strong>三种来源在后台不是一个地方，别找错门。</strong><br><strong>询价单（站内信询盘）：</strong>商机沟通 → 询价单管理 → 所有询价单。注意页面标题写的是「<strong>商机列表</strong>」，列表里的单位叫「<strong>询价单</strong>」——课程口语说的「询盘」，后台用的是这两个词。<br><strong>状态页签只有六个：</strong>全部、待回复、新询价、已下单、待支付、待确认。<strong>没有「待跟进」这个状态</strong>；「未读商机」是右上角的一个复选框，不是页签。<br><strong>点开一条会新开一个全屏页</strong>，没有左侧导航，和列表不是同一套布局——第一次用的人常以为自己点错了。</div>
+          <figure class="course-figure">
+            <div class="figure-head"><span>01</span><div><strong>商机列表长什么样</strong><p>商机沟通 → 询价单管理 → 所有询价单（买家名与内容已隐去）</p></div></div>
+            <img src="assets/lesson-11-inquiry-list.png" alt="商机沟通下的商机列表，左侧为询价单管理菜单，中间为状态页签与询价单列表，右侧为状态与操作" loading="lazy">
+            <figcaption>上面那排就是全部六个状态页签，<strong>找「待跟进」会找不到</strong>。左侧竖排是这一块的菜单：询价单管理、接待设置、服务数据看板、消息管理、常用功能（起草意向合同、RFQ 推荐、所有订单都在这里）。列表右侧只有两个动作：<strong>「立即回复」</strong>和<strong>「查看详情」</strong>——回复和判断是两件事，先判断再回。</figcaption>
+          </figure>
         </div></details>`],
       ["按信号给询盘分级", "分级不是为了挑客户，是为了分配时间。A 类当天深度跟，C 类用模板回，中间的时间才够用。",
         `<details class="step-more"><summary>展开看分级的五个信号</summary><div class="step-more-body">
@@ -1335,8 +1359,14 @@ lessons.push(
             <tr><td>商机数或成交额</td><td>当天产生的商机数，或成交金额</td></tr>
           </tbody></table></div>
           <div class="method-note"><strong>那句话的格式：</strong>「今天异常是＿＿＿，明天第一件事是＿＿＿」。写不出这句话，说明还在抄数字，没在看数据。</div>
-          <div class="method-note"><strong>日报不追责，追异常。</strong>把日报做成考核表，团队会开始修饰数字；做成异常提示，大家才愿意说真话。</div>
-        </div></details>`],
+           <div class="method-note"><strong>日报不追责，追异常。</strong>把日报做成考核表，团队会开始修饰数字；做成异常提示，大家才愿意说真话。</div>
+           <figure class="course-figure">
+             <div class="figure-head"><span>01</span><div><strong>店铺数据的导出入口</strong><p>数据参谋 → 数据总览（数值已隐去）</p></div></div>
+             <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看数据总览顶部截图"><img src="assets/lesson-12-report-export.png" alt="数据参谋数据总览顶部，含实时数据与日周月数据切换、日期与全店数据筛选、运营常用模式、图形与三列表切换、下载按钮" loading="lazy"></div>
+             <figcaption>这一条筛选栏上有三样东西要认：<strong>「实时数据／日周月数据」</strong>决定看的是当下还是结算后的数、<strong>「运营常用」</strong>是模式、<strong>「下载」</strong>才是导出。先切模式再下载，否则导出来的还是默认那几列。</figcaption>
+           </figure>
+           <div class="method-note"><strong>这五个数去哪取，两个入口别混。</strong><br><strong>① 店铺经营数据：</strong>数据参谋 → 数据概览 → 右上「下载」，导出的是店铺整体数据；注意默认模式下没有访客、曝光、点击，<strong>先在顶部「自定义列」把这三项加上</strong>，下载出来才齐。<br><strong>② 广告报告：</strong>营销中心 → 直通车报告 → 右上「导出」，导的是投放数据（分全站推广／标准推广两组）。<br>两条线的口径不同，别把广告报告里的询盘和店铺总询盘直接相加，也别用同一张表算全店转化率——第 10 课第 1 步讲的口径问题，在取数这一步就要守住。</div>
+         </div></details>`],
       ["周报：变化、归因、动作", "周报的核心是归因。没有归因的周报，只是把后台数字搬到 PPT 上。",
         `<details class="step-more"><summary>展开看三段怎么写</summary><div class="step-more-body">
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>段落</th><th>写什么</th><th>不合格的样子</th></tr></thead><tbody>
