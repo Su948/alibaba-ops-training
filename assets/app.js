@@ -46,7 +46,7 @@ const lessons = [
           <p class="step-more-note">只写四个维度，真到打分时还是会卡住：什么算「有需求」？什么算「有优势」？直接把每个维度拆成三档，只取 5、3、1 三个值，满分 20 分。</p>
           <div class="source-table-wrap"><table class="decision-table score-table"><thead><tr><th>维度</th><th>5 分</th><th>3 分</th><th>1 分</th></tr></thead><tbody>
             <tr><td>市场有需求</td><td>近 90 天有稳定搜索量，且已有 3 个以上不同买家的真实询盘</td><td>有搜索量，询盘零星</td><td>只有零星搜索，几乎没人问</td></tr>
-            <tr><td>自己有优势</td><td>自有工厂或独家供应，有认证，MOQ 和交期能压过同行</td><td>有稳定供应商，价格和交期处于中位</td><td>贸易拼货，价格和交期都没把握</td></tr>
+            <tr><td>自己有优势</td><td>自有工厂、独家供应或独家代理，有认证，MOQ 和交期能压过同行</td><td>有稳定供应商，价格和交期处于中位</td><td>靠拼货，价格和交期都受制于上游</td></tr>
             <tr><td>竞争可切入</td><td>头部链接没有垄断，主图和详情普遍粗糙</td><td>有强对手，但存在认证、定制或小单的差异空间</td><td>头部集中打价格战，找不到差异点</td></tr>
             <tr><td>利润能覆盖获客成本</td><td>毛利能覆盖多倍点击成本，一次成交就回本</td><td>毛利偏薄，必须压住点击成本才不亏</td><td>毛利太低，靠广告基本不可能回本</td></tr>
           </tbody></table></div>
@@ -66,6 +66,24 @@ const lessons = [
             <div><strong>为什么眼部按摩仪只做验证</strong><p>需求明确，但头部集中、差异化空间小。先用小预算跑两周询盘质量，达标再提为核心，不达标就退回暂缓。</p></div>
           </div>
           <div class="method-note"><strong>三个主推的搭配：</strong>2 个核心产品保证产出，1 个验证产品留增长机会。不要 5 个全上（预算摊薄，每个都做不深），也不要只留 1 个核心（没有后备，一波动就断档）。</div>
+          <p class="step-more-label">三、工厂店和贸易店，这一步差在哪</p>
+          <p class="step-more-note">不是两套方法，是同一张打分卡、两个不同的一票否决项。工厂店多一道开模判断，贸易店多一道供应商判断。</p>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>维度</th><th>工厂店</th><th>贸易店</th><th>影响哪一步</th></tr></thead><tbody>
+            <tr><td>选品起点</td><td>产线能做 × 市场要做的交集</td><td>市场要做的，再去找货源</td><td>02</td></tr>
+            <tr><td>多出的一票否决</td><td>开模投入摊不摊得掉</td><td>供应商稳不稳（价格、交期、断货风险）</td><td>02</td></tr>
+            <tr><td>库存</td><td>会多做库存品：展示用 + 寄样用</td><td>一般不做库存，寄样靠供应商</td><td>02 / 05</td></tr>
+            <tr><td>交期承诺</td><td>自己可控，可以写进报价</td><td>取决于供应商，报价要留缓冲</td><td>05</td></tr>
+            <tr><td>主推宽度</td><td>可以多推几款：有实物、能快速寄样</td><td>集中主推，避免样机成本</td><td>07</td></tr>
+            <tr><td>主要风险</td><td>开了模卖不动，钱沉在模具里</td><td>卖起来了供应商涨价或断货</td><td>07</td></tr>
+          </tbody></table></div>
+          <p class="step-more-label">工厂店：开模前先过三问</p>
+          <div class="mindmap"><div class="mm-root">这个品值不值得开模</div><ul class="mm-list">
+            <li><strong>一、有没有订单托底</strong><span>已有大客、明确的试单，或同类款在老店里跑出过稳定成交。一个都没有，先做样品和小批量，别直接开模</span></li>
+            <li><strong>二、能不能摊得掉</strong><span>先算清楚模具摊到多少量才回本，再拿它和你实际能拿到的订单量比。算不出来的，就是还没想清楚</span></li>
+            <li><strong>三、撑不撑得起展示</strong><span>这个品放在展厅和样品间里，客户看一眼会不会问价。撑不起展示的品，开了模也只能靠低价走量</span></li>
+          </ul></div>
+          <div class="method-note"><strong>库存品不是库存压力，是销售资产。</strong>工厂多做的那批货，价值在于「随时能寄样、随时能展示」——客户看得到实物，成交周期会明显短于只能发图片的贸易店。所以工厂店的主推可以比贸易店更宽。但要在表里单独记「样品／展示库存」，不要和滞销库存混在一起算，否则会误判成压货。</div>
+          <div class="method-note"><strong>贸易店要多问一句：</strong>这个品卖起来之后，供应商稳不稳？价格会不会跳、交期会不会拖、会不会转头卖给你的同行。工厂店的开模风险在前期，贸易店的断货风险在后期——两种风险都要写进打分表的备注栏。</div>
         </div></details>`],
       ["查国家分布：本店买家 × 行业买家", "两个页签都要看：本店买家告诉你「我已经在哪里有证据」，行业买家告诉你「需求在哪里」。先本店、再行业，最后用四象限定取舍——只看一个都会偏。",
         `<details class="step-more"><summary>展开看两个口径怎么取舍</summary><div class="step-more-body">
@@ -201,6 +219,7 @@ const lessons = [
             <tr><td>足浴按摩盆 × 北美</td><td>9</td><td>暂缓</td><td>不加预算，只保留自然流量</td><td>每月复盘一次，不设目标</td></tr>
           </tbody></table></div>
           <div class="method-note"><strong>「暂缓」也是结论。</strong>矩阵的价值不在于把所有组合都做起来，而在于明确写清「这三个月不做哪几个」。没有暂缓项的矩阵，等于没有做取舍。</div>
+          <div class="method-note"><strong>同一个「暂缓」，工厂店和贸易店的成因不同。</strong>工厂店多数是模具摊不掉——市场可能是好的，只是量不够；贸易店多数是上游不稳或价格打不进去。写暂缓理由时把成因写清，下个季度才知道该复查什么。</div>
         </div></details>`]
     ],
     decisionTitle: "数据表现与判断方法",
