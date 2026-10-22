@@ -402,6 +402,13 @@ lessons.push(
           </ul></div>
           <p class="step-more-label">产品360 用来做「词—产品」绑定</p>
           <div class="method-note"><strong>搜索流量商机词的价值在于对得上号。</strong>同一个词在 A 产品上一直带来商机，说明词和产品匹配，可以固化进标题；如果某个词有曝光，但商机全跑到别的产品上，说明类目或标题指错了地方——这时候改标题比加预算有效。<br>按产品看还有一个用处：能发现「词是好词，但挂错了链接」，这是老店最常见的浪费。</div>
+          <p class="step-more-label">来源词怎么取出来，取出来怎么用</p>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>取法</th><th>适合什么情况</th><th>拿到什么</th></tr></thead><tbody>
+            <tr><td>页面逐条看</td><td>词量少、核对单条访客</td><td>来源词、国家、浏览行为，适合抽样验证</td></tr>
+            <tr><td>脚本导出成 Excel</td><td>要按词统计、要跑几十上百条</td><td>整月访客明细，可排序可汇总，能按「是否询盘／是否 TM」打标</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>页面上没有导出按钮，别指望点一下就能下载。</strong>访客详情能查、能筛，但要批量拿到明细，得用脚本导出。这件事本身就该固化成每月动作——不是为了看报表，是为了攒自己的历史：平台只保留近 31 天，不导出就永远只有最近一个月。</div>
+          <div class="method-note"><strong>词取出来之后，只做三件事。</strong><br><strong>① 打标：</strong>按有没有产生询盘或 TM，分成有商机词和无商机词。<br><strong>② 拿去搜：</strong>把每个词丢到 Google 和国际站首页各搜一次，看搜出来的是批发询价页还是零售维修页——这一步决定它该进核心词还是进屏蔽词。<br><strong>③ 归类：</strong>按六类意图分好，喂回自己的词库，再决定放进标题、详情还是推广。</div>
           <div class="method-note"><strong>三个必须注意的地方。</strong><br><strong>① 有商机词是结果，不是原因。</strong>要配曝光量一起看转化率。只看商机绝对数，很容易把「投放多」误当成「词好」。<br><strong>② 样本要够。</strong>7 天数据可能是偶然，建议看近 30—90 天再定去留。<br><strong>③ 访客详情只保留近 31 天、T-2 更新。</strong>要做季度对比，得自己定期导出 Excel 留档，否则数据会滚掉。</div>
         </div></details>`],
       ["多渠道扩词", "从平台搜索建议、关键词指数、同行标题、广告搜索词和 Google／站外工具补充词。每个词都要记下它从哪来——来源决定可信度。",
