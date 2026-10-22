@@ -1040,16 +1040,102 @@ lessons.push(
     id: 10,
     stage: "管理",
     title: "数据诊断与链接优化",
-    summary: "从店铺总览下钻到国家、渠道、产品和搜索词，把报表转化成下一步动作。",
+    summary: "从店铺总览下钻到国家、渠道、产品和搜索词，把报表转化成下一步动作；给一张症状速查表，遇到问题直接定位到该看哪一课。",
     duration: "75 分钟",
-    updated: "2026-09",
+    updated: "2026-10",
     prerequisites: "第 01、05、07—09 课",
-    outcomes: ["完成从曝光到成交的完整漏斗分析", "完成店铺数据概览", "定位低转化产品的主要问题", "输出有优先级的优化清单"],
-    quick: "数据分析不等于罗列数字。先确认目标和口径，再按店铺 → 国家 → 渠道 → 产品 → 搜索词逐层下钻，每个结论都必须对应一个可执行动作和复查日期。",
-    steps: [["建立完整漏斗", "按曝光、点击、访客、询盘/TM、样品/信保、成交/复购记录同一周期数据。"],["做数据概览", "记录日均访客、曝光、点击、自然/付费占比、询盘/TM、GMV 和目标完成度。"],["检查国家分布", "对比访客国家、询盘国家和成交国家是否符合主推定位。"],["分析漏斗", "分别计算点击率、访客询盘率和询盘成交率，找最大损失环节。"],["下钻到产品", "区分高曝光低点击、高点击低询盘和有询盘低成交三类。"],["核对流量来源", "自然、推荐、活动和付费流量要分开判断，避免用汇总数据掩盖问题。"],["形成行动清单", "给问题标注影响、证据、负责人、动作、截止日和复查指标。"]],
-    decisions: [["自然流量占比过低", "过度依赖广告或自然覆盖弱", "补关键词与内容质量，逐步验证自然流量"],["国家偏离主推市场", "词、人群或系统扩量偏差", "调整词、国家和素材本地化"],["低转化产品长期消耗", "承接或产品竞争力不足", "修正后设观察期，仍无改善则停止投入"]],
-    checklist: ["统计口径与时间范围一致", "自然和付费分开", "国家、产品和词完成下钻", "结论有数据证据", "每个问题都有负责人和复查日期"],
-    assignment: "用最近一个完整月完成店铺诊断，输出 3 个最高优先级问题，每个问题只安排一个首要动作。",
+    outcomes: ["统一口径后再做判断，不出「拿 7 天比 30 天」的错", "从结果倒推，定位问题卡在哪一层", "分清是店铺级问题还是单链接问题", "用速查表把症状直接映射到动作和对应课程"],
+    quick: "数据分析不等于罗列数字。先确认口径，再从成交往回倒推：成交 → 询盘 → 点击 → 曝光。因为下游的问题经常伪装成上游的问题——成交差，你会以为是流量少，其实可能是报价贵。每个结论都必须落到一个动作、一个负责人、一个复查日期。",
+    steps: [
+      ["先固定口径，再谈结论", "三件事没定就别开始看数：时间范围、数据来源、对比基准。这三样不一致，算出来的结论全是假的。",
+        `<details class="step-more"><summary>展开看三个口径项怎么定</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>口径项</th><th>必须怎么定</th><th>定错会怎样</th></tr></thead><tbody>
+            <tr><td>时间范围</td><td>同一周期、同一天数；环比就都是 30 天，比就都是 30 天</td><td>拿 7 天比 30 天，得出「流量暴跌」的假结论</td></tr>
+            <tr><td>数据来源</td><td>同口径同报表，别把不同模块的数字混着算</td><td>访客数和询盘数来自不同口径，算出来的转化率没意义</td></tr>
+            <tr><td>对比基准</td><td>环比、同比，或同类目中位数，三选一固定用</td><td>每次换基准，结论跟着基准变</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>还有一个常被忽略的：</strong>后台数据按美西时间统计。跨月做对比时，注意月初月末的时区差，别把「差半天」当成趋势。</div>
+        </div></details>`],
+      ["从结果往回倒推", "先看成交，再看询盘，再看点击，最后看曝光。顺序不能正着来——正着看，你会一直在优化最上游、但可能最没问题的那一层。",
+        `<details class="step-more"><summary>展开看四层各指向什么</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>层</th><th>看什么指标</th><th>异常时先怀疑什么</th></tr></thead><tbody>
+            <tr><td>成交</td><td>成交单数、成交买家数、客单价</td><td>报价、付款条款、跟进节奏——销售环节，不是链接问题</td></tr>
+            <tr><td>询盘</td><td>询盘人数、TM 咨询人数、有效询盘占比</td><td>详情承接、价格带、MOQ、交期</td></tr>
+            <tr><td>点击</td><td>点击率、点击成本</td><td>主图、标题词序、价格展示</td></tr>
+            <tr><td>曝光</td><td>曝光量、覆盖词数</td><td>收录、类目、词太小、账户资格</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>为什么倒着看：</strong>成交差的时候，最直觉的反应是「流量不够」，于是加预算。但如果卡在报价，加预算只会让更多人来问、然后同样谈不成——问题没解决，钱花了。</div>
+        </div></details>`],
+      ["分清店铺级和单链接问题", "同一个症状，可能是整店的问题，也可能只是一条链接的问题。判断错了，就会用整店改版去解决一个链接的小毛病。",
+        `<details class="step-more"><summary>展开看怎么区分</summary><div class="step-more-body">
+          <div class="mindmap"><div class="mm-root">先判断是铺开的问题，还是局部的问题</div><ul class="mm-list">
+            <li><strong>多数链接点击率都低</strong><span>店铺级问题：类目结构、价格带、整体视觉风格。改一两条链接没用</span></li>
+            <li><strong>只有一两条低</strong><span>单链接问题：词、图、详情。别动全店</span></li>
+            <li><strong>新链接都不起量，老链接还行</strong><span>冷启动流程问题，回第 07 课看两段式有没有做对</span></li>
+            <li><strong>询盘集中在少数产品</strong><span>正常现象。要看的是这少数产品有没有被喂够资源，而不是强行拉平</span></li>
+          </ul></div>
+          <div class="method-note"><strong>一个快速算法：</strong>把询盘按产品排序，看前 20% 的产品贡献了多少询盘。如果超过 70%，属正常集中；如果不到 40%，说明没有主推，资源撒得太散。</div>
+        </div></details>`],
+      ["单链接诊断只看三件事", "词对不对、图行不行、页接不接得住。三个问题对应三个数据源，不要混着看。",
+        `<details class="step-more"><summary>展开看三个问题怎么查</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>问题</th><th>看哪里</th><th>不合格的表现</th></tr></thead><tbody>
+            <tr><td>词对不对</td><td>产品360 的搜索流量商机词、访客详情的来源词</td><td>词有曝光但商机跑到别的产品上</td></tr>
+            <tr><td>图行不行</td><td>点击率与同类目中位数对比</td><td>曝光正常、点击明显偏低</td></tr>
+            <tr><td>页接不接得住</td><td>访客停留、询盘率、询盘里反复问的问题</td><td>停留短、询盘少的理由集中在价格和 MOQ</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>不要三个一起改。</strong>词、图、页同时动，跑出来的结果无法归因，下次遇到同样问题还是不知道该怎么修。</div>
+        </div></details>`],
+      ["症状速查表", "遇到问题别从第一课翻起。按症状查这张表，直接定位到该看哪里、对应哪一课、第一个动作是什么。",
+        `<details class="step-more"><summary>展开看十种常见症状怎么查</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>症状</th><th>先看哪里</th><th>对应课程</th><th>第一个动作</th></tr></thead><tbody>
+            <tr><td>完全没有曝光</td><td>收录状态、类目、词的大小</td><td>第 05、07 课</td><td>查类目与收录，别加预算</td></tr>
+            <tr><td>有曝光没点击</td><td>首图、标题词序、价格展示</td><td>第 06 课</td><td>先换首图，词不动</td></tr>
+            <tr><td>有点击没询盘</td><td>详情承接、MOQ、交期</td><td>第 05 课</td><td>补页面，不是加投放</td></tr>
+            <tr><td>有询盘没成交</td><td>报价、付款条款、跟进节奏</td><td>第 11 课</td><td>转销售环节处理</td></tr>
+            <tr><td>访客国家不对</td><td>国家分布、投放国家、词的语言</td><td>第 02、04 课</td><td>重查主推国家与实际分布</td></tr>
+            <tr><td>询盘集中在非主推国</td><td>四象限结论是否过期</td><td>第 02 课</td><td>重跑一次矩阵，别硬扭</td></tr>
+            <tr><td>点击成本高、毛利撑不住</td><td>词结构、计划粒度</td><td>第 08、09 课</td><td>拆计划，不是压价</td></tr>
+            <tr><td>总询盘没涨但广告询盘涨</td><td>新客占比、自然流量变化</td><td>第 09 课</td><td>做增量验证</td></tr>
+            <tr><td>老客多、新客少</td><td>词库覆盖、拓新计划</td><td>第 04、09 课</td><td>补新词，别只维护老客</td></tr>
+            <tr><td>单链接好、整店差</td><td>产品集中度、资源分配</td><td>本课第 03 步</td><td>判断该集中还是该补链路</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>这张表的用法：</strong>先对症状，再看「先看哪里」，最后确认「第一个动作」。三列对不上，说明症状描述得还不够具体——回去把数据拆细一层再查。</div>
+        </div></details>`],
+      ["三个率相乘就是全链路效率", "点击率、询盘率、成交率，三率相乘等于从曝光到成交的整体效率。任何一环砍半，整体就砍半。",
+        `<details class="step-more"><summary>展开看三率怎么算、怎么比</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>指标</th><th>怎么算</th><th>异常时先做什么</th></tr></thead><tbody>
+            <tr><td>点击率</td><td>点击 ÷ 曝光</td><td>先换首图；词的问题放第二步查</td></tr>
+            <tr><td>询盘率</td><td>询盘人数 ÷ 访客数</td><td>查详情承接、价格带、MOQ</td></tr>
+            <tr><td>成交率</td><td>成交单数 ÷ 询盘数</td><td>查报价、条款、跟进时效</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>先修最短的那块板。</strong>三率里最差的那一项，往往就是当前投入产出比最高的一处改动。都差不多的时候，按「改动成本最低」的先做。</div>
+          <div class="method-note"><strong>算比例要用同一批人的数：</strong>询盘率的分母是访客数，不是曝光数；成交率的分母是询盘数，不是访客数。分母用错，算出来的「转化率」会好看得离谱。</div>
+        </div></details>`],
+      ["按影响和可验证性排优先级", "问题清单出来之后，不是按严重程度排，是按「改完之后能不能在两周内看出结果」排。",
+        `<details class="step-more"><summary>展开看怎么排</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>类型</th><th>特征</th><th>处理顺序</th></tr></thead><tbody>
+            <tr><td>高影响 + 可验证</td><td>涉及主要流量或金额，两周能看出变化</td><td>先做</td></tr>
+            <tr><td>高影响 + 难验证</td><td>涉及面大，但见效周期长（如类目重构）</td><td>拆分验证，先做一小块</td></tr>
+            <tr><td>低影响 + 可验证</td><td>改起来快，但影响有限</td><td>顺手做，不占主线</td></tr>
+            <tr><td>低影响 + 难验证</td><td>既费劲又看不出结果</td><td>写进「暂缓」，不做</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>每个问题只配一个首要动作。</strong>一个问题的行动清单列了五条，通常等于一条都不会被执行。先做那条最可能改变结果的，跑完再排下一条。</div>
+        </div></details>`],
+      ["复查机制与口径核对", "诊断的产出不是报告，是一张带负责人和复查日期的清单。没有复查，就等于没诊断。",
+        `<details class="step-more"><summary>展开看清单必须有哪五列</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>列</th><th>要求</th></tr></thead><tbody>
+            <tr><td>问题描述</td><td>用数据说话，不写「效果不好」</td></tr>
+            <tr><td>证据</td><td>哪张报表、哪个时间段、什么数值</td></tr>
+            <tr><td>首要动作</td><td>只写一条，写到能直接执行</td></tr>
+            <tr><td>负责人与截止日</td><td>具体到人和日期</td></tr>
+            <tr><td>复查指标与日期</td><td>两周后看哪个数、达到多少算有效</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>指标定义也要季度核对。</strong>后台对「访客」「询盘人数」「商机」的口径可能调整，口径一变，历史对比就失效。发现口径变化，在报表里标注断点，不要跨断点做同比。</div>
+        </div></details>`]
+    ],
+    decisions: [["自然流量占比过低", "过度依赖广告，或自然覆盖弱", "补关键词与内容质量，逐步验证自然流量"],["国家偏离主推市场", "词、人群或系统扩量偏差", "调整词、国家和素材本地化"],["低转化产品长期消耗", "承接或产品竞争力不足", "修正后设观察期，仍无改善则停止投入"],["三率里询盘率最差", "承接和价格带的问题，不是流量问题", "优先改详情与报价策略"],["问题清单列了十条以上", "没有做优先级取舍", "只保留能两周内验证的三条"]],
+    checklist: ["时间范围、数据来源、对比基准三项已固定", "按成交→询盘→点击→曝光的顺序倒推过", "判断过是店铺级问题还是单链接问题", "用速查表把症状映射到了具体动作", "三率分母没有用错", "每个问题只有一个首要动作", "清单包含负责人、截止日、复查指标", "本季度已核对一次后台指标口径"],
+    assignment: "用最近一个完整月做一次店铺诊断：先固定口径，按四层倒推定位，再用速查表找出 3 个最高优先级问题，每个问题只安排一个首要动作，写清负责人、截止日和两周后的复查指标。",
     sources: [{label:"数据分析课程（会员）",url:"https://t.zsxq.com/X6Q73"},{label:"低转化产品排查（会员）",url:"https://t.zsxq.com/QxtRl"},{label:"贸易记录下的链接分析（会员）",url:"https://t.zsxq.com/kqWZj"},{label:"汽车方向盘案例（会员）",url:"https://t.zsxq.com/QbIFO"}]
   },
   {
