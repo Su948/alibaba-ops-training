@@ -135,6 +135,15 @@ const lessons = [
             <tr><td>南美</td><td>2%</td><td>0</td><td>0</td><td>第 18 位</td><td>弱</td><td>放弃</td></tr>
           </tbody></table></div>
           <div class="method-note"><strong>对着表逐行验一遍：</strong>东南亚三项齐、行业第 3，所以是主攻；中东三项也齐，但行业排到第 14，只能算利基——有利可图但盘子小，扩投放是浪费；南亚行业第 6 说明有需求，但只有 1 条询盘、没成交，所以先进「待验证」，不是直接投钱；南美两边都排不上，直接放弃。</div>
+          <p class="step-more-label">第三只眼睛：行业买家看体量，榜单看形态</p>
+          <p class="step-more-note">行业买家告诉你这个国家有多少买家在找这类产品；榜单告诉你这个国家现在认什么形态、什么价位。一个定盘子大小，一个定盘子里装什么。</p>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>看什么</th><th>回答什么</th><th>用在哪</th></tr></thead><tbody>
+            <tr><td>行业买家</td><td>这个国家的需求体量，排第几</td><td>定国家优先级，就是上面四象限的「行业需求」</td></tr>
+            <tr><td>国际站平台榜单</td><td>B2B 同类目现在什么形态在起量</td><td>定主推形态，不用来定国家</td></tr>
+            <tr><td>亚马逊对应国家榜单</td><td>终端消费者认什么形态、什么价位</td><td>交叉验证形态，尤其用在待验证的市场</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>「待验证」那一格，最该用榜单再确认一次。</strong>弱证据 × 高需求＝待验证，这时候最怕的不是没流量，而是「需求是真的，但需求方要的不是你这个形态」。<br>去看对应国家的榜单：<strong>同形态已有 3 个以上在卖</strong>，说明需求真实，问题在你的承接，回去改页面；<strong>一个都没有</strong>，要么是品类还没被开发，要么是根本没这个需求，先去查搜索量再决定要不要投。</div>
+          <div class="method-note"><strong>榜单的局限要记住：</strong>它只显示「已经卖出来的」，看不到还没被开发的需求；平台榜单反映的也只是 B2B 已有供给，替代不了行业买家的体量数据。所以它是补充判断，不是替代。</div>
           <div class="method-note"><strong>两个口径的权重按店铺阶段调，不是固定五五开。</strong><br><strong>新店</strong>（成交不足 3 单，或日均访客很低）：行业 70%、本店 30%。本店样本太小，一次活动就能把排序打乱。<br><strong>老店</strong>（流量和成交都稳定）：本店 70%、行业 30%。已有证据最可靠，行业用来发现盲区。</div>
           <div class="method-note"><strong>两个必须记住的陷阱。</strong><br><strong>① 本店买家的国家分布＝你的投放史。</strong>没投过的国家不会出现，出现过的国家会被放大。<br><strong>② 行业买家证明「市场存在」，不证明「你能赢」。</strong>它能帮你发现盲区，不能替你判断竞争力。</div>
           <div class="method-note"><strong>三个口径先说清，否则比例会算错。</strong><br><strong>① 分国家人数加总会大于总访客数：</strong>同一个人换 IP 进来，人数按去重算 1，国家却各计 1。算占比要用「分国家 ÷ 分国家合计」，不要除以总访客数。<br><strong>② 显示 other 的：</strong>注册国家和 IP 都识别不出的访客，不是数据错。<br><strong>③ 总量含中国大陆：</strong>看国家结构时要单独说明，别把大陆流量混进海外市场判断。</div>
