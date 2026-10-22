@@ -67,27 +67,34 @@ const lessons = [
           </div>
           <div class="method-note"><strong>三个主推的搭配：</strong>2 个核心产品保证产出，1 个验证产品留增长机会。不要 5 个全上（预算摊薄，每个都做不深），也不要只留 1 个核心（没有后备，一波动就断档）。</div>
         </div></details>`],
-      ["查访客的国家分布", "路径：数据参谋 → 买家参谋 → 本店买家，买家类型选「访问买家」，看「买家来源 → Top 国家及地区分布」。取近 90 天，记下 Top 10 国家的买家数和占比；要看明细再去访客详情。",
-        `<details class="step-more"><summary>展开看案例与取数逻辑</summary><div class="step-more-body">
-          <p class="step-more-label">取数逻辑</p>
-          <div class="mindmap"><div class="mm-root">访客国家分布：在哪看、怎么记</div><ul class="mm-list">
-            <li><strong>主入口</strong><span>数据参谋 → 买家参谋 → 本店买家。国家分布不在「流量来源」里，那一页是按渠道拆的，没有国家维度</span></li>
-            <li><strong>买家类型</strong><span>选「访问买家」。同一个切换器还能看询盘买家、TM 买家、订单买家，第 04、05 步就是切这三个</span></li>
-            <li><strong>具体位置</strong><span>买家来源 → Top 国家及地区分布（国家 / 买家数 / 占比）</span></li>
-            <li><strong>时间</strong><span>取近 90 天。只取 7 天容易被一次活动或一次补货带偏；后台按美西时间计</span></li>
-            <li><strong>要看明细</strong><span>数据参谋 → 访客详情。可按国家、大洲、是否询盘访客筛选，能用工具导出成 Excel 留档</span></li>
-            <li><strong>记什么</strong><span>Top 10 的国家 + 买家数 + 占比，三列都要。只看占比会丢掉整体量级</span></li>
+      ["查国家分布：本店买家 × 行业买家", "两个页签都要看：本店买家告诉你「我已经在哪里有证据」，行业买家告诉你「需求在哪里」。先本店、再行业，最后用四象限定取舍——只看一个都会偏。",
+        `<details class="step-more"><summary>展开看两个口径怎么取舍</summary><div class="step-more-body">
+          <p class="step-more-label">为什么要看两个页签</p>
+          <div class="mindmap"><div class="mm-root">主推国家 ＝ 本店证据 × 行业需求</div><ul class="mm-list">
+            <li><strong>本店买家：我已有的证据</strong><span>数据参谋 → 买家参谋 → 本店买家。买家类型选「访问买家」，看「买家来源 → Top 国家及地区分布」。回答的是「谁已经在看我、问我、买我」</span></li>
+            <li><strong>行业买家：市场的容量</strong><span>同一页顶部切到「行业买家」。不依赖你的历史，回答的是「这个行业的需求集中在哪些国家」</span></li>
+            <li><strong>只看本店会怎样</strong><span>你只会加码已经做过的地方。没投过的国家在数据里根本不出现，但它不代表没需求——本店数据反映的是你的投放史，不是市场排序</span></li>
+            <li><strong>只看行业会怎样</strong><span>行业有需求，不等于份额能给你。行业口径里含着大量你打不过的对手，容易一头撞进红海</span></li>
+            <li><strong>正确顺序</strong><span>先本店找证据 → 再行业找缺口 → 最后交叉定取舍。反过来做，就是拿行业热度给自己找理由</span></li>
           </ul></div>
-          <div class="method-note"><strong>三个口径必须先说清，否则比例会算错。</strong><br><strong>① 分国家人数加总会大于总访客数：</strong>同一个人换 IP 进来，人数按去重算 1，国家却各计 1。算占比要用「分国家 ÷ 分国家合计」，不要除以总访客数。<br><strong>② 显示 other 的：</strong>注册国家和 IP 都识别不出的访客，不是数据错。<br><strong>③ 总量含中国大陆：</strong>看国家结构时要单独说明，别把大陆流量混进海外市场判断。</div>
-          <p class="step-more-label">案例：只有访客数据时会怎么误判</p>
-          <p class="step-more-note">一家家具类供应商近 90 天的访客分布。表内为教学示例，不对应任何真实店铺数据。</p>
-          <div class="source-table-wrap"><table class="decision-table score-table"><thead><tr><th>国家/地区</th><th>访客数</th><th>占比</th><th>先记下的判断</th></tr></thead><tbody>
-            <tr><td>北美</td><td>1,240</td><td>31%</td><td>量最大，但不能凭这个定为主推</td></tr>
-            <tr><td>西欧</td><td>880</td><td>22%</td><td>量稳，结构待第 04 步验证</td></tr>
-            <tr><td>南美</td><td>360</td><td>9%</td><td>量小但集中，先留着</td></tr>
-            <tr><td>其他</td><td>1,520</td><td>38%</td><td>极度分散，暂不逐个看</td></tr>
+          <p class="step-more-label">四象限：两个都看，怎么取舍</p>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>本店证据</th><th>行业需求</th><th>定位</th><th>动作</th></tr></thead><tbody>
+            <tr><td>强</td><td>高</td><td>主攻</td><td>加预算、扩精准词、按该国重做主图和报价</td></tr>
+            <tr><td>强</td><td>低</td><td>利基</td><td>保留，靠精准词吃利润，不扩投放</td></tr>
+            <tr><td>弱</td><td>高</td><td>待验证</td><td>先查有没有曝光：零曝光＝没做过，可小预算试；有曝光没询盘＝承接问题，先修页面再加钱</td></tr>
+            <tr><td>弱</td><td>低</td><td>放弃</td><td>不投入，写进「这季度不做」清单</td></tr>
           </tbody></table></div>
-          <div class="method-note"><strong>这一步只做记录，不做判断。</strong>看到北美占 31% 就想「主推北美」是这课最常见的错——访客只说明有人来，不说明有人买。谁在问、谁在买，交给第 04、05 步。</div>
+          <p class="step-more-label">案例：四个国家分别落在哪个象限</p>
+          <p class="step-more-note">表内为教学示例，区域名称与数字均为示例，不对应任何真实店铺数据。</p>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>市场</th><th>本店访客占比</th><th>行业需求</th><th>定位</th><th>动作</th></tr></thead><tbody>
+            <tr><td>东南亚</td><td>42%</td><td>高</td><td>主攻</td><td>加预算、扩精准词，主图换当地使用场景</td></tr>
+            <tr><td>中东</td><td>9%</td><td>低</td><td>利基</td><td>客单高，保留精准词，不扩投放</td></tr>
+            <tr><td>南亚</td><td>4%</td><td>高</td><td>待验证</td><td>有曝光无询盘，先查承接再加预算</td></tr>
+            <tr><td>南美</td><td>2%</td><td>低</td><td>放弃</td><td>不投入，本季度不做</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>两个口径的权重按店铺阶段调，不是固定五五开。</strong><br><strong>新店</strong>（成交不足 3 单，或日均访客很低）：行业 70%、本店 30%。本店样本太小，一次活动就能把排序打乱。<br><strong>老店</strong>（流量和成交都稳定）：本店 70%、行业 30%。已有证据最可靠，行业用来发现盲区。</div>
+          <div class="method-note"><strong>两个必须记住的陷阱。</strong><br><strong>① 本店买家的国家分布＝你的投放史。</strong>没投过的国家不会出现，出现过的国家会被放大。<br><strong>② 行业买家证明「市场存在」，不证明「你能赢」。</strong>它能帮你发现盲区，不能替你判断竞争力。</div>
+          <div class="method-note"><strong>三个口径先说清，否则比例会算错。</strong><br><strong>① 分国家人数加总会大于总访客数：</strong>同一个人换 IP 进来，人数按去重算 1，国家却各计 1。算占比要用「分国家 ÷ 分国家合计」，不要除以总访客数。<br><strong>② 显示 other 的：</strong>注册国家和 IP 都识别不出的访客，不是数据错。<br><strong>③ 总量含中国大陆：</strong>看国家结构时要单独说明，别把大陆流量混进海外市场判断。</div>
         </div></details>`],
       ["查询盘和 TM 的国家分布", "还是这一页，买家类型依次切「询盘买家」和「TM 买家」，看各自的 Top 国家及地区分布。重点标出「访客多、询盘少」的国家，那通常是承接问题，不是流量问题。",
         `<details class="step-more"><summary>展开看判断逻辑与案例</summary><div class="step-more-body">
@@ -544,7 +551,7 @@ function trafficSourcePrimer(){
 function lessonSupplement(lessonId){
   if(lessonId===2){
     return `<section class="lesson-section"><h2>后台去哪里查这几组数据</h2><div class="source-guide">
-      <section class="source-group"><h3>国家分布只有一个入口</h3><div class="source-item"><strong>数据参谋 → 买家参谋 → 本店买家</strong><p>国家分布看「买家来源 → Top 国家及地区分布」。访客、询盘、TM、成交四种买家都在这一页，靠顶部「买家类型」切换，不用换页面。</p></div><div class="source-item"><strong>不要走流量参谋</strong><p>「流量参谋 → 流量来源」是按渠道拆的（搜索、系统推荐、导购会场、频道、互动、自营销、店内、站外），那一页没有国家维度。第一课用它认渠道，这一课不能用它取国家。</p></div></section>
+      <section class="source-group"><h3>国家分布只有一个入口，两个页签</h3><div class="source-item"><strong>数据参谋 → 买家参谋</strong><p>顶部并排两个页签：本店买家（你的历史数据）和行业买家（类目大盘）。两个都在同一个模块里，不用换系统。</p></div><div class="source-item"><strong>本店买家 → 买家来源 → Top 国家及地区分布</strong><p>用顶部「买家类型」切换访问／询盘／TM／订单买家，四种国家分布都在这一块，分别对应第 03、04、05 步。</p></div><div class="source-item"><strong>不要走流量参谋</strong><p>「流量参谋 → 流量来源」是按渠道拆的（搜索、系统推荐、导购会场、频道、互动、自营销、店内、站外），那一页没有国家维度。第一课用它认渠道，这一课不能用它取国家。</p></div></section>
       <section class="source-group"><h3>同一页切四种买家类型</h3><div class="source-item"><strong>访问 / 询盘 / TM / 订单</strong><p>「访问买家」＝第 03 步的访客国家；「询盘买家」「TM 买家」＝第 04 步；「订单买家」＝第 05 步。四组放一起才比得出各环节的转化。</p></div><div class="source-item"><strong>要看明细：访客详情</strong><p>数据参谋 → 访客详情。可按国家、大洲、是否询盘访客筛选，页面上没有导出按钮，但明细可以用工具导出成 Excel 留档。注意只保留最近 31 天、T-2 更新。</p></div></section>
       <section class="source-group"><h3>广告怎么按国家投</h3><div class="source-item"><strong>直通车 → 标签维度 → 地域标签</strong><p>地域标签用来给已验证的国家加价、给长期比价的国家降价。扣费方式和出价规则留到第 08、09 课展开。</p></div><div class="source-item"><strong>口径提醒</strong><p>直通车的地域数据按 IP 解析，买家参谋里的 TM 买家国家取注册地，两边对不上是正常的，不是数据错误。</p></div></section>
     </div><p class="verify-note">后台菜单会随平台调整。以上路径于 2026-10 核对，实际入口与下拉项名称以自己账号可见菜单为准。</p></section>
