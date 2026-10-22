@@ -944,16 +944,96 @@ lessons.push(
     id: 9,
     stage: "增长",
     title: "全站推优化与排查",
-    summary: "围绕计划目标、搜索词、国家、产品和商机结果，建立可复用的投后排查流程。",
+    summary: "先把全站推和直通车分工分清，再按固定顺序排查；系统扩量带来的是效率，也带来归因难度。",
     duration: "70 分钟",
-    updated: "2026-09",
+    updated: "2026-10",
     prerequisites: "第 08 课",
-    outcomes: ["创建全站推计划", "按固定顺序完成投后排查", "识别应该降权、保留或加投的流量"],
-    quick: "全站推上线后不能只看花费。优先检查搜索词是否精准、国家是否符合定位、产品是否具备承接能力，再结合商机质量判断增减预算。",
-    steps: [["创建新手版计划", "选择少量已经验收的重点产品，明确国家和预算，避免把大量未验证链接一次加入。"],["运行初始观察期", "保持核心设置稳定，积累曝光、点击和搜索词数据。"],["排查第一页数据", "可按点击或曝光排序，优先处理最消耗预算的搜索词、国家和产品。"],["处理无效词", "完全不相关的词及时屏蔽或降权；相关但暂时无商机的词结合样本量继续观察。"],["判断产品去留", "对有优质商机信号的产品加投；对点击持续消耗且承接差的产品暂停并修正。"],["复盘成本", "用有效商机成本和后续成交价值判断，避免追求极低点击成本。"]],
-    decisions: [["有 L3 词但不精准", "系统扩量偏离", "及时降权并收紧语义"],["低成本但无优质商机", "流量便宜但价值低", "按客户质量而不是点击成本优化"],["少量产品贡献多数商机", "产品已被验证", "集中预算并扩展相近词/国家"]],
-    checklist: ["重点产品已通过链接检查", "运行两天后检查搜索词", "按点击和曝光各排查一次", "记录国家与客户质量", "每次优化有修改日志"],
-    assignment: "完成一次全站推排查：列出消耗前 20 的词、国家和产品，分别标记保留、观察、降权或停止。",
+    outcomes: ["说清全站推和直通车各自解决什么问题", "按四层指标拆解数据，不只看花费", "按固定顺序排查四类问题", "验证广告带来的是增量还是替代自然流量"],
+    quick: "全站推的特点是系统帮你扩量：你给产品和预算，系统去找需求。代价是流量结构变模糊——所以它比直通车更依赖「先排除无效、再调结构、最后调价」这个顺序。顺序一乱，就越调越看不出原因。",
+    steps: [
+      ["先分清它和直通车的分工", "两个工具买的不是同一样东西：直通车买的是明确的搜索意图，全站推买的是系统判断的潜在需求。混着用又不分开看，等于两个都没法归因。",
+        `<details class="step-more"><summary>展开看两者怎么分工</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>维度</th><th>直通车（关键词）</th><th>全站推（智能投放）</th></tr></thead><tbody>
+            <tr><td>买什么</td><td>明确的搜索意图</td><td>系统判断的潜在需求</td></tr>
+            <tr><td>可控性</td><td>高：词、匹配、出价都能控</td><td>较低：更多交给系统</td></tr>
+            <tr><td>适合</td><td>测词、精准拿单、控成本</td><td>补量、拓新客、放大成熟品</td></tr>
+            <tr><td>主要风险</td><td>词选错就没量</td><td>流量结构变模糊，归因变难</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>顺序建议：</strong>新品和新词先用直通车验证清楚「词对不对、图行不行、承接够不够」，再用全站推放量。反过来做，等于把还没验证的东西交给系统去扩张。</div>
+        </div></details>`],
+      ["定这次要解决什么", "全站推能解决四件事，但一次只做一件：补量、拓新、放大成熟品、验证国家。目标不同，看的指标也不同。",
+        `<details class="step-more"><summary>展开看四种目标</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>目标</th><th>看什么结果</th><th>不该做的</th></tr></thead><tbody>
+            <tr><td>补量</td><td>自然和直通车已到瓶颈时的增量询盘</td><td>同时放大直通车，分不清增量来自哪</td></tr>
+            <tr><td>拓新</td><td>出现了你词库里没有的搜索词</td><td>一看到陌生词就屏蔽，把拓新做成了收紧</td></tr>
+            <tr><td>放大成熟品</td><td>已验证产品的询盘量级提升</td><td>顺手加了新品，变量变多</td></tr>
+            <tr><td>验证国家</td><td>某国到底有没有需求</td><td>多国同开，样本被摊薄</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>「拓新」这一项最容易被做反。</strong>系统扩出来的陌生词，先判断它是「新的采购需求」还是「跑偏的流量」。前者要留、要记进词库；后者才屏蔽。全部一刀切，等于花钱买了个更窄的流量池。</div>
+        </div></details>`],
+      ["上线前确认三个基础", "产品范围、落地一致性、追踪口径，这三样在上线前定好，上线后就不要再动——否则数据没法归因。",
+        `<details class="step-more"><summary>展开看三个基础怎么定</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>基础</th><th>怎么定</th><th>没定好的后果</th></tr></thead><tbody>
+            <tr><td>产品范围</td><td>只放已通过链接检查的重点产品，3—5 个起步</td><td>把未验证的新品全丢进去，跑出来的结论没有指向</td></tr>
+            <tr><td>落地一致性</td><td>按第 08 课六项逐条检查</td><td>买来流量但页面接不住</td></tr>
+            <tr><td>追踪口径</td><td>自然、直通车、全站推三条线分开记</td><td>三笔钱混在一起，谁有效说不清</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>追踪口径要在上线前建好表。</strong>每天记一行：花费、曝光、点击、询盘数、新客数。等跑完一周再回头补，基本补不回来。</div>
+        </div></details>`],
+      ["按四层拆数据", "全站推比直通车多一层要看的东西：流量结构。前三层判断效果，第四层判断「这些流量是不是你本来就会拿到的」。",
+        `<details class="step-more"><summary>展开看四层分别说明什么</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>层级</th><th>看什么</th><th>说明什么问题</th></tr></thead><tbody>
+            <tr><td>一、曝光</td><td>量级与趋势</td><td>计划有没有真正跑起来、覆盖面够不够</td></tr>
+            <tr><td>二、点击</td><td>点击率与点击成本</td><td>素材和流量是否匹配</td></tr>
+            <tr><td>三、询盘</td><td>询盘数与有效询盘占比</td><td>承接和报价有没有竞争力</td></tr>
+            <tr><td>四、流量结构</td><td>新客占比、搜索词里有多少是你没投过的</td><td>是全新增量，还是在替代自然流量</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>第四层是全站推独有的判断题。</strong>系统扩量的价值在于「拿到你原本拿不到的人」，如果新客占比很低、搜索词全是你自己已经在投的词，那这笔钱大概率只是把自然流量买了一遍。</div>
+        </div></details>`],
+      ["四类问题按树排查", "问题不同，动手的地方完全不同。先定位是哪一类，再决定改什么。",
+        `<details class="step-more"><summary>展开看四类问题的排查方向</summary><div class="step-more-body">
+          <div class="mindmap"><div class="mm-root">全站推出问题，先归到哪一类</div><ul class="mm-list">
+            <li><strong>一、花不出钱</strong><span>查预算是否过低、产品是否太少、落地页是否有问题、账户或计划是否有资格限制</span></li>
+            <li><strong>二、花得快但没询盘</strong><span>查搜索词是否跑偏、国家是否不对、落地页是否接不住</span></li>
+            <li><strong>三、成本失控</strong><span>多半是结构问题：品类混跑、国家混跑。这时候该拆计划，不是继续调价</span></li>
+            <li><strong>四、流量结构变差</strong><span>系统扩量偏离，或自然流量被替代。回第四层判断增量真假</span></li>
+          </ul></div>
+          <div class="method-note"><strong>最常见的误判：</strong>把「结构问题」当「出价问题」处理。成本失控时反复调出价，两周后成本没降、量也没了——因为根子在计划混了不同形态的产品。</div>
+        </div></details>`],
+      ["优化动作必须按顺序", "先排除无效，再调结构，最后才调价。顺序反了，就是在错误的结构上做出价优化。",
+        `<details class="step-more"><summary>展开看三步顺序</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>顺序</th><th>做什么</th><th>为什么排在这</th></tr></thead><tbody>
+            <tr><td>第一步：排除</td><td>屏蔽不相关词、排除不合适国家、暂停承接差的产品</td><td>先把脏流量去掉，后面算出来的成本才是真的</td></tr>
+            <tr><td>第二步：调结构</td><td>拆开或合并计划，按形态、意图、国家重新分组</td><td>结构不对，出价再准也跑不出好结果</td></tr>
+            <tr><td>第三步：调价与预算</td><td>在干净的结构上微调出价和预算</td><td>这一步才是真正的「优化」，放最后</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>每次只做一步，做完至少观察 3 天，并记录改动时间与内容。</strong>一周内连改五次出价，最后既不知道哪次有效，也复制不了成功经验。</div>
+        </div></details>`],
+      ["验证是增量还是替代", "这是全站推最容易被忽略的一步：总询盘没涨、只是结构变了，说明你花的钱买的是本来就会来的流量。",
+        `<details class="step-more"><summary>展开看三种验证方法</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>方法</th><th>怎么做</th><th>注意</th></tr></thead><tbody>
+            <tr><td>分国家对比</td><td>一部分国家开、一部分不开，比总询盘而不是比广告询盘</td><td>要控制其他变量，同期不要大改直通车</td></tr>
+            <tr><td>看新客占比</td><td>询盘里有多少是以前没接触过的买家</td><td>新客占比低，增量就有限</td></tr>
+            <tr><td>短期关停观察</td><td>停一段时间，看自然询盘是否回升</td><td>会损失曝光，只适合小范围试</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>判断标准：</strong>关掉或不做的那部分，总询盘是否明显下降。下降＝有增量；几乎不变＝在替代。这个判断决定全站推该继续加钱还是收掉。</div>
+        </div></details>`],
+      ["规则部分每季度核对", "全站推的产品形态和规则调整比较频繁。本课不写死具体规则，只给核对清单。",
+        `<details class="step-more"><summary>展开看必须核对的六项</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>核对什么</th><th>为什么要核</th><th>在哪看</th></tr></thead><tbody>
+            <tr><td>可选的目标类型</td><td>目标变了，优化方向就变了</td><td>计划创建页</td></tr>
+            <tr><td>出价方式与扣费逻辑</td><td>直接影响成本结构</td><td>推广后台规则说明</td></tr>
+            <tr><td>可用条件与资格</td><td>决定账户能不能开、能开多大</td><td>后台资格提示与公告</td></tr>
+            <tr><td>国家与人群定向能力</td><td>决定能不能按国家做增量测试</td><td>计划设置页</td></tr>
+            <tr><td>报表口径与归因方式</td><td>决定你能不能把增量算清楚</td><td>数据报表说明</td></tr>
+            <tr><td>系统扩量逻辑</td><td>决定流量会往哪里扩</td><td>官方公告与后台说明</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>核对完把变化写进《规则变更日志》。</strong>发现和课程写的不一致，以账号后台为准，并把差异反馈给课程维护人更新——这一条对第 08、09 两课都适用。</div>
+        </div></details>`]
+    ],
+    decisions: [["系统扩量带来越来越多不精准的词", "扩量方向偏离，语义没收紧", "先收紧否定与屏蔽，再观察扩量范围"],["成本很低但询盘质量差", "买来的是低意向流量", "按客户质量优化，不追最低点击成本"],["少量产品贡献多数询盘", "产品已被验证", "集中预算，扩相近词和国家"],["成本失控、反复调价无效", "结构问题，不是出价问题", "拆计划按形态／国家重新分组"],["总询盘没涨、广告询盘涨了", "在替代自然流量", "按增量验证方法判断，考虑收掉"]],
+    checklist: ["计划和直通车的分工已写清，两条线分开记账", "只放 3—5 个通过链接检查的产品", "上线前已建好每日追踪表", "每天或每周固定时间看搜索词", "排查时按「排除→结构→出价」的顺序", "每次优化只有一个变量，并记录时间", "做过一次增量验证，而不只看广告询盘", "本季度已按规则清单核对一次"],
+    assignment: "完成一次全站推排查：列出消耗前 20 的词、国家和产品，分别标记保留、观察、降权或停止；再写一句结论——这轮投放带来的是增量，还是在替代自然流量，依据是什么。",
     sources: [{label:"低成本高转化计划（会员）",url:"https://t.zsxq.com/vKr0F"},{label:"开计划后的排查（会员）",url:"https://t.zsxq.com/rIOaz"},{label:"设置与数据排查视频（会员）",url:"https://t.zsxq.com/tTLAZ"},{label:"新手版指南（会员）",url:"https://t.zsxq.com/Y7bd0"},{label:"全站推案例（会员）",url:"https://t.zsxq.com/KBfc3"},{label:"低成本设置细节",url:"https://articles.zsxq.com/id_c4bndqjwmlw6.html"},{label:"每天花费无效果排查（会员）",url:"https://t.zsxq.com/fVugu"}]
   },
   {
