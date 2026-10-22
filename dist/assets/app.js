@@ -844,16 +844,100 @@ lessons.push(
     id: 8,
     stage: "增长",
     title: "直通车基础与计划搭建",
-    summary: "先把目标、产品、词和预算结构搭正确，再谈降成本和扩大投放。",
+    summary: "先把目标、产品、词和预算结构搭正确，再谈降成本和扩大投放；规则类内容每季度核对一次。",
     duration: "65 分钟",
-    updated: "规则需定期核对",
+    updated: "2026-10",
     prerequisites: "第 02、04—07 课",
-    outcomes: ["独立创建标准推广计划", "为计划设置产品、词和预算边界", "读懂营销能力与基础投放指标"],
-    quick: "广告计划首先是一个验证工具：用明确产品、明确市场和明确目标换取可解释的数据。计划混品、混词、混目标后，即使产生询盘也很难知道为什么有效。",
-    steps: [["确定唯一目标", "区分测品、测词、获取询盘、放大成熟品和国家验证。"],["控制计划粒度", "把产品和意图相近的词放在一起，避免不相关产品共享预算。"],["设定预算边界", "根据客单、毛利、历史转化和测试周期设置，不用单日情绪频繁调整。"],["配置关键词与人群", "关键词来自已清洗词库；国家与人群服从主推市场。"],["检查落地链接", "广告承诺、主图、价格和详情必须一致。"],["建立观察节奏", "先看搜索词和点击质量，再判断询盘成本；保留修改记录。"]],
-    decisions: [["预算很快花完", "词过宽、出价或流量范围过大", "查搜索词和国家，再调出价"],["有点击无商机", "词不准或落地页弱", "先排除明显无效流量"],["成本高但询盘优质", "不能只看表面成本", "按有效询盘和成交价值判断"]],
-    checklist: ["每个计划只有一个目标", "产品和词语义一致", "主推国家已设置", "预算覆盖有效测试周期", "搜索词报告有固定检查时间"],
-    assignment: "搭建一个标准推广计划草案，写清目标、产品、词组、国家、预算和三种数据异常下的处理方法。",
+    outcomes: ["为一次投放目标选对计划结构", "按产品、意图和国家拆分计划，避免预算混烧", "用倒推法定预算与观察周期", "建立一份自己的规则核对清单"],
+    quick: "广告计划首先是一个验证工具：用明确的产品、明确的市场和明确的目标，换取可解释的数据。计划混品、混词、混目标之后，即使出了询盘，你也说不清是哪一条起了作用。",
+    steps: [
+      ["先定唯一目标", "一个计划只回答一个问题。测品、测词、拿询盘、放大成熟品、验证国家，这五件事的判断标准完全不同，混在一起就无法归因。",
+        `<details class="step-more"><summary>展开看五种目标怎么分</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>目标</th><th>要看的结果</th><th>不能混进来的东西</th></tr></thead><tbody>
+            <tr><td>测品</td><td>这个形态有没有需求</td><td>其他形态的产品</td></tr>
+            <tr><td>测词</td><td>哪些词能带来精准流量</td><td>不同意图的词混在一组</td></tr>
+            <tr><td>拿询盘</td><td>稳定获取商机</td><td>未经验证的新品和新词</td></tr>
+            <tr><td>放大成熟品</td><td>增量而不是替代自然流量</td><td>新变量、新素材</td></tr>
+            <tr><td>验证国家</td><td>这个国家到底有没有需求</td><td>多国同开</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>判断标准不一样，就不能放一个计划里。</strong>测品看的是「有没有人问」，拿询盘看的是「成本多少」。同一个计划里两个标准并存，最后一定是拿成本去否定一个还没验证完的品。</div>
+        </div></details>`],
+      ["控制计划粒度", "产品和词都要同构：同形态的产品放一起，同意图的词放一起。粒度太粗预算被摊薄，粒度太细跑不出样本。",
+        `<details class="step-more"><summary>展开看三条拆分原则</summary><div class="step-more-body">
+          <div class="mindmap"><div class="mm-root">按三个维度拆计划</div><ul class="mm-list">
+            <li><strong>一、按产品形态</strong><span>不同形态不共预算。台式款和便携款的点击成本和转化率本来就不一样</span></li>
+            <li><strong>二、按搜索意图</strong><span>品类词、采购意图词（OEM／wholesale）、长尾场景词分组。意图不同，出价逻辑不同</span></li>
+            <li><strong>三、按国家</strong><span>重点国家单独成计划。多国混跑，每个国家都拿不到足够样本</span></li>
+          </ul></div>
+          <div class="method-note"><strong>可执行的粒度参考：</strong>一个计划里产品控制在 3 个以内且同形态，词控制在几十个以内且同意图。这是经验阈值，不是平台规则——目标是让每个计划跑一周后能看出方向。</div>
+        </div></details>`],
+      ["用倒推法定预算与周期", "预算不是「今天想花多少」，是从目标倒推出来的：想要几条询盘、能接受多少成本、需要多少点击、需要多少钱。",
+        `<details class="step-more"><summary>展开看倒推四步</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>步骤</th><th>怎么算</th><th>没有历史数据时怎么办</th></tr></thead><tbody>
+            <tr><td>一、定目标询盘数</td><td>这一轮想验证出几条询盘</td><td>先定 3—5 条，够判断趋势即可</td></tr>
+            <tr><td>二、估可接受成本</td><td>客单价 × 毛利 × 可承受比例</td><td>用「一单利润能覆盖几次点击」粗算</td></tr>
+            <tr><td>三、换算点击量</td><td>询盘数 ÷ 询盘转化率</td><td>没有转化率就用同行参考值，跑完再修正</td></tr>
+            <tr><td>四、得出预算</td><td>点击量 × 平均点击成本</td><td>先用最小可跑量起步，跑一周再补</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>周期比金额重要。</strong>预算再小，也要覆盖 7 天；能覆盖 14 天更好。预算小到三天就烧完，你拿到的只是三天的噪音，不是趋势。</div>
+        </div></details>`],
+      ["配词与匹配方式", "词来自第 04 课清洗并分组过的词库，不要在现场临时想词。第一轮以精准为主，采购意图词单独成组。",
+        `<details class="step-more"><summary>展开看第一轮配置</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>项目</th><th>第一轮做法</th><th>原因</th></tr></thead><tbody>
+            <tr><td>词源</td><td>只用已分好意图的词</td><td>现场想词，等于用预算做词库测试</td></tr>
+            <tr><td>词量</td><td>十几到几十个精准词</td><td>词太多预算摊薄，每个词都跑不出数据</td></tr>
+            <tr><td>匹配</td><td>以精准为主</td><td>宽匹配会把预算耗在无关搜索上</td></tr>
+            <tr><td>采购意图词</td><td>单独一组，单独定预算</td><td>想买货的人和想看产品的人，点击成本不一样</td></tr>
+            <tr><td>排除词</td><td>零售、维修、配件词提前屏蔽</td><td>这类流量点得再多也不会询价</td></tr>
+          </tbody></table></div>
+        </div></details>`],
+      ["设国家与人群", "国家跟随第 02 课的主推结论，不跟随「哪个国家便宜投哪个」。人群定向是加分项，不是必需项。",
+        `<details class="step-more"><summary>展开看国家与人群怎么设</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>设置项</th><th>原则</th><th>常见错误</th></tr></thead><tbody>
+            <tr><td>投放国家</td><td>只投第 02 课认定的主攻国 + 1 个验证国</td><td>多国同开，每个国家都拿不到样本</td></tr>
+            <tr><td>老店人群</td><td>可用店铺人群、复购客户做定向</td><td>人群圈太小，计划跑不出量</td></tr>
+            <tr><td>新店人群</td><td>先不加，把变量减到最少</td><td>一上手就叠人群，出问题无法定位</td></tr>
+            <tr><td>时间与终端</td><td>按目标市场的采购时段和终端习惯设</td><td>照抄别人的设置</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>变量越少，归因越清楚。</strong>第一轮只留「词 × 国家」两个变量，跑出结论之后再加人群、加时段、加终端。</div>
+        </div></details>`],
+      ["上线前检查落地一致性", "广告承诺和落地页必须一致。不一致的时候，钱花得越多，浪费越大。",
+        `<details class="step-more"><summary>展开看六项一致性</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>检查项</th><th>不一致的后果</th></tr></thead><tbody>
+            <tr><td>词与产品形态</td><td>点进来发现不是要找的东西，直接跳出</td></tr>
+            <tr><td>首图与卖点</td><td>承诺的场景图和详情对不上，信任受损</td></tr>
+            <tr><td>价格与 MOQ</td><td>页面写 50、报价按 500，询盘白来</td></tr>
+            <tr><td>交期</td><td>写了做不到的周期，后面全是纠纷</td></tr>
+            <tr><td>详情完整性</td><td>关键参数缺失，买家懒得问直接走</td></tr>
+            <tr><td>询盘入口</td><td>自己发一条测试，别等客户告诉你按钮坏了</td></tr>
+          </tbody></table></div>
+        </div></details>`],
+      ["建立观察顺序与调优节奏", "先看搜索词，再看点击质量，最后才谈询盘成本。顺序反了，就会用成本去否定一个还没跑明白的计划。",
+        `<details class="step-more"><summary>展开看调优顺序</summary><div class="step-more-body">
+          <div class="mindmap"><div class="mm-root">按这个顺序看，不要跳</div><ul class="mm-list">
+            <li><strong>第一步：搜索词</strong><span>看买家实际搜的是什么。出现零售词、配件词就屏蔽，这一步决定流量的干净程度</span></li>
+            <li><strong>第二步：点击质量</strong><span>有点击但停留极短，说明词和图不匹配；点击率低说明图不行</span></li>
+            <li><strong>第三步：询盘成本</strong><span>前两步干净了，成本才有比较意义</span></li>
+            <li><strong>第四步：成交与复购</strong><span>成本低但客户质量差，一样是亏</span></li>
+          </ul></div>
+          <div class="method-note"><strong>一次只改一个变量，改完至少观察 3 天，并记录改动时间和内容。</strong>没有修改记录，两周后你无法解释成本为什么变了，也无法复制成功的做法。</div>
+        </div></details>`],
+      ["规则部分每季度核对一次", "出价方式、扣费逻辑、计划类型、定向能力这些都会随平台调整。本课不写死具体规则，只给一张核对清单——每季度按表核一次，把变化记下来。",
+        `<details class="step-more"><summary>展开看必须核对的六项</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>核对什么</th><th>为什么要核</th><th>在哪看</th></tr></thead><tbody>
+            <tr><td>出价方式与扣费逻辑</td><td>直接影响成本结构，一变全盘算法都要重算</td><td>推广后台的规则说明与官方公告</td></tr>
+            <tr><td>计划类型与可用功能</td><td>计划类型增减会影响怎么搭结构</td><td>推广后台创建入口</td></tr>
+            <tr><td>匹配方式选项</td><td>匹配方式决定流量宽窄</td><td>关键词设置页</td></tr>
+            <tr><td>店铺评分／营销能力口径</td><td>影响可用的推广能力和权益</td><td>后台能力分说明页</td></tr>
+            <tr><td>国家与人群定向能力</td><td>决定能不能按国家精细投放</td><td>计划设置页</td></tr>
+            <tr><td>广告位与展示规则</td><td>决定曝光在哪里出现</td><td>官方公告与后台说明</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>本课的原则性内容是稳定的，规则性内容是会变的。</strong>上面六项每季度核对一次，把变化写进自己的《规则变更日志》；发现和课程写的不一致，以账号后台为准，并把差异反馈给课程维护人更新。</div>
+        </div></details>`]
+    ],
+    decisions: [["预算很快花完", "词过宽、出价偏高或流量范围过大", "先看搜索词和国家，再动出价"],["有点击无商机", "词不准，或落地页承接弱", "先屏蔽无效搜索词，再评估页面"],["成本高但询盘优质", "不能只看表面成本", "按有效询盘和后续成交价值判断"],["成本很低但询盘质量差", "买来的是低意向流量", "查搜索词，收紧匹配方式"],["多国同开、每国都没数据", "样本被摊薄", "按国家拆计划，先跑 1—2 个"]],
+    checklist: ["每个计划只有一个目标", "同计划内产品和词语义一致", "预算由目标倒推得出，且能覆盖 7 天以上", "只投主推国家 + 1 个验证国", "上线前六项一致性已逐条检查", "有固定时间看搜索词报告", "改动有记录，一次只改一个变量", "本季度已按规则清单核对一次"],
+    assignment: "搭一个计划草案：写清目标、产品、词组与意图分组、国家、由目标倒推出的预算与周期，以及三种数据异常下的处理动作。再对照第 08 步的六项，标注哪些规则你已在本季度核对过。",
     sources: [{label:"直通车认识与建计划（会员）",url:"https://t.zsxq.com/phtMs"},{label:"直通车注意事项（会员）",url:"https://t.zsxq.com/XWl1S"},{label:"标准推广实操（会员）",url:"https://t.zsxq.com/PfSND"},{label:"营销能力分官方说明",url:"https://www.yuque.com/chaike/yingxiao/pxb7k642147fp0m3"}]
   },
   {
