@@ -77,21 +77,29 @@ const lessons = [
             <li><strong>只看行业会怎样</strong><span>行业有需求，不等于份额能给你。行业口径里含着大量你打不过的对手，容易一头撞进红海</span></li>
             <li><strong>正确顺序</strong><span>先本店找证据 → 再行业找缺口 → 最后交叉定取舍。反过来做，就是拿行业热度给自己找理由</span></li>
           </ul></div>
+          <p class="step-more-label">先定「强」和「高」怎么判，否则四象限没法用</p>
+          <p class="step-more-note">「强」不是感觉强，是两个数说了算。</p>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>判断项</th><th>判为「强 / 高」</th><th>判为「弱 / 低」</th><th>为什么这么定</th></tr></thead><tbody>
+            <tr><td>本店证据</td><td>近 90 天该国三条同时成立：① 访客进入 Top 10 ② 询盘不少于 3 条 ③ 至少 1 笔成交，或已进入报价谈判</td><td>三条里缺任意一条</td><td>只有访客没有询盘＝路过；有询盘没成交＝还在验证。都不算证据</td></tr>
+            <tr><td>行业需求</td><td>该国在你主营类目的行业买家里排进 Top 10</td><td>排在 Top 10 之外</td><td>用同一个排序口径，避免「我觉得这个国家有潜力」</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>阈值可以自己定，但定了就固定用。</strong>这个课用「询盘 ≥3 条、行业 Top 10」，你也可以改成 ≥5 条、Top 5。但一旦定下来，整个矩阵、整个季度都用同一套，否则两张表没法比，也没法和上季度比。</div>
           <p class="step-more-label">四象限：两个都看，怎么取舍</p>
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>本店证据</th><th>行业需求</th><th>定位</th><th>动作</th></tr></thead><tbody>
-            <tr><td>强</td><td>高</td><td>主攻</td><td>加预算、扩精准词、按该国重做主图和报价</td></tr>
-            <tr><td>强</td><td>低</td><td>利基</td><td>保留，靠精准词吃利润，不扩投放</td></tr>
-            <tr><td>弱</td><td>高</td><td>待验证</td><td>先查有没有曝光：零曝光＝没做过，可小预算试；有曝光没询盘＝承接问题，先修页面再加钱</td></tr>
-            <tr><td>弱</td><td>低</td><td>放弃</td><td>不投入，写进「这季度不做」清单</td></tr>
+            <tr><td>强<br><span class="cell-sub">访客＋询盘＋成交都有</span></td><td>高<br><span class="cell-sub">行业 Top 10 内</span></td><td>主攻</td><td>加预算、扩精准词、按该国重做主图和报价</td></tr>
+            <tr><td>强<br><span class="cell-sub">访客＋询盘＋成交都有</span></td><td>低<br><span class="cell-sub">行业 Top 10 外</span></td><td>利基</td><td>保留，靠精准词吃利润，不扩投放</td></tr>
+            <tr><td>弱<br><span class="cell-sub">三项缺任意一项</span></td><td>高<br><span class="cell-sub">行业 Top 10 内</span></td><td>待验证</td><td>先查有没有曝光：零曝光＝没做过，可小预算试；有曝光没询盘＝承接问题，先修页面再加钱</td></tr>
+            <tr><td>弱<br><span class="cell-sub">三项缺任意一项</span></td><td>低<br><span class="cell-sub">行业 Top 10 外</span></td><td>放弃</td><td>不投入，写进「这季度不做」清单</td></tr>
           </tbody></table></div>
           <p class="step-more-label">案例：四个国家分别落在哪个象限</p>
-          <p class="step-more-note">表内为教学示例，区域名称与数字均为示例，不对应任何真实店铺数据。</p>
-          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>市场</th><th>本店访客占比</th><th>行业需求</th><th>定位</th><th>动作</th></tr></thead><tbody>
-            <tr><td>东南亚</td><td>42%</td><td>高</td><td>主攻</td><td>加预算、扩精准词，主图换当地使用场景</td></tr>
-            <tr><td>中东</td><td>9%</td><td>低</td><td>利基</td><td>客单高，保留精准词，不扩投放</td></tr>
-            <tr><td>南亚</td><td>4%</td><td>高</td><td>待验证</td><td>有曝光无询盘，先查承接再加预算</td></tr>
-            <tr><td>南美</td><td>2%</td><td>低</td><td>放弃</td><td>不投入，本季度不做</td></tr>
+          <p class="step-more-note">「行业排名」取自行业买家页签。表内为教学示例，区域名称与数字均为示例，不对应任何真实店铺数据。</p>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>市场</th><th>访客占比</th><th>询盘</th><th>成交</th><th>行业排名</th><th>证据</th><th>定位</th></tr></thead><tbody>
+            <tr><td>东南亚</td><td>42%</td><td>11</td><td>3</td><td>第 3 位</td><td>强</td><td>主攻</td></tr>
+            <tr><td>中东</td><td>9%</td><td>4</td><td>1</td><td>第 14 位</td><td>强</td><td>利基</td></tr>
+            <tr><td>南亚</td><td>4%</td><td>1</td><td>0</td><td>第 6 位</td><td>弱</td><td>待验证</td></tr>
+            <tr><td>南美</td><td>2%</td><td>0</td><td>0</td><td>第 18 位</td><td>弱</td><td>放弃</td></tr>
           </tbody></table></div>
+          <div class="method-note"><strong>对着表逐行验一遍：</strong>东南亚三项齐、行业第 3，所以是主攻；中东三项也齐，但行业排到第 14，只能算利基——有利可图但盘子小，扩投放是浪费；南亚行业第 6 说明有需求，但只有 1 条询盘、没成交，所以先进「待验证」，不是直接投钱；南美两边都排不上，直接放弃。</div>
           <div class="method-note"><strong>两个口径的权重按店铺阶段调，不是固定五五开。</strong><br><strong>新店</strong>（成交不足 3 单，或日均访客很低）：行业 70%、本店 30%。本店样本太小，一次活动就能把排序打乱。<br><strong>老店</strong>（流量和成交都稳定）：本店 70%、行业 30%。已有证据最可靠，行业用来发现盲区。</div>
           <div class="method-note"><strong>两个必须记住的陷阱。</strong><br><strong>① 本店买家的国家分布＝你的投放史。</strong>没投过的国家不会出现，出现过的国家会被放大。<br><strong>② 行业买家证明「市场存在」，不证明「你能赢」。</strong>它能帮你发现盲区，不能替你判断竞争力。</div>
           <div class="method-note"><strong>三个口径先说清，否则比例会算错。</strong><br><strong>① 分国家人数加总会大于总访客数：</strong>同一个人换 IP 进来，人数按去重算 1，国家却各计 1。算占比要用「分国家 ÷ 分国家合计」，不要除以总访客数。<br><strong>② 显示 other 的：</strong>注册国家和 IP 都识别不出的访客，不是数据错。<br><strong>③ 总量含中国大陆：</strong>看国家结构时要单独说明，别把大陆流量混进海外市场判断。</div>
