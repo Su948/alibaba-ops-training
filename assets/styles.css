@@ -322,6 +322,8 @@ p { margin: 0 0 1em; }
   .tool-note-grid, .prompt-checks { grid-template-columns: 1fr; }
   .prompt-card-head { align-items: flex-start; }
 }
+.screenshot-scroll.zoom-wide { max-height: none; }
+.screenshot-scroll.zoom-wide img { width: auto; min-width: 1180px; max-width: none; }
 .method-note code, .step-more-body code, .source-item code { padding: 1px 5px; color: var(--teal); background: #edf3f5; border-radius: 3px; font: 600 .88em/1.1 ui-monospace, Menlo, monospace; word-break: break-all; }
 @media print {
   .sidebar, .topbar, .complete-button, .back-link { display: none !important; }
