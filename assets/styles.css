@@ -247,6 +247,25 @@ p { margin: 0 0 1em; }
 .step p.step-more-note { margin: 0 0 12px; font-size: .88rem; }
 .step p.step-more-label { margin: 20px 0 6px; color: var(--ink); font-size: .92rem; font-weight: 800; }
 .step-more-body > .step-more-label:first-child { margin-top: 0; }
+/* 思维导图 */
+.mindmap { margin: 10px 0 0; padding: 16px; background: #f7f9fa; border: 1px solid var(--line); }
+.mm-root { display: inline-block; padding: 9px 15px; color: #fff; background: var(--navy); font-size: .88rem; font-weight: 800; }
+.mm-list { margin: 16px 0 0; padding: 0 0 0 18px; list-style: none; border-left: 2px solid #cfdbe2; }
+.mm-list > li { position: relative; margin-bottom: 14px; }
+.mm-list > li:last-child { margin-bottom: 0; }
+.mm-list > li::before { content: ""; position: absolute; left: -25px; top: 8px; width: 10px; height: 10px; background: var(--teal); border-radius: 50%; }
+.mm-list strong { display: block; font-size: .88rem; }
+.mm-list span { display: block; margin-top: 3px; color: var(--ink-2); font-size: .85rem; }
+.mm-sub { margin: 8px 0 0; padding: 0 0 0 16px; list-style: none; border-left: 2px solid #cfdbe2; }
+.mm-sub li { position: relative; margin-top: 8px; color: var(--ink-2); font-size: .84rem; }
+.mm-sub li:first-child { margin-top: 0; }
+.mm-sub li::before { content: ""; position: absolute; left: -18px; top: 9px; width: 12px; height: 2px; background: #cfdbe2; }
+.mm-sub b { color: var(--ink); }
+/* 同行对比表 */
+.compare-table { min-width: 640px; }
+.compare-table td:first-child, .compare-table th:first-child { font-weight: 800; }
+/* 国家维度漏斗 */
+.funnel.four { grid-template-columns: repeat(4, 1fr); }
 .step-more .method-note { margin-top: 12px; }
 .decision-table { width: 100%; border-collapse: collapse; background: var(--white); }
 .decision-table th, .decision-table td { padding: 12px 14px; border: 1px solid var(--line); text-align: left; vertical-align: top; }
@@ -286,7 +305,7 @@ p { margin: 0 0 1em; }
   .funnel { grid-template-columns: repeat(2, 1fr); }
   .funnel span::after { display: none; }
    .decision-table { display: block; overflow-x: auto; }
-   .decision-table.score-table, .decision-table.case-table { display: table; overflow: visible; }
+   .decision-table.score-table, .decision-table.case-table, .decision-table.compare-table { display: table; overflow: visible; }
    .source-table-wrap { -webkit-overflow-scrolling: touch; }
    .step:has(.step-more) { padding: 14px 14px 14px 44px; }
    .step:has(.step-more)::before { left: 14px; top: 14px; }
