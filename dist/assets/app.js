@@ -891,9 +891,14 @@ lessons.push(
             <li><strong>二、按搜索意图</strong><span>品类词、采购意图词（OEM／wholesale）、长尾场景词分组。意图不同，出价逻辑不同</span></li>
             <li><strong>三、按国家</strong><span>重点国家单独成计划。多国混跑，每个国家都拿不到足够样本</span></li>
           </ul></div>
-          <div class="method-note"><strong>可执行的粒度参考：</strong>一个计划里产品控制在 3 个以内且同形态，词控制在几十个以内且同意图。这是经验阈值，不是平台规则——目标是让每个计划跑一周后能看出方向。</div>
-        </div></details>`],
-      ["用倒推法定预算与周期", "预算不是「今天想花多少」，是从目标倒推出来的：想要几条询盘、能接受多少成本、需要多少点击、需要多少钱。",
+           <div class="method-note"><strong>可执行的粒度参考：</strong>一个计划里产品控制在 3 个以内且同形态，词控制在几十个以内且同意图。这是经验阈值，不是平台规则——目标是让每个计划跑一周后能看出方向。</div>
+           <figure class="course-figure">
+             <div class="figure-head"><span>01</span><div><strong>计划列表长什么样</strong><p>营销中心 → 标准推广（金额与计划名已隐去）</p></div></div>
+             <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看计划列表截图"><img src="assets/lesson-08-ads-plan-list.png" alt="标准推广的计划列表，含状态、计划、诊断状态、预算、出价、投放渠道、推广商品数、推广关键词数、花费等列" loading="lazy"></div>
+             <figcaption>这张表就是你判断「粒度对不对」的地方。<strong>「推广商品数」和「推广关键词数」两列并排看</strong>：商品数很多、词也很多，几乎一定混烧；商品数 1—3、词几十个，才是一个能归因的计划。右边「预算」「出价」「花费」挨在一起，是用来对照「预算给了多少、实际花了多少」的——三个数一起看才有意义，单看花费没有判断价值。左侧「状态」与「诊断状态」是平台给的提示，不等于你的结论。</figcaption>
+                       </figure>
+         </div></details>`],
+       ["用倒推法定预算与周期", "预算不是「今天想花多少」，是从目标倒推出来的：想要几条询盘、能接受多少成本、需要多少点击、需要多少钱。",
         `<details class="step-more"><summary>展开看倒推四步</summary><div class="step-more-body">
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>步骤</th><th>怎么算</th><th>没有历史数据时怎么办</th></tr></thead><tbody>
             <tr><td>一、定目标询盘数</td><td>这一轮想验证出几条询盘</td><td>先定 3—5 条，够判断趋势即可</td></tr>
@@ -908,11 +913,18 @@ lessons.push(
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>项目</th><th>第一轮做法</th><th>原因</th></tr></thead><tbody>
             <tr><td>词源</td><td>只用已分好意图的词</td><td>现场想词，等于用预算做词库测试</td></tr>
             <tr><td>词量</td><td>十几到几十个精准词</td><td>词太多预算摊薄，每个词都跑不出数据</td></tr>
-            <tr><td>匹配</td><td>以精准为主</td><td>宽匹配会把预算耗在无关搜索上</td></tr>
-            <tr><td>采购意图词</td><td>单独一组，单独定预算</td><td>想买货的人和想看产品的人，点击成本不一样</td></tr>
-            <tr><td>排除词</td><td>零售、维修、配件词提前屏蔽</td><td>这类流量点得再多也不会询价</td></tr>
-          </tbody></table></div>
-        </div></details>`],
+             <tr><td>匹配</td><td>以精准为主</td><td>宽匹配会把预算耗在无关搜索上</td></tr>
+             <tr><td>采购意图词</td><td>单独一组，单独定预算</td><td>想买货的人和想看产品的人，点击成本不一样</td></tr>
+             <tr><td>排除词</td><td>零售、维修、配件词提前屏蔽</td><td>这类流量点得再多也不会询价</td></tr>
+           </tbody></table></div>
+           <figure class="course-figure">
+             <div class="figure-head"><span>02</span><div><strong>关键词页与匹配方式的位置</strong><p>标准推广 → 某个计划 → 「关键词」页签（计划名、出价、数字均已隐去）</p></div></div>
+             <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看关键词页截图"><img src="assets/lesson-08-ads-keyword-match.png" alt="标准推广计划的关键词页签，含关键词、出价、近1小时最佳排名、24小时排名分布、抢位状态、推广评分、同行平均出价、搜索热度" loading="lazy"></div>
+             <figcaption>三个要点：<strong>① 右上角「匹配方式」是计划级设置</strong>，不是在每个词后面单独选——点开改一次，这个计划里所有词一起变。<strong>② 表头那一排</strong>才是逐词看的：出价、近1小时最佳排名、24小时排名分布、抢位状态、推广评分、同行平均出价、搜索热度。判断一个词「能不能抢」看排名与同行出价，判断「值不值得抢」看推广评分与搜索热度。<strong>③ 因为匹配方式是整计划统一</strong>，精准词和宽泛词必须拆到两个计划里，否则只能二选一。</figcaption>
+           </figure>
+           <div class="method-note"><strong>这处最容易被写错，记牢：</strong>匹配方式<strong>不是逐词设置</strong>，是计划级统一设置，入口在关键词页右上角（文案形如「匹配方式：短语匹配」）。所以「这个计划用精准、那个计划用宽泛」是拆计划的理由之一，而不是在同一个计划里混着设。</div>
+           <div class="method-note"><strong>屏蔽词的入口也在这页。</strong>关键词列表左上角有一个下拉（显示「词组」），里面能打开词报告、也能进屏蔽词；零售词、维修词、配件词就在这里排掉，不用去别的页面找。</div>
+         </div></details>`],
       ["设国家与人群", "国家跟随第 02 课的主推结论，不跟随「哪个国家便宜投哪个」。人群定向是加分项，不是必需项。",
         `<details class="step-more"><summary>展开看国家与人群怎么设</summary><div class="step-more-body">
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>设置项</th><th>原则</th><th>常见错误</th></tr></thead><tbody>
@@ -942,14 +954,20 @@ lessons.push(
             <li><strong>第三步：询盘成本</strong><span>前两步干净了，成本才有比较意义</span></li>
             <li><strong>第四步：成交与复购</strong><span>成本低但客户质量差，一样是亏</span></li>
           </ul></div>
-          <div class="method-note"><strong>一次只改一个变量，改完至少观察 3 天，并记录改动时间和内容。</strong>没有修改记录，两周后你无法解释成本为什么变了，也无法复制成功的做法。</div>
-        </div></details>`],
+           <figure class="course-figure">
+             <div class="figure-head"><span>03</span><div><strong>搜索词报告长什么样</strong><p>营销中心 → 直通车报告 → 搜索词报告（数字已隐去）</p></div></div>
+             <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看搜索词报告截图"><img src="assets/lesson-08-ads-search-terms.png" alt="直通车报告的搜索词报告页签，含买家搜索词、点击占比、曝光占比三列" loading="lazy"></div>
+             <figcaption><strong>先认清楚它只有三列</strong>：买家搜索词、点击占比、曝光占比。<strong>没有花费、没有点击次数、没有展现量的绝对值</strong>——所以想在这一页回答「哪个词烧了多少钱」是做不到的。这一页能做的是两件事：① 看买家到底在搜什么（发现跑偏的词）；② 看点击占比和曝光占比的落差（曝光高、点击占比低＝人家看到你没点，问题在词与图的匹配）。要算钱，回计划列表用花费对着关键词数拆，别指望这一页。<br>另外注意顶部要先选组：<strong>「全站推广」和「标准推广」是两组报告</strong>，页签不同数据不同。本店标准推广组当期无数据，这张取自全站推广组——所以三列结构以自己后台为准。</figcaption>
+           </figure>
+           <div class="method-note"><strong>标准推广组的搜索词报告是空的，先别怀疑报表坏了。</strong>按顺序查三件事：① 这个计划近 7 天到底有没有在投（有预算不等于有在跑）；② 统计周期是不是选得太短；③ 词是不是窄到根本没人搜。三件都正常还空，才去后台报问题。</div>
+           <div class="method-note"><strong>一次只改一个变量，改完至少观察 3 天，并记录改动时间和内容。</strong>没有修改记录，两周后你无法解释成本为什么变了，也无法复制成功的做法。</div>
+         </div></details>`],
       ["规则部分每季度核对一次", "出价方式、扣费逻辑、计划类型、定向能力这些都会随平台调整。本课不写死具体规则，只给一张核对清单——每季度按表核一次，把变化记下来。",
         `<details class="step-more"><summary>展开看必须核对的六项</summary><div class="step-more-body">
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>核对什么</th><th>为什么要核</th><th>在哪看</th></tr></thead><tbody>
             <tr><td>出价方式与扣费逻辑</td><td>直接影响成本结构，一变全盘算法都要重算</td><td>推广后台的规则说明与官方公告</td></tr>
             <tr><td>计划类型与可用功能</td><td>计划类型增减会影响怎么搭结构</td><td>推广后台创建入口</td></tr>
-            <tr><td>匹配方式选项</td><td>匹配方式决定流量宽窄</td><td>关键词设置页</td></tr>
+             <tr><td>匹配方式选项</td><td>匹配方式决定流量宽窄，且是计划级统一设置，不能逐词设</td><td>关键词页右上角「匹配方式」</td></tr>
             <tr><td>店铺评分／营销能力口径</td><td>影响可用的推广能力和权益</td><td>后台能力分说明页</td></tr>
             <tr><td>国家与人群定向能力</td><td>决定能不能按国家精细投放</td><td>计划设置页</td></tr>
             <tr><td>广告位与展示规则</td><td>决定曝光在哪里出现</td><td>官方公告与后台说明</td></tr>
@@ -991,9 +1009,14 @@ lessons.push(
             <tr><td>放大成熟品</td><td>已验证产品的询盘量级提升</td><td>顺手加了新品，变量变多</td></tr>
             <tr><td>验证国家</td><td>某国到底有没有需求</td><td>多国同开，样本被摊薄</td></tr>
           </tbody></table></div>
-          <div class="method-note"><strong>「拓新」这一项最容易被做反。</strong>系统扩出来的陌生词，先判断它是「新的采购需求」还是「跑偏的流量」。前者要留、要记进词库；后者才屏蔽。全部一刀切，等于花钱买了个更窄的流量池。</div>
-        </div></details>`],
-      ["上线前确认三个基础", "产品范围、落地一致性、追踪口径，这三样在上线前定好，上线后就不要再动——否则数据没法归因。",
+           <div class="method-note"><strong>「拓新」这一项最容易被做反。</strong>系统扩出来的陌生词，先判断它是「新的采购需求」还是「跑偏的流量」。前者要留、要记进词库；后者才屏蔽。全部一刀切，等于花钱买了个更窄的流量池。</div>
+           <figure class="course-figure">
+             <div class="figure-head"><span>01</span><div><strong>建计划这条流程长什么样</strong><p>营销中心 → 全站推广 → 新建（预算与计划名已隐去）</p></div></div>
+             <img src="assets/lesson-09-p4p-plan-setup.png" alt="全站推建计划的六步流程，当前停在设置出价和预算，含投放目标、出价设置、日均预算、偏好设置、计划名称" loading="lazy">
+             <figcaption>左边那六个节点就是全部流程：<strong>推广方式 → 选择商品 → 流量设置 → 设置出价和预算 → 偏好设置 → 计划名称</strong>。这一屏是第四步，三个字段定生死：<strong>「投放目标」</strong>选的是这一轮要什么（全站商机／其他），<strong>「出价设置」</strong>选的是成本口径（目标商机成本／商机价值最大化），<strong>「日均预算」</strong>决定一天最多烧多少。三个一起决定「花多少钱换多少商机」，改任意一个，另外两个的判断就失效——所以一次只动一个。</figcaption>
+            </figure>
+         </div></details>`],
+       ["上线前确认三个基础", "产品范围、落地一致性、追踪口径，这三样在上线前定好，上线后就不要再动——否则数据没法归因。",
         `<details class="step-more"><summary>展开看三个基础怎么定</summary><div class="step-more-body">
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>基础</th><th>怎么定</th><th>没定好的后果</th></tr></thead><tbody>
             <tr><td>产品范围</td><td>只放已通过链接检查的重点产品，3—5 个起步</td><td>把未验证的新品全丢进去，跑出来的结论没有指向</td></tr>
@@ -1010,8 +1033,13 @@ lessons.push(
             <tr><td>三、询盘</td><td>询盘数与有效询盘占比</td><td>承接和报价有没有竞争力</td></tr>
             <tr><td>四、流量结构</td><td>新客占比、搜索词里有多少是你没投过的</td><td>是全新增量，还是在替代自然流量</td></tr>
           </tbody></table></div>
-          <div class="method-note"><strong>第四层是全站推独有的判断题。</strong>系统扩量的价值在于「拿到你原本拿不到的人」，如果新客占比很低、搜索词全是你自己已经在投的词，那这笔钱大概率只是把自然流量买了一遍。</div>
-        </div></details>`],
+           <div class="method-note"><strong>第四层是全站推独有的判断题。</strong>系统扩量的价值在于「拿到你原本拿不到的人」，如果新客占比很低、搜索词全是你自己已经在投的词，那这笔钱大概率只是把自然流量买了一遍。</div>
+           <figure class="course-figure">
+             <div class="figure-head"><span>02</span><div><strong>全站推报表的列结构</strong><p>全站推广 → 数据报告 → 详细数据（数字已隐去）</p></div></div>
+             <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看全站推报表截图"><img src="assets/lesson-09-p4p-report.png" alt="全站推广详细数据报表，按日期列出花费、全站商机量、商机成本、L1+商机量、商机转化率、点击量、点击成本等列" loading="lazy"></div>
+             <figcaption>这张表按日期一行，列从左到右正好对着上面四层：<strong>花费 → 商机量 → 商机成本 → 商机转化率 → 点击量 → 点击成本</strong>，再往右是 <strong>L1+</strong> 那三列（L1+ 商机量、L1+ 点击量、L1+ 买家点击占比）。<strong>「L1+」这一组是你判断买家质量的地方</strong>——同样的商机成本，L1+ 占比高说明来的是像样的采购商，占比低说明只是有人来问。横着读一行看不出好坏，要连读七天看趋势。</figcaption>
+           </figure>
+         </div></details>`],
       ["四类问题按树排查", "问题不同，动手的地方完全不同。先定位是哪一类，再决定改什么。",
         `<details class="step-more"><summary>展开看四类问题的排查方向</summary><div class="step-more-body">
           <div class="mindmap"><div class="mm-root">全站推出问题，先归到哪一类</div><ul class="mm-list">
