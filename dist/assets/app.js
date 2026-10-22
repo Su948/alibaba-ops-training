@@ -344,50 +344,185 @@ lessons.push(
     id: 4,
     stage: "增长",
     title: "高转化关键词体系",
-    summary: "从平台、同行和站外收词，经过清洗、分组和验证，形成可持续维护的词库。",
+    summary: "从平台、同行和站外收词，经过清洗、分组和验证，形成可持续维护的词库；工厂店和贸易店的收词取向不一样。",
     duration: "55 分钟",
-    updated: "2026-09",
+    updated: "2026-10",
     prerequisites: "第 02—03 课",
-    outcomes: ["建立关键词来源清单", "把词按采购意图和产品属性分组", "用词库完成标题、详情和推广词配置"],
-    quick: "高转化词不是搜索量最大的词，而是产品匹配、买家意图清晰并且在实际点击或询盘中得到验证的词。收词、清洗、分组、覆盖、投放和复盘必须形成闭环。",
+    outcomes: ["建立一份带来源标记的种子词与扩词清单", "把词按六类意图分组，并说清每类用在哪里", "区分工厂店和贸易店该抢的词、不该抢的词", "建立每周新增与淘汰的复核机制"],
+    quick: "高转化词不是搜索量最大的词，而是产品匹配、买家意图清晰、并在实际点击或询盘里被验证过的词。收词、清洗、分组、覆盖、投放、复盘要形成闭环——但闭环的入口不一样：工厂店从「我能做什么」出发，贸易店从「客户要什么、我能组什么」出发。",
     steps: [
-      ["定义种子词", "用产品名称、用途、材质、规格、适用行业和采购场景建立第一批种子词。"],
-      ["多渠道扩词", "从平台搜索建议、关键词指数、同行标题、广告搜索词和 Google/站外工具补充词。"],
-      ["清洗与去重", "删除不相关、语义重复、品牌侵权和明显低意向词；保留小语种、连写词、常见变体时要单独标记。"],
-      ["按意图分组", "至少分为核心品类词、属性词、用途词、场景词、采购意图词和国家/语言词。"],
-      ["分配使用位置", "标题优先放核心词与强属性词；详情页覆盖场景与长尾词；推广计划按意图分组。"],
-      ["用数据复核", "每周查看曝光、点击、询盘和搜索词报告，新增有效词、降权或屏蔽无效词。"]
+      ["定义种子词", "用产品名称、用途、材质、规格、适用行业和采购场景建立第一批种子词。种子词不在多，在于每一个都能对应一个真实买家会搜的场景。",
+        `<details class="step-more"><summary>展开看种子词怎么起</summary><div class="step-more-body">
+          <div class="mindmap"><div class="mm-root">种子词的四个来源</div><ul class="mm-list">
+            <li><strong>产品名称</strong><span>客户嘴里的叫法，不是你内部的型号。同一款产品可能有 2—3 个通用叫法，都要收</span></li>
+            <li><strong>用途</strong><span>用来解决什么问题：放松、助眠、康复、办公久坐</span></li>
+            <li><strong>使用场景</strong><span>在哪用、给谁用：家用、车载、办公室、礼品</span></li>
+            <li><strong>材质与规格</strong><span>只在买家会主动搜的时候才收，不是所有参数都值得当词</span></li>
+          </ul></div>
+          <div class="method-note"><strong>判断一个种子词合不合格：</strong>把它丢到 Google 和国际站首页各搜一次，出来的如果是同类产品的采购页，合格；出来的是科普、评测、维修，不合格。这一步和第 02 课判断采购意图是同一个动作。</div>
+        </div></details>`],
+      ["多渠道扩词", "从平台搜索建议、关键词指数、同行标题、广告搜索词和 Google／站外工具补充词。每个词都要记下它从哪来——来源决定可信度。",
+        `<details class="step-more"><summary>展开看渠道与可信度</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>渠道</th><th>拿到什么词</th><th>可信度</th></tr></thead><tbody>
+            <tr><td>平台搜索下拉与相关搜索</td><td>真实买家正在搜的表达</td><td>高，优先级第一</td></tr>
+            <tr><td>关键词指数</td><td>搜索量与趋势</td><td>高，用来排序和判断季节性</td></tr>
+            <tr><td>同行标题</td><td>已被验证的表达组合</td><td>中，要防抄到过时或违规的词</td></tr>
+            <tr><td>广告搜索词报告</td><td>花钱买来的真实点击词</td><td>最高，但样本量小</td></tr>
+            <tr><td>Google／站外工具</td><td>行业通用词、长尾表达</td><td>中，需回到平台验证有没有人搜</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>扩词阶段不做判断，只做收集。</strong>一边收一边删，最后会只剩你本来就认识的那几个词——那等于没扩。</div>
+        </div></details>`],
+      ["清洗与去重", "删除不相关、语义重复、品牌侵权和明显低意向词；小语种、连写词和常见变体要单独标记，不要直接删。",
+        `<details class="step-more"><summary>展开看删、留、标记三种处理</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>情况</th><th>处理</th><th>理由</th></tr></thead><tbody>
+            <tr><td>零售词、维修词、配件词</td><td>删</td><td>搜的人不是采购商，来了也不会问价</td></tr>
+            <tr><td>品牌词、他人商标</td><td>删</td><td>侵权风险，与投放合规直接相关</td></tr>
+            <tr><td>语义重复（单复数、连写）</td><td>合并，保留搜索量高的那个</td><td>重复词会稀释预算，不会放大曝光</td></tr>
+            <tr><td>小语种、地区变体</td><td>标记保留，不删</td><td>可能是某个市场的唯一入口，但要用单独的词组去测</td></tr>
+            <tr><td>看着相关但不确定的词</td><td>标记「待验证」</td><td>先放观察区，用一周数据说话，别凭感觉删</td></tr>
+          </tbody></table></div>
+        </div></details>`],
+      ["按意图分组", "至少分为核心品类词、属性词、用途词、场景词、采购意图词、国家／语言词六类。分组不是为了好看，是为了决定每个词放哪里。",
+        `<details class="step-more"><summary>展开看六类词分别放哪里</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>词类</th><th>例子方向</th><th>主要用在哪</th></tr></thead><tbody>
+            <tr><td>核心品类词</td><td>产品大词</td><td>标题首位、主推链接</td></tr>
+            <tr><td>属性词</td><td>材质、功率、形态、认证</td><td>标题中段、属性栏、筛选词</td></tr>
+            <tr><td>用途词</td><td>缓解什么、解决什么</td><td>详情页、卖点</td></tr>
+            <tr><td>场景词</td><td>家用、车载、办公、礼品</td><td>详情页、副图、长尾覆盖</td></tr>
+            <tr><td>采购意图词</td><td>wholesale、OEM、custom、bulk</td><td>推广计划、独立落地页</td></tr>
+            <tr><td>国家／语言词</td><td>小语种表达、地区叫法</td><td>单独词组测试，不混进主计划</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>采购意图词要单独建组。</strong>它和品类词混在一个计划里，出价逻辑会被拉平——想买货的人和想看产品的人，点击成本本来就不一样。</div>
+        </div></details>`],
+      ["分店铺类型取向", "同一个产品，工厂店和贸易店该抢的词不一样。抢错词不是浪费预算，是接不住的单。",
+        `<details class="step-more"><summary>展开看工厂店和贸易店的词表</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>词的方向</th><th>工厂店</th><th>贸易店</th></tr></thead><tbody>
+            <tr><td>定制与代工</td><td>优先：OEM、ODM、custom logo、private label、custom packaging</td><td>慎用：接了要转厂，交期和品质自己控不住</td></tr>
+            <tr><td>能力与资质</td><td>优先：manufacturer、factory、ISO、CE、FDA、RoHS</td><td>可用：有独家代理或稳定认证来源时才用</td></tr>
+            <tr><td>批量与宽度</td><td>慎用：wholesale、assorted 这类要的是多品类</td><td>优先：wholesale、bulk、set、kit、collection</td></tr>
+            <tr><td>起订与现货</td><td>按产线实际能力定，别承诺做不到的 MOQ</td><td>优先：small order、mixed order、ready to ship</td></tr>
+            <tr><td>共同要抢</td><td colspan="2">核心品类词、用途词、场景词——这三类不分店铺类型，都要覆盖</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>同一个产品，两个店的标题词序就该不一样。</strong><br><strong>工厂店：</strong>Custom Logo Neck Massager OEM Manufacturer CE<br><strong>贸易店：</strong>Wholesale Neck Massager Set Bulk Ready to Ship<br>差别不在英文写得好不好，在于你想让哪一类买家点进来。</div>
+          <div class="method-note"><strong>最容易犯的错：</strong>贸易店去抢 OEM 词，接了单转给工厂，交期和品质两头受气；工厂店去抢 wholesale 宽词，来的都是要几十个 SKU 的分销商，产线根本配不齐。</div>
+        </div></details>`],
+      ["分配使用位置", "标题优先放核心词与强属性词；详情页覆盖场景与长尾词；推广计划按意图分组。一个词只在一个地方主推，不要三处重复堆。",
+        `<details class="step-more"><summary>展开看分配原则</summary><div class="step-more-body">
+          <div class="mindmap"><div class="mm-root">一个词，一个主战场</div><ul class="mm-list">
+            <li><strong>标题</strong><span>只放 1 个核心品类词 + 2—3 个强属性词。标题是给搜索匹配用的，不是词库的展示窗口</span></li>
+            <li><strong>详情页</strong><span>承接场景词和长尾词，用自然句子写，不要罗列</span></li>
+            <li><strong>推广计划</strong><span>按意图分组建计划，采购意图词单独一组，出价单独定</span></li>
+            <li><strong>不要做的</strong><span>同一个词在标题、详情、广告里反复堆，既不加分，还会让标题读不通</span></li>
+          </ul></div>
+        </div></details>`],
+      ["用数据复核", "每周查看曝光、点击、询盘和搜索词报告，新增有效词、降权或屏蔽无效词。词库不是建完就结束，是一个每周都要动的清单。",
+        `<details class="step-more"><summary>展开看每周复核动作</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>看到什么</th><th>怎么处理</th><th>频率</th></tr></thead><tbody>
+            <tr><td>有曝光、没点击的词</td><td>先查主图和标题是否匹配，连续两周仍无点击则降权</td><td>每周</td></tr>
+            <tr><td>有点击、没询盘的词</td><td>回看搜索词报告，确认是不是意图偏差，是则屏蔽</td><td>每周</td></tr>
+            <tr><td>词小但询盘稳定</td><td>扩同义词和相近款，单独建小组养着</td><td>每周</td></tr>
+            <tr><td>突然起量的新词</td><td>加进种子池，看是不是季节性或新需求</td><td>每周</td></tr>
+            <tr><td>整份词库</td><td>季度清理一次，删掉连续两个月零曝光的词</td><td>每季度</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>复核看的是词的去留，不是账户的涨跌。</strong>把「这周删了哪 5 个词、加了哪 3 个词」记下来，比记「曝光涨了 12%」有用得多。</div>
+        </div></details>`]
     ],
     decisions: [
-      ["曝光高、点击低", "词太宽或展示表达不匹配", "拆分词组并调整主图/标题"],
-      ["点击高、无询盘", "采购意图弱或详情承接不足", "核对搜索词并检查产品页"],
-      ["流量小、询盘稳定", "高价值长尾词", "扩大同义词和相近产品覆盖"]
+      ["曝光高、点击低", "词太宽，或主图与搜索意图不匹配", "拆词组，先改主图再看点击"],
+      ["点击高、无询盘", "采购意图弱，或详情承接不足", "回看搜索词报告，屏蔽零售词"],
+      ["流量小、询盘稳定", "高价值长尾词", "扩同义词和相近款，单独建组养"],
+      ["工厂店抢了 wholesale 宽词", "产线配不齐多品类，询盘全是分销商", "收回到 OEM／定制／认证类词"],
+      ["贸易店抢了 OEM 词", "接了单要转厂，交期和品质控不住", "换成批发、组合、现货类词"]
     ],
-    checklist: ["关键词已去重并标记来源", "每个词都有意图和产品归属", "标题没有机械堆词", "广告词能追溯到搜索词结果", "建立每周新增与淘汰机制"],
-    assignment: "为一个主推产品整理不少于 80 个候选词，分成 5 类，并挑选 10 个词说明放在标题、详情还是广告中。",
+    checklist: ["关键词已去重并标记来源", "每个词都有意图归属和使用位置", "标题只放了核心词与强属性词，没有机械堆词", "工厂店／贸易店的词取向已分开处理", "广告词能追溯到搜索词报告", "建立了每周新增与淘汰机制"],
+    assignment: "为一个主推产品整理不少于 80 个候选词，按六类分组，标出来源；再挑 10 个词说明放在标题、详情还是广告。最后写一句：这些词里，哪些是你们这家店不该抢的，为什么。",
     sources: [{label:"高转化词课程与文档（会员）",url:"https://t.zsxq.com/KMJRl"},{label:"站外收词方法（会员）",url:"https://t.zsxq.com/dj3gF"},{label:"词频组合标题（会员）",url:"https://t.zsxq.com/lTRhH"},{label:"SEO 外贸关键词工具",url:"https://seowaimao.com"}]
   },
   {
     id: 5,
     stage: "转化",
     title: "高质量产品链接",
-    summary: "把类目、属性、标题、图片和详情组织成能获得流量、也能承接采购需求的产品页。",
+    summary: "把类目、属性、标题、图片和详情组织成能获得流量、也能承接采购需求的产品页；工厂店和贸易店的详情重点不同。",
     duration: "60 分钟",
-    updated: "2026-09",
+    updated: "2026-10",
     prerequisites: "第 04 课",
-    outcomes: ["独立发布完整产品链接", "使用检查表排查链接质量", "让关键词、卖点和询盘入口保持一致"],
-    quick: "高质量链接不是字段填满，而是买家在正确类目中看到匹配的标题和主图，进入页面后快速确认规格、能力、信任与下一步沟通方式。",
+    outcomes: ["独立发布一条完整产品链接并自查", "按采购决策顺序组织图片和详情", "区分工厂店和贸易店的详情说服重点", "用一张检查表在发布前拦掉常见错误"],
+    quick: "高质量链接不是字段填满，而是买家在正确类目里看到匹配的标题和主图，进页面后快速确认三件事：规格对不对、你能不能做、下一步怎么谈。工厂店要证明「我能做」，贸易店要证明「我能配齐、能快发」——证明错了，流量再多也不转化。",
     steps: [
-      ["选对类目与产品形态", "优先保证类目、产品名称和实际交付一致，避免用高流量类目换来不精准曝光。"],
-      ["填写结构化属性", "完整填写材质、规格、用途、认证、产地和定制能力，让系统和买家都能理解产品。"],
-      ["组合标题", "按核心产品词 + 关键属性 + 使用场景组织，避免重复堆砌同义词。"],
-      ["组织图片与视频", "首图解决点击，后续图片依次回答细节、参数、场景、工厂和信任问题。"],
-      ["编排详情页", "先价值与差异，再规格、应用、生产、质检、包装、交付、FAQ 和联系入口。"],
-      ["发布后检查", "从移动端和买家视角检查截断、错误参数、图片清晰度、MOQ、价格与询盘按钮。"]
+      ["选对类目与产品形态", "优先保证类目、产品名称和实际交付一致。用高流量类目换来的曝光，基本都是不精准曝光。",
+        `<details class="step-more"><summary>展开看类目错的代价</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>错法</th><th>会出现什么</th><th>代价</th></tr></thead><tbody>
+            <tr><td>挂到更热的上级类目</td><td>曝光涨了，点击率暴跌</td><td>拖低整店点击率，影响系统推荐</td></tr>
+            <tr><td>挂到相近但不相同的类目</td><td>来的买家问的都不是这个产品</td><td>询盘质量差，业务员白耗时间</td></tr>
+            <tr><td>多类目重复铺同款</td><td>自己跟自己抢流量</td><td>分散权重，两款都做不起来</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>自查方法：</strong>把这个类目的 Top 20 产品打开看一遍，如果至少 15 个和你的产品形态一致，类目就是对的。少于一半，回去重选。</div>
+        </div></details>`],
+      ["填写结构化属性", "完整填写材质、规格、用途、认证、产地和定制能力。属性不只是给买家看的，也是给筛选和推荐用的。",
+        `<details class="step-more"><summary>展开看哪些属性必须填满</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>属性组</th><th>填到什么程度</th><th>漏填的后果</th></tr></thead><tbody>
+            <tr><td>材质与规格</td><td>可量化的全部填，不留空</td><td>进不了筛选结果，等于不存在</td></tr>
+            <tr><td>认证</td><td>只填真实持有的，写清型号范围</td><td>写错或夸大属于合规风险</td></tr>
+            <tr><td>定制能力</td><td>能做什么、起订多少、是否收费</td><td>买家要问一遍，沟通成本翻倍</td></tr>
+            <tr><td>产地与交期</td><td>填常规交期，不填最快纪录</td><td>承诺兑现不了，纠纷从这里开始</td></tr>
+          </tbody></table></div>
+        </div></details>`],
+      ["组合标题", "按核心产品词 + 关键属性 + 使用场景组织。词从第 04 课的词库里取，标题只放 1 个核心词和 2—3 个强属性词。",
+        `<details class="step-more"><summary>展开看词序怎么排</summary><div class="step-more-body">
+          <div class="mindmap"><div class="mm-root">标题语序：越靠前权重越高</div><ul class="mm-list">
+            <li><strong>第 1 段</strong><span>核心品类词，一个就够。放三个同义词不会加权，只会让标题读不通</span></li>
+            <li><strong>第 2 段</strong><span>强属性词：形态、功率、材质、认证中买家最在意的那两个</span></li>
+            <li><strong>第 3 段</strong><span>场景或采购意图词：家用、礼品、custom、wholesale——按店铺类型选，别混着放</span></li>
+            <li><strong>不要做的</strong><span>把词库里的词全部塞进标题。买家读不懂，系统也不会因此多给你曝光</span></li>
+          </ul></div>
+        </div></details>`],
+      ["组织图片与视频", "首图解决点击，后续图片依次回答细节、参数、场景、工厂和信任问题。图片顺序就是买家的提问顺序。",
+        `<details class="step-more"><summary>展开看图片该按什么顺序排</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>位置</th><th>回答什么问题</th><th>常见错误</th></tr></thead><tbody>
+            <tr><td>首图</td><td>这是什么，值不值得点</td><td>信息过多、看不清主体</td></tr>
+            <tr><td>第 2—3 张</td><td>细节和关键参数</td><td>放氛围图，浪费最贵的两屏</td></tr>
+            <tr><td>第 4—5 张</td><td>使用场景、尺寸对比</td><td>场景图看不出产品本身</td></tr>
+            <tr><td>第 6—7 张</td><td>工厂、产线、认证、质检</td><td>工厂店不展示能力，等于白有</td></tr>
+            <tr><td>视频</td><td>动态展示和操作方式</td><td>只拍外观，不拍使用过程</td></tr>
+          </tbody></table></div>
+        </div></details>`],
+      ["编排详情页", "先价值与差异，再规格、应用、生产、质检、包装、交付、FAQ 和联系入口。前三屏决定买家会不会继续往下看。",
+        `<details class="step-more"><summary>展开看详情页信息顺序</summary><div class="step-more-body">
+          <div class="mindmap"><div class="mm-root">详情页的阅读顺序</div><ul class="mm-list">
+            <li><strong>第一屏：说清是什么</strong><span>产品全貌 + 一句话价值。不要开场就贴公司简介</span></li>
+            <li><strong>第二屏：解决什么问题</strong><span>用途与场景，让买家确认「这就是我要找的」</span></li>
+            <li><strong>第三屏：凭什么信你</strong><span>认证、产线、质检——这一屏是工厂店的主场</span></li>
+            <li><strong>中段：参数与规格</strong><span>表格化，买家要拿去和同行比价的就是这一段</span></li>
+            <li><strong>后段：交付与 FAQ</strong><span>MOQ、交期、包装、定制流程、常见问题</span></li>
+            <li><strong>结尾：询盘入口</strong><span>明确告诉买家下一步做什么</span></li>
+          </ul></div>
+        </div></details>`],
+      ["分店铺类型调重点", "同一条链接结构，工厂店和贸易店的说服重点不一样。买家第一个问题不同，第一屏就该不同。",
+        `<details class="step-more"><summary>展开看两种店该证明什么</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>证明什么</th><th>工厂店</th><th>贸易店</th></tr></thead><tbody>
+            <tr><td>买家先问的</td><td>你能做我这款吗？多少量？多久？</td><td>你有多少款？能混批吗？多久发？</td></tr>
+            <tr><td>第一屏该放</td><td>产品全貌 + 产线或认证</td><td>产品全貌 + 品类宽度</td></tr>
+            <tr><td>核心证据</td><td>产线与设备实拍、产能、良率、自持认证、打样与开模周期</td><td>可配齐的品类与组合、现货、混批门槛、发货时效</td></tr>
+            <tr><td>定制能力</td><td>重点讲：logo、包装、电压插头、说明书语言</td><td>讲「可协调」，不承诺自己做不到的</td></tr>
+            <tr><td>最容易缺的</td><td>把认证和产线藏到最后，买家看不到就走了</td><td>只报单品，看不出你能一次配齐</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>一句话判断：</strong>把详情页第一屏给一个陌生买家看三秒，他能不能说出「这家是工厂还是贸易」。说不出来，说明你的证明还没做到位。</div>
+          <div class="method-note"><strong>别硬装。</strong>贸易店在详情里写「自有工厂」，客户验厂时立刻穿帮；工厂店去拼「品类最全」，产线配不齐反而拖交期。写你真实能兑现的那部分，转化率比吹出来的高。</div>
+        </div></details>`],
+      ["发布后检查", "从移动端和买家视角检查截断、错误参数、图片清晰度、MOQ、价格与询盘按钮。发布不是终点，是第一次验收。",
+        `<details class="step-more"><summary>展开看发布前检查清单</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>检查项</th><th>怎么看</th><th>不合格的信号</th></tr></thead><tbody>
+            <tr><td>移动端截断</td><td>用手机打开自己的链接</td><td>标题尾部被截、参数表要横滑</td></tr>
+            <tr><td>参数一致性</td><td>属性栏、详情、图片三处对一遍</td><td>功率、尺寸、颜色对不上</td></tr>
+            <tr><td>图片清晰度</td><td>放大看细节</td><td>有水印、拉伸、压字太糊</td></tr>
+            <tr><td>MOQ 与价格</td><td>和业务员确认口径</td><td>页面写 50，报价按 500 起</td></tr>
+            <tr><td>询盘入口</td><td>自己发一条测试</td><td>按钮点了没反应、表单太长</td></tr>
+          </tbody></table></div>
+        </div></details>`]
     ],
-    decisions: [["无曝光", "类目、关键词或新品覆盖不足", "检查类目与标题，再补充有效词"],["有点击无停留", "首屏信息与广告承诺不一致", "重做首屏卖点和规格表达"],["询盘问题重复", "详情页没有回答关键采购信息", "把高频问题前置到详情与 FAQ"]],
-    checklist: ["类目与产品完全一致", "属性无空缺或矛盾", "标题自然且覆盖核心词", "图片顺序符合采购决策", "MOQ、交期、定制和认证清楚", "移动端预览通过"],
-    assignment: "选择一个准备推广的产品，用本课检查表完成一次发布前审核，并记录至少 5 处修改。",
+    decisions: [["无曝光", "类目、关键词或新品覆盖不足", "检查类目与标题，再补充有效词"],["有点击无停留", "首屏信息与广告承诺不一致", "重做首屏卖点和规格表达"],["询盘问题重复", "详情页没有回答关键采购信息", "把高频问题前置到详情与 FAQ"],["询盘问「你是工厂吗」", "详情页没证明制造能力，白丢信任", "补产线、认证、质检到前三屏"],["询盘问「能配齐吗」", "贸易店的宽度没讲出来", "补组合方案与混批门槛"]],
+    checklist: ["类目与产品完全一致", "属性无空缺或矛盾，认证只写真实持有的", "标题只放 1 个核心词 + 2—3 个强属性词", "图片顺序符合买家提问顺序", "详情前三屏能证明「工厂还是贸易」", "MOQ、交期、定制和认证清楚", "手机端实测无截断"],
+    assignment: "选一个准备推广的产品，用本课检查表完成一次发布前审核，记录至少 5 处修改；再写一句：三秒内能不能看出这家店是工厂还是贸易，如果不能，第一屏要改哪里。",
     sources: [{label:"高质量产品发布与检查（会员）",url:"https://t.zsxq.com/i4vSR"},{label:"词频工具组合标题（会员）",url:"https://t.zsxq.com/lTRhH"}]
   },
   {
