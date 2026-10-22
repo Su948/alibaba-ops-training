@@ -584,9 +584,33 @@ lessons.push(
     duration: "50 分钟",
     updated: "2026-10",
     prerequisites: "第 03—05 课",
-    outcomes: ["给一套产品图分工：哪张解决点击、哪张回答什么", "判断该用哪种主图类型，以及它的风险", "按买家提问顺序排图，而不是按好看程度排", "守住三条视觉红线：形态、标识、文案"],
-    quick: "B2B 主图不是把产品拍好看，是让买家在缩略图阶段认出产品、点进来，再在后续图里逐个打消疑虑。一张图只能回答一个问题——想在一张图里说完所有卖点，结果通常是什么都没说清。",
+    outcomes: ["用平台榜单和亚马逊对应国家榜单定出视觉参照", "给一套产品图分工：哪张解决点击、哪张回答什么", "判断该用哪种主图类型，以及它的风险", "按买家提问顺序排图，而不是按好看程度排", "守住三条视觉红线：形态、标识、文案"],
+    quick: "B2B 主图不是把产品拍好看，是让买家在缩略图阶段认出产品、点进来，再在后续图里逐个打消疑虑。一张图只能回答一个问题——想在一张图里说完所有卖点，结果通常是什么都没说清。而「该长什么样」不该拍脑袋定，先看榜单。",
     steps: [
+      ["先看榜单，定视觉参照", "主图的形态、配色和信息优先级，先从前两排的产品里找参照。平台榜单看 B2B 同类目在卖什么，亚马逊对应国家榜单看终端消费者认什么。",
+        `<details class="step-more"><summary>展开看两个榜单各看什么</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>看哪个榜单</th><th>回答什么问题</th><th>局限</th></tr></thead><tbody>
+            <tr><td>国际站平台榜单</td><td>B2B 同类目在卖什么形态、什么在起量</td><td>只看得到平台上已有的，看不到终端审美变化</td></tr>
+            <tr><td>亚马逊对应国家 Best Sellers</td><td>终端消费者认什么形态、什么价位</td><td>B2C 表达，不能直接搬到 B2B 主图</td></tr>
+            <tr><td>亚马逊 New Releases／Movers &amp; Shakers</td><td>什么新品正在快速起量</td><td>样本小，可能只是短期爆款</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>亚马逊要选对应国家的站点。</strong>主推美国就看美国站，主推德国就看德国站。不同站点的审美、认证关注点、价格带差别很大，用美国榜去指导德国主图，等于没看。</div>
+          <p class="step-more-label">榜单只用来回答三件事</p>
+          <div class="mindmap"><div class="mm-root">从左到右看，一层一层定</div><ul class="mm-list">
+            <li><strong>一、形态</strong><span>前两排里反复出现的是哪种形态？这就是主图的主体该长什么样</span></li>
+            <li><strong>二、视觉语言</strong><span>是白底、场景还是带角标？配色偏冷还是偏暖？这决定你的图看起来像不像这个类目</span></li>
+            <li><strong>三、卖点优先级</strong><span>首图和标题在强调什么——价格、功能、材质还是认证？这是买家当下最在意的东西</span></li>
+          </ul></div>
+          <p class="step-more-label">案例：怎么从榜单里读出一个结论</p>
+          <p class="step-more-note">以下为教学示例，类目与数字均为示例，不对应任何真实店铺数据。</p>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>观察</th><th>读出的结论</th><th>主图怎么改</th></tr></thead><tbody>
+            <tr><td>平台榜单前 20 里 11 个是可折叠便携款</td><td>便携款是当季主流形态</td><td>主图主体用便携款，折叠状态展开展示各一张</td></tr>
+            <tr><td>前 3 名都是白底 + 单个角标</td><td>当地买家吃「干净 + 一个硬信息」这套</td><td>首图去背景杂物，只留一个认证或参数角标</td></tr>
+            <tr><td>亚马逊美国站前 20 有 8 个带场景图</td><td>终端在意使用场景</td><td>场景图提前到第 4 张，但首图仍保持干净</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>借形态和视觉语言，不借表达。</strong>亚马逊主图卖的是「消费者现在就想买」，B2B 主图卖的是「你能稳定供这个货」。榜单能告诉你产品该长什么样、图该多干净，但 MOQ、认证、定制能力这些 B2B 必须讲的东西，B2C 榜单里一个都不会有——这三样要自己补。</div>
+          <div class="method-note"><strong>一个判断门槛：</strong>榜单前 20 里同形态出现 5 个以上，说明是主流，主图照它来；只出现 1—2 个，说明是小众形态，反而适合做差异化主图去抢细分。</div>
+        </div></details>`],
       ["先定每张图的分工", "一套图先分岗位，再谈审美。首图负责点击，第 2—5 张负责打消疑虑，第 6 张以后负责证明你可靠，视频负责演示怎么用。",
         `<details class="step-more"><summary>展开看图片分工表</summary><div class="step-more-body">
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>位置</th><th>只回答一个问题</th><th>排错的表现</th></tr></thead><tbody>
