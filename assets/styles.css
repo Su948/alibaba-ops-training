@@ -264,6 +264,9 @@ p { margin: 0 0 1em; }
 /* 同行对比表 */
 .cell-sub { display: block; margin-top: 3px; color: #667c8d; font-size: .78rem; font-weight: 500; }
 .compare-table { min-width: 640px; }
+.glossary-table { min-width: 520px; }
+.glossary-table td:first-child { font-weight: 800; white-space: nowrap; }
+.glossary-table td:last-child { line-height: 1.55; }
 .compare-table td:first-child, .compare-table th:first-child { font-weight: 800; }
 /* 国家维度漏斗 */
 .funnel.four { grid-template-columns: repeat(4, 1fr); }
@@ -306,7 +309,7 @@ p { margin: 0 0 1em; }
   .funnel { grid-template-columns: repeat(2, 1fr); }
   .funnel span::after { display: none; }
    .decision-table { display: block; overflow-x: auto; }
-   .decision-table.score-table, .decision-table.case-table, .decision-table.compare-table { display: table; overflow: visible; }
+   .decision-table.score-table, .decision-table.case-table, .decision-table.compare-table, .decision-table.glossary-table { display: table; overflow: visible; }
    .source-table-wrap { -webkit-overflow-scrolling: touch; }
    .step:has(.step-more) { padding: 14px 14px 14px 44px; }
    .step:has(.step-more)::before { left: 14px; top: 14px; }

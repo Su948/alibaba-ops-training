@@ -14,7 +14,7 @@ const lessons = [
       ["先按后台认识入口", "先认识搜索、系统推荐、导购会场、频道、互动、自营销、直接访问、店内和站外等来源。第一课只要知道买家从哪里来，不急着分析每一项涨跌。"],
       ["理解产品匹配", "平台需要判断你的产品是什么、适合谁。类目、标题、关键词、属性和图片越一致，越容易匹配到合适买家。"],
       ["理解点击", "有曝光不等于有访问。买家通常会根据主图、标题、价格和产品相关性决定是否点击。"],
-      ["理解询盘", "有访问也不等于有询盘。产品页还要回答规格、MOQ、交期、认证、定制和信任问题。"],
+      ["理解询盘", "有访问也不等于有询盘。产品页还要回答规格、MOQ（最小起订量）、交期、认证、定制和信任问题。"],
       ["先记住学习顺序", "认识流量 → 选对产品和国家 → 找词 → 做好链接和主图 → 获取流量 → 看数据优化。后面的课程会逐步展开。"]
     ],
     decisionTitle: "新人先记住",
@@ -130,11 +130,11 @@ const lessons = [
           <p class="step-more-note">「行业排名」取自行业买家页签。表内为教学示例，区域名称与数字均为示例，不对应任何真实店铺数据。</p>
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>市场</th><th>访客占比</th><th>询盘</th><th>成交</th><th>行业排名</th><th>证据</th><th>定位</th></tr></thead><tbody>
             <tr><td>东南亚</td><td>42%</td><td>11</td><td>3</td><td>第 3 位</td><td>强</td><td>主攻</td></tr>
-            <tr><td>中东</td><td>9%</td><td>4</td><td>1</td><td>第 14 位</td><td>强</td><td>利基</td></tr>
+            <tr><td>中东</td><td>9%</td><td>4</td><td>1</td><td>第 14 位</td><td>强</td><td>利基<br><span class="cell-sub">细分小众</span></td></tr>
             <tr><td>南亚</td><td>4%</td><td>1</td><td>0</td><td>第 6 位</td><td>弱</td><td>待验证</td></tr>
             <tr><td>南美</td><td>2%</td><td>0</td><td>0</td><td>第 18 位</td><td>弱</td><td>放弃</td></tr>
           </tbody></table></div>
-          <div class="method-note"><strong>对着表逐行验一遍：</strong>东南亚三项齐、行业第 3，所以是主攻；中东三项也齐，但行业排到第 14，只能算利基——有利可图但盘子小，扩投放是浪费；南亚行业第 6 说明有需求，但只有 1 条询盘、没成交，所以先进「待验证」，不是直接投钱；南美两边都排不上，直接放弃。</div>
+          <div class="method-note"><strong>对着表逐行验一遍：</strong>东南亚三项齐、行业第 3，所以是主攻；中东三项也齐，但行业排到第 14，只能算利基（细分小众市场）——有利可图但盘子小，扩投放是浪费；南亚行业第 6 说明有需求，但只有 1 条询盘、没成交，所以先进「待验证」，不是直接投钱；南美两边都排不上，直接放弃。</div>
           <p class="step-more-label">第三只眼睛：行业买家看体量，榜单看形态</p>
           <p class="step-more-note">行业买家告诉你这个国家有多少买家在找这类产品；榜单告诉你这个国家现在认什么形态、什么价位。一个定盘子大小，一个定盘子里装什么。</p>
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>看什么</th><th>回答什么</th><th>用在哪</th></tr></thead><tbody>
@@ -221,7 +221,7 @@ const lessons = [
           <div class="method-note"><strong>读法：同行长期在哪国持续投放，说明那个市场被真金白银验证过。</strong>但「市场存在」不等于「你能赢」——别人能做，可能是因为他的价格带或认证你拿不到。所以这一栏只用来判断市场真假，不用来判断你要不要做。</div>
           <div class="method-note"><strong>要抄的是判断依据，不是结论。</strong>看到同行乙用低 MOQ 打开市场，值得学的是「用小单降低首单门槛」这个思路，而不是照抄他的 50 台——你的成本结构可能根本撑不住。</div>
         </div></details>`],
-      ["打分排序，形成矩阵", "把产品和国家组合起来再打一次分：五个维度各 1—5 分——需求匹配、竞争强度（反向计分）、询盘质量、成交与复购、获客成本（反向计分）。这一步和第 2 步不是同一张卡：第 2 步选「做哪个产品」，这一步选「这个产品先打哪个国家」。按总分分成核心、验证、暂缓三类，每类写清下一步动作。",
+      ["打分排序，形成矩阵", "把产品和国家组合起来再打一次分：五个维度各 1—5 分，满分 25——需求匹配、竞争强度（反向计分：竞争越弱得分越高）、询盘质量、成交与复购、获客成本（反向计分：成本越低得分越高）。这一步和第 2 步不是同一张卡：第 2 步选「做哪个产品」，这一步选「这个产品先打哪个国家」。按总分分成核心、验证、暂缓三类，每类写清下一步动作。",
         `<details class="step-more"><summary>展开看分类逻辑与矩阵示例</summary><div class="step-more-body">
           <p class="step-more-label">分类逻辑：五维打分 → 三类 → 三种资源配法</p>
           <div class="mindmap"><div class="mm-root">产品 × 国家组合，满分 25 分</div><ul class="mm-list">
@@ -1101,7 +1101,7 @@ lessons.push(
           </tbody></table></div>
           <div class="method-note"><strong>这张表的用法：</strong>先对症状，再看「先看哪里」，最后确认「第一个动作」。三列对不上，说明症状描述得还不够具体——回去把数据拆细一层再查。</div>
         </div></details>`],
-      ["三个率相乘就是全链路效率", "点击率、询盘率、成交率，三率相乘等于从曝光到成交的整体效率。任何一环砍半，整体就砍半。",
+      ["三个率决定全链路效率", "点击率、询盘率、成交率，三段效率叠起来决定从曝光到成交的整体结果。任何一环砍半，整体就砍半。注意这三率不是严格的乘法公式——点进来的人会去重成访客，所以它用来比趋势，不要拿去精算。",
         `<details class="step-more"><summary>展开看三率怎么算、怎么比</summary><div class="step-more-body">
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>指标</th><th>怎么算</th><th>异常时先做什么</th></tr></thead><tbody>
             <tr><td>点击率</td><td>点击 ÷ 曝光</td><td>先换首图；词的问题放第二步查</td></tr>
@@ -1110,6 +1110,7 @@ lessons.push(
           </tbody></table></div>
           <div class="method-note"><strong>先修最短的那块板。</strong>三率里最差的那一项，往往就是当前投入产出比最高的一处改动。都差不多的时候，按「改动成本最低」的先做。</div>
           <div class="method-note"><strong>算比例要用同一批人的数：</strong>询盘率的分母是访客数，不是曝光数；成交率的分母是询盘数，不是访客数。分母用错，算出来的「转化率」会好看得离谱。</div>
+          <div class="method-note"><strong>为什么说「三率相乘」只是近似：</strong>点击是次数，访客是去重后的人数——一个人点两次，点击算两次、访客只算一个。所以三率连乘算出来的数不等于「成交 ÷ 曝光」。它的正确用法是比趋势：这个月比上个月哪一段效率降了，而不是拿去做精确预测。</div>
         </div></details>`],
       ["按影响和可验证性排优先级", "问题清单出来之后，不是按严重程度排，是按「改完之后能不能在两周内看出结果」排。",
         `<details class="step-more"><summary>展开看怎么排</summary><div class="step-more-body">
@@ -1511,8 +1512,34 @@ function trafficSourcePrimer(){
       ${groups.map(([title,items])=>`<section class="source-group"><h3>${title}</h3>${items.map(([name,meaning])=>`<div class="source-item"><strong>${name}</strong><p>${meaning}</p></div>`).join("")}</section>`).join("")}
     </div>
     <div class="metric-note"><strong>第一课只看懂 4 个结果：</strong><span>店铺访问人数＝来了多少人</span><span>店内询盘人数＝多少人发了询盘</span><span>店内 TM 咨询人数＝多少人发起即时沟通</span><span>商机转化率＝访问后产生商机的比例</span><p>先会认入口和结果就够了。怎么根据涨跌判断问题，留到后面的“数据诊断与增长漏斗”课程。</p></div>
-    <p class="paid-traffic-note">补充：直通车属于付费推广流量，通常在营销模块单独管理，第 08 课再展开。</p>
-  </section>`;
+     <p class="paid-traffic-note">补充：直通车属于付费推广流量，通常在营销模块单独管理，第 08 课再展开。</p>
+   </section>
+   <section class="lesson-section"><h2>先认这几个词</h2>
+     <p class="drill-intro">后面 11 课会反复用到这些词。不用背，看不懂的时候回来查一眼就行。</p>
+     <details class="drill"><summary>展开看 19 个常用词的一句话解释</summary><div class="answer">
+       <div class="source-table-wrap"><table class="decision-table glossary-table"><thead><tr><th>词</th><th>一句话解释</th></tr></thead><tbody>
+         <tr><td>曝光</td><td>平台把你的产品展示给买家，展示一次算一次</td></tr>
+         <tr><td>点击</td><td>买家在主图或标题上点进了产品页</td></tr>
+         <tr><td>访问（访客）</td><td>进入店铺或产品页的人数。同一个人来十次，只算一个人</td></tr>
+         <tr><td>询盘</td><td>买家通过站内信发来的具体采购询问，通常带产品和数量</td></tr>
+         <tr><td>TM</td><td>阿里国际站的即时聊天工具。买家在那头发消息，就记为 TM 咨询</td></tr>
+         <tr><td>商机</td><td>平台把询盘、TM 咨询这类「有可能成交的沟通」统一算作商机</td></tr>
+         <tr><td>MOQ</td><td>最小起订量，英文 Minimum Order Quantity。低于这个量通常不接单</td></tr>
+         <tr><td>RFQ</td><td>采购需求单。买家发布需求，供应商报名报价，多方同时竞争</td></tr>
+         <tr><td>FOB／CIF</td><td>两种贸易术语。FOB 是货交到船上为止，CIF 是卖方付运费和保险到目的港。所以同款产品这两个价格不能直接比</td></tr>
+         <tr><td>信保订单</td><td>通过平台担保交易的订单。金额和履约记录会计入店铺数据</td></tr>
+         <tr><td>橱窗</td><td>店铺里可以重点推荐产品的展示位，数量有限</td></tr>
+         <tr><td>SKU</td><td>同一款产品下的不同规格、颜色或套装。三个颜色就是三个 SKU</td></tr>
+         <tr><td>OEM／ODM</td><td>OEM 是按客户品牌代工，ODM 是工厂自己设计好、贴客户品牌</td></tr>
+         <tr><td>点击率／询盘率</td><td>点击率＝点击 ÷ 曝光；询盘率＝询盘人数 ÷ 访客数。分母用错，算出来会好看得离谱</td></tr>
+         <tr><td>直通车</td><td>按关键词买搜索流量的付费推广工具。你选词、定出价，买家搜到就展示</td></tr>
+         <tr><td>全站推</td><td>智能投放工具。你给产品和预算，系统自己去找可能感兴趣的买家，可控性比直通车低</td></tr>
+         <tr><td>首响</td><td>第一次回复的简称。客户发来询盘或消息后，你回的第一条</td></tr>
+         <tr><td>口径</td><td>一个指标按什么规则统计。口径不同，两个数字就不能直接比——比如拿 7 天的数和 30 天的数比</td></tr>
+         <tr><td>增量／归因</td><td>增量是「多出来的」，不是从原有流量里挪过来的；归因是找出变化到底由什么引起</td></tr>
+       </tbody></table></div>
+     </div></details>
+   </section>`;
 }
 
 function lessonSupplement(lessonId){
