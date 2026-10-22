@@ -1142,16 +1142,104 @@ lessons.push(
     id: 11,
     stage: "转化",
     title: "询盘、RFQ 与订单转化",
-    summary: "让业务从收到线索、判断客户、报价和跟进，到信保下单形成标准动作。",
+    summary: "让业务从收到线索、判断客户、报价和跟进，到信保下单形成标准动作；三种商机来源要用三套打法。",
     duration: "65 分钟",
-    updated: "2026-09",
+    updated: "2026-10",
     prerequisites: "第 01—02 课",
-    outcomes: ["快速判断询盘质量", "完成有结构的 RFQ 报价", "建立从首次回复到订单的跟进记录"],
-    quick: "业务转化不是回复越快越好，而是在速度基础上快速确认客户、需求、数量、应用、预算和时间，再提供能推进下一步的报价与证据。运营必须获得丢单和成交反馈。",
-    steps: [["快速首响", "先确认收到需求，并提出数量、规格、应用、认证、交期和目的国等关键问题。"],["完成客户背调", "核对公司、官网、采购角色、主营业务、地区和潜在订单价值。"],["结构化报价", "写清产品、规格、阶梯价、MOQ、样品、交期、包装、贸易条款和有效期。"],["管理 RFQ", "优先选择产品匹配、需求具体、国家合适且竞争可控的 RFQ。"],["推进下一步", "用样品、图纸确认、视频会议、地址获取或 PI 把沟通从询问推进到行动。"],["规范信保订单", "商品、数量、金额、运费、交期和条款必须与沟通一致；特殊运费处理要保留说明。"],["回传运营", "标记有效/无效询盘、丢单原因、价格反馈、国家质量和成交产品。"]],
-    decisions: [["需求模糊", "可能是早期询价或群发", "用 3—5 个关键问题筛选"],["客户反复比价", "差异和风险价值未表达", "用认证、交期、质检与总成本支撑报价"],["报价后沉默", "下一步不清晰或信息过载", "用单一问题和明确行动重新跟进"]],
-    checklist: ["首响包含关键确认问题", "完成基础背调", "报价字段完整", "每次跟进有下一步", "订单信息与沟通一致", "成交/丢单原因已回传"],
-    assignment: "选择一个历史 RFQ 或询盘，重写首次回复和报价，并设计 7 天内三次不同目的的跟进。",
+    outcomes: ["按信号给询盘分级，把时间花在值得的客户上", "写一条能推进下一步的首次回复", "做一份客户能直接拿去比价的报价", "诊断报价后沉默的真实原因", "把成单和丢单原因回传给运营"],
+    quick: "转化不是回复越快越好，而是快的基础上给出具体信息。第一次回复就写「请告知详细需求」是最常见的错误——客户已经把需求说了一遍，你还让他再说一遍。先给一个具体信息（价格区间、交期、认证），再问两三个关键问题。",
+    steps: [
+      ["先分清三种商机来源", "询盘、TM 咨询、RFQ，转化逻辑完全不同。用同一套模板打三种来源，等于用同一种方式追三种不同的客户。",
+        `<details class="step-more"><summary>展开看三种来源怎么打</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>来源</th><th>特点</th><th>打法</th></tr></thead><tbody>
+            <tr><td>询盘（站内信）</td><td>产品指向明确，信息量较大</td><td>先确认需求，再给结构化报价</td></tr>
+            <tr><td>TM 咨询</td><td>即时、碎片，意向强弱差别很大</td><td>先判断是不是采购，再抓关键信息，别一上来甩报价单</td></tr>
+            <tr><td>RFQ</td><td>买家发需求，多方同时竞争</td><td>拼匹配度、响应速度和差异化，慢一步就出局</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>最常见的错配：</strong>拿 RFQ 的长报价单去回 TM 咨询。买家只是想先问一句，收到一大段条款，通常就退出了。TM 要短、要快、要一句话钩住；RFQ 要完整、要显得读过需求。</div>
+        </div></details>`],
+      ["按信号给询盘分级", "分级不是为了挑客户，是为了分配时间。A 类当天深度跟，C 类用模板回，中间的时间才够用。",
+        `<details class="step-more"><summary>展开看分级的五个信号</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>信号</th><th>A 类</th><th>B 类</th><th>C 类</th></tr></thead><tbody>
+            <tr><td>产品指向</td><td>明确型号或规格</td><td>只到品类</td><td>只问价格</td></tr>
+            <tr><td>数量</td><td>给了数量或区间</td><td>笼统提一句</td><td>没提</td></tr>
+            <tr><td>用途与市场</td><td>说明了用途和目的国</td><td>部分说明</td><td>完全没有</td></tr>
+            <tr><td>联系方式</td><td>公司域名邮箱或电话</td><td>个人邮箱</td><td>只有平台内消息</td></tr>
+            <tr><td>时间要求</td><td>给了交期或采购时间</td><td>模糊</td><td>没提</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>五个信号里中三条以上算 A。</strong>A 类当天回、给具体方案、可安排背调；B 类 24 小时内回、补问关键信息；C 类用固定模板回，不投入过多时间。分级标准要写下来固定用，不能凭当天心情。</div>
+        </div></details>`],
+      ["首次回复给具体信息", "首响不是「已收到，请告知详情」，而是「你要的这件事，我现在能给你什么」。三段式：确认 + 给一个具体信息 + 问两三个问题。",
+        `<details class="step-more"><summary>展开看三段式怎么写</summary><div class="step-more-body">
+          <div class="mindmap"><div class="mm-root">第一条回复的三段</div><ul class="mm-list">
+            <li><strong>第一段：一句话复述他要什么</strong><span>让他确认你读懂了，不是群发模板</span></li>
+            <li><strong>第二段：先给一个具体信息</strong><span>价格区间、常规交期、持有的认证，任选一个给出来。先给，再问</span></li>
+            <li><strong>第三段：问两三个关键问题</strong><span>数量、目的国、认证要求，挑最影响报价的三个。问七个问题等于没问</span></li>
+          </ul></div>
+          <div class="method-note"><strong>两句话的差别：</strong>「请告知详细需求」和「这款我们的常规交期是 30 天，FOB 报价区间 45—70 美元，取决于数量。您大概要多少台、发到哪个国家？」——前者把问题推回给客户，后者证明你已经准备好了。</div>
+          <div class="method-note"><strong>首响的时效：</strong>A 类当天，B 类 24 小时内，RFQ 越快越好。速度本身就是竞争力，但只快不给信息，等于催客户再问一遍。</div>
+        </div></details>`],
+      ["报价要让客户能直接比价", "报价不是报一个价格，是报一组条件。缺条件的报价，客户没法横向比，只能回来再问你一遍——这一轮沟通就是白花的。",
+        `<details class="step-more"><summary>展开看报价必须包含什么</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>字段</th><th>为什么必须有</th></tr></thead><tbody>
+            <tr><td>产品与规格</td><td>同名产品参数差很多，不写清就是在给自己埋纠纷</td></tr>
+            <tr><td>阶梯价</td><td>客户要拿不同数量算成本</td></tr>
+            <tr><td>MOQ</td><td>决定他能不能试单</td></tr>
+            <tr><td>样品政策</td><td>样品费和运费谁承担，是最常见的卡点</td></tr>
+            <tr><td>交期</td><td>写常规交期，不写最快纪录</td></tr>
+            <tr><td>包装方式</td><td>影响运费和清关</td></tr>
+            <tr><td>贸易术语</td><td>FOB／CIF 不同，价格不能直接比</td></tr>
+            <tr><td>有效期</td><td>原材料和汇率会变，不设有效期等于无限承诺</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>不要报「面议」。</strong>面议看起来留了余地，实际上是把决策成本推给客户。真想留空间，就报区间加条件——「1000 台以上可谈到 X，具体看包装要求」。</div>
+        </div></details>`],
+      ["RFQ 是抢的，不是等的", "RFQ 广场上同一需求有多个供应商在看。买家决定回谁，通常只看前两条消息。",
+        `<details class="step-more"><summary>展开看怎么挑、怎么报</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>环节</th><th>标准</th></tr></thead><tbody>
+            <tr><td>挑 RFQ</td><td>产品匹配、需求具体、国家在主推市场、竞争席位还没满</td></tr>
+            <tr><td>消息开头</td><td>前两句话给结论：能不能做、价格区间、交期</td></tr>
+            <tr><td>差异化</td><td>认证、样品政策、小单能力、交期——挑你最占优的那个说</td></tr>
+            <tr><td>结尾</td><td>一个明确的下一步，比如「确认数量后我把详细报价和样品方案发您」</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>要让买家看出你读了他的需求。</strong>复制粘贴的通用报价，买家一眼能认出来。开头提一句他写的具体条件（数量、用途、目的国），回复率会明显不一样。</div>
+        </div></details>`],
+      ["跟进要有节奏，不是想起来才发", "跟进不是「催」，是每次带一个新的、对他有用的信息。空催三次，客户就把你静音了。",
+        `<details class="step-more"><summary>展开看跟进节奏</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>节点</th><th>目的</th><th>带什么</th></tr></thead><tbody>
+            <tr><td>D0</td><td>首响 + 报价</td><td>确认需求、给具体信息、问关键问题</td></tr>
+            <tr><td>D1—D2</td><td>补证据</td><td>认证、检测报告、包装方案、同类案例（匿名）</td></tr>
+            <tr><td>D3—D4</td><td>降低决策门槛</td><td>样品政策、小批量试单方案</td></tr>
+            <tr><td>D7</td><td>推动决策</td><td>只问一个问题 + 给一个明确动作</td></tr>
+            <tr><td>D14 及以后</td><td>长期维护</td><td>新品、价格变动、行业信息，别再重复报价</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>每次跟进只问一个问题。</strong>列五个问题，客户通常一个都不回；问一个具体的「这批大概什么时候要」，反而容易得到答案。</div>
+        </div></details>`],
+      ["报价后沉默，先分清是哪一类卡点", "沉默有四种原因，处理方式完全不同。用同一招（比如降价）打四种原因，只有一种会奏效。",
+        `<details class="step-more"><summary>展开看四类卡点怎么分辨</summary><div class="step-more-body">
+          <div class="mindmap"><div class="mm-root">报价后没下文，卡在哪</div><ul class="mm-list">
+            <li><strong>一、价格</strong><span>他还在问细节、但反复提价格 → 用总成本对比（运费、不良率、返工），不要直接降价</span></li>
+            <li><strong>二、信任</strong><span>问认证、问验厂、问老客户 → 给报告、给流程、给匿名案例</span></li>
+            <li><strong>三、时机</strong><span>说「项目还在评估」「明年再采购」→ 转长期维护，别硬推</span></li>
+            <li><strong>四、对接人不对</strong><span>回复很慢、只转达不决策 → 想办法触达决策链，而不是催他</span></li>
+          </ul></div>
+          <div class="method-note"><strong>三个快速判断：</strong>还在问细节＝有意向但没定；只回价格、不回其他＝在比价；完全不回＝时机或对接人问题。<strong>对着症状选动作</strong>，不要一律降价。</div>
+        </div></details>`],
+      ["成交与回传", "订单要一致，反馈要回传。少了回传这一步，运营后面的优化全靠猜。",
+        `<details class="step-more"><summary>展开看订单检查与回传清单</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>环节</th><th>必须一致／必须回传的内容</th></tr></thead><tbody>
+            <tr><td>订单一致性</td><td>产品、数量、单价、运费、交期、贸易条款与聊天记录逐项对得上</td></tr>
+            <tr><td>特殊费用</td><td>运费、附加费、样品费的处理方式留书面说明，别只在口头说</td></tr>
+            <tr><td>回传运营①</td><td>这条询盘是有效还是无效，无效的原因</td></tr>
+            <tr><td>回传运营②</td><td>丢单原因：价格、交期、认证、信任，还是没下文</td></tr>
+            <tr><td>回传运营③</td><td>客户对价格的真实反馈：贵多少、和谁比</td></tr>
+            <tr><td>回传运营④</td><td>成交的产品、国家和数量，用来校正主推判断</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>回传不是走流程，是给运营纠错。</strong>没有回传，运营只能靠猜：猜词好不好、猜图行不行、猜国家对不对。猜出来的优化方向，大概率是错的。</div>
+        </div></details>`]
+    ],
+    decisions: [["需求模糊", "早期询价或群发", "用 3—5 个关键问题筛选，不急着报价"],["客户反复比价", "差异和风险价值没表达出来", "用认证、交期、质检和总成本支撑，不直接降价"],["报价后沉默", "下一步不清晰或信息过载", "用单一问题加明确动作重新跟进"],["报价后只回价格", "他只在比价，没进入评估", "给可比条件（贸易术语、有效期、阶梯价）"],["问认证问验厂", "信任卡点，不是价格卡点", "给报告、流程和匿名案例"]],
+    checklist: ["询盘已按五个信号分级，标准固定", "首次回复给了具体信息，不是只问需求", "报价含八项字段，有有效期", "RFQ 开头两句话给了结论", "跟进按 D0／D2／D4／D7 有节奏", "每次跟进只问一个问题", "订单条款与聊天记录逐项对得上", "成交与丢单原因已回传运营"],
+    assignment: "选一条历史询盘或 RFQ，做四件事：按五个信号定级、重写首次回复（三段式）、重做一份含八项字段的报价、设计 D0／D2／D4／D7 四次跟进，每次只带一个新信息、只问一个问题。最后写一句：这条询盘如果丢了，最可能的原因是哪一类。",
     sources: [{label:"业务新人培训大纲 XLSX（会员）",url:"https://t.zsxq.com/C39Um"},{label:"RFQ 报价（会员）",url:"https://t.zsxq.com/UHKu2"},{label:"业务学习技能（会员）",url:"https://t.zsxq.com/wIl4v"},{label:"代客户采购的判断（会员）",url:"https://t.zsxq.com/Ol8eH"},{label:"信保订单与运费技巧（会员）",url:"https://t.zsxq.com/H0pAf"},{label:"系统索要地址技巧（会员）",url:"https://t.zsxq.com/6No1o"}]
   },
   {
