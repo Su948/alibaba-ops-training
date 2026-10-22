@@ -1246,16 +1246,108 @@ lessons.push(
     id: 12,
     stage: "管理",
     title: "运营 SOP、报告与 AI 提效",
-    summary: "把日常操作、复盘和 AI 使用沉淀成可交接、可追踪、可持续改进的团队系统。",
+    summary: "把日常操作、复盘和 AI 使用沉淀成可交接、可追踪的团队系统；报告的价值在于归因和动作，不在于篇幅。",
     duration: "70 分钟",
-    updated: "2026-09",
+    updated: "2026-10",
     prerequisites: "第 01—11 课",
-    outcomes: ["建立日、周、月工作节奏", "输出老板和团队都能读懂的诊断报告", "把 AI 用在有输入标准和验收标准的任务中"],
-    quick: "SOP 不是任务清单，而是触发条件、输入、步骤、输出、负责人和验收标准。AI 不是独立模块，它应嵌入收词、卖点、图片、分析和报告流程，并由人完成事实与业务判断。",
-    steps: [["划分工作节奏", "日常关注异常和客户反馈；每周做词、产品和广告优化；每月做漏斗与资源复盘。"],["建立统一报告", "月报包含目标、结果、渠道、国家、产品、问题、动作和资源需求，避免只有截图和环比。"],["形成平台诊断", "从流量、点击、询盘、成交逐层定位问题，按影响和难度排序。"],["沉淀年终复盘", "总结目标完成、关键动作、成功/失败案例、能力缺口和下一年计划。"],["选择 AI 场景", "优先用于资料整理、词分类、卖点草稿、图片方案、数据解释和报告初稿。"],["写清提示词", "提供角色、产品资料、目标市场、输出格式、限制条件和优秀示例。"],["人工验收", "检查事实、参数、语气、平台规则、知识产权和可执行性，再用于正式业务。"]],
-    decisions: [["报告很长但无动作", "缺少目标和优先级", "每个问题只保留证据、动作、负责人和复查指标"],["团队执行不一致", "SOP 缺少输入或验收标准", "用真实案例补齐边界条件"],["AI 输出空泛", "输入资料与约束不足", "补产品证据、目标客户和输出示例"]],
-    checklist: ["日周月工作边界明确", "报告结论可追溯到数据", "动作有负责人和日期", "AI 输入不含未经授权敏感信息", "AI 输出经过事实与业务复核"],
-    assignment: "建立一个月度运营复盘模板，并选择一个真实任务写出可复用 AI 提示词、输入材料和验收清单。",
+    outcomes: ["写出新人能照做的 SOP，而不是任务清单", "分清日、周、月三级各自该做什么决定", "用五个数加一句话写完日报", "把 AI 用在有输入标准和验收标准的环节"],
+    quick: "SOP 不是任务清单，而是触发条件、输入、步骤、输出、负责人和验收标准。检验方法只有一条：交给一个没做过的人，他能不能照着做出一样的结果。报告同理——没有归因和动作的报告，只是数据搬运。",
+    steps: [
+      ["SOP 得能交给新人", "六个要素缺一个，SOP 就变成「给写的人自己看的笔记」。触发条件和验收标准最常被漏掉。",
+        `<details class="step-more"><summary>展开看六要素怎么补齐</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>要素</th><th>要写清什么</th><th>缺了会怎样</th></tr></thead><tbody>
+            <tr><td>触发条件</td><td>什么时候做：固定时间，还是某个事件发生</td><td>没人知道该什么时候开始</td></tr>
+            <tr><td>输入</td><td>需要哪些报表、数据、素材</td><td>做到一半发现缺数据，来回补</td></tr>
+            <tr><td>步骤</td><td>按顺序写，能被照做</td><td>只有结论没有过程，新人没法执行</td></tr>
+            <tr><td>输出</td><td>产出什么、放在哪个文件或表格</td><td>做完没人知道东西在哪</td></tr>
+            <tr><td>负责人</td><td>谁做、谁验收</td><td>出问题找不到人</td></tr>
+            <tr><td>验收标准</td><td>做到什么程度算完成，用什么数判断</td><td>「做完了」但没人能确认对错</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>检验方法：</strong>把这条 SOP 交给一个没做过这件事的同事，他能不能照着做出一样的结果。做不到，回去补「输入」和「验收标准」——这两个地方最容易糊过去。</div>
+        </div></details>`],
+      ["日、周、月各管一件事", "三级节奏混乱，最常见的表现是「用日级动作解决月级问题」：每天都在改，一个月过去结构没动过。",
+        `<details class="step-more"><summary>展开看三级各做什么、不做什么</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>周期</th><th>只看什么</th><th>产出</th><th>这一级不该做的</th></tr></thead><tbody>
+            <tr><td>日</td><td>异常：花费突变、询盘断档、差评、库存告急</td><td>日报：五个数 + 一句话</td><td>不做策略调整，不因一天数据改计划</td></tr>
+            <tr><td>周</td><td>词、产品、广告的优化效果</td><td>周报：变化 + 归因 + 下周动作</td><td>不做架构级改动（类目、主推结构）</td></tr>
+            <tr><td>月</td><td>漏斗结构、资源分配、目标差距</td><td>月报：结构判断 + 下月计划</td><td>不做日常救火</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>一句话记法：</strong>日看异常、周看优化、月看结构。三件事混在一天里做，等于每件都没做到位。</div>
+        </div></details>`],
+      ["日报：五个数加一句话", "日报不是流水账。五个固定数字，加一句「今天的异常是什么、明天第一件事做什么」，就够了。",
+        `<details class="step-more"><summary>展开看五个数与那句话</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>字段</th><th>说明</th></tr></thead><tbody>
+            <tr><td>访客数</td><td>当天店铺访问人数</td></tr>
+            <tr><td>询盘人数</td><td>当天发询盘的买家数</td></tr>
+            <tr><td>TM 咨询人数</td><td>当天发起即时沟通的人数</td></tr>
+            <tr><td>花费</td><td>当天推广花费</td></tr>
+            <tr><td>商机数或成交额</td><td>当天产生的商机数，或成交金额</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>那句话的格式：</strong>「今天异常是＿＿＿，明天第一件事是＿＿＿」。写不出这句话，说明还在抄数字，没在看数据。</div>
+          <div class="method-note"><strong>日报不追责，追异常。</strong>把日报做成考核表，团队会开始修饰数字；做成异常提示，大家才愿意说真话。</div>
+        </div></details>`],
+      ["周报：变化、归因、动作", "周报的核心是归因。没有归因的周报，只是把后台数字搬到 PPT 上。",
+        `<details class="step-more"><summary>展开看三段怎么写</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>段落</th><th>写什么</th><th>不合格的样子</th></tr></thead><tbody>
+            <tr><td>一、变化</td><td>和上周比，同一口径，哪些数变了多少</td><td>只写本周数字，没有对比</td></tr>
+            <tr><td>二、归因</td><td>变化是哪个渠道、哪个产品、哪个词带来的</td><td>写「流量涨了」但不说为什么涨</td></tr>
+            <tr><td>三、动作</td><td>下周做哪几条，谁做，什么时候看结果</td><td>写「继续优化」这类无法执行的话</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>归因写不出来时，先别写周报。</strong>说明数据还没拆到能解释的层级，这时候写出来的「原因」都是猜的，下周动作也会跟着错。</div>
+        </div></details>`],
+      ["月报：回答「证明了什么」", "月报不是把四周周报拼起来。它要回答两个问题：这个月证明了什么，下个月改什么。",
+        `<details class="step-more"><summary>展开看月报的四个部分</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>部分</th><th>内容</th></tr></thead><tbody>
+            <tr><td>目标与差距</td><td>目标多少、实际多少、差在哪一环</td></tr>
+            <tr><td>结构判断</td><td>是流量结构、产品结构，还是转化结构的问题</td></tr>
+            <tr><td>已验证与未验证</td><td>这个月哪些假设被证实、哪些被推翻</td></tr>
+            <tr><td>资源需求</td><td>要人、要钱，还是要时间——写清要什么、用来解决哪个问题</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>「结构判断」是月报和日报最大的区别。</strong>日报看单点异常，月报要能说出「问题在结构上」——比如询盘不少但都集中在一个产品，那下个月的重点就不是加流量，是补第二增长点。</div>
+        </div></details>`],
+      ["AI 用在哪、不用在哪", "AI 能省时间，不能替你做业务判断。分清这两件事，才不会把「生成得很快」当成「做得对」。",
+        `<details class="step-more"><summary>展开看六个场景的分工</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>场景</th><th>AI 做什么</th><th>人必须做什么</th></tr></thead><tbody>
+            <tr><td>收词与分类</td><td>批量归类、去重、扩同义</td><td>判断词的真实采购意图</td></tr>
+            <tr><td>卖点草稿</td><td>按参数生成候选表达</td><td>核实参数与认证真实性</td></tr>
+            <tr><td>图片方案</td><td>给构图和信息层级建议</td><td>确认产品形态不能被改</td></tr>
+            <tr><td>数据解释</td><td>把报表变化写成文字</td><td>判断归因是否成立</td></tr>
+            <tr><td>报告初稿</td><td>搭结构、填框架</td><td>补归因、定动作</td></tr>
+            <tr><td>翻译与本地化</td><td>初译、语气调整</td><td>核对行业术语和合规表述</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>一条底线：</strong>AI 不能替你判断「这个市场要不要做」「这个客户值不值得跟」。这类判断涉及成本和风险，必须由人负责。</div>
+        </div></details>`],
+      ["提示词四件套与验收", "AI 输出空泛，九成不是模型不行，是输入不真实、约束不清楚。",
+        `<details class="step-more"><summary>展开看四件套与五项验收</summary><div class="step-more-body">
+          <div class="mindmap"><div class="mm-root">写提示词的四件套</div><ul class="mm-list">
+            <li><strong>角色</strong><span>让它以什么身份输出：采购决策编辑、行业分析师、客服主管</span></li>
+            <li><strong>输入</strong><span>真实参数、认证、目标国家、客户类型。不真实的输入一定产出空泛的话</span></li>
+            <li><strong>输出格式</strong><span>表格还是段落、几条、多少字、要不要中英对照</span></li>
+            <li><strong>限制条件</strong><span>不许编造参数、不许用无法证明的绝对化表达、重复要合并</span></li>
+          </ul></div>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>验收项</th><th>查什么</th></tr></thead><tbody>
+            <tr><td>事实</td><td>参数、认证、交期是否真实存在</td></tr>
+            <tr><td>合规</td><td>有没有绝对化表述、侵权词、夸大功效</td></tr>
+            <tr><td>语气</td><td>是否符合目标市场的商务习惯</td></tr>
+            <tr><td>可用性</td><td>能不能直接放到页面、广告或邮件里</td></tr>
+            <tr><td>敏感信息</td><td>输入里有没有不该外发的客户或经营数据</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>本课下方有一张可直接复制的商品卖点任务卡</strong>，就是按这四件套写的，可以直接改成自己的产品。</div>
+        </div></details>`],
+      ["交接与版本管理", "SOP 过期比没有 SOP 更危险——新人会照着错的做法执行，还以为这是标准。",
+        `<details class="step-more"><summary>展开看交接要交什么</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>交接项</th><th>要求</th></tr></thead><tbody>
+            <tr><td>SOP 文档</td><td>带版本号和修改日期，写清这一版改了什么</td></tr>
+            <tr><td>账号与权限</td><td>哪些后台、什么角色、谁审批，列成清单</td></tr>
+            <tr><td>历史记录</td><td>近三个月的报表、优化记录、规则变更日志</td></tr>
+            <tr><td>边界与例外</td><td>哪些情况 SOP 不适用，该找谁</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>季度复核一次。</strong>平台规则变、主推产品变、团队分工变，SOP 里至少有一处会过期。复核时只问一句：这条现在还能照着做吗？</div>
+        </div></details>`]
+    ],
+    decisions: [["报告很长但无动作", "缺少目标和优先级", "每个问题只保留证据、动作、负责人、复查指标"],["团队执行不一致", "SOP 缺输入或验收标准", "用真实案例补齐边界条件"],["AI 输出空泛", "输入资料与约束不足", "补产品证据、目标客户和输出示例"],["日报变成流水账", "没有固定字段和判断句", "只留五个数 + 一句异常与明日动作"],["周报写不出归因", "数据没拆到可解释的层级", "先按渠道／产品／词拆一层，再写结论"]],
+    checklist: ["每条 SOP 都有触发条件、输入和验收标准", "日周月三级边界写清，不混用", "日报固定五个数 + 一句话", "周报有归因，不只是罗列数字", "月报能说出结构性问题", "AI 用在有输入标准的场景，不涉及未授权数据", "AI 输出经过事实、合规、语气、可用性四项复核", "SOP 有版本号且本季度复核过"],
+    assignment: "写一条真实 SOP（照六要素补齐），再用本课的方法做一次周报：变化、归因、下周三条动作。最后把下方那张商品卖点任务卡改成自己产品的版本，跑一次并做五项验收。",
     sources: [{label:"运营每天的工作（会员）",url:"https://t.zsxq.com/PlMGd"},{label:"运营工作清单（待校对）",url:"https://t.zsxq.com/h1Yuw"},{label:"月数据报告（会员）",url:"https://t.zsxq.com/mns1l"},{label:"平台诊断报告（会员）",url:"https://t.zsxq.com/elo8T"},{label:"运营年终报告（会员）",url:"https://t.zsxq.com/l8r09"},{label:"AI 商品卖点案例",url:"https://www.yuque.com/liangdan-5gae1/kenyau/oce1ba29ygbulc29"}]
   }
 );
