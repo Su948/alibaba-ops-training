@@ -86,10 +86,10 @@ const lessons = [
           <div class="method-note"><strong>阈值可以自己定，但定了就固定用。</strong>这个课用「询盘 ≥3 条、行业 Top 10」，你也可以改成 ≥5 条、Top 5。但一旦定下来，整个矩阵、整个季度都用同一套，否则两张表没法比，也没法和上季度比。</div>
           <p class="step-more-label">四象限：两个都看，怎么取舍</p>
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>本店证据</th><th>行业需求</th><th>定位</th><th>动作</th></tr></thead><tbody>
-            <tr><td>强<br><span class="cell-sub">访客＋询盘＋成交都有</span></td><td>高<br><span class="cell-sub">行业 Top 10 内</span></td><td>主攻</td><td>加预算、扩精准词、按该国重做主图和报价</td></tr>
-            <tr><td>强<br><span class="cell-sub">访客＋询盘＋成交都有</span></td><td>低<br><span class="cell-sub">行业 Top 10 外</span></td><td>利基</td><td>保留，靠精准词吃利润，不扩投放</td></tr>
-            <tr><td>弱<br><span class="cell-sub">三项缺任意一项</span></td><td>高<br><span class="cell-sub">行业 Top 10 内</span></td><td>待验证</td><td>先查有没有曝光：零曝光＝没做过，可小预算试；有曝光没询盘＝承接问题，先修页面再加钱</td></tr>
-            <tr><td>弱<br><span class="cell-sub">三项缺任意一项</span></td><td>低<br><span class="cell-sub">行业 Top 10 外</span></td><td>放弃</td><td>不投入，写进「这季度不做」清单</td></tr>
+            <tr><td>强<br><span class="cell-sub">访客＋询盘＋成交</span></td><td>高<br><span class="cell-sub">行业前 10</span></td><td>主攻</td><td>加预算、扩精准词、按该国重做主图和报价</td></tr>
+            <tr><td>强<br><span class="cell-sub">访客＋询盘＋成交</span></td><td>低<br><span class="cell-sub">前 10 之外</span></td><td>利基</td><td>保留，靠精准词吃利润，不扩投放</td></tr>
+            <tr><td>弱<br><span class="cell-sub">缺任意一项</span></td><td>高<br><span class="cell-sub">行业前 10</span></td><td>待验证</td><td>先查有没有曝光：零曝光＝没做过，可小预算试；有曝光没询盘＝承接问题，先修页面再加钱</td></tr>
+            <tr><td>弱<br><span class="cell-sub">缺任意一项</span></td><td>低<br><span class="cell-sub">前 10 之外</span></td><td>放弃</td><td>不投入，写进「这季度不做」清单</td></tr>
           </tbody></table></div>
           <p class="step-more-label">案例：四个国家分别落在哪个象限</p>
           <p class="step-more-note">「行业排名」取自行业买家页签。表内为教学示例，区域名称与数字均为示例，不对应任何真实店铺数据。</p>
