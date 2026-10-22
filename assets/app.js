@@ -765,6 +765,16 @@ lessons.push(
           </tbody></table></div>
           <div class="method-note"><strong>这一段通常看 3—7 天。</strong>老店有基础权重，可能更快看到曝光；新店会更慢。<strong>慢不等于错</strong>，只要收录正常、曝光在缓慢增长，就继续观察，不要因为第三天还没询盘就改详情。</div>
           <div class="method-note"><strong>自然段的价值不是省钱，是干净。</strong>没有广告干扰时跑出来的曝光和点击，才是这条链接真实的基础水平。这个基线后面用来判断「付费到底带来了增量，还是只是替代了自然流量」，没有基线就没法算。</div>
+          <p class="step-more-label">七天怎么判：用相对基准，不用绝对数字</p>
+          <p class="step-more-note">不同类目的点击率、曝光量差好几倍，用「点击率低于 1% 就是差」这种绝对标准一定会误判。统一拿「同类目同形态 Top 20 的中位数」当基准线，只比相对位置。</p>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>指标</th><th>好</th><th>一般</th><th>差</th></tr></thead><tbody>
+            <tr><td>收录</td><td>3 天内能搜到</td><td>4—7 天能搜到</td><td>7 天仍搜不到</td></tr>
+            <tr><td>自然曝光趋势</td><td>第 4—7 天高于第 1—3 天</td><td>基本持平</td><td>持续为零，或逐日下降</td></tr>
+            <tr><td>自然点击率</td><td>不低于类目中位数</td><td>中位数的 50%—100%</td><td>低于中位数的一半</td></tr>
+            <tr><td>流量来源</td><td>搜索来源稳定有量</td><td>偶有搜索流量</td><td>几乎没有搜索，全是店内或直接访问</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>周期纪律：7 天是最小观察窗，14 天是完整窗。</strong>7 天内只记录、不下结论——前三天数据波动极大，任何调整都会被噪音带偏。满 7 天做第一次判断，满 14 天做去留决定。</div>
+          <div class="method-note"><strong>四项里有任何一项是「差」，先修那一项，别进入第二段。</strong>其中「收录」和「曝光趋势」是硬门槛：这两项不过，后面三项好坏都没意义。</div>
         </div></details>`],
       ["第二段：小预算付费，验证词和图", "自然段确认基础没问题，再上小预算。这一段买的是判断依据，不是订单——词选小而准，预算小到跑得动但不心疼。",
         `<details class="step-more"><summary>展开看第一轮怎么配</summary><div class="step-more-body">
@@ -778,6 +788,22 @@ lessons.push(
           </tbody></table></div>
           <div class="method-note"><strong>工厂店和贸易店的起手差异：</strong>有现货库存的工厂店，把「现货／快发」放进标题和角标，冷启动期决策链会明显变短；贸易店用「可混批、小单起订」降低首单门槛。这两句都是第 04、05 课已经准备好的素材，冷启动期正好用上。</div>
           <div class="method-note"><strong>具体出价和扣费规则不在这里展开</strong>，第 08、09 课会讲。这一课只需要记住：冷启动期的预算作用是买判断依据。</div>
+          <p class="step-more-label">什么时候开广告：五道闸门全过才开</p>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>闸门</th><th>通过标准</th><th>不通过先做什么</th></tr></thead><tbody>
+            <tr><td>一、收录</td><td>能搜到自己的链接</td><td>查类目和属性。链接没进池，投广告等于给不存在的入口加钱</td></tr>
+            <tr><td>二、自然曝光</td><td>连续 7 天有量，且在增长</td><td>回去解决进池问题。硬门槛，不过就别开</td></tr>
+            <tr><td>三、点击率</td><td>不低于类目中位数的一半</td><td>先换首图。否则买来的全是无效点击</td></tr>
+            <tr><td>四、承接</td><td>价格、MOQ、交期、详情都对得上</td><td>先补页面。买来询盘也谈不成，白付点击费</td></tr>
+            <tr><td>五、词</td><td>手上有 10—20 个精准词，且已分好意图</td><td>回第 04 课建词库。否则钱花在猜词上</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>缺哪一道，后果不一样。</strong>缺一、二，广告基本无效；缺三，是在买无效点击；缺四，买来询盘也成不了单；缺五，等于用预算替自己做词库测试。五道都过再开，钱才花得有判断依据。</div>
+          <p class="step-more-label">三种不该开的情况</p>
+          <div class="mindmap"><div class="mm-root">这几种情况下先别投</div><ul class="mm-list">
+            <li><strong>一、只是想「试试看有没有效果」</strong><span>没有假设就没有判断标准。跑完两周，你也说不清该改哪里</span></li>
+            <li><strong>二、因为竞品都在投</strong><span>别人的成本结构和你不一定一样。他投得起，不代表你投得划算</span></li>
+            <li><strong>三、自然段还没满 7 天</strong><span>用广告盖住还没验证的基础，是最贵的一种试错——钱花了，问题还在</span></li>
+          </ul></div>
+          <div class="method-note"><strong>开广告的正确起点：</strong>先写一句假设，比如「换成场景首图后，点击率能追上类目中位数，所以值得用精准词加速验证」。写不出这句，说明还没到开的时机。</div>
         </div></details>`],
       ["三天一循环看三个信号", "固定三个节点做判断，不要每天盯盘改来改去。每次只改一个变量，改完至少观察 3 天。",
         `<details class="step-more"><summary>展开看三个节点各做什么决定</summary><div class="step-more-body">
