@@ -726,6 +726,12 @@ lessons.push(
             <tr><td>询盘</td><td>详情承接和报价有没有竞争力</td><td>7—14 天</td></tr>
           </tbody></table></div>
           <div class="method-note"><strong>没有曝光的链接，谈点击率没有意义；没有点击的链接，谈询盘率也没有意义。</strong>冷启动最常见的错误是跳层判断——刚上架两天没询盘，就开始改详情，其实问题可能只是还没被收录。</div>
+          <p class="step-more-label">冷启动分两段，顺序不能颠倒</p>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>阶段</th><th>花不花钱</th><th>验证什么</th><th>什么条件才进下一段</th></tr></thead><tbody>
+            <tr><td>第一段：自然冷启动</td><td>不投广告</td><td>收录、类目、属性、首图能不能被点</td><td>自然曝光稳定出现，点击率与同类目相近</td></tr>
+            <tr><td>第二段：付费助推</td><td>小预算</td><td>词对不对、图能不能打、询盘承接行不行</td><td>拿到询盘且质量正常，才谈加预算</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>为什么不能一上来就投钱：</strong>广告能制造出「有曝光、有点击」的假象。基础没验证就投，你分不清这些数据是产品本身行，还是钱买来的。等到预算一停，数据立刻归零，前面那半个月等于白跑。</div>
         </div></details>`],
       ["新店和老店起点不同", "新店没有历史，起手全靠外部参考；老店手里已经有跑通的词、客户和价格带，直接复用比重新试快得多。",
         `<details class="step-more"><summary>展开看两种店怎么起手</summary><div class="step-more-body">
@@ -749,7 +755,18 @@ lessons.push(
             <tr><td>询盘入口</td><td>自己发一条测试过</td><td>有意向也联系不上</td></tr>
           </tbody></table></div>
         </div></details>`],
-      ["配第一轮词与预算", "第一轮只求跑出数据，不求跑出订单。词选小而准，预算小到跑得动但不心疼。",
+      ["第一段：不投广告，先验证基础", "这一段一分钱不花，只验证四件事：有没有被收录、类目对不对、属性全不全、首图能不能被点。自然流量跑不通，投再多钱也是往漏水的桶里灌水。",
+        `<details class="step-more"><summary>展开看自然段查什么</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>看什么</th><th>正常表现</th><th>异常怎么办</th></tr></thead><tbody>
+            <tr><td>收录</td><td>上架后几天内能搜到自己的链接</td><td>搜不到：查类目、属性、是否处于待审状态</td></tr>
+            <tr><td>自然曝光</td><td>持续有小量曝光，不是零</td><td>完全为零：回到类目和标题，先解决能不能进池</td></tr>
+            <tr><td>自然点击率</td><td>和同类目大致相当</td><td>明显偏低：先换首图，不要改动其他变量</td></tr>
+            <tr><td>流量来源构成</td><td>搜索来源占一定比例</td><td>全是店内或直接访问：说明还没进搜索，词和类目有问题</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>这一段通常看 3—7 天。</strong>老店有基础权重，可能更快看到曝光；新店会更慢。<strong>慢不等于错</strong>，只要收录正常、曝光在缓慢增长，就继续观察，不要因为第三天还没询盘就改详情。</div>
+          <div class="method-note"><strong>自然段的价值不是省钱，是干净。</strong>没有广告干扰时跑出来的曝光和点击，才是这条链接真实的基础水平。这个基线后面用来判断「付费到底带来了增量，还是只是替代了自然流量」，没有基线就没法算。</div>
+        </div></details>`],
+      ["第二段：小预算付费，验证词和图", "自然段确认基础没问题，再上小预算。这一段买的是判断依据，不是订单——词选小而准，预算小到跑得动但不心疼。",
         `<details class="step-more"><summary>展开看第一轮怎么配</summary><div class="step-more-body">
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>项目</th><th>第一轮建议</th><th>理由</th></tr></thead><tbody>
             <tr><td>词量</td><td>10—20 个精准长尾</td><td>大词点击贵、意图杂，冷启动期烧不起</td></tr>
