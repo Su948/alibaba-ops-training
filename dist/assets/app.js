@@ -67,11 +67,113 @@ const lessons = [
           </div>
           <div class="method-note"><strong>三个主推的搭配：</strong>2 个核心产品保证产出，1 个验证产品留增长机会。不要 5 个全上（预算摊薄，每个都做不深），也不要只留 1 个核心（没有后备，一波动就断档）。</div>
         </div></details>`],
-      ["查访客的国家分布", "路径：数据参谋 → 流量参谋 → 流量来源，取近 90 天数据，切到国家/地区维度，记下 Top 10 国家的访客数和占比。"],
-      ["查询盘和 TM 的国家分布", "切到商机口径，看询盘人数、TM 咨询人数按国家的分布。重点标出「访客多、询盘少」的国家，那通常是承接问题，不是流量问题。"],
-      ["查成交国家与客单", "看信保订单数、成交金额、成交买家数按国家的分布。新店还没成交，就用样品单、报价记录和深度沟通记录替代，并在表格里标注为代理指标。"],
-      ["用同行交叉验证", "挑 3 家同类目 Top 店铺，看他们在目标国家主推什么款、什么价格带、什么认证。同行长期在哪国投入，本身就是一种验证。"],
-      ["打分排序，形成矩阵", "把产品和国家组合起来再打一次分：五个维度各 1—5 分——需求匹配、竞争强度（反向计分）、询盘质量、成交与复购、获客成本（反向计分）。这一步和第 2 步不是同一张卡：第 2 步选「做哪个产品」，这一步选「这个产品先打哪个国家」。按总分分成核心、验证、暂缓三类，每类写清下一步动作。"]
+      ["查访客的国家分布", "路径：数据参谋 → 流量参谋 → 流量来源，取近 90 天数据，切到国家/地区维度，记下 Top 10 国家的访客数和占比。",
+        `<details class="step-more"><summary>展开看案例与取数逻辑</summary><div class="step-more-body">
+          <p class="step-more-label">取数逻辑</p>
+          <div class="mindmap"><div class="mm-root">访客国家分布：取什么、记什么</div><ul class="mm-list">
+            <li><strong>入口</strong><span>数据参谋 → 流量参谋 → 流量来源</span></li>
+            <li><strong>时间</strong><span>固定取近 90 天。只取 7 天容易被一次活动或一次补货带偏</span></li>
+            <li><strong>维度</strong><span>切到国家／地区。先看汇总的「全部」看不出结构，等于没查</span></li>
+            <li><strong>口径</strong><span>用「店铺访问人数」，不用「访问次数」。同一个人来十次只算一个人</span></li>
+            <li><strong>记什么</strong><span>Top 10 的访客数 + 占比，两列都要。只看占比会丢掉整体量级</span></li>
+          </ul></div>
+          <p class="step-more-label">案例：只有访客数据时会怎么误判</p>
+          <p class="step-more-note">一家家具类供应商近 90 天的访客分布。表内为教学示例，不对应任何真实店铺数据。</p>
+          <div class="source-table-wrap"><table class="decision-table score-table"><thead><tr><th>国家/地区</th><th>访客数</th><th>占比</th><th>先记下的判断</th></tr></thead><tbody>
+            <tr><td>北美</td><td>1,240</td><td>31%</td><td>量最大，但不能凭这个定为主推</td></tr>
+            <tr><td>西欧</td><td>880</td><td>22%</td><td>量稳，结构待第 04 步验证</td></tr>
+            <tr><td>南美</td><td>360</td><td>9%</td><td>量小但集中，先留着</td></tr>
+            <tr><td>其他</td><td>1,520</td><td>38%</td><td>极度分散，暂不逐个看</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>这一步只做记录，不做判断。</strong>看到北美占 31% 就想「主推北美」是这课最常见的错——访客只说明有人来，不说明有人买。谁在问、谁在买，交给第 04、05 步。</div>
+          <figure class="course-figure"><img src="assets/lesson-1-traffic-path.png" alt="数据参谋进入流量参谋的入口路径"><figcaption>这张图和第 01 课是同一张，只解决「入口在哪」。该页默认展示的是流量来源清单，不含国家维度——需要在页面里把维度切到国家／地区之后，才能取到本步需要的数据。</figcaption></figure>
+        </div></details>`],
+      ["查询盘和 TM 的国家分布", "切到商机口径，看询盘人数、TM 咨询人数按国家的分布。重点标出「访客多、询盘少」的国家，那通常是承接问题，不是流量问题。",
+        `<details class="step-more"><summary>展开看判断逻辑与案例</summary><div class="step-more-body">
+          <p class="step-more-label">判断逻辑：访客多但询盘少，往下查三层</p>
+          <div class="mindmap"><div class="mm-root">访客多 → 询盘少，问题出在哪</div><ul class="mm-list">
+            <li><strong>第一层：词对不对</strong><span>来的到底是不是采购商</span><ul class="mm-sub">
+              <li>查该国的搜索词里有没有零售词、配件词、维修词</li>
+              <li><b>验证动作：</b>把该国排名前 20 的词逐条看一遍采购意图</li>
+            </ul></li>
+            <li><strong>第二层：页对不对</strong><span>产品页有没有接住这个国家的需求</span><ul class="mm-sub">
+              <li>主图产品形态、价格带、MOQ 是否对得上当地采购习惯</li>
+              <li><b>验证动作：</b>找三个同行在同一国家的同款页面做对照</li>
+            </ul></li>
+            <li><strong>第三层：人接没接住</strong><span>询盘是不是发生了但没被记下来</span><ul class="mm-sub">
+              <li>TM 咨询是否被当成即时聊天处理、没进商机口径</li>
+              <li><b>验证动作：</b>拿一周的 TM 会话记录和后台商机数对一次</li>
+            </ul></li>
+          </ul></div>
+          <div class="method-note"><strong>顺序不能反。</strong>先查词，再查页，最后查人。从「人」开始查，最后往往只是在追责业务员，问题还在原地。</div>
+          <p class="step-more-label">案例：同一个访客量级，询盘率差 8 倍</p>
+          <p class="step-more-note">沿用上一步的访客数据，加上询盘数。表内为教学示例。</p>
+          <div class="source-table-wrap"><table class="decision-table score-table"><thead><tr><th>国家/地区</th><th>访客数</th><th>询盘数</th><th>询盘率</th><th>读法</th></tr></thead><tbody>
+            <tr><td>北美</td><td>1,240</td><td>2</td><td>0.16%</td><td>典型「访客多、询盘少」，先查第 1、2 层</td></tr>
+            <tr><td>西欧</td><td>880</td><td>11</td><td>1.25%</td><td>结构正常，可以往后走成交</td></tr>
+            <tr><td>南美</td><td>360</td><td>6</td><td>1.67%</td><td>量小但转化最好，值得小预算验证</td></tr>
+            <tr><td>其他</td><td>1,520</td><td>5</td><td>0.33%</td><td>太分散，先不投入</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>看的是率，不是数量。</strong>北美询盘率 0.16%、南美 1.67%，差 8 倍。如果只按访客大小排优先级，会把预算压在转化最差的市场。</div>
+        </div></details>`],
+      ["查成交国家与客单", "看信保订单数、成交金额、成交买家数按国家的分布。新店还没成交，就用样品单、报价记录和深度沟通记录替代，并在表格里标注为代理指标。",
+        `<details class="step-more"><summary>展开看案例与替代指标</summary><div class="step-more-body">
+          <p class="step-more-label">案例：把访客、询盘、成交放在一起才看得懂</p>
+          <p class="step-more-note">沿用前面两步的数据，补上成交与客单。表内为教学示例，不对应任何真实店铺数据。</p>
+          <div class="source-table-wrap"><table class="decision-table score-table"><thead><tr><th>国家/地区</th><th>访客</th><th>询盘</th><th>成交单数</th><th>客单价 USD</th><th>读法</th></tr></thead><tbody>
+            <tr><td>西欧</td><td>880</td><td>11</td><td>3</td><td>1,850</td><td>利润国家，预算优先给它</td></tr>
+            <tr><td>南美</td><td>360</td><td>6</td><td>2</td><td>620</td><td>走量国家，控制单笔获客成本</td></tr>
+            <tr><td>北美</td><td>1,240</td><td>2</td><td>0</td><td>—</td><td>只来不买，回到第 04 步查承接</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>三个数一起看才有结论。</strong>北美访客最多、成交为零；西欧访客只有北美的 7 成，却贡献了全部利润。到这一步，「主推哪个国家」的答案已经和数据方向相反了。</div>
+          <p class="step-more-label">新店没有成交时，用什么替代</p>
+          <div class="mindmap"><div class="mm-root">没有成交数据，先用代理指标</div><ul class="mm-list">
+            <li><strong>样品单</strong><span>能反映真实采购意愿，但金额小，不能直接当客单看</span></li>
+            <li><strong>报价记录</strong><span>能看出对方在什么价位还愿意继续谈，比询盘数量有用</span></li>
+            <li><strong>深度沟通记录</strong><span>问清用途、数量、认证、交期的对话，才算一条有效商机</span></li>
+            <li><strong>使用纪律</strong><span>任何替代指标都要在表里标注「代理」，不能和真实成交混在一列算占比</span></li>
+          </ul></div>
+          <div class="method-note"><strong>代理指标只能用于排序，不能用于对账。</strong>用样品单排出优先级可以，但不要拿它当成交额汇报——这一步最容易出现「看起来有单，其实没成交」的误判。</div>
+        </div></details>`],
+      ["用同行交叉验证", "挑 3 家同类目 Top 店铺，看他们在目标国家主推什么款、什么价格带、什么认证。同行长期在哪国投入，本身就是一种验证。",
+        `<details class="step-more"><summary>展开看对比案例与读法</summary><div class="step-more-body">
+          <p class="step-more-label">案例：三家同行在西欧的动作</p>
+          <p class="step-more-note">只看「他们卖什么」没用，要看每一栏分别在回答你的哪个问题。表内为教学示例，同行名称已匿名处理。</p>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>对比项</th><th>同行甲</th><th>同行乙</th><th>同行丙</th><th>这一栏在回答什么</th></tr></thead><tbody>
+            <tr><td>主推形态</td><td>可折叠台式款</td><td>便携充电款</td><td>台式大功率款</td><td>当地更认哪种形态</td></tr>
+            <tr><td>价格带（FOB）</td><td>45—70 美元</td><td>28—40 美元</td><td>80—120 美元</td><td>你能落在哪一档还不亏</td></tr>
+            <tr><td>认证展示</td><td>CE、RoHS 单独一屏</td><td>CE 放在详情末尾</td><td>CE 与 FDA 双认证</td><td>认证是入场券还是加分项</td></tr>
+            <tr><td>MOQ</td><td>200</td><td>50</td><td>500</td><td>你的起订量是优势还是门槛</td></tr>
+            <tr><td>是否持续投放</td><td>有国家点位</td><td>未见投放</td><td>有国家点位</td><td>有没有人在用钱验证这个市场</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>读法：同行长期在哪国持续投放，说明那个市场被真金白银验证过。</strong>但「市场存在」不等于「你能赢」——别人能做，可能是因为他的价格带或认证你拿不到。所以这一栏只用来判断市场真假，不用来判断你要不要做。</div>
+          <div class="method-note"><strong>要抄的是判断依据，不是结论。</strong>看到同行乙用低 MOQ 打开市场，值得学的是「用小单降低首单门槛」这个思路，而不是照抄他的 50 台——你的成本结构可能根本撑不住。</div>
+        </div></details>`],
+      ["打分排序，形成矩阵", "把产品和国家组合起来再打一次分：五个维度各 1—5 分——需求匹配、竞争强度（反向计分）、询盘质量、成交与复购、获客成本（反向计分）。这一步和第 2 步不是同一张卡：第 2 步选「做哪个产品」，这一步选「这个产品先打哪个国家」。按总分分成核心、验证、暂缓三类，每类写清下一步动作。",
+        `<details class="step-more"><summary>展开看分类逻辑与矩阵示例</summary><div class="step-more-body">
+          <p class="step-more-label">分类逻辑：五维打分 → 三类 → 三种资源配法</p>
+          <div class="mindmap"><div class="mm-root">产品 × 国家组合，满分 25 分</div><ul class="mm-list">
+            <li><strong>五个维度，各 1—5 分</strong><span>需求匹配 · 竞争强度（反向）· 询盘质量 · 成交与复购 · 获客成本（反向）</span></li>
+            <li><strong>按总分分三档</strong><span>20 分及以上为核心，14—19 分为验证，13 分及以下为暂缓</span></li>
+            <li><strong>核心：给资源</strong><ul class="mm-sub">
+              <li>预算优先、关键词铺满、主图按该国重做、报价单独定</li>
+            </ul></li>
+            <li><strong>验证：给小预算和时间盒</strong><ul class="mm-sub">
+              <li>只跑精准长尾，两周为期，达标升级、不达标降级</li>
+            </ul></li>
+            <li><strong>暂缓：只留自然流量</strong><ul class="mm-sub">
+              <li>不加预算、不专门做图，按月复盘一次即可</li>
+            </ul></li>
+          </ul></div>
+          <p class="step-more-label">案例：一张填好的矩阵长什么样</p>
+          <p class="step-more-note">表内为教学示例。注意最后一列——每个组合都必须有可验证的指标，否则分类只是贴标签。</p>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>产品 × 国家</th><th>总分</th><th>分类</th><th>下一步动作</th><th>两周验证指标</th></tr></thead><tbody>
+            <tr><td>颈部按摩仪 × 西欧</td><td>21</td><td>核心</td><td>精准词扩到 30 个，主图换当地使用场景</td><td>询盘率不低于 1.5%，累计不少于 8 条询盘</td></tr>
+            <tr><td>头皮按摩器 × 南美</td><td>17</td><td>验证</td><td>小预算跑长尾词，先不铺全站推</td><td>不少于 5 条询盘，客单不低于 600 美元</td></tr>
+            <tr><td>足浴按摩盆 × 北美</td><td>9</td><td>暂缓</td><td>不加预算，只保留自然流量</td><td>每月复盘一次，不设目标</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>「暂缓」也是结论。</strong>矩阵的价值不在于把所有组合都做起来，而在于明确写清「这三个月不做哪几个」。没有暂缓项的矩阵，等于没有做取舍。</div>
+        </div></details>`]
     ],
     decisionTitle: "数据表现与判断方法",
     decisions: [
