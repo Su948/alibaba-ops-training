@@ -711,16 +711,90 @@ lessons.push(
     id: 7,
     stage: "增长",
     title: "产品链接冷启动",
-    summary: "让新链接先具备承接能力，再通过搜索、推荐、活动和资源叠加积累有效数据。",
+    summary: "先让链接具备承接能力，再用小规模精准流量换取「可判断」的数据；新店和老店的起手方式不一样。",
     duration: "40 分钟",
-    updated: "2026-09",
+    updated: "2026-10",
     prerequisites: "第 04—06 课",
-    outcomes: ["制定新链接 14 天冷启动计划", "分辨自然、推荐和付费流量", "确定什么时候适合叠加资源"],
-    quick: "链接冷启动不是给所有新品平均加流量。先完成内容质量检查，再用小规模精准流量验证点击和询盘，最后把橱窗、活动和预算集中到表现更好的链接。",
-    steps: [["发布前验收", "确认类目、词、主图、详情和询盘入口已经具备承接能力。"],["获得基础曝光", "用关键词覆盖、新品渠道、店铺资源和小预算精准投放建立第一批数据。"],["观察点击与停留", "先判断展示是否匹配，不急于因短期无订单大幅改动。"],["筛选潜力链接", "优先给点击和询盘信号更好的产品增加橱窗、活动或广告资源。"],["形成滚动机制", "保留表现好的链接，修正可改善的链接，停止长期没有有效信号的投入。"]],
-    decisions: [["无曝光", "收录、类目或覆盖不足", "检查基础质量并增加精准词"],["有曝光无点击", "主图、价格或词不匹配", "先换素材和表达"],["有询盘信号", "链接开始被验证", "叠加资源并保持变量稳定"]],
-    checklist: ["冷启动目标和周期明确", "只选择少量重点新品", "自然与付费数据分开", "资源增加有数据依据", "每次只测试少量变量"],
-    assignment: "为 3 个新品制定 14 天冷启动表，写出每日观察指标、调整条件和停止条件。",
+    outcomes: ["说清冷启动要拿到哪三个信号", "区分新店和老店的起手方式", "给新链接配第一轮词与预算", "按三个节点做去留判断，而不是凭感觉加钱"],
+    quick: "冷启动不是给新品平均加流量，也不是冲着成交去。它要的是两份判断依据：系统判断这条链接值不值得给更多曝光，你判断这条链接值不值得继续投。没有数据的链接不能加预算，有数据的链接不该平均分配。",
+    steps: [
+      ["先搞清冷启动要拿什么信号", "冷启动期不看成交，看三个信号：有没有曝光、有没有点击、有没有询盘。三个信号背后是三个完全不同的问题，混在一起就会瞎调。",
+        `<details class="step-more"><summary>展开看三个信号分别说明什么</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>信号</th><th>说明什么问题</th><th>什么时候该出现</th></tr></thead><tbody>
+            <tr><td>曝光</td><td>链接有没有被收录、有没有资格进流量池</td><td>3 天内应有；完全为零就是硬问题</td></tr>
+            <tr><td>点击</td><td>主图、词、价格对不对得上</td><td>有曝光后 3—7 天</td></tr>
+            <tr><td>询盘</td><td>详情承接和报价有没有竞争力</td><td>7—14 天</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>没有曝光的链接，谈点击率没有意义；没有点击的链接，谈询盘率也没有意义。</strong>冷启动最常见的错误是跳层判断——刚上架两天没询盘，就开始改详情，其实问题可能只是还没被收录。</div>
+        </div></details>`],
+      ["新店和老店起点不同", "新店没有历史，起手全靠外部参考；老店手里已经有跑通的词、客户和价格带，直接复用比重新试快得多。",
+        `<details class="step-more"><summary>展开看两种店怎么起手</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>起手方式</th><th>新店</th><th>老店</th></tr></thead><tbody>
+            <tr><td>第一批词</td><td>行业买家 + 榜单 + 精准长尾，从外部推</td><td>直接用已有「有商机词」，不用重新猜</td></tr>
+            <tr><td>初始流量</td><td>新链接自然流量 + 小预算</td><td>可用老链接导流、店铺关联、老客户复访</td></tr>
+            <tr><td>定价参考</td><td>榜单和同行</td><td>自己的成交价带，更可信</td></tr>
+            <tr><td>最容易犯的错</td><td>词选错，流量全废</td><td>用老经验套新品，忽略形态差异</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>老店能复用的四样东西：</strong>有商机词、成交过的客户、老链接的流量入口、已经验证过的价格带。这四样用上，冷启动周期通常比新店短。</div>
+          <div class="method-note"><strong>但老店别照搬。</strong>老链接的词是围绕老形态跑出来的，新品形态不同、卖点不同，词能复用，图和详情不能复用。</div>
+        </div></details>`],
+      ["上架前必须就绪的六件事", "六件事缺一件就别上架。半成品上架等于用真实流量做一次多变量测试，测出来的结论还是错的。",
+        `<details class="step-more"><summary>展开看六件事的就绪标准</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>项目</th><th>就绪标准</th><th>没就绪的代价</th></tr></thead><tbody>
+            <tr><td>类目</td><td>和实际产品一致，同级 Top 20 里至少 15 个同形态</td><td>曝光来了也不精准</td></tr>
+            <tr><td>属性</td><td>可量化的全部填满，认证只写真实持有</td><td>进不了筛选，等于不存在</td></tr>
+            <tr><td>首图</td><td>通过 200 像素缩略图测试</td><td>有点击机会也抓不住</td></tr>
+            <tr><td>价格与 MOQ</td><td>和业务员口径一致，页面写的能兑现</td><td>询盘来了也谈不成</td></tr>
+            <tr><td>交期</td><td>写常规交期，不写最快纪录</td><td>纠纷从这里开始</td></tr>
+            <tr><td>询盘入口</td><td>自己发一条测试过</td><td>有意向也联系不上</td></tr>
+          </tbody></table></div>
+        </div></details>`],
+      ["配第一轮词与预算", "第一轮只求跑出数据，不求跑出订单。词选小而准，预算小到跑得动但不心疼。",
+        `<details class="step-more"><summary>展开看第一轮怎么配</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>项目</th><th>第一轮建议</th><th>理由</th></tr></thead><tbody>
+            <tr><td>词量</td><td>10—20 个精准长尾</td><td>大词点击贵、意图杂，冷启动期烧不起</td></tr>
+            <tr><td>匹配方式</td><td>以精准为主</td><td>广泛匹配会把预算耗在无关搜索上</td></tr>
+            <tr><td>预算</td><td>小到能跑动、但不心疼</td><td>目的是买数据，不是买订单</td></tr>
+            <tr><td>出价</td><td>先控速，不抢首屏</td><td>首屏贵，且不一定更精准</td></tr>
+            <tr><td>投放国家</td><td>只投已验证的 1—2 个</td><td>多国同开，每个国家都拿不到足够样本</td></tr>
+            <tr><td>周期</td><td>7 天一轮</td><td>太短看不出规律，太长浪费预算</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>工厂店和贸易店的起手差异：</strong>有现货库存的工厂店，把「现货／快发」放进标题和角标，冷启动期决策链会明显变短；贸易店用「可混批、小单起订」降低首单门槛。这两句都是第 04、05 课已经准备好的素材，冷启动期正好用上。</div>
+          <div class="method-note"><strong>具体出价和扣费规则不在这里展开</strong>，第 08、09 课会讲。这一课只需要记住：冷启动期的预算作用是买判断依据。</div>
+        </div></details>`],
+      ["三天一循环看三个信号", "固定三个节点做判断，不要每天盯盘改来改去。每次只改一个变量，改完至少观察 3 天。",
+        `<details class="step-more"><summary>展开看三个节点各做什么决定</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>节点</th><th>看什么</th><th>做什么决定</th></tr></thead><tbody>
+            <tr><td>D3</td><td>有没有曝光</td><td>没有就查收录、类目、词是否太小；不加预算</td></tr>
+            <tr><td>D7</td><td>点击率</td><td>低就先换首图，词不动；高就进入下一层观察</td></tr>
+            <tr><td>D14</td><td>有没有询盘</td><td>有询盘才谈加预算；没有就查承接</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>为什么要按节点而不是天天看：</strong>冷启动期的数据波动很大，今天点击率掉了一半，可能只是展示位置变了。天天改，最后谁也说不清是哪次改动起了作用。</div>
+        </div></details>`],
+      ["卡住时按层排查", "冷启动跑不动，先定位卡在哪一层，不要一上来就改详情或加预算。",
+        `<details class="step-more"><summary>展开看四层排查逻辑</summary><div class="step-more-body">
+          <div class="mindmap"><div class="mm-root">冷启动卡住，先定位在哪一层</div><ul class="mm-list">
+            <li><strong>一、没有曝光</strong><span>查收录状态、类目是否挂错、词是不是太小、预算有没有真的跑起来</span></li>
+            <li><strong>二、有曝光没点击</strong><span>换首图、看价格是否有竞争力、确认词和产品是否匹配</span></li>
+            <li><strong>三、有点击没询盘</strong><span>查详情承接、价格带、MOQ 和交期——这一步是页面问题，不是流量问题</span></li>
+            <li><strong>四、有询盘没成交</strong><span>已经不是链接问题，是报价和跟进问题，交给第 11 课</span></li>
+          </ul></div>
+          <div class="method-note"><strong>越往后越不是运营能单独解决的。</strong>前三层是链接问题，第四层是销售问题。运营在不该改的地方反复改，是冷启动期最大的时间浪费。</div>
+        </div></details>`],
+      ["什么时候加预算，什么时候止损", "加预算要有依据，止损也要有依据。两个动作都不能凭感觉。",
+        `<details class="step-more"><summary>展开看加投与止损的条件</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>情形</th><th>判断条件</th><th>动作</th></tr></thead><tbody>
+            <tr><td>可以加预算</td><td>有点击、有询盘、询盘质量正常、报价能接住</td><td>逐步加，一次不超过原来的 30%—50%，加完再观察 3 天</td></tr>
+            <tr><td>维持观察</td><td>有点击、暂无询盘，但详情和价格没有明显问题</td><td>再给一个 7 天周期，不加大投入</td></tr>
+            <tr><td>暂停投放</td><td>连续两轮零询盘，且排查后确认是承接问题</td><td>先停投放、修页面，修好再开</td></tr>
+            <tr><td>止损降权</td><td>形态本身在这个市场没需求，或价格带打不进去</td><td>降为自然流量观察，不删除，留数据</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>止损不等于删链接。</strong>链接留着还有自然流量和老客户复访的可能，删掉等于把已经积累的少量权重清零。降权保留、按月复盘，比一刀切更划算。</div>
+        </div></details>`]
+    ],
+    decisions: [["无曝光", "收录、类目或词覆盖不足", "查收录与类目，换更精准的词，不加预算"],["有曝光无点击", "首图、价格或词不匹配", "先换素材和表达，词不动"],["有点击无询盘", "详情承接、价格带或 MOQ 有问题", "改页面，不要继续加投放"],["有询盘无成交", "报价与跟进问题，不是链接问题", "转给销售环节，按第 11 课处理"],["连续两轮零询盘", "承接有硬伤或市场不匹配", "暂停投放修页面，或降权保留"]],
+    checklist: ["冷启动目标和观察周期已写明", "只选少量重点新品，不平均撒预算", "六项上架前置条件已逐项确认", "第一轮词控制在 10—20 个精准长尾", "自然流量与付费流量分开记录", "每次只改一个变量，改完观察 3 天", "加预算和止损都有明确条件"],
+    assignment: "选 1 个新品（老店优先用已有的有商机词），做一张 14 天冷启动表：D3／D7／D14 各看什么指标、满足什么条件加预算、满足什么条件止损。表格用模板库《04-直通车排查表》的记录逻辑即可。",
     sources: [{label:"提升链接流量方法汇总（会员）",url:"https://t.zsxq.com/Cbgts"},{label:"运营流量逻辑（会员）",url:"https://t.zsxq.com/2TxTS"}]
   },
   {
