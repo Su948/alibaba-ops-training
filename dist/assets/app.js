@@ -103,6 +103,17 @@ const lessons = [
           <div class="method-note"><strong>两个口径的权重按店铺阶段调，不是固定五五开。</strong><br><strong>新店</strong>（成交不足 3 单，或日均访客很低）：行业 70%、本店 30%。本店样本太小，一次活动就能把排序打乱。<br><strong>老店</strong>（流量和成交都稳定）：本店 70%、行业 30%。已有证据最可靠，行业用来发现盲区。</div>
           <div class="method-note"><strong>两个必须记住的陷阱。</strong><br><strong>① 本店买家的国家分布＝你的投放史。</strong>没投过的国家不会出现，出现过的国家会被放大。<br><strong>② 行业买家证明「市场存在」，不证明「你能赢」。</strong>它能帮你发现盲区，不能替你判断竞争力。</div>
           <div class="method-note"><strong>三个口径先说清，否则比例会算错。</strong><br><strong>① 分国家人数加总会大于总访客数：</strong>同一个人换 IP 进来，人数按去重算 1，国家却各计 1。算占比要用「分国家 ÷ 分国家合计」，不要除以总访客数。<br><strong>② 显示 other 的：</strong>注册国家和 IP 都识别不出的访客，不是数据错。<br><strong>③ 总量含中国大陆：</strong>看国家结构时要单独说明，别把大陆流量混进海外市场判断。</div>
+          <p class="step-more-label">新店没有本店数据怎么办</p>
+          <p class="step-more-note">开店铺两三个星期内，本店买家基本是空的。这时候四象限会让所有国家都落在「弱」那一行，看上去没法用——但不需要跳过整课，换一根轴就行。</p>
+          <div class="mindmap"><div class="mm-root">新店：把「本店证据」换成「竞品证据」</div><ul class="mm-list">
+            <li><strong>照做的部分</strong><span>第 01 步盘清能交付什么、第 02 步选候选产品，都不依赖后台数据，新店照做，一步不用跳</span></li>
+            <li><strong>只取一半</strong><span>第 03 步只取「行业买家」那一半——类目大盘不依赖你的历史，新店照样有数</span></li>
+            <li><strong>换掉的那根轴</strong><span>「本店证据」换成「竞品证据」：同行在这个国家有没有本地语言页、认证展示、专属款、广告位。这根轴正好是第 03 课的产物</span></li>
+            <li><strong>调整后的顺序</strong><span>01 盘清交付 → 02 选产品 → 03 只取行业买家 → 去第 03 课做竞品拆解 → 回第 02 课重画四象限 → 再进第 04 课</span></li>
+          </ul></div>
+          <div class="method-note"><strong>这是一条合法的回头路，课程不假装线性。</strong>第 02 课的矩阵对新店要分两次填：先用竞品证据填初版，跑满 30 天有本店数据后，再用真实数据回来重填一次。新店的「没有数据」只是暂时的，不是方法失效。</div>
+          <div class="method-note"><strong>新店起步别一次铺三个国家。</strong>先 1 个主攻 + 1 个验证，把预算和精力压在能验证的组合上。三个同时做，等于三个都做不深；等主攻那个跑通再复制。</div>
+          <div class="method-note"><strong>还有一个补充来源。</strong>如果账号里有选词参谋的地区分布，可以拿 3—5 个核心词看它们在哪些国家被搜，和行业买家的排序做交叉。这一项入口名称请按自己账号核对，各账号版本不一定一致。</div>
         </div></details>`],
       ["查询盘和 TM 的国家分布", "还是这一页，买家类型依次切「询盘买家」和「TM 买家」，看各自的 Top 国家及地区分布。重点标出「访客多、询盘少」的国家，那通常是承接问题，不是流量问题。",
         `<details class="step-more"><summary>展开看判断逻辑与案例</summary><div class="step-more-body">
