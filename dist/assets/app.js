@@ -221,14 +221,101 @@ const lessons = [
     title: "对标店铺与竞品拆解",
     summary: "建立可持续更新的同行库，把模仿变成有证据的产品决策。",
     duration: "50 分钟",
-    updated: "内容整理中",
+    updated: "2026-10",
     prerequisites: "第 02 课",
-    outcomes: ["找到真正可比的对标店铺", "用工具快速建立候选池并人工复核", "拆解产品、价格和视觉结构", "形成竞品机会清单"],
-    quick: "对标的目标不是复制页面，而是识别同行已经验证的需求、表达方式和价格带，再结合自己的供应优势做差异化。",
-    steps: [["设定可比条件", "按类目、产品形态、目标国家、公司规模和价格带限定范围。"],["建立候选池", "先从平台搜索和榜单找店铺，再用瞬悉、来搜、SuperAli 等工具辅助收集店铺与产品信息。工具负责提效，不能替代人工判断。"],["拆解关键字段", "记录标题词、主图表达、MOQ、价格带、认证、交期和交易信号。"],["形成机会判断", "标出可跟进、需验证和不适合的方向。"]],
-    decisions: [["订单多、价格低", "供应链或规模优势明显", "不要盲目价格跟随"],["曝光强、询盘弱", "需求或承接可能有问题", "只借鉴流量词，不直接跟品"],["细分词稳定成交", "采购意图可能更清晰", "进入关键词和样品验证"]],
-    checklist: ["至少收集 10 家候选店铺", "工具采集结果已人工复核", "确定 3 家核心对标", "完成 20 个产品拆解", "写出 3 个差异化方向"],
-    assignment: "选择 3 家真正可比的店铺，完成竞品拆解表并写出一条产品机会假设。",
+    outcomes: ["按五条可比条件筛出真正能对标的店铺，并说明为什么排除其他", "用工具建立候选池，并完成人工复核", "拆出主推款的形态、价格带、MOQ 和表达结构", "输出一份三档竞品机会清单（可跟进／需验证／不做）"],
+    quick: "对标的目标不是复制页面，而是找到同行已经验证过的东西——哪个形态在卖、卖到什么价位、用什么话术讲清楚——再结合自己的供应优势做差异化。拆得越多不等于越准，先保证比的是同一类生意。",
+    steps: [
+      ["设定可比条件", "按类目、产品形态、目标国家、公司规模、价格带五条限定范围。五条里至少占四条才算「可比」，否则拆出来的结论不能用。",
+        `<details class="step-more"><summary>展开看五条条件怎么填</summary><div class="step-more-body">
+          <p class="step-more-label">五条条件与不合格的后果</p>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>条件</th><th>怎么填</th><th>不满足会怎样</th></tr></thead><tbody>
+            <tr><td>类目</td><td>与你相同的三级类目</td><td>跨类目对比，主图和关键词都不通用</td></tr>
+            <tr><td>产品形态</td><td>同形态（台式／便携／穿戴）</td><td>形态不同，主图卖点和结构完全对不上</td></tr>
+            <tr><td>目标国家</td><td>至少 1 个重点国家重合</td><td>国家不同，认证要求和价格带没有可比性</td></tr>
+            <tr><td>公司规模</td><td>团队、产能、店铺年限接近</td><td>拿头部团队的标准要求自己，结论会失真</td></tr>
+            <tr><td>价格带</td><td>与你的成本结构能重叠</td><td>差三倍以上，只能学表达，学不到定价</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>怎么用这五条：</strong>五条全中＝直接对手，重点拆；中四条＝可比对象，可以拆；中一到三条＝只能当参考，不进拆解表。宁可少拆几家，也别把不同生意混在一张表里。</div>
+        </div></details>`],
+      ["建立候选池", "先从平台搜索和榜单找店铺，再用瞬悉、来搜、SuperAli 等工具辅助收集店铺与产品信息。工具负责提效，不能替代人工判断。",
+        `<details class="step-more"><summary>展开看工具分工与复核清单</summary><div class="step-more-body">
+          <p class="step-more-label">三个工具各管一段</p>
+          <div class="tool-note-grid">
+            <article><strong>瞬悉</strong><p>辅助观察同行店铺和产品数据，适合建立第一批候选名单。</p></article>
+            <article><strong>来搜</strong><p>辅助搜索和对比国际站产品，用于补充平台搜索结果。</p></article>
+            <article><strong>SuperAli</strong><p>辅助收集店铺与产品信息，减少手工抄录时间。</p></article>
+          </div>
+          <p class="step-more-label">采集完必须过这四道复核</p>
+          <div class="mindmap"><div class="mm-root">工具给的是名单，不是结论</div><ul class="mm-list">
+            <li><strong>一、形态对不对</strong><span>店铺是不是真在做你这个产品形态，还是顺带挂了几款</span></li>
+            <li><strong>二、还在不在推</strong><span>主推款是近 90 天还在上新和调整，还是两年前的僵尸链接</span></li>
+            <li><strong>三、成交真不真</strong><span>交易信号要看评价内容和复购痕迹，只看订单数容易被活动期数据骗</span></li>
+            <li><strong>四、价格是不是活动价</strong><span>抓到的低价可能是限时折扣，拿它当常态价会误判整个价格带</span></li>
+          </ul></div>
+          <div class="source-table-wrap"><table class="decision-table score-table"><thead><tr><th>环节</th><th>数量</th><th>说明</th></tr></thead><tbody>
+            <tr><td>工具初筛</td><td>40 家</td><td>按类目和形态关键词批量抓取</td></tr>
+            <tr><td>形态复核</td><td>18 家</td><td>去掉顺带挂款的、跨形态的</td></tr>
+            <tr><td>活跃度复核</td><td>12 家</td><td>去掉近 90 天没更新的</td></tr>
+            <tr><td>进入拆解</td><td>3 家</td><td>再按可比条件和主推结构筛</td></tr>
+          </tbody></table></div>
+          <div class="method-note">上表为教学示例，数字只说明漏斗比例，不代表任何真实店铺。真实的漏斗通常是 40 进 3 出——工具跑得越快，人工复核越不能省。</div>
+        </div></details>`],
+      ["筛出 3 家真正可比的", "从候选池里去掉「大而全」和「小而乱」，留下主推结构清晰的。这一步的标准不是谁做得好，而是谁的结构看得懂。",
+        `<details class="step-more"><summary>展开看筛选逻辑</summary><div class="step-more-body">
+          <div class="mindmap"><div class="mm-root">为什么只留 3 家</div><ul class="mm-list">
+            <li><strong>大而全：删</strong><span>什么都卖，看不出主推是什么，只能看行业趋势，拆不出可执行的动作</span></li>
+            <li><strong>小而乱：删</strong><span>上新频繁但没有稳定成交，说明还没跑通，跟他学等于跟一个还在试错的人学</span></li>
+            <li><strong>主推清晰：留</strong><span>有 1—3 个稳定主推款、有持续成交、详情结构完整——这种才拆得出东西</span></li>
+            <li><strong>为什么是 3 家</strong><span>1 家容易被个案带偏，5 家以上拆不完也记不住。3 家刚好能看出「共性」和「差异」</span></li>
+          </ul></div>
+          <div class="method-note"><strong>选对标不是选最强的。</strong>头部大卖家的供应链和团队规模你复制不了，拆完只会得到「我做不到」的结论。选那种「比我强一档、但路径看得懂」的，才是能落地的对标。</div>
+        </div></details>`],
+      ["拆产品结构", "记录主推款的形态、SKU 宽度、价格带分布和 MOQ。先拆结构，再看表达——结构决定你能不能接这个单。",
+        `<details class="step-more"><summary>展开看拆解表怎么填</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>字段</th><th>怎么记</th><th>用来判断什么</th></tr></thead><tbody>
+            <tr><td>主推形态</td><td>店铺首屏和橱窗里反复出现的那一款</td><td>当地市场认哪种形态</td></tr>
+            <tr><td>SKU 宽度</td><td>同款有几个颜色／规格／套装</td><td>对方靠单款打透还是靠宽度铺量</td></tr>
+            <tr><td>价格带</td><td>最低价、主推价、最高价三个点</td><td>你的成本能落在哪一档</td></tr>
+            <tr><td>MOQ</td><td>起订量及是否支持混批</td><td>你的起订量是优势还是门槛</td></tr>
+            <tr><td>交期与定制</td><td>是否写明打样时间、能否改 logo／包装</td><td>对方接的是标准单还是定制单</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>20 个产品怎么记才不白记：</strong>按「形态 × 价格带」交叉着记，每个格子至少 2 个样本。如果 20 个里 15 个都落在同一档，说明你其实只拆了 1 个结论，回去补样本。</div>
+        </div></details>`],
+      ["拆表达方式", "看标题词、主图类型、详情结构和认证展示。表达决定同样的产品为什么别人点得多。",
+        `<details class="step-more"><summary>展开看四个维度怎么对照</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>维度</th><th>看什么</th><th>记成什么</th></tr></thead><tbody>
+            <tr><td>标题</td><td>前三个词放的是品类词还是卖点词</td><td>词序结构，不是整句照抄</td></tr>
+            <tr><td>主图</td><td>首图是白底、场景还是带角标</td><td>主图类型 + 出现的卖点信息层级</td></tr>
+            <tr><td>详情</td><td>前三屏讲什么：参数、场景还是认证</td><td>信息顺序，这是最容易抄错的部分</td></tr>
+            <tr><td>认证</td><td>放在首屏、详情中段还是末尾</td><td>认证在当地是入场券还是加分项</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>抄结构，别抄文案。</strong>同行的英文表达可能本身就不地道，但他们的信息顺序（先讲什么、把认证放哪）往往是踩过坑才定下来的，这部分才值得学。</div>
+        </div></details>`],
+      ["拆交易与流量信号", "看成交、评价、橱窗和广告位。信号决定这个方向是「真被验证」还是「看着热闹」。",
+        `<details class="step-more"><summary>展开看信号怎么读</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>信号</th><th>说明什么</th><th>容易误判的地方</th></tr></thead><tbody>
+            <tr><td>成交笔数与金额</td><td>需求真实存在</td><td>活动期冲量，不代表常态</td></tr>
+            <tr><td>评价内容</td><td>买家到底在意什么</td><td>只看好评数量，不看具体抱怨</td></tr>
+            <tr><td>橱窗／主推位</td><td>对方把资源压在哪款</td><td>把橱窗款当成最好卖的款</td></tr>
+            <tr><td>广告位</td><td>对方愿意为哪些词持续花钱</td><td>偶尔出现的广告位不算，要看是否长期在</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>一个可靠的判断：</strong>如果一款产品既有持续成交，又能看到对方长期在投广告，说明这个方向被真金白银验证过。只有成交没有投放，可能是老客户复购；只有投放没有成交，可能还在烧钱试。</div>
+        </div></details>`],
+      ["形成机会清单", "把拆解结果分成三档：可跟进、需验证、不做，每档写清理由和下一步动作。清单要能直接变成产品决定。",
+        `<details class="step-more"><summary>展开看三档怎么分</summary><div class="step-more-body">
+          <div class="mindmap"><div class="mm-root">竞品机会清单：三档 + 一条差异化</div><ul class="mm-list">
+            <li><strong>可跟进</strong><span>需求被验证、你的供应能接、价格带能覆盖成本——直接排进产品计划</span></li>
+            <li><strong>需验证</strong><span>方向看着对，但缺一个关键条件（认证、起订量、交期）——先小批量或打样试</span></li>
+            <li><strong>不做</strong><span>供应链没优势、或价格带打不进去——写清理由，避免下次又想起来</span></li>
+            <li><strong>差异化方向</strong><span>至少写一条：同行普遍没做、而你能做到的（认证、包装、小单、交期）</span></li>
+          </ul></div>
+          <div class="method-note"><strong>清单的验收标准：</strong>每条都要能回答「下一步谁在什么时候做什么」。写不出动作的条目，说明拆解还没到位，不是清单的问题。</div>
+        </div></details>`]
+    ],
+    decisions: [["订单多、价格低", "供应链或规模优势明显，不是你能硬碰的", "不要盲目价格跟随，改拼交期、小单或认证"],["曝光强、询盘弱", "需求方向对，但页面承接有问题", "只借鉴流量词和主图方向，不直接跟品"],["细分词稳定成交", "采购意图更清晰、竞争更小", "进入关键词清单，先做样品和小批量验证"],["同行长期投广告且持续成交", "这个方向被真金白银验证过", "优先排进产品计划，别再犹豫"],["同行有成交但没投放", "可能是老客户复购，不是新客需求", "降低优先级，先看它的流量来源"]],
+    checklist: ["五条可比条件逐条确认，并写明满足几条", "至少收集 10 家候选店铺，工具采集结果已人工复核", "确定 3 家核心对标，并写明排除其他家的理由", "完成 20 个产品拆解，按形态 × 价格带交叉取样", "写出 3 个差异化方向，每条都对应一个可执行动作"],
+    assignment: "选 3 家真正可比的店铺，填完竞品拆解表（模板库《01-竞品拆解表》），输出一份三档机会清单：可跟进／需验证／不做各至少 1 条，每条写清理由和下一步动作。",
     sources: [{label:"对标店铺（会员）",url:"https://t.zsxq.com/KXBDI"},{label:"优秀同行产品（会员）",url:"https://t.zsxq.com/hpBmo"}]
   }
 ];
@@ -585,13 +672,6 @@ function lessonSupplement(lessonId){
       <details><summary>练习 3 · 询盘数量不错，但几乎都是要样品、不下单</summary><div class="answer"><p><b>判断：</b>这是客户结构问题，不是业务话术问题。询盘数量好看，不代表商机质量好。</p><p><b>动作：</b>先看这些询盘来自哪些词和国家，把明显偏零售的词降权；再调整 MOQ 和样品政策，把「要不要样品」前置到产品页，减少无效沟通。</p></div></details>
     </div></section>`;
   }
-  if(lessonId===3){
-    return `<section class="lesson-section"><h2>工具怎么用才不会跑偏</h2><div class="tool-note-grid">
-      <article><strong>瞬悉</strong><p>辅助观察同行店铺和产品数据，适合建立第一批候选名单。</p></article>
-      <article><strong>来搜</strong><p>辅助搜索和对比国际站产品，用于补充平台搜索结果。</p></article>
-      <article><strong>SuperAli</strong><p>辅助收集店铺与产品信息，减少手工抄录时间。</p></article>
-    </div><div class="method-note"><strong>统一原则：</strong>工具只负责“收集”，最终是否值得对标，必须回到产品匹配度、目标国家、价格带、供应能力和真实交易信号。</div></section>`;
-  }
   if(lessonId===12){
     return `<section class="lesson-section"><h2>可直接复用的 AI 商品卖点任务卡</h2><div class="prompt-card">
       <div class="prompt-card-head"><div><strong>先补齐产品证据，再让 AI 输出</strong><p>把方括号内容替换成自己的真实资料。</p></div><button type="button" data-copy-prompt>复制提示词</button></div>
@@ -627,7 +707,7 @@ function lessonPage(lesson){
       <section class="lesson-section"><h2>3 分钟先看懂</h2><div class="quick-read"><strong>核心判断</strong><p>${lesson.quick}</p>${lesson.id===1?`<div class="funnel beginner-flow"><span>被看见</span><span>愿意点</span><span>看懂产品</span><span>愿意咨询</span></div>`:""}</div></section>
       ${lesson.steps.length?`<section class="lesson-section"><h2>实操 SOP</h2><div class="steps">${lesson.steps.map(s=>`<div class="step"><h3>${s[0]}</h3><p>${s[1]}</p>${s[2]||""}</div>`).join("")}</div></section>`:""}
       ${lessonSupplement(lesson.id)}
-      ${lesson.decisions.length?`<section class="lesson-section"><h2>${lesson.decisionTitle||"数据判断与动作"}</h2><table class="decision-table"><thead><tr><th>${lesson.id===1?"阶段":"表现"}</th><th>${lesson.id===1?"是什么意思":"可能原因"}</th><th>${lesson.id===1?"新人先问什么":"优先动作"}</th></tr></thead><tbody>${rows}</tbody></table></section>`:""}
+      ${lesson.decisions.length?`<section class="lesson-section"><h2>${lesson.decisionTitle||"数据表现与判断方法"}</h2><table class="decision-table"><thead><tr><th>${lesson.id===1?"阶段":"表现"}</th><th>${lesson.id===1?"是什么意思":"可能原因"}</th><th>${lesson.id===1?"新人先问什么":"优先动作"}</th></tr></thead><tbody>${rows}</tbody></table></section>`:""}
       ${lesson.id===1?trafficSourcePrimer():""}
       ${lesson.checklist.length?`<section class="lesson-section"><h2>本课检查表</h2><ul class="checklist">${lesson.checklist.map(x=>`<li>${x}</li>`).join("")}</ul></section>`:""}
       <section class="lesson-section"><h2>课后任务</h2><div class="assignment">${lesson.assignment}</div></section>
