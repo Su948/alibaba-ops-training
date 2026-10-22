@@ -262,6 +262,7 @@ p { margin: 0 0 1em; }
 .mm-sub li::before { content: ""; position: absolute; left: -18px; top: 9px; width: 12px; height: 2px; background: #cfdbe2; }
 .mm-sub b { color: var(--ink); }
 /* 同行对比表 */
+.cell-sub { display: block; margin-top: 3px; color: #667c8d; font-size: .78rem; font-weight: 500; }
 .compare-table { min-width: 640px; }
 .compare-table td:first-child, .compare-table th:first-child { font-weight: 800; }
 /* 国家维度漏斗 */
