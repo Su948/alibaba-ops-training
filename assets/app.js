@@ -631,10 +631,9 @@ function lessonPage(lesson){
       ${lesson.id===1?trafficSourcePrimer():""}
       ${lesson.checklist.length?`<section class="lesson-section"><h2>本课检查表</h2><ul class="checklist">${lesson.checklist.map(x=>`<li>${x}</li>`).join("")}</ul></section>`:""}
       <section class="lesson-section"><h2>课后任务</h2><div class="assignment">${lesson.assignment}</div></section>
-    </article><aside class="lesson-aside">
-      <div class="aside-card"><h3>原始资料</h3>${lesson.sources.length?lesson.sources.map(s=>`<a href="${s.url}" target="_blank" rel="noopener">${s.label} ↗</a>`).join(""):"<p>源资料正在校对。</p>"}</div>
-      <div class="aside-card"><h3>学习状态</h3><button class="complete-button ${completed.has(lesson.id)?"done":""}" data-complete>${completed.has(lesson.id)?"✓ 已完成":"标记为已完成"}</button></div>
-    </aside></div>`;
+     </article><aside class="lesson-aside">
+       <div class="aside-card"><h3>学习状态</h3><button class="complete-button ${completed.has(lesson.id)?"done":""}" data-complete>${completed.has(lesson.id)?"✓ 已完成":"标记为已完成"}</button></div>
+     </aside></div>`;
   app.querySelector("[data-complete]").onclick=()=>{completed.has(lesson.id)?completed.delete(lesson.id):completed.add(lesson.id);saveProgress();lessonPage(lesson);};
   const copyPrompt=app.querySelector("[data-copy-prompt]");
   if(copyPrompt){
