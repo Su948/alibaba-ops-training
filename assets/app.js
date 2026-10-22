@@ -579,23 +579,98 @@ lessons.push(
     id: 6,
     stage: "转化",
     title: "高转化主图与视觉",
-    summary: "用六类主图方法表达产品差异、采购价值和目标市场偏好。",
+    summary: "每张图只回答一个问题：首图解决点击，后续图按买家的提问顺序排；工厂店和贸易店要证明的东西不一样。",
     duration: "50 分钟",
-    updated: "2026-09",
+    updated: "2026-10",
     prerequisites: "第 03—05 课",
-    outcomes: ["为不同产品选择合适主图类型", "制作一套可验证的主图测试方案", "避免信息拥挤和无效美化"],
-    quick: "B2B 主图既要让买家一眼认出产品，也要给出点击理由。清晰主体是基础，角标、文案、场景、人物和国别元素都只能服务于一个明确卖点。",
+    outcomes: ["给一套产品图分工：哪张解决点击、哪张回答什么", "判断该用哪种主图类型，以及它的风险", "按买家提问顺序排图，而不是按好看程度排", "守住三条视觉红线：形态、标识、文案"],
+    quick: "B2B 主图不是把产品拍好看，是让买家在缩略图阶段认出产品、点进来，再在后续图里逐个打消疑虑。一张图只能回答一个问题——想在一张图里说完所有卖点，结果通常是什么都没说清。",
     steps: [
-      ["正常展示型", "用干净背景、准确色彩和居中主体表达产品本身，适合规格明确或外观有优势的产品。"],
-      ["角标型", "用小面积角标突出认证、交期、MOQ、核心参数或定制能力；避免遮挡主体。"],
-      ["文案型", "只呈现一个核心利益点，字号保证移动端可读，文字与详情页证据一致。"],
-      ["丰富信息型", "适合需要同时表达套装、配件、结构或多规格的产品，但要有清楚视觉层级。"],
-      ["人物/场景型", "用使用场景和比例关系帮助买家理解用途，人物形象需符合目标市场。"],
-      ["国别化测试", "根据目标国家调整场景、人物、语言、认证与卖点，不用国旗装饰代替真实本地化。"]
+      ["先定每张图的分工", "一套图先分岗位，再谈审美。首图负责点击，第 2—5 张负责打消疑虑，第 6 张以后负责证明你可靠，视频负责演示怎么用。",
+        `<details class="step-more"><summary>展开看图片分工表</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>位置</th><th>只回答一个问题</th><th>排错的表现</th></tr></thead><tbody>
+            <tr><td>首图</td><td>这是什么，值不值得点</td><td>信息太满，缩小后看不清主体</td></tr>
+            <tr><td>第 2—3 张</td><td>细节、材质、结构到底怎么样</td><td>放氛围图，浪费最贵的两屏</td></tr>
+            <tr><td>第 4—5 张</td><td>用在什么场景、多大、给谁用</td><td>场景图里看不到产品本身</td></tr>
+            <tr><td>第 6—7 张</td><td>凭什么信你能稳定供货</td><td>工厂店不展示产线，等于白有</td></tr>
+            <tr><td>视频</td><td>怎么用、什么手感</td><td>只拍外观转圈，不拍使用过程</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>先分工再设计。</strong>做图之前先在纸上写清「这张图要回答哪一句提问」，写完再决定放什么元素。反过来先找素材再想用途，最后一定每张图都想塞满。</div>
+        </div></details>`],
+      ["选主图类型", "六种类型是工具箱，不是必选项。选哪一个，取决于你想让买家先看到什么。",
+        `<details class="step-more"><summary>展开看六类主图各适合什么</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>类型</th><th>适合什么</th><th>主要风险</th></tr></thead><tbody>
+            <tr><td>正常展示型</td><td>规格明确、外观有优势的产品</td><td>同质化，缩略图里没有记忆点</td></tr>
+            <tr><td>角标型</td><td>有认证、交期、MOQ 这类硬优势</td><td>角标太多，遮挡主体</td></tr>
+            <tr><td>文案型</td><td>有一个说得清的核心利益</td><td>字太小，移动端读不出来</td></tr>
+            <tr><td>丰富信息型</td><td>套装、配件、多规格</td><td>信息层级乱，看不出主产品是什么</td></tr>
+            <tr><td>人物／场景型</td><td>用途需要演示、需要比例参照</td><td>人物形象不符合目标市场审美</td></tr>
+            <tr><td>国别化</td><td>已确定主推国家</td><td>用国旗当装饰，实际内容没变</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>最多叠加两种。</strong>角标 + 场景是常见组合；角标 + 文案 + 人物 + 多规格堆在一张首图上，缩略图里只剩一堆色块。</div>
+        </div></details>`],
+      ["首图：解决点击", "首图只有一个任务——让买家在缩略图状态下认出产品，并且想点。判断标准不是设计好不好看，是缩到很小还能不能认出来。",
+        `<details class="step-more"><summary>展开看首图怎么自检</summary><div class="step-more-body">
+          <div class="mindmap"><div class="mm-root">首图三件事</div><ul class="mm-list">
+            <li><strong>一、缩略图测试</strong><span>把图缩到 200 像素宽，再问一句「认得出这是什么吗」。认不出，重做</span></li>
+            <li><strong>二、一个点击理由</strong><span>主体够大、背景干净、只放一个卖点。三个卖点等于没有卖点</span></li>
+            <li><strong>三、和标题对得上</strong><span>标题写定制，首图就要有定制痕迹；标题写套装，首图就要看到整套。承诺不一致，点击来了也会跳走</span></li>
+          </ul></div>
+          <div class="method-note"><strong>最简单的自检：</strong>把首图和同行 6 张图并排缩成一行，能不能一眼挑出你的。挑不出来，说明这张图只是合格，不是有竞争力。</div>
+        </div></details>`],
+      ["后续图：按提问顺序排", "买家看图是有顺序的：先看细节，再看场景，最后才关心你是谁。按这个顺序排，转化率比按好看程度排高。",
+        `<details class="step-more"><summary>展开看六张图的信息顺序</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>顺序</th><th>放什么</th><th>为什么放这</th></tr></thead><tbody>
+            <tr><td>第 1 张</td><td>首图：产品全貌</td><td>决定点不点</td></tr>
+            <tr><td>第 2—3 张</td><td>关键细节、材质、结构</td><td>买家在确认「和我想的是不是一样」</td></tr>
+            <tr><td>第 4 张</td><td>尺寸与比例参照</td><td>没有参照物，买家对大小没概念</td></tr>
+            <tr><td>第 5 张</td><td>使用场景</td><td>确认自己是不是这个用途</td></tr>
+            <tr><td>第 6 张</td><td>认证、检测报告</td><td>开始考虑「能不能进我的市场」</td></tr>
+            <tr><td>第 7 张</td><td>产线、质检、包装、发货</td><td>最后才考虑「这家靠不靠谱」</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>把信任类图片提到前面是常见错误。</strong>买家还没确认产品对不对，就先看厂房和设备，只会觉得你在讲自己。信任信息有用，但要等产品信息讲完。</div>
+        </div></details>`],
+      ["分店铺类型配视觉证据", "同一条链接，工厂店和贸易店该证明的东西不一样。这类差异不在美工，在做图之前就要定。",
+        `<details class="step-more"><summary>展开看两种店的视觉重点</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>位置</th><th>工厂店</th><th>贸易店</th></tr></thead><tbody>
+            <tr><td>首图</td><td>产品全貌 + 一个角标（认证或工厂）</td><td>产品全貌 + 组合感，让人看出不止一款</td></tr>
+            <tr><td>第 2—3 张</td><td>结构、工艺、材质细节</td><td>多款组合、颜色／规格选择</td></tr>
+            <tr><td>中段</td><td>产线、设备、质检流程、自持认证</td><td>品类宽度、现货状态、发货能力</td></tr>
+            <tr><td>收尾</td><td>定制流程：打样周期、开模周期</td><td>混批门槛、组合方案、包装服务</td></tr>
+            <tr><td>一句话目标</td><td>让买家看到产能和可控性</td><td>让买家看到能配齐、能快发</td></tr>
+            <tr><td>最忌讳</td><td>七张图全是产品，看不出你有工厂</td><td>放一张工厂图，但是网上找的</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>工厂店最大的浪费：</strong>明明有产线、有设备、有质检，却一张都不拍，把最强的证据留在车间里。这些图不需要专业摄影，手机拍清流程就够用。</div>
+          <div class="method-note"><strong>贸易店最大的风险：</strong>用网图或供应商的图冒充自有产能。客户验厂立刻穿帮，还可能有版权和侵权投诉。没有产线就大方讲组合能力和发货能力，这本身就是贸易商的价值。</div>
+        </div></details>`],
+      ["守住三条视觉红线", "形态、标识、文案。这三条一旦破，图做得再好看也是负分——前两条会导致验货纠纷，第三条会招来投诉。",
+        `<details class="step-more"><summary>展开看三条红线和尺寸规范</summary><div class="step-more-body">
+          <div class="mindmap"><div class="mm-root">三条红线</div><ul class="mm-list">
+            <li><strong>一、不改产品形态</strong><span>实拍抠图 + 场景合成可以；用 AI 重绘改掉产品外形、比例、按键位置不行——买家按图验货，偏差就是纠纷</span></li>
+            <li><strong>二、去掉非官方标识</strong><span>机身、包装、配件上的第三方品牌 Logo 必须抹掉。露出别家商标，轻则被投诉，重则侵权</span></li>
+            <li><strong>三、文案不夸大</strong><span>认证只写真实持有的型号范围，参数只写实测值。「最好」「第一」这类绝对化表述不要用</span></li>
+          </ul></div>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>规范项</th><th>团队标准</th><th>说明</th></tr></thead><tbody>
+            <tr><td>尺寸</td><td>统一 800×800；部分项目按客户要求做 1600×1200</td><td>平台对尺寸有最低要求，以发布页提示为准</td></tr>
+            <tr><td>背景</td><td>首图干净，后续图可用场景</td><td>场景是合成的也要符合真实使用环境</td></tr>
+            <tr><td>文字</td><td>只放一个核心卖点，字号保证移动端可读</td><td>小字在手机上等于没有</td></tr>
+            <tr><td>水印</td><td>不放店铺名水印</td><td>占位置，且显得不专业</td></tr>
+          </tbody></table></div>
+        </div></details>`],
+      ["用数据复核图片", "图好不好不由设计判断，由点击率和停留时长判断。一次只测一个变量，否则不知道是哪个改动起了作用。",
+        `<details class="step-more"><summary>展开看怎么测、看什么数</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>看什么</th><th>说明什么</th><th>怎么动</th></tr></thead><tbody>
+            <tr><td>点击率</td><td>首图有没有吸引力</td><td>换首图类型或换卖点，一次只换一个</td></tr>
+            <tr><td>停留时长</td><td>首图承诺和详情是否一致</td><td>不一致就统一表达，不是继续换图</td></tr>
+            <tr><td>询盘率</td><td>图上的承诺有没有兑现</td><td>回看询盘问题，补对应图片</td></tr>
+            <tr><td>不同国家表现</td><td>审美和采购重点不同</td><td>按国家建素材组，不要一套图打全球</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>A/B 测试的纪律：</strong>同一时间只改一个变量，至少跑满一周再判断。同时换首图和标题，跑出来的结果谁也归因不了。</div>
+        </div></details>`]
     ],
-    decisions: [["点击率低", "主体不清、卖点弱或与搜索词不符", "先做主体图与单卖点图 A/B 测试"],["点击高、询盘低", "图片承诺与详情/价格不一致", "统一主图、标题和首屏信息"],["多国表现差异大", "市场审美和采购重点不同", "按国家建立不同素材组"]],
-    checklist: ["主体在缩略图中清楚", "只突出一个主要点击理由", "文案移动端可读", "卖点有参数或证据支持", "准备至少两个测试版本"],
-    assignment: "为一个主推产品分别制作正常展示型、角标型和场景型三张主图，写明每张图验证的假设。",
+    decisions: [["点击率低", "主体不清、卖点弱，或与搜索词不符", "先做主体图与单卖点图的 A/B 测试"],["点击高、询盘低", "图片承诺与详情／价格不一致", "统一主图、标题和首屏信息，不是继续换图"],["多国表现差异大", "市场审美和采购重点不同", "按国家建立素材组，一套图打不了全球"],["询盘总问同一个问题", "图上没回答，详情也没前置", "把这个问题做成一张图，放进第 2—3 位"],["工厂店点击低", "七张图全是产品，看不出制造能力", "补产线、质检、认证到中段"]],
+    checklist: ["每张图都写明了它回答哪个问题", "首图通过 200 像素缩略图测试", "首图只放一个点击理由，最多叠加两种类型", "信任类图片排在第 6 位之后", "形态未改、非官方标识已去除", "文案无绝对化表述、认证只写真实持有", "准备了至少两个可对比的版本"],
+    assignment: "为第 05 课那条主推链接配一套 7 张图 + 1 条视频，每张图下面写一句「它回答哪个提问」；再挑一张做 A/B 测试，写明你要验证的假设和判断标准。",
     sources: [{label:"高转化主图完整课程（会员）",url:"https://t.zsxq.com/Yv2G7"},{label:"角标素材（会员）",url:"https://t.zsxq.com/XB1xi"},{label:"文案类主图工具（会员）",url:"https://t.zsxq.com/bkGli"},{label:"AI 服装模特效果图（会员）",url:"https://t.zsxq.com/L7H5y"}]
   },
   {
