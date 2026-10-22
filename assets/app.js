@@ -112,7 +112,12 @@ const lessons = [
             <li><strong>只看行业会怎样</strong><span>行业有需求，不等于份额能给你。行业口径里含着大量你打不过的对手，容易一头撞进红海</span></li>
             <li><strong>正确顺序</strong><span>先本店找证据 → 再行业找缺口 → 最后交叉定取舍。反过来做，就是拿行业热度给自己找理由</span></li>
           </ul></div>
-          <p class="step-more-label">先定「强」和「高」怎么判，否则四象限没法用</p>
+           <figure class="course-figure">
+             <div class="figure-head"><span>01</span><div><strong>这个页面长什么样</strong><p>数据参谋 → 买家参谋 → 本店买家 → 买家来源（图内数字已隐去）</p></div></div>
+             <img src="assets/lesson-02-buyer-country.png" alt="国际站买家参谋本店买家的买家来源页，右侧为 Top 国家及地区分布" loading="lazy">
+             <figcaption>只看右半边：<strong>国家及地区名称</strong>一列告诉你是哪一国，条形长度与<strong>买家数</strong>一列告诉你相对大小，已经按买家数从高到低排好。左半边「渠道分布」是渠道口径（第 01 课已认过），这一课不用它取国家。最上面那一排按钮，就是下一步要讲的「买家类型」。</figcaption>
+           </figure>
+           <p class="step-more-label">先定「强」和「高」怎么判，否则四象限没法用</p>
           <p class="step-more-note">「强」不是感觉强，是两个数说了算。</p>
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>判断项</th><th>判为「强 / 高」</th><th>判为「弱 / 低」</th><th>为什么这么定</th></tr></thead><tbody>
             <tr><td>本店证据</td><td>近 90 天该国三条同时成立：① 访客进入 Top 10 ② 询盘不少于 3 条 ③ 至少 1 笔成交，或已进入报价谈判</td><td>三条里缺任意一条</td><td>只有访客没有询盘＝路过；有询盘没成交＝还在验证。都不算证据</td></tr>
@@ -388,14 +393,14 @@ lessons.push(
           <div class="method-note"><strong>判断一个种子词合不合格：</strong>把它丢到 Google 和国际站首页各搜一次，出来的如果是同类产品的采购页，合格；出来的是科普、评测、维修，不合格。这一步和第 02 课判断采购意图是同一个动作。</div>
           <p class="step-more-label">新店和老店的起点不一样</p>
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>起点</th><th>新店</th><th>老店</th></tr></thead><tbody>
-            <tr><td>输入从哪来</td><td>产品名称、用途、场景、同行标题</td><td>访客详情里的来源词、产品360 的搜索流量商机词</td></tr>
+             <tr><td>输入从哪来</td><td>产品名称、用途、场景、同行标题</td><td>访客详情表头的「全站偏好关键词」、产品360「关键词分析」页签</td></tr>
             <tr><td>第一件事做什么</td><td>起种子词，再往外扩</td><td>把已有的词分成有商机和无商机，再看缺口</td></tr>
             <tr><td>最容易犯的错</td><td>凭感觉起词，收了一堆没人搜的表达</td><td>天天扩新词，却不看已经有商机的词有没有被用足</td></tr>
             <tr><td>优势</td><td>没有历史包袱，可以直接按意图分类</td><td>有真实转化数据，能验证词到底值不值</td></tr>
           </tbody></table></div>
           <div class="method-note"><strong>老店先别扩词。</strong>把「已经带来过商机的词」列出来，看看它们分别放在了标题、详情还是广告里。很多时候不是词不够，是好词没被用足——扩十个新词，不如把一个已验证的词铺到三个位置。</div>
         </div></details>`],
-      ["老店：把有商机词和无商机词分开用", "访客详情的来源词能分出「有商机词」和「无商机词」，产品360 的搜索流量商机词能按单个产品看哪些词带来了商机。这两份数据不是用来看报表的，是用来决定加词、砍词和改页面的。",
+      ["老店：把有商机词和无商机词分开用", "访客详情里那一列，表头写的不是「来源词」，而是「全站偏好关键词」（课程里口语仍叫来源词）——用它就能分出有商机词和无商机词。要按单个产品看词，则去产品360 的「关键词分析」页签。这两份数据不是用来看报表的，是用来决定加词、砍词和改页面的。",
         `<details class="step-more"><summary>展开看三类词各自怎么用</summary><div class="step-more-body">
           <p class="step-more-label">按有没有产生商机，词只分三类</p>
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>词的类型</th><th>怎么认定</th><th>动作</th></tr></thead><tbody>
@@ -409,14 +414,16 @@ lessons.push(
             <li><strong>二、页不对</strong><span>词是对的，但主图形态、价格带、MOQ 接不住。这类要改页面，屏蔽了反而少一批精准流量</span></li>
             <li><strong>三、竞争不对</strong><span>词和页都对，但点击成本压过毛利。这类降权或缩到长尾，不是删词</span></li>
           </ul></div>
-          <p class="step-more-label">产品360 用来做「词—产品」绑定</p>
-          <div class="method-note"><strong>搜索流量商机词的价值在于对得上号。</strong>同一个词在 A 产品上一直带来商机，说明词和产品匹配，可以固化进标题；如果某个词有曝光，但商机全跑到别的产品上，说明类目或标题指错了地方——这时候改标题比加预算有效。<br>按产品看还有一个用处：能发现「词是好词，但挂错了链接」，这是老店最常见的浪费。</div>
+           <p class="step-more-label">产品360 用来做「词—产品」绑定</p>
+           <div class="method-note"><strong>先说清入口，不然会找不到。</strong>产品360 不是一个独立页面：先到<strong>产品参谋 → 产品分析</strong>找到那个产品，点行末的「分析」，右侧会滑出一个抽屉，抽屉顶部才是「关键词分析／趋势分析／访客地域／关联商品／流量来源／价格分析／竞品对标」这排页签。<strong>带词的是「关键词分析」这一个页签</strong>；「流量来源」页签只有渠道维度（搜索、推荐、会场这些），里面没有词——这是最容易走错的一步。</div>
+           <div class="method-note"><strong>关键词分析的价值在于对得上号。</strong>同一个词在 A 产品上一直带来商机，说明词和产品匹配，可以固化进标题；如果某个词有曝光，但商机全跑到别的产品上，说明类目或标题指错了地方——这时候改标题比加预算有效。<br>按产品看还有一个用处：能发现「词是好词，但挂错了链接」，这是老店最常见的浪费。</div>
           <p class="step-more-label">来源词怎么取出来，取出来怎么用</p>
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>取法</th><th>适合什么情况</th><th>拿到什么</th></tr></thead><tbody>
             <tr><td>页面逐条看</td><td>词量少、核对单条访客</td><td>来源词、国家、浏览行为，适合抽样验证</td></tr>
             <tr><td>插件或自研脚本导出</td><td>要按词统计、要跑几十上百条</td><td>整月访客明细 Excel，可排序可汇总，能按「是否询盘／是否 TM」打标</td></tr>
           </tbody></table></div>
-          <div class="method-note"><strong>页面上没有导出按钮，别指望点一下就能下载。</strong>访客详情能查、能筛，但要批量拿到明细，得用脚本导出。这件事本身就该固化成每月动作——不是为了看报表，是为了攒自己的历史：平台只保留近 31 天，不导出就永远只有最近一个月。</div>
+                     <div class="method-note"><strong>这一页的四个筛选器，新人常按错。</strong><br><strong>搜索词：</strong>表格上方那个输入框，用来筛某一类词（不是列名）。<br><strong>统计周期：</strong>只有「最近7天／最近31天／自定义时间段」三档，<strong>没有「近30天」这一项</strong>——要凑整月就自己选自定义时间段，别拿 31 天当 30 天去和月报比。<br><strong>国家及地区、产品负责人：</strong>用来把范围收窄到某个市场或某个业务员，做季度复盘时才需要动它。<br>表头里那一列叫「全站偏好关键词」，是指这个访客在本店看过的词，不是他搜索的全部历史。</div>
+           <div class="method-note"><strong>页面上没有导出按钮，别指望点一下就能下载。</strong>访客详情能查、能筛，但要批量拿到明细，得用脚本导出。这件事本身就该固化成每月动作——不是为了看报表，是为了攒自己的历史：平台只保留近 31 天，不导出就永远只有最近一个月。</div>
           <div class="method-note"><strong>导出只是原料，汇总成台账才是资产。</strong>把明细按「来源词 × 国家」汇总成一张月度台账，字段固定下来：访客数、询盘访客数、TM 访客数、商机数、是否产生商机、词类、处理动作。用模板库的《08-访客来源词台账》记录，每月 1 号导上月数据，连续攒三个月就能看出哪些词在退、哪些词在起。<br>汇总脚本团队会统一做，但在脚本出来之前，先用表格手工汇总也比不攒强——平台只留 31 天，数据过期不会等人。</div>
           <div class="method-note"><strong>词取出来之后，只做三件事。</strong><br><strong>① 打标：</strong>按有没有产生询盘或 TM，分成有商机词和无商机词。<br><strong>② 拿去搜：</strong>把每个词丢到 Google 和国际站首页各搜一次，看搜出来的是批发询价页还是零售维修页——这一步决定它该进核心词还是进屏蔽词。<br><strong>③ 归类：</strong>按六类意图分好，喂回自己的词库，再决定放进标题、详情还是推广。</div>
           <div class="method-note"><strong>三个必须注意的地方。</strong><br><strong>① 有商机词是结果，不是原因。</strong>要配曝光量一起看转化率。只看商机绝对数，很容易把「投放多」误当成「词好」。<br><strong>② 样本要够。</strong>7 天数据可能是偶然，建议看近 30—90 天再定去留。<br><strong>③ 访客详情只保留近 31 天、T-2 更新。</strong>要做季度对比，得自己定期导出 Excel 留档，否则数据会滚掉。</div>
@@ -1079,7 +1086,7 @@ lessons.push(
       ["单链接诊断只看三件事", "词对不对、图行不行、页接不接得住。三个问题对应三个数据源，不要混着看。",
         `<details class="step-more"><summary>展开看三个问题怎么查</summary><div class="step-more-body">
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>问题</th><th>看哪里</th><th>不合格的表现</th></tr></thead><tbody>
-            <tr><td>词对不对</td><td>产品360 的搜索流量商机词、访客详情的来源词</td><td>词有曝光但商机跑到别的产品上</td></tr>
+            <tr><td>词对不对</td><td>产品360「关键词分析」页签、访客详情的「全站偏好关键词」</td><td>词有曝光但商机跑到别的产品上</td></tr>
             <tr><td>图行不行</td><td>点击率与同类目中位数对比</td><td>曝光正常、点击明显偏低</td></tr>
             <tr><td>页接不接得住</td><td>访客停留、询盘率、询盘里反复问的问题</td><td>停留短、询盘少的理由集中在价格和 MOQ</td></tr>
           </tbody></table></div>
@@ -1545,7 +1552,7 @@ function trafficSourcePrimer(){
 function lessonSupplement(lessonId){
   if(lessonId===2){
     return `<section class="lesson-section"><h2>后台去哪里查这几组数据</h2><div class="source-guide">
-      <section class="source-group"><h3>国家分布只有一个入口，两个页签</h3><div class="source-item"><strong>数据参谋 → 买家参谋</strong><p>顶部并排两个页签：本店买家（你的历史数据）和行业买家（类目大盘）。两个都在同一个模块里，不用换系统。</p></div><div class="source-item"><strong>本店买家 → 买家来源 → Top 国家及地区分布</strong><p>用顶部「买家类型」切换访问／询盘／TM／订单买家，四种国家分布都在这一块，分别对应第 03、04、05 步。</p></div><div class="source-item"><strong>不要走流量参谋</strong><p>「流量参谋 → 流量来源」是按渠道拆的（搜索、系统推荐、导购会场、频道、互动、自营销、店内、站外），那一页没有国家维度。第一课用它认渠道，这一课不能用它取国家。</p></div></section>
+      <section class="source-group"><h3>国家分布只有一个入口，两个页签</h3><div class="source-item"><strong>数据参谋 → 买家参谋</strong><p>顶部并排两个页签：本店买家（你的历史数据）和行业买家（类目大盘）。两个都在同一个模块里，不用换系统。</p></div><div class="source-item"><strong>本店买家 → 买家来源 → Top 国家及地区分布</strong><p>用顶部「买家类型」切换访问／询盘／TM／订单买家，四种国家分布都在这一块，分别对应第 03、04、05 步。</p></div><div class="source-item"><strong>怎么找得到它</strong><p>一定从工作台 <code>i.alibaba.com</code> 左侧菜单点进「数据参谋」，直接输 <code>data.alibaba.com</code> 会跳到买家登录页，白折腾一趟。左侧二级菜单分五组：店铺、参谋、智能、营销、学堂——<strong>买家参谋在「参谋组」的最末一个</strong>，不是挨着「访客详情」。第一次找的人常在「访客详情」附近来回翻。</p></div><div class="source-item"><strong>不要走流量参谋</strong><p>「流量参谋 → 流量来源」是按渠道拆的（搜索、系统推荐、导购会场、频道、互动、自营销、店内、站外），那一页没有国家维度。第一课用它认渠道，这一课不能用它取国家。</p></div></section>
       <section class="source-group"><h3>同一页切四种买家类型</h3><div class="source-item"><strong>访问 / 询盘 / TM / 订单</strong><p>「访问买家」＝第 03 步的访客国家；「询盘买家」「TM 买家」＝第 04 步；「订单买家」＝第 05 步。四组放一起才比得出各环节的转化。</p></div><div class="source-item"><strong>要看明细：访客详情</strong><p>数据参谋 → 访客详情。可按国家、大洲、是否询盘访客筛选，页面上没有导出按钮，但明细可以用工具导出成 Excel 留档。注意只保留最近 31 天、T-2 更新。</p></div></section>
       <section class="source-group"><h3>广告怎么按国家投</h3><div class="source-item"><strong>直通车 → 标签维度 → 地域标签</strong><p>地域标签用来给已验证的国家加价、给长期比价的国家降价。扣费方式和出价规则留到第 08、09 课展开。</p></div><div class="source-item"><strong>口径提醒</strong><p>直通车的地域数据按 IP 解析，买家参谋里的 TM 买家国家取注册地，两边对不上是正常的，不是数据错误。</p></div></section>
     </div><p class="verify-note">后台菜单会随平台调整。以上路径于 2026-10 核对，实际入口与下拉项名称以自己账号可见菜单为准。</p></section>
