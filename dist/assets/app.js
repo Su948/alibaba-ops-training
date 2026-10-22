@@ -368,7 +368,7 @@ lessons.push(
     outcomes: ["建立一份带来源标记的种子词与扩词清单", "把词按六类意图分组，并说清每类用在哪里", "区分工厂店和贸易店该抢的词、不该抢的词", "建立每周新增与淘汰的复核机制"],
     quick: "高转化词不是搜索量最大的词，而是产品匹配、买家意图清晰、并在实际点击或询盘里被验证过的词。收词、清洗、分组、覆盖、投放、复盘要形成闭环——但闭环的入口不一样：工厂店从「我能做什么」出发，贸易店从「客户要什么、我能组什么」出发。",
     steps: [
-      ["定义种子词", "用产品名称、用途、材质、规格、适用行业和采购场景建立第一批种子词。种子词不在多，在于每一个都能对应一个真实买家会搜的场景。",
+      ["定起点：新店起种子词，老店起有商机词", "新店没有历史，用产品名称、用途、规格和场景起种子词；老店已经有跑出来的词，直接从那批「有商机词」开始，不用从零猜。起点选错，后面扩出来的词都是空的。",
         `<details class="step-more"><summary>展开看种子词怎么起</summary><div class="step-more-body">
           <div class="mindmap"><div class="mm-root">种子词的四个来源</div><ul class="mm-list">
             <li><strong>产品名称</strong><span>客户嘴里的叫法，不是你内部的型号。同一款产品可能有 2—3 个通用叫法，都要收</span></li>
@@ -377,6 +377,32 @@ lessons.push(
             <li><strong>材质与规格</strong><span>只在买家会主动搜的时候才收，不是所有参数都值得当词</span></li>
           </ul></div>
           <div class="method-note"><strong>判断一个种子词合不合格：</strong>把它丢到 Google 和国际站首页各搜一次，出来的如果是同类产品的采购页，合格；出来的是科普、评测、维修，不合格。这一步和第 02 课判断采购意图是同一个动作。</div>
+          <p class="step-more-label">新店和老店的起点不一样</p>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>起点</th><th>新店</th><th>老店</th></tr></thead><tbody>
+            <tr><td>输入从哪来</td><td>产品名称、用途、场景、同行标题</td><td>访客详情里的来源词、产品360 的搜索流量商机词</td></tr>
+            <tr><td>第一件事做什么</td><td>起种子词，再往外扩</td><td>把已有的词分成有商机和无商机，再看缺口</td></tr>
+            <tr><td>最容易犯的错</td><td>凭感觉起词，收了一堆没人搜的表达</td><td>天天扩新词，却不看已经有商机的词有没有被用足</td></tr>
+            <tr><td>优势</td><td>没有历史包袱，可以直接按意图分类</td><td>有真实转化数据，能验证词到底值不值</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>老店先别扩词。</strong>把「已经带来过商机的词」列出来，看看它们分别放在了标题、详情还是广告里。很多时候不是词不够，是好词没被用足——扩十个新词，不如把一个已验证的词铺到三个位置。</div>
+        </div></details>`],
+      ["老店：把有商机词和无商机词分开用", "访客详情的来源词能分出「有商机词」和「无商机词」，产品360 的搜索流量商机词能按单个产品看哪些词带来了商机。这两份数据不是用来看报表的，是用来决定加词、砍词和改页面的。",
+        `<details class="step-more"><summary>展开看三类词各自怎么用</summary><div class="step-more-body">
+          <p class="step-more-label">按有没有产生商机，词只分三类</p>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>词的类型</th><th>怎么认定</th><th>动作</th></tr></thead><tbody>
+            <tr><td>有商机词</td><td>带来过询盘或 TM 咨询</td><td>提为核心词；扩同义词和他国变体；铺到标题、详情、推广三个位置</td></tr>
+            <tr><td>无商机词（有访客）</td><td>有人点进来，但没产生商机</td><td>先诊断原因，再决定是屏蔽还是改页面——不要直接砍</td></tr>
+            <tr><td>零曝光词</td><td>词库里有，但从没跑出曝光</td><td>查是不是没投放、类目挂错、或词本身太小没人搜</td></tr>
+          </tbody></table></div>
+          <p class="step-more-label">无商机词往下查三层，别一刀切</p>
+          <div class="mindmap"><div class="mm-root">有访客、没商机，原因只有三种</div><ul class="mm-list">
+            <li><strong>一、词不对</strong><span>搜的人不是采购商：零售词、维修词、配件词。这类直接屏蔽</span></li>
+            <li><strong>二、页不对</strong><span>词是对的，但主图形态、价格带、MOQ 接不住。这类要改页面，屏蔽了反而少一批精准流量</span></li>
+            <li><strong>三、竞争不对</strong><span>词和页都对，但点击成本压过毛利。这类降权或缩到长尾，不是删词</span></li>
+          </ul></div>
+          <p class="step-more-label">产品360 用来做「词—产品」绑定</p>
+          <div class="method-note"><strong>搜索流量商机词的价值在于对得上号。</strong>同一个词在 A 产品上一直带来商机，说明词和产品匹配，可以固化进标题；如果某个词有曝光，但商机全跑到别的产品上，说明类目或标题指错了地方——这时候改标题比加预算有效。<br>按产品看还有一个用处：能发现「词是好词，但挂错了链接」，这是老店最常见的浪费。</div>
+          <div class="method-note"><strong>三个必须注意的地方。</strong><br><strong>① 有商机词是结果，不是原因。</strong>要配曝光量一起看转化率。只看商机绝对数，很容易把「投放多」误当成「词好」。<br><strong>② 样本要够。</strong>7 天数据可能是偶然，建议看近 30—90 天再定去留。<br><strong>③ 访客详情只保留近 31 天、T-2 更新。</strong>要做季度对比，得自己定期导出 Excel 留档，否则数据会滚掉。</div>
         </div></details>`],
       ["多渠道扩词", "从平台搜索建议、关键词指数、同行标题、广告搜索词和 Google／站外工具补充词。每个词都要记下它从哪来——来源决定可信度。",
         `<details class="step-more"><summary>展开看渠道与可信度</summary><div class="step-more-body">
