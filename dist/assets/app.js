@@ -117,6 +117,11 @@ const lessons = [
              <img src="assets/lesson-02-buyer-country.png" alt="国际站买家参谋本店买家的买家来源页，右侧为 Top 国家及地区分布" loading="lazy">
              <figcaption>只看右半边：<strong>国家及地区名称</strong>一列告诉你是哪一国，条形长度与<strong>买家数</strong>一列告诉你相对大小，已经按买家数从高到低排好。左半边「渠道分布」是渠道口径（第 01 课已认过），这一课不用它取国家。最上面那一排按钮，就是下一步要讲的「买家类型」。</figcaption>
            </figure>
+           <figure class="course-figure">
+             <div class="figure-head"><span>02</span><div><strong>同一页怎么切出四种口径</strong><p>买家参谋顶部：两个页签 ＋ 买家类型五个选项</p></div></div>
+             <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看完整筛选栏截图"><img src="assets/lesson-02-buyer-type-switch.png" alt="买家参谋顶部的本店买家与行业买家页签，以及买家类型、时间范围、买家分层、去重开关" loading="lazy"></div>
+             <figcaption>最上面两个并排的大块，就是「本店买家」和「行业买家」——<strong>换页签换的是数据来源，不是筛选条件</strong>。往下那一排才是筛选：「买家类型」五个选项（访问／询盘／TM／订单／自定义客群）决定你看漏斗的哪一段，「时间范围」三档，「买家分层」全部或 L1+，「去重」开着时一个买家只算一次。四个一起动，国家分布就会整块重排，所以每次截图记录都要把这几个状态写下来，否则两张图没法比。</figcaption>
+           </figure>
            <p class="step-more-label">先定「强」和「高」怎么判，否则四象限没法用</p>
           <p class="step-more-note">「强」不是感觉强，是两个数说了算。</p>
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>判断项</th><th>判为「强 / 高」</th><th>判为「弱 / 低」</th><th>为什么这么定</th></tr></thead><tbody>
@@ -416,8 +421,18 @@ lessons.push(
           </ul></div>
            <p class="step-more-label">产品360 用来做「词—产品」绑定</p>
            <div class="method-note"><strong>先说清入口，不然会找不到。</strong>产品360 不是一个独立页面：先到<strong>产品参谋 → 产品分析</strong>找到那个产品，点行末的「分析」，右侧会滑出一个抽屉，抽屉顶部才是「关键词分析／趋势分析／访客地域／关联商品／流量来源／价格分析／竞品对标」这排页签。<strong>带词的是「关键词分析」这一个页签</strong>；「流量来源」页签只有渠道维度（搜索、推荐、会场这些），里面没有词——这是最容易走错的一步。</div>
+           <figure class="course-figure">
+             <div class="figure-head"><span>01</span><div><strong>产品360 的关键词分析页签</strong><p>产品参谋 → 产品分析 → 行末「分析」→ 右侧抽屉（图内标题与数字已隐去）</p></div></div>
+             <img src="assets/lesson-04-product360-keywords.png" alt="产品360 右侧抽屉的关键词分析页签，含关键词列与搜索曝光、点击、店内询盘、商机转化率等指标列" loading="lazy">
+             <figcaption>抽屉顶部那排页签，只有<strong>「关键词分析」</strong>这一页带词；点错到「流量来源」就只剩渠道、看不到词。表格是<strong>关键词 + 九个指标 + 操作</strong>：左边两个曝光两个点击分「搜索」和「标准推广」两套，正好对照自然流量和付费流量；右边一路到「商机转化率」，是这个产品在每个词上的结果。一列一列横着读，能看出词是好在曝光、好在点击、还是好在承接。</figcaption>
+           </figure>
            <div class="method-note"><strong>关键词分析的价值在于对得上号。</strong>同一个词在 A 产品上一直带来商机，说明词和产品匹配，可以固化进标题；如果某个词有曝光，但商机全跑到别的产品上，说明类目或标题指错了地方——这时候改标题比加预算有效。<br>按产品看还有一个用处：能发现「词是好词，但挂错了链接」，这是老店最常见的浪费。</div>
-          <p class="step-more-label">来源词怎么取出来，取出来怎么用</p>
+           <p class="step-more-label">来源词怎么取出来，取出来怎么用</p>
+           <figure class="course-figure">
+             <div class="figure-head"><span>02</span><div><strong>访客详情这一页长什么样</strong><p>数据参谋 → 访客详情（图内关键词与数字已隐去）</p></div></div>
+             <img src="assets/lesson-04-visitor-keywords.png" alt="国际站数据参谋访客详情页，含搜索词筛选、统计周期与国家筛选，以及七个数据列" loading="lazy">
+             <figcaption>看三处就够：<strong>左上「搜索词」框</strong>（筛某一类词）、<strong>「统计周期」</strong>（最近7天／最近31天／自定义）、<strong>第五列「全站偏好关键词」</strong>（前面依次是访客、国家及地区、浏览次数、停留时长）——课程口语叫来源词，就是这一列。一行是一个访客，不是一次浏览；同一个访客来三次，这里仍然只占一行。</figcaption>
+           </figure>
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>取法</th><th>适合什么情况</th><th>拿到什么</th></tr></thead><tbody>
             <tr><td>页面逐条看</td><td>词量少、核对单条访客</td><td>来源词、国家、浏览行为，适合抽样验证</td></tr>
             <tr><td>插件或自研脚本导出</td><td>要按词统计、要跑几十上百条</td><td>整月访客明细 Excel，可排序可汇总，能按「是否询盘／是否 TM」打标</td></tr>
