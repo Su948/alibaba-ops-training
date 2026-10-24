@@ -326,26 +326,48 @@ const lessons = [
           </ul></div>
           <div class="method-note"><strong>选对标不是选最强的。</strong>头部大卖家的供应链和团队规模你复制不了，拆完只会得到「我做不到」的结论。选那种「比我强一档、但路径看得懂」的，才是能落地的对标。</div>
         </div></details>`],
-      ["拆产品结构", "记录主推款的形态、SKU 宽度、价格带分布和 MOQ。先拆结构，再看表达——结构决定你能不能接这个单。",
-        `<details class="step-more"><summary>展开看拆解表怎么填</summary><div class="step-more-body">
+      ["拆产品结构", "记录主推款的形态、SKU 宽度、价格带分布和最低起订量（MOQ）。先拆结构，再看表达——结构决定你能不能接这个单。",
+        `<details class="step-more"><summary>展开看拆解表怎么填与真实搜索卡片</summary><div class="step-more-body">
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>字段</th><th>怎么记</th><th>用来判断什么</th></tr></thead><tbody>
             <tr><td>主推形态</td><td>店铺首屏和橱窗里反复出现的那一款</td><td>当地市场认哪种形态</td></tr>
             <tr><td>SKU 宽度</td><td>同款有几个颜色／规格／套装</td><td>对方靠单款打透还是靠宽度铺量</td></tr>
             <tr><td>价格带</td><td>最低价、主推价、最高价三个点</td><td>你的成本能落在哪一档</td></tr>
-            <tr><td>MOQ</td><td>起订量及是否支持混批</td><td>你的起订量是优势还是门槛</td></tr>
+            <tr><td>起订量</td><td>起订量及是否支持混批（搜索端显示为「最低起订量」）</td><td>你的起订量是优势还是门槛</td></tr>
             <tr><td>交期与定制</td><td>是否写明打样时间、能否改 logo／包装</td><td>对方接的是标准单还是定制单</td></tr>
           </tbody></table></div>
+          <figure class="course-figure">
+            <div class="figure-head"><span>01</span><div><strong>买家端搜索结果卡片与价格带分布</strong><p>国际站买家端搜索页（以 neck massager 为例，供应商已匿名）</p></div></div>
+            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看买家搜索卡片截图"><img src="assets/lesson-03-price-band.png" alt="国际站买家搜索端真实产品卡片，展示价格区间、最低起订量、已售件数以及顶部属性筛选栏" loading="lazy"></div>
+            <figcaption>买家端搜索结果卡片结构：① <strong>价格带区间</strong>（注意：卡片价格符号由买家端或当前账号的站点币种决定，图中 <code>₩</code> 为韩元显示，交货地设为 CA 加拿大，日常对标时请核对自己顶栏的货币设置并统一折算为 USD 美元或 RMB 记账）；② <strong>起订量字段</strong>（国际站卡片上显示的正式字段名是<strong>「最低起订量：N piece」</strong>，不要在页面上硬找英文缩写 MOQ）；③ <strong>已售笔数与评价数量</strong>（验证真实市场热度与采购动销）；④ <strong>顶部属性与认证标签</strong>（如 CE 认证、快速定制、Verified 供应商等，反映买家高频筛选意图与准入门槛）。</figcaption>
+          </figure>
           <div class="method-note"><strong>20 个产品怎么记才不白记：</strong>按「形态 × 价格带」交叉着记，每个格子至少 2 个样本。如果 20 个里 15 个都落在同一档，说明你其实只拆了 1 个结论，回去补样本。</div>
         </div></details>`],
       ["拆表达方式", "看标题词、主图类型、详情结构和认证展示。表达决定同样的产品为什么别人点得多。",
-        `<details class="step-more"><summary>展开看四个维度怎么对照</summary><div class="step-more-body">
+        `<details class="step-more"><summary>展开看四个维度与对标旺铺结构</summary><div class="step-more-body">
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>维度</th><th>看什么</th><th>记成什么</th></tr></thead><tbody>
             <tr><td>标题</td><td>前三个词放的是品类词还是卖点词</td><td>词序结构，不是整句照抄</td></tr>
             <tr><td>主图</td><td>首图是白底、场景还是带角标</td><td>主图类型 + 出现的卖点信息层级</td></tr>
             <tr><td>详情</td><td>前三屏讲什么：参数、场景还是认证</td><td>信息顺序，这是最容易抄错的部分</td></tr>
             <tr><td>认证</td><td>放在首屏、详情中段还是末尾</td><td>认证在当地是入场券还是加分项</td></tr>
           </tbody></table></div>
-          <div class="method-note"><strong>抄结构，别抄文案。</strong>同行的英文表达可能本身就不地道，但他们的信息顺序（先讲什么、把认证放哪）往往是踩过坑才定下来的，这部分才值得学。</div>
+          <figure class="course-figure">
+            <div class="figure-head"><span>02</span><div><strong>同行对标旺铺结构与分类陈列</strong><p>同行旺铺「全部商品」页（店招与账号信息已脱敏处理）</p></div></div>
+            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看同行旺铺截图"><img src="assets/lesson-03-competitor-shop.png" alt="同行旺铺全部商品页，展示顶部导航、精选橱窗、产品分类树以及商品网格陈列" loading="lazy"></div>
+            <figcaption>同行对标旺铺结构：<strong>同行旺铺首页通常包含纵深长达数千像素的全屏品牌大 Banner，若要在单屏内看清其主推款、价格分布与产品分类，应直接点击顶部导航的「产品 / 全部商品」页签。</strong>左侧为细分品类树，中间为主推产品与网格陈列。</figcaption>
+          </figure>
+          <p class="step-more-label">同行优秀旺铺的标准动线拆解（从上到下）</p>
+          <div class="mindmap"><div class="mm-root">成熟 B2B 旺铺自上而下 9 屏动线</div><ul class="mm-list">
+            <li><strong>1. 店招与企业标识</strong><span>品牌定位、核心卖点、Verified 验真资质</span></li>
+            <li><strong>2. 顶部导航条</strong><span>首页／产品／公司档案＋店内搜索（买家找货第一入口）</span></li>
+            <li><strong>3. 全屏 Banner 视觉区</strong><span>季度主推款场景大图、痛点解决方案</span></li>
+            <li><strong>4. 实力背书与认证</strong><span>国际权威检验机构验真标签（如 TÜV / SGS 等）</span></li>
+            <li><strong>5. 企业核心竞争力视频</strong><span>无尘车间、研发团队、自动化产线实拍</span></li>
+            <li><strong>6. 主推产品与精选橱窗</strong><span>爆款产品网格、主推形态陈列</span></li>
+            <li><strong>7. 细分场景分类磁贴</strong><span>按功能/人群/使用场景分流</span></li>
+            <li><strong>8. 公司简介与产能实力</strong><span>厂房面积、日产能、交期保障承诺</span></li>
+            <li><strong>9. 认证矩阵与定制能力</strong><span>CE/FDA/RoHS、R&D 专利、ODM/OEM 流程、主要出口市场与多语言站点</span></li>
+          </ul></div>
+          <div class="method-note"><strong>抄结构，别抄文案。</strong>同行的英文表达可能本身就不地道，但他们的信息顺序（先讲什么、把认证放哪、分类怎么切）往往是踩过坑才定下来的，这部分才值得学。</div>
         </div></details>`],
       ["拆交易与流量信号", "看成交、评价、橱窗和广告位。信号决定这个方向是「真被验证」还是「看着热闹」。",
         `<details class="step-more"><summary>展开看信号怎么读</summary><div class="step-more-body">
@@ -1310,13 +1332,18 @@ lessons.push(
           <div class="method-note"><strong>不要报「面议」。</strong>面议看起来留了余地，实际上是把决策成本推给客户。真想留空间，就报区间加条件——「1000 台以上可谈到 X，具体看包装要求」。</div>
         </div></details>`],
       ["RFQ 是抢的，不是等的", "RFQ 广场上同一需求有多个供应商在看。买家决定回谁，通常只看前两条消息。",
-        `<details class="step-more"><summary>展开看怎么挑、怎么报</summary><div class="step-more-body">
+        `<details class="step-more"><summary>展开看怎么挑、怎么报与真实 RFQ 卡片</summary><div class="step-more-body">
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>环节</th><th>标准</th></tr></thead><tbody>
             <tr><td>挑 RFQ</td><td>产品匹配、需求具体、国家在主推市场、竞争席位还没满</td></tr>
             <tr><td>消息开头</td><td>前两句话给结论：能不能做、价格区间、交期</td></tr>
             <tr><td>差异化</td><td>认证、样品政策、小单能力、交期——挑你最占优的那个说</td></tr>
             <tr><td>结尾</td><td>一个明确的下一步，比如「确认数量后我把详细报价和样品方案发您」</td></tr>
           </tbody></table></div>
+          <figure class="course-figure">
+            <div class="figure-head"><span>03</span><div><strong>RFQ 推荐商机卡片结构与席位时效</strong><p>商机沟通 → 常用功能 →「RFQ 推荐」卡片流（买家隐私信息已脱敏）</p></div></div>
+            <img src="assets/lesson-11-rfq-market.png" alt="阿里国际站后台 RFQ 推荐单卡，展示金牌商机徽标、求购标题、采购量 50 Pieces、发布地点丹麦、剩余 3 个报价席位与发布时效" loading="lazy">
+            <figcaption>入口在后台<strong>「商机沟通 → 常用功能 → RFQ 推荐」</strong>。单张 RFQ 卡片包含核心判读维度：① <strong>商机标签</strong>（如金牌商机、优选商机徽标）；② <strong>求购标题</strong>（明确品类与规格，如无线遥控真空拔罐器带内置电池）；③ <strong>采购量与发布地点</strong>（如 <code>采购量：50 Piece/Pieces</code>，<code>发布地点：Denmark</code> 与国旗）；④ <strong>剩余席位与时效</strong>（如<code>剩余3个报价席位</code>、<code>发布日期：11 小时前</code>）。<strong>注意：RFQ 报价席位通常有限（常见为 5—10 个），高价值金牌商机席位消耗极快；只要席位大于 0 且与自身品类匹配，务必第一时间组织定制化精准报价，抢占买家前两条有效触达窗口。</strong></figcaption>
+          </figure>
           <div class="method-note"><strong>要让买家看出你读了他的需求。</strong>复制粘贴的通用报价，买家一眼能认出来。开头提一句他写的具体条件（数量、用途、目的国），回复率会明显不一样。</div>
         </div></details>`],
       ["跟进要有节奏，不是想起来才发", "跟进不是「催」，是每次带一个新的、对他有用的信息。空催三次，客户就把你静音了。",
@@ -1337,7 +1364,7 @@ lessons.push(
             <li><strong>二、信任</strong><span>问认证、问验厂、问老客户 → 给报告、给流程、给匿名案例</span></li>
             <li><strong>三、时机</strong><span>说「项目还在评估」「明年再采购」→ 转长期维护，别硬推</span></li>
             <li><strong>四、对接人不对</strong><span>回复很慢、只转达不决策 → 想办法触达决策链，而不是催他</span></li>
-          </ul></div>
+          </tbody></table></div>
           <div class="method-note"><strong>三个快速判断：</strong>还在问细节＝有意向但没定；只回价格、不回其他＝在比价；完全不回＝时机或对接人问题。<strong>对着症状选动作</strong>，不要一律降价。</div>
         </div></details>`],
       ["成交与回传（起草信用保障订单）", "意向谈定后在后台起草信保订单，订单条款必须与聊天记录逐项一致；成交与丢单反馈必须闭环回传给运营。",
@@ -1351,7 +1378,7 @@ lessons.push(
             <tr><td>回传运营④</td><td>成交的产品、国家和数量，用来校正主推判断</td></tr>
           </tbody></table></div>
           <figure class="course-figure">
-            <div class="figure-head"><span>03</span><div><strong>起草信用保障订单表单全貌</strong><p>交易管理总览 →「起草信用保障订单」表单全貌（字段结构展示）</p></div></div>
+            <div class="figure-head"><span>04</span><div><strong>起草信用保障订单表单全貌</strong><p>交易管理总览 →「起草信用保障订单」表单全貌（字段结构展示）</p></div></div>
             <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看信保订单表单截图"><img src="assets/lesson-11-trade-assurance-order.png" alt="阿里国际站起草信用保障订单全貌，包含交易设置、买家信息、产品信息、运输信息、出口方式、交易保障服务与支付条款七大区块" loading="lazy"></div>
             <figcaption>入口在后台 <code>biz.alibaba.com</code> 交易管理总览，点击<strong>「起草信用保障订单」</strong>。整张表单严格分为七大区块：<strong>① 交易设置</strong>（结算方式汇款/信用卡/信用证，币种选 USD 或 CNY）；<strong>② 买家信息</strong>（买家邮箱、姓名与收货地址）；<strong>③ 产品信息</strong>（点击添加产品，录入数量、单价与规格）；<strong>④ 运输信息</strong>（拆为三项：运输方式、发货日期、贸易术语 FOB／CIF／EXW 等）；<strong>⑤ 出口方式</strong>（自营出口／便捷发货等）；<strong>⑥ 交易保障服务</strong>（信保额度与保障范围）；<strong>⑦ 支付条款</strong>（总价、预付款与尾款比例）。<strong>起草前必须对照聊天记录逐字核实产品型号、总价与贸易术语</strong>，确认无误再提交，严防口头承诺与线上合同不一致导致的违约纠纷。</figcaption>
           </figure>
