@@ -534,22 +534,32 @@ lessons.push(
     quick: "高质量链接不是字段填满，而是买家在正确类目里看到匹配的标题和主图，进页面后快速确认三件事：规格对不对、你能不能做、下一步怎么谈。工厂店要证明「我能做」，贸易店要证明「我能配齐、能快发」——证明错了，流量再多也不转化。",
     steps: [
       ["选对类目与产品形态", "优先保证类目、产品名称和实际交付一致。用高流量类目换来的曝光，基本都是不精准曝光。",
-        `<details class="step-more"><summary>展开看类目错的代价</summary><div class="step-more-body">
+        `<details class="step-more"><summary>展开看类目错的代价与后台类目选择</summary><div class="step-more-body">
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>错法</th><th>会出现什么</th><th>代价</th></tr></thead><tbody>
             <tr><td>挂到更热的上级类目</td><td>曝光涨了，点击率暴跌</td><td>拖低整店点击率，影响系统推荐</td></tr>
             <tr><td>挂到相近但不相同的类目</td><td>来的买家问的都不是这个产品</td><td>询盘质量差，业务员白耗时间</td></tr>
             <tr><td>多类目重复铺同款</td><td>自己跟自己抢流量</td><td>分散权重，两款都做不起来</td></tr>
           </tbody></table></div>
           <div class="method-note"><strong>自查方法：</strong>把这个类目的 Top 20 产品打开看一遍，如果至少 15 个和你的产品形态一致，类目就是对的。少于一半，回去重选。</div>
+          <figure class="course-figure">
+            <div class="figure-head"><span>01</span><div><strong>发品后台的类目匹配与推荐</strong><p>商品管理 → 商品发布 →「类目发品」页面</p></div></div>
+            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看类目选择截图"><img src="assets/lesson-05-publish-category.png" alt="商品发布后台的类目发品页面，包含商品图片、商品名称、搜索类目输入框及匹配的三层类目列表" loading="lazy"></div>
+            <figcaption>入口叫<strong>「商品管理 → 商品发布」</strong>，落地页叫<strong>「类目发品」</strong>。看核心操作流：① 在<strong>「搜索类目」</strong>框输入你的核心产品英文词（如 <code>neck massager</code>）；② 系统会在下方列出匹配的三层类目树（如 <code>健康护理 >> 按摩用品 >> 按摩枕／肩颈部按摩仪</code>）；③ 点击选中最吻合的底层类目，页面最底部会显示「已选类目」，点击「我已阅读如上规则，现在发布产品」进入属性填写页。<strong>不要凭主观感觉随便挂大类</strong>，类目一旦放错，后面质量助手会直接报黄标判定为「较差」。</figcaption>
+          </figure>
         </div></details>`],
-      ["填写结构化属性", "完整填写材质、规格、用途、认证、产地和定制能力。属性不只是给买家看的，也是给筛选和推荐用的。",
-        `<details class="step-more"><summary>展开看哪些属性必须填满</summary><div class="step-more-body">
+      ["填写结构化属性与阶梯价格", "完整填写材质、规格、用途、认证、产地和定制能力；设置合理的梯度起订量与交期。属性不只是给买家看的，也是给筛选和推荐用的。",
+        `<details class="step-more"><summary>展开看属性必填项、规格与阶梯价格设置</summary><div class="step-more-body">
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>属性组</th><th>填到什么程度</th><th>漏填的后果</th></tr></thead><tbody>
             <tr><td>材质与规格</td><td>可量化的全部填，不留空</td><td>进不了筛选结果，等于不存在</td></tr>
             <tr><td>认证</td><td>只填真实持有的，写清型号范围</td><td>写错或夸大属于合规风险</td></tr>
             <tr><td>定制能力</td><td>能做什么、起订多少、是否收费</td><td>买家要问一遍，沟通成本翻倍</td></tr>
             <tr><td>产地与交期</td><td>填常规交期，不填最快纪录</td><td>承诺兑现不了，纠纷从这里开始</td></tr>
           </tbody></table></div>
+          <figure class="course-figure">
+            <div class="figure-head"><span>02</span><div><strong>属性与阶梯价格长什么样</strong><p>发品后台 → 商品属性与交易信息设置区</p></div></div>
+            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看属性与价格设置截图"><img src="assets/lesson-05-product-attributes-price.png" alt="商品发布后台中的商品属性、商品规格、根据数量设置阶梯价、发货期设置区" loading="lazy"></div>
+            <figcaption>看两个关键区：<strong>① 上半部「商品属性」</strong>：分为 4 项必填属性（功能、售后、原产地、适用部位）和其他属性（品牌、型号、尺寸、类型等）。<strong>注意：品牌和型号是文本输入框，不是勾选框；型号不能当规格填</strong>。<strong>② 下半部「交易信息」</strong>：支持勾选商品规格（颜色/材质传图）；下方<strong>「根据数量设置阶梯价」</strong>支持多区间设置（最小起订量、单件价格）；最底部<strong>「发货期」</strong>根据不同订货量区间明确填写预计发货天数。阶梯价和交期必须和业务员口径完全对齐，严防前台写 7 天、实际生产要 30 天导致的违约纠纷。</figcaption>
+          </figure>
         </div></details>`],
       ["组合标题", "按核心产品词 + 关键属性 + 使用场景组织。词从第 04 课的词库里取，标题只放 1 个核心词和 2—3 个强属性词。",
         `<details class="step-more"><summary>展开看词序怎么排</summary><div class="step-more-body">
@@ -593,8 +603,8 @@ lessons.push(
           <div class="method-note"><strong>一句话判断：</strong>把详情页第一屏给一个陌生买家看三秒，他能不能说出「这家是工厂还是贸易」。说不出来，说明你的证明还没做到位。</div>
           <div class="method-note"><strong>别硬装。</strong>贸易店在详情里写「自有工厂」，客户验厂时立刻穿帮；工厂店去拼「品类最全」，产线配不齐反而拖交期。写你真实能兑现的那部分，转化率比吹出来的高。</div>
         </div></details>`],
-      ["发布后检查", "从移动端和买家视角检查截断、错误参数、图片清晰度、MOQ、价格与询盘按钮。发布不是终点，是第一次验收。",
-        `<details class="step-more"><summary>展开看发布前检查清单</summary><div class="step-more-body">
+      ["发布后检查与质量助手自检", "从移动端和买家视角检查截断、错误参数、图片清晰度、MOQ、价格与询盘按钮，并对照商品质量助手排查错放类目。发布不是终点，是第一次验收。",
+        `<details class="step-more"><summary>展开看发布前检查清单与质量助手面板</summary><div class="step-more-body">
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>检查项</th><th>怎么看</th><th>不合格的信号</th></tr></thead><tbody>
             <tr><td>移动端截断</td><td>用手机打开自己的链接</td><td>标题尾部被截、参数表要横滑</td></tr>
             <tr><td>参数一致性</td><td>属性栏、详情、图片三处对一遍</td><td>功率、尺寸、颜色对不上</td></tr>
@@ -602,47 +612,11 @@ lessons.push(
             <tr><td>MOQ 与价格</td><td>和业务员确认口径</td><td>页面写 50，报价按 500 起</td></tr>
             <tr><td>询盘入口</td><td>自己发一条测试</td><td>按钮点了没反应、表单太长</td></tr>
           </tbody></table></div>
-        </div></details>`]
-    ],
-    decisions: [["无曝光", "类目、关键词或新品覆盖不足", "检查类目与标题，再补充有效词"],["有点击无停留", "首屏信息与广告承诺不一致", "重做首屏卖点和规格表达"],["询盘问题重复", "详情页没有回答关键采购信息", "把高频问题前置到详情与 FAQ"],["询盘问「你是工厂吗」", "详情页没证明制造能力，白丢信任", "补产线、认证、质检到前三屏"],["询盘问「能配齐吗」", "贸易店的宽度没讲出来", "补组合方案与混批门槛"]],
-    checklist: ["类目与产品完全一致", "属性无空缺或矛盾，认证只写真实持有的", "标题只放 1 个核心词 + 2—3 个强属性词", "图片顺序符合买家提问顺序", "详情前三屏能证明「工厂还是贸易」", "MOQ、交期、定制和认证清楚", "手机端实测无截断"],
-    assignment: "选一个准备推广的产品，用本课检查表完成一次发布前审核，记录至少 5 处修改；再写一句：三秒内能不能看出这家店是工厂还是贸易，如果不能，第一屏要改哪里。",
-    sources: [{label:"高质量产品发布与检查（会员）",url:"https://t.zsxq.com/i4vSR"},{label:"词频工具组合标题（会员）",url:"https://t.zsxq.com/lTRhH"}]
-  },
-  {
-    id: 6,
-    stage: "转化",
-    title: "高转化主图与视觉",
-    summary: "每张图只回答一个问题：首图解决点击，后续图按买家的提问顺序排；工厂店和贸易店要证明的东西不一样。",
-    duration: "50 分钟",
-    updated: "2026-10",
-    prerequisites: "第 03—05 课",
-    outcomes: ["用平台榜单和亚马逊对应国家榜单定出视觉参照", "给一套产品图分工：哪张解决点击、哪张回答什么", "判断该用哪种主图类型，以及它的风险", "按买家提问顺序排图，而不是按好看程度排", "守住三条视觉红线：形态、标识、文案"],
-    quick: "B2B 主图不是把产品拍好看，是让买家在缩略图阶段认出产品、点进来，再在后续图里逐个打消疑虑。一张图只能回答一个问题——想在一张图里说完所有卖点，结果通常是什么都没说清。而「该长什么样」不该拍脑袋定，先看榜单。",
-    steps: [
-      ["先看榜单，定视觉参照", "主图的形态、配色和信息优先级，先从前两排的产品里找参照。平台榜单看 B2B 同类目在卖什么，亚马逊对应国家榜单看终端消费者认什么。",
-        `<details class="step-more"><summary>展开看两个榜单各看什么</summary><div class="step-more-body">
-          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>看哪个榜单</th><th>回答什么问题</th><th>局限</th></tr></thead><tbody>
-            <tr><td>国际站平台榜单</td><td>B2B 同类目在卖什么形态、什么在起量</td><td>只看得到平台上已有的，看不到终端审美变化</td></tr>
-            <tr><td>亚马逊对应国家 Best Sellers</td><td>终端消费者认什么形态、什么价位</td><td>B2C 表达，不能直接搬到 B2B 主图</td></tr>
-            <tr><td>亚马逊 New Releases／Movers &amp; Shakers</td><td>什么新品正在快速起量</td><td>样本小，可能只是短期爆款</td></tr>
-          </tbody></table></div>
-          <div class="method-note"><strong>亚马逊要选对应国家的站点。</strong>主推美国就看美国站，主推德国就看德国站。不同站点的审美、认证关注点、价格带差别很大，用美国榜去指导德国主图，等于没看。</div>
-          <p class="step-more-label">榜单只用来回答三件事</p>
-          <div class="mindmap"><div class="mm-root">从左到右看，一层一层定</div><ul class="mm-list">
-            <li><strong>一、形态</strong><span>前两排里反复出现的是哪种形态？这就是主图的主体该长什么样</span></li>
-            <li><strong>二、视觉语言</strong><span>是白底、场景还是带角标？配色偏冷还是偏暖？这决定你的图看起来像不像这个类目</span></li>
-            <li><strong>三、卖点优先级</strong><span>首图和标题在强调什么——价格、功能、材质还是认证？这是买家当下最在意的东西</span></li>
-          </ul></div>
-          <p class="step-more-label">案例：怎么从榜单里读出一个结论</p>
-          <p class="step-more-note">以下为教学示例，类目与数字均为示例，不对应任何真实店铺数据。</p>
-          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>观察</th><th>读出的结论</th><th>主图怎么改</th></tr></thead><tbody>
-            <tr><td>平台榜单前 20 里 11 个是可折叠便携款</td><td>便携款是当季主流形态</td><td>主图主体用便携款，折叠状态展开展示各一张</td></tr>
-            <tr><td>前 3 名都是白底 + 单个角标</td><td>当地买家吃「干净 + 一个硬信息」这套</td><td>首图去背景杂物，只留一个认证或参数角标</td></tr>
-            <tr><td>亚马逊美国站前 20 有 8 个带场景图</td><td>终端在意使用场景</td><td>场景图提前到第 4 张，但首图仍保持干净</td></tr>
-          </tbody></table></div>
-          <div class="method-note"><strong>借形态和视觉语言，不借表达。</strong>亚马逊主图卖的是「消费者现在就想买」，B2B 主图卖的是「你能稳定供这个货」。榜单能告诉你产品该长什么样、图该多干净，但 MOQ、认证、定制能力这些 B2B 必须讲的东西，B2C 榜单里一个都不会有——这三样要自己补。</div>
-          <div class="method-note"><strong>一个判断门槛：</strong>榜单前 20 里同形态出现 5 个以上，说明是主流，主图照它来；只出现 1—2 个，说明是小众形态，反而适合做差异化主图去抢细分。</div>
+          <figure class="course-figure">
+            <div class="figure-head"><span>03</span><div><strong>商品质量助手与错放类目报错</strong><p>发品后台左侧悬浮的「商品质量助手」与报错反馈面板</p></div></div>
+            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看商品质量助手截图"><img src="assets/lesson-05-quality-score.png" alt="商品发布后台中的商品质量助手面板，展示质量评级、类目错放优化建议与报错反馈" loading="lazy"></div>
+            <figcaption>看左侧悬浮的两个面板：<strong>① 上方橙色「报错反馈」</strong>：指出物流提供方式等未达标项，有红标直接无法提交。<strong>② 下方「商品质量助手」</strong>：展示当前的质量综合评级。截图直观展示了类目放错的后果——如果标题写了手部按摩器却错挂到「足部按摩器」，系统会立刻标红警告<strong>「类目错放：商品信息与当前类目不匹配」</strong>，并判定为<strong>「较差 · 商品曝光受限」</strong>，同时给出建议修正的底层类目。<strong>必须按照质量助手的优化建议逐条消除黄红标</strong>，做到各项合规、评级优良后再提交发布。</figcaption>
+          </figure>
         </div></details>`],
       ["先定每张图的分工", "一套图先分岗位，再谈审美。首图负责点击，第 2—5 张负责打消疑虑，第 6 张以后负责证明你可靠，视频负责演示怎么用。",
         `<details class="step-more"><summary>展开看图片分工表</summary><div class="step-more-body">
@@ -1366,8 +1340,8 @@ lessons.push(
           </ul></div>
           <div class="method-note"><strong>三个快速判断：</strong>还在问细节＝有意向但没定；只回价格、不回其他＝在比价；完全不回＝时机或对接人问题。<strong>对着症状选动作</strong>，不要一律降价。</div>
         </div></details>`],
-      ["成交与回传", "订单要一致，反馈要回传。少了回传这一步，运营后面的优化全靠猜。",
-        `<details class="step-more"><summary>展开看订单检查与回传清单</summary><div class="step-more-body">
+      ["成交与回传（起草信用保障订单）", "意向谈定后在后台起草信保订单，订单条款必须与聊天记录逐项一致；成交与丢单反馈必须闭环回传给运营。",
+        `<details class="step-more"><summary>展开看订单检查、信保表单结构与回传清单</summary><div class="step-more-body">
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>环节</th><th>必须一致／必须回传的内容</th></tr></thead><tbody>
             <tr><td>订单一致性</td><td>产品、数量、单价、运费、交期、贸易条款与聊天记录逐项对得上</td></tr>
             <tr><td>特殊费用</td><td>运费、附加费、样品费的处理方式留书面说明，别只在口头说</td></tr>
@@ -1376,36 +1350,12 @@ lessons.push(
             <tr><td>回传运营③</td><td>客户对价格的真实反馈：贵多少、和谁比</td></tr>
             <tr><td>回传运营④</td><td>成交的产品、国家和数量，用来校正主推判断</td></tr>
           </tbody></table></div>
+          <figure class="course-figure">
+            <div class="figure-head"><span>03</span><div><strong>起草信用保障订单表单全貌</strong><p>交易管理总览 →「起草信用保障订单」表单全貌（字段结构展示）</p></div></div>
+            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看信保订单表单截图"><img src="assets/lesson-11-trade-assurance-order.png" alt="阿里国际站起草信用保障订单全貌，包含交易设置、买家信息、产品信息、运输信息、出口方式、交易保障服务与支付条款七大区块" loading="lazy"></div>
+            <figcaption>入口在后台 <code>biz.alibaba.com</code> 交易管理总览，点击<strong>「起草信用保障订单」</strong>。整张表单严格分为七大区块：<strong>① 交易设置</strong>（结算方式汇款/信用卡/信用证，币种选 USD 或 CNY）；<strong>② 买家信息</strong>（买家邮箱、姓名与收货地址）；<strong>③ 产品信息</strong>（点击添加产品，录入数量、单价与规格）；<strong>④ 运输信息</strong>（拆为三项：运输方式、发货日期、贸易术语 FOB／CIF／EXW 等）；<strong>⑤ 出口方式</strong>（自营出口／便捷发货等）；<strong>⑥ 交易保障服务</strong>（信保额度与保障范围）；<strong>⑦ 支付条款</strong>（总价、预付款与尾款比例）。<strong>起草前必须对照聊天记录逐字核实产品型号、总价与贸易术语</strong>，确认无误再提交，严防口头承诺与线上合同不一致导致的违约纠纷。</figcaption>
+          </figure>
           <div class="method-note"><strong>回传不是走流程，是给运营纠错。</strong>没有回传，运营只能靠猜：猜词好不好、猜图行不行、猜国家对不对。猜出来的优化方向，大概率是错的。</div>
-        </div></details>`]
-    ],
-    decisions: [["需求模糊", "早期询价或群发", "用 3—5 个关键问题筛选，不急着报价"],["客户反复比价", "差异和风险价值没表达出来", "用认证、交期、质检和总成本支撑，不直接降价"],["报价后沉默", "下一步不清晰或信息过载", "用单一问题加明确动作重新跟进"],["报价后只回价格", "他只在比价，没进入评估", "给可比条件（贸易术语、有效期、阶梯价）"],["问认证问验厂", "信任卡点，不是价格卡点", "给报告、流程和匿名案例"]],
-    checklist: ["询盘已按五个信号分级，标准固定", "首次回复给了具体信息，不是只问需求", "报价含八项字段，有有效期", "RFQ 开头两句话给了结论", "跟进按 D0／D2／D4／D7 有节奏", "每次跟进只问一个问题", "订单条款与聊天记录逐项对得上", "成交与丢单原因已回传运营"],
-    assignment: "选一条历史询盘或 RFQ，做四件事：按五个信号定级、重写首次回复（三段式）、重做一份含八项字段的报价、设计 D0／D2／D4／D7 四次跟进，每次只带一个新信息、只问一个问题。最后写一句：这条询盘如果丢了，最可能的原因是哪一类。",
-    sources: [{label:"业务新人培训大纲 XLSX（会员）",url:"https://t.zsxq.com/C39Um"},{label:"RFQ 报价（会员）",url:"https://t.zsxq.com/UHKu2"},{label:"业务学习技能（会员）",url:"https://t.zsxq.com/wIl4v"},{label:"代客户采购的判断（会员）",url:"https://t.zsxq.com/Ol8eH"},{label:"信保订单与运费技巧（会员）",url:"https://t.zsxq.com/H0pAf"},{label:"系统索要地址技巧（会员）",url:"https://t.zsxq.com/6No1o"}]
-  },
-  {
-    id: 12,
-    stage: "管理",
-    title: "运营 SOP、报告与 AI 提效",
-    summary: "把日常操作、复盘和 AI 使用沉淀成可交接、可追踪的团队系统；报告的价值在于归因和动作，不在于篇幅。",
-    duration: "70 分钟",
-    updated: "2026-10",
-    prerequisites: "第 01—11 课",
-    outcomes: ["写出新人能照做的 SOP，而不是任务清单", "分清日、周、月三级各自该做什么决定", "用五个数加一句话写完日报", "把 AI 用在有输入标准和验收标准的环节"],
-    quick: "SOP 不是任务清单，而是触发条件、输入、步骤、输出、负责人和验收标准。检验方法只有一条：交给一个没做过的人，他能不能照着做出一样的结果。报告同理——没有归因和动作的报告，只是数据搬运。",
-    steps: [
-      ["SOP 得能交给新人", "六个要素缺一个，SOP 就变成「给写的人自己看的笔记」。触发条件和验收标准最常被漏掉。",
-        `<details class="step-more"><summary>展开看六要素怎么补齐</summary><div class="step-more-body">
-          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>要素</th><th>要写清什么</th><th>缺了会怎样</th></tr></thead><tbody>
-            <tr><td>触发条件</td><td>什么时候做：固定时间，还是某个事件发生</td><td>没人知道该什么时候开始</td></tr>
-            <tr><td>输入</td><td>需要哪些报表、数据、素材</td><td>做到一半发现缺数据，来回补</td></tr>
-            <tr><td>步骤</td><td>按顺序写，能被照做</td><td>只有结论没有过程，新人没法执行</td></tr>
-            <tr><td>输出</td><td>产出什么、放在哪个文件或表格</td><td>做完没人知道东西在哪</td></tr>
-            <tr><td>负责人</td><td>谁做、谁验收</td><td>出问题找不到人</td></tr>
-            <tr><td>验收标准</td><td>做到什么程度算完成，用什么数判断</td><td>「做完了」但没人能确认对错</td></tr>
-          </tbody></table></div>
-          <div class="method-note"><strong>检验方法：</strong>把这条 SOP 交给一个没做过这件事的同事，他能不能照着做出一样的结果。做不到，回去补「输入」和「验收标准」——这两个地方最容易糊过去。</div>
         </div></details>`],
       ["日、周、月各管一件事", "三级节奏混乱，最常见的表现是「用日级动作解决月级问题」：每天都在改，一个月过去结构没动过。",
         `<details class="step-more"><summary>展开看三级各做什么、不做什么</summary><div class="step-more-body">
