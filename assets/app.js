@@ -873,15 +873,23 @@ lessons.push(
     id: 8,
     stage: "增长",
     title: "直通车基础与计划搭建",
-    summary: "先把目标、产品、词和预算结构搭正确，再谈降成本和扩大投放；规则类内容每季度核对一次。",
-    duration: "65 分钟",
+    summary: "认清国际站广告三大板块（品牌广告、全站推、标准推广），掌握标准计划搭建与「词、品、国、时」四维调控法；用可归因的结构换取真实商机。",
+    duration: "75 分钟",
     updated: "2026-10",
     prerequisites: "第 02、04—07 课",
-    outcomes: ["为一次投放目标选对计划结构", "按产品、意图和国家拆分计划，避免预算混烧", "用倒推法定预算与观察周期", "建立一份自己的规则核对清单"],
-    quick: "广告计划首先是一个验证工具：用明确的产品、明确的市场和明确的目标，换取可解释的数据。计划混品、混词、混目标之后，即使出了询盘，你也说不清是哪一条起了作用。",
+    outcomes: ["说清国际站三大广告板块（品牌/全站推/标准推广）的定位与分工", "掌握标准计划「词、品、国、时」四维调优机制与淘汰红线", "按产品形态、搜索意图与核心国家拆分计划，避免预算混烧", "用倒推法定预算，建立一套可执行的日常排查与规则核对 SOP"],
+    quick: "国际站广告分为三大板块：品牌广告（问鼎、顶展、聚量）、全站推广（推工厂、日预算、智能推）与标准推广（新品加速、关键词推广、爆品助推）。广告计划首先是一个验证工具：用明确的产品、明确的市场和明确的目标，换取可解释的数据。计划混品、混词、混目标之后，即使出了询盘，你也说不清是哪一条起了作用。",
     steps: [
-      ["先定唯一目标", "一个计划只回答一个问题。测品、测词、拿询盘、放大成熟品、验证国家，这五件事的判断标准完全不同，混在一起就无法归因。",
-        `<details class="step-more"><summary>展开看五种目标怎么分</summary><div class="step-more-body">
+      ["先认清广告全景与确定唯一目标", "国际站广告分为三大板块，选对工具是第一步；而具体到一个计划，它只能回答一个问题。测品、测词、拿询盘、放大成熟品、验证国家，这五件事的判断标准完全不同，混在一起就无法归因。",
+        `<details class="step-more"><summary>展开看广告板块分工与五种投放目标</summary><div class="step-more-body">
+          <p class="step-more-label">国际站三大广告板块全景与定位</p>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>广告大类</th><th>包含工具／计划类型</th><th>计费与运作特点</th><th>适合什么场景</th></tr></thead><tbody>
+            <tr><td><strong>品牌广告</strong></td><td>问鼎、顶展（顶级展位）、聚量</td><td>包月／包年／CPV 为主，PC 与 App 首位独占，强占行业心智</td><td>成熟大牌、头部大单品，锁定行业核心词第一名</td></tr>
+            <tr><td><strong>全站推广</strong><br>（直通车）</td><td>推工厂、日预算、智能推</td><td>全域算法智能匹配，系统以品寻客，按全站商机或效果出价</td><td>拓新客、全店商品补量、放大成熟爆品（详见第 09 课）</td></tr>
+            <tr><td><strong>标准推广</strong><br>（直通车·本课重点）</td><td>新品加速、关键词推广、爆品助推</td><td>P4P 点击付费，自主选品、选词、定出价、定国家与时段</td><td>新品冷启动测款、核心精准词打透、自主可控拿询盘</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>新手最容易犯的错误：把全站推和标准推广混着开、同一产品两边跑。</strong>两者的底层逻辑完全不同：标准推广买的是「明确的搜索意图」，全站推买的是「系统预测的潜在需求」。必须各司其职，不要把没测明白的品直接丢给系统去放大。</div>
+          <p class="step-more-label">标准推广的五种投放目标</p>
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>目标</th><th>要看的结果</th><th>不能混进来的东西</th></tr></thead><tbody>
             <tr><td>测品</td><td>这个形态有没有需求</td><td>其他形态的产品</td></tr>
             <tr><td>测词</td><td>哪些词能带来精准流量</td><td>不同意图的词混在一组</td></tr>
@@ -891,8 +899,8 @@ lessons.push(
           </tbody></table></div>
           <div class="method-note"><strong>判断标准不一样，就不能放一个计划里。</strong>测品看的是「有没有人问」，拿询盘看的是「成本多少」。同一个计划里两个标准并存，最后一定是拿成本去否定一个还没验证完的品。</div>
         </div></details>`],
-      ["控制计划粒度", "产品和词都要同构：同形态的产品放一起，同意图的词放一起。粒度太粗预算被摊薄，粒度太细跑不出样本。",
-        `<details class="step-more"><summary>展开看三条拆分原则</summary><div class="step-more-body">
+      ["控制计划粒度与加品/删品规则（品维调控）", "产品和词都要同构：同形态的产品放一起，同意图的词放一起。同时建立严格的加品准入和删品淘汰红线，避免预算浪费和多计划左右互搏。",
+        `<details class="step-more"><summary>展开看拆分原则与加删品红线</summary><div class="step-more-body">
           <div class="mindmap"><div class="mm-root">按三个维度拆计划</div><ul class="mm-list">
             <li><strong>一、按产品形态</strong><span>不同形态不共预算。台式款和便携款的点击成本和转化率本来就不一样</span></li>
             <li><strong>二、按搜索意图</strong><span>品类词、采购意图词（OEM／wholesale）、长尾场景词分组。意图不同，出价逻辑不同</span></li>
@@ -903,7 +911,15 @@ lessons.push(
              <div class="figure-head"><span>01</span><div><strong>计划列表长什么样</strong><p>营销中心 → 标准推广（金额与计划名已隐去）</p></div></div>
              <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看计划列表截图"><img src="assets/lesson-08-ads-plan-list.png" alt="标准推广的计划列表，含状态、计划、诊断状态、预算、出价、投放渠道、推广商品数、推广关键词数、花费等列" loading="lazy"></div>
              <figcaption>这张表就是你判断「粒度对不对」的地方。<strong>「推广商品数」和「推广关键词数」两列并排看</strong>：商品数很多、词也很多，几乎一定混烧；商品数 1—3、词几十个，才是一个能归因的计划。右边「预算」「出价」「花费」挨在一起，是用来对照「预算给了多少、实际花了多少」的——三个数一起看才有意义，单看花费没有判断价值。左侧「状态」与「诊断状态」是平台给的提示，不等于你的结论。</figcaption>
-                       </figure>
+           </figure>
+           <p class="step-more-label">产品维度的日常调控：删品与加品硬性红线</p>
+           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>调整动作</th><th>触发条件（硬性红线）</th><th>处理方式与执行原则</th></tr></thead><tbody>
+             <tr><td><strong>删品红线 ①</strong></td><td>连续 30 天无商机，且有持续花费消耗</td><td><strong>坚决移出计划</strong>。说明该品在现有出价和人群下无法转化，继续放着纯属浪费预算</td></tr>
+             <tr><td><strong>删品红线 ②</strong></td><td>仅有曝光，0 点击、0 商机</td><td><strong>坚决移出计划</strong>。买家毫无点击欲望，说明主图吸睛度或产品形态严重不过关，必须回第 06 课重修视觉</td></tr>
+             <tr><td><strong>删品红线 ③</strong></td><td>各项核心数据显著低迷，持续无商机</td><td><strong>及时止损移出</strong>，停止无效试错</td></tr>
+             <tr><td><strong>加品红线<br>（资产防撞车）</strong></td><td><strong>已在「全站推·推工厂」产生过商机的产品</strong></td><td><strong>绝对禁止加入标准推广计划！</strong>避免同一款产品在不同计划里互抢曝光、重复消耗费用，破坏推工厂原本已建立的算法模型</td></tr>
+             <tr><td><strong>加品准入标准</strong></td><td>推工厂与其他计划中未产生商机的潜力品</td><td>在产品参谋/产品运营工作台筛选「优品」：<strong>近 90 天内 TM + 询盘在 1～10 之间</strong>（有基础转化信号，尚未打透的潜力款）。单计划单次最多添加 5 个，严格同品类</td></tr>
+           </tbody></table></div>
          </div></details>`],
        ["用倒推法定预算与周期", "预算不是「今天想花多少」，是从目标倒推出来的：想要几条询盘、能接受多少成本、需要多少点击、需要多少钱。",
         `<details class="step-more"><summary>展开看倒推四步</summary><div class="step-more-body">
@@ -915,8 +931,9 @@ lessons.push(
           </tbody></table></div>
           <div class="method-note"><strong>周期比金额重要。</strong>预算再小，也要覆盖 7 天；能覆盖 14 天更好。预算小到三天就烧完，你拿到的只是三天的噪音，不是趋势。</div>
         </div></details>`],
-      ["配词与匹配方式", "词来自第 04 课清洗并分组过的词库，不要在现场临时想词。第一轮以精准为主，采购意图词单独成组。",
-        `<details class="step-more"><summary>展开看第一轮配置</summary><div class="step-more-body">
+      ["配词、匹配方式与商机词淘汰（词维调控）", "词来自清洗过的词库与日常积累的买家商机词，第一轮以精准为主，采购意图词单独成组；建立半月至一月的淘汰红线，不让僵尸词和吸费词赖在计划里。",
+        `<details class="step-more"><summary>展开看配词原则、商机词挖掘与淘汰三红线</summary><div class="step-more-body">
+          <p class="step-more-label">第一轮建计划配词原则</p>
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>项目</th><th>第一轮做法</th><th>原因</th></tr></thead><tbody>
             <tr><td>词源</td><td>只用已分好意图的词</td><td>现场想词，等于用预算做词库测试</td></tr>
             <tr><td>词量</td><td>十几到几十个精准词</td><td>词太多预算摊薄，每个词都跑不出数据</td></tr>
@@ -931,7 +948,38 @@ lessons.push(
            </figure>
            <div class="method-note"><strong>这处最容易被写错，记牢：</strong>匹配方式<strong>不是逐词设置</strong>，是计划级统一设置，入口在关键词页右上角（文案形如「匹配方式：短语匹配」）。所以「这个计划用精准、那个计划用宽泛」是拆计划的理由之一，而不是在同一个计划里混着设。</div>
            <div class="method-note"><strong>屏蔽词的入口也在这页。</strong>关键词列表左上角有一个下拉（显示「词组」），里面能打开词报告、也能进屏蔽词；零售词、维修词、配件词就在这里排掉，不用去别的页面找。</div>
+           <p class="step-more-label">商机词深度挖掘与 AI 辅助分析 SOP</p>
+           <div class="method-note"><strong>商机词从哪里来：</strong>一是「访客详情」中通过来搜或自研脚本导出的买家进店来源词；二是业务员日常在《询盘与客情登记表》中记录的真实买家询价词。<br><strong>借助 AI（Accio／GPT）进行结构化清洗：</strong>把导出的带访客、国家、产品 ID 和询盘标记的数据表提供给 AI，使用以下标准话术指令：<br>
+           <code>“这是门店近期的访客与商机来源明细，请帮我分析输出表格与图表：<br>1. 整理所有产生过询盘或 TM 的商机来源词，按词频排序，核对与当下主推产品是否匹配；<br>2. 统计每个商机来源词对应绑定的产品 ID，找出带词核心款；<br>3. 汇总商机访客国家分布，测算各国家转化率（哪些是高转化国、哪些是无效国）；<br>4. 进行商机词意图分类（如按产品线划分为液体包装机词包、薯片包装机词包等），提取前 10 高频词填入对应计划。”</code></div>
+           <p class="step-more-label">关键词日常复盘与淘汰三红线</p>
+           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>淘汰红线</th><th>触发条件</th><th>处理动作与诊断依据</th></tr></thead><tbody>
+             <tr><td><strong>红线 ①：0 曝光</strong></td><td>添加满 15～30 天，曝光依然为 0</td><td><strong>直接删除</strong>。说明出价远低于门槛，或该词极其冷门根本无人搜索，留着占名额无意义</td></tr>
+             <tr><td><strong>红线 ②：高曝光、0 点击、0 商机</strong></td><td>持续累积高曝光，点击率极低甚至为 0</td><td><strong>直接删除</strong>。典型的词与主图/形态不符，买家搜了这个词看到你的产品根本不想点</td></tr>
+             <tr><td><strong>红线 ③：高曝光、高点击、持续无商机</strong></td><td>持续 1 个月高消耗、点击量大，但商机数为 0</td><td><strong>果断删除</strong>。最危险的「吸费词」——虽然热闹但意图不对（如零售、找资料或买家定位偏差），必须止血</td></tr>
+           </tbody></table></div>
+           <div class="method-note"><strong>关键词投放周期管理：</strong>新加词不要每天频繁改动，应以<strong>半个月至一个月</strong>为一个观察调整周期，结合添加时间做批量复盘与末位淘汰。</div>
          </div></details>`],
+      ["设国家与投放时段（国家与时段调控）", "国家跟随第 02 课的主推结论；时段以消耗速度和买家时差为准；遇到业务员反馈「某国全已读不回」，必须用三步 SOP 穿透真实原因，绝不盲目屏蔽。",
+        `<details class="step-more"><summary>展开看国家判断周期、业务员反馈排查 SOP 与时段调控</summary><div class="step-more-body">
+          <p class="step-more-label">国家维度调整：45 天长短期对比</p>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>市场表现</th><th>数据特征（看 1.5 个月）</th><th>调控动作</th></tr></thead><tbody>
+            <tr><td><strong>长期不适合</strong></td><td>连续 1.5 个月（45天）询盘极少、转化极差、买家客单或认证严重不匹配</td><td>果断缩减该国出价，或直接在该计划中<strong>屏蔽该国家</strong></td></tr>
+            <tr><td><strong>短期月度偏差</strong></td><td>历史表现良好，仅单月或某两周数据下滑</td><td><strong>不直接判定市场不行</strong>。多为当地节假日（斋月、圣诞）、季节性淡季或物流波动，保持观察</td></tr>
+          </tbody></table></div>
+          <p class="step-more-label">业务员反馈「某国全已读不回」的排查三步法（破除信息失真）</p>
+          <div class="mindmap"><div class="mm-root">业务员集体说某国质量差，怎么查</div><ul class="mm-list">
+            <li><strong>第一步：后台核查真实性</strong><span>后台抽查该国真实聊天记录。若确认确实 100% 普遍已读不回、无任何有效互动，在该计划中针对性屏蔽该国家</span></li>
+            <li><strong>第二步：排查「主账号转询盘时效卡点」</strong><span>若发现超过 50% 是客户给主账号发了消息，但转给业务员后买家不再回复——问题出在转派延迟或首响过慢！<strong>解法：</strong>设置该国询盘指定业务员直达接单（不走主账号中转）测试 30 天；若直派且无时差依然已读不回，再行屏蔽</span></li>
+            <li><strong>第三步：排查「询盘多但不出单」的分配问题</strong><span>管理层重点指定的潜力国家若询盘多但一单未出，核查沟通记录与话术，排查是否集中分给了同一个业务员；若是沟通方式或专业度卡点，应建议更换分配业务员做对照测试，而不是直接停投广告</span></li>
+          </ul></div>
+          <div class="method-note"><strong>调整周期：</strong>国家维度常规<strong>一个月调整一次</strong>，遇到特殊紧急或严重异常场景即时调整。</div>
+          <p class="step-more-label">投放时段调控：以消耗速度为核心</p>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>消耗速度表现</th><th>排查与诊断方向</th><th>调整动作</th></tr></thead><tbody>
+            <tr><td><strong>消耗过快</strong><br>（如半天烧完日预算）</td><td>对照核心买家国时区，排查是否在<strong>目标国非工作时间或深夜</strong>发生无效集中点击</td><td>调低该时段出价比例（如降至 50%—70%），或直接暂停非目标活跃时段</td></tr>
+            <tr><td><strong>消耗平稳匀速</strong></td><td>预算能平稳跑满全天，且商机产出均匀</td><td><strong>基本不调整</strong>，切忌在正常节奏下随意改动时段</td></tr>
+          </tbody></table></div>
+          <div class="method-note"><strong>AI 辅助时段排查：</strong>把店铺主要询盘和 TM 来源国家，连同直通车时间段排布截图发给 Accio：<code>“这是我店铺询盘与 TM 的主要来源国家，这是我的直通车投放时段设置，帮我核对是否存在目标国深夜烧钱的时区倒挂问题。”</code></div>
+        </div></details>`],
       ["设国家与人群", "国家跟随第 02 课的主推结论，不跟随「哪个国家便宜投哪个」。人群定向是加分项，不是必需项。",
         `<details class="step-more"><summary>展开看国家与人群怎么设</summary><div class="step-more-body">
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>设置项</th><th>原则</th><th>常见错误</th></tr></thead><tbody>
@@ -968,6 +1016,13 @@ lessons.push(
            </figure>
            <div class="method-note"><strong>标准推广组的搜索词报告是空的，先别怀疑报表坏了。</strong>按顺序查三件事：① 这个计划近 7 天到底有没有在投（有预算不等于有在跑）；② 统计周期是不是选得太短；③ 词是不是窄到根本没人搜。三件都正常还空，才去后台报问题。</div>
            <div class="method-note"><strong>一次只改一个变量，改完至少观察 3 天，并记录改动时间和内容。</strong>没有修改记录，两周后你无法解释成本为什么变了，也无法复制成功的做法。</div>
+           <p class="step-more-label">标准推广计划日常调控周期与四维动作总表</p>
+           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>调控维度</th><th>核心依据与指标</th><th>标准操作周期</th><th>触发动作与红线</th></tr></thead><tbody>
+             <tr><td><strong>词（关键词）</strong></td><td>曝光、点击率、商机产出、意图匹配</td><td>每半个月至 1 个月</td><td>0 曝光删、高曝 0 点 0 商机删、高曝高耗持续 1 月 0 商机必删；持续补充访客来源词与询盘登记词</td></tr>
+             <tr><td><strong>品（推广产品）</strong></td><td>商机量、消耗额、点击率、推工厂状态</td><td>每 30 天复盘一次</td><td>30 天无商机有消耗删、仅曝光 0 点 0 商机删；<strong>推工厂出商机品坚决不入</strong>；加品限 90 天优品（1&lt;TM+询盘&lt;10），单次≤5个</td></tr>
+             <tr><td><strong>国（投放国家）</strong></td><td>转化率、有效询盘数、业务员跟进记录</td><td>常规每月（看 45 天）</td><td>区分长期不适（屏蔽）与短期波动；业务员说全已读不回按 3 步排查（核数据→直派30天测试→换业务员复核）</td></tr>
+             <tr><td><strong>时（投放时段）</strong></td><td><strong>预算消耗速度</strong>、核心国时差</td><td>周度巡检，异常即调</td><td>消耗过快立即核查是否目标国深夜无效耗费，下调非工作时段出价；消耗平稳则不调</td></tr>
+           </tbody></table></div>
          </div></details>`],
       ["规则部分每季度核对一次", "出价方式、扣费逻辑、计划类型、定向能力这些都会随平台调整。本课不写死具体规则，只给一张核对清单——每季度按表核一次，把变化记下来。",
         `<details class="step-more"><summary>展开看必须核对的六项</summary><div class="step-more-body">
@@ -983,7 +1038,7 @@ lessons.push(
         </div></details>`]
     ],
     decisions: [["预算很快花完", "词过宽、出价偏高或流量范围过大", "先看搜索词和国家，再动出价"],["有点击无商机", "词不准，或落地页承接弱", "先屏蔽无效搜索词，再评估页面"],["成本高但询盘优质", "不能只看表面成本", "按有效询盘和后续成交价值判断"],["成本很低但询盘质量差", "买来的是低意向流量", "查搜索词，收紧匹配方式"],["多国同开、每国都没数据", "样本被摊薄", "按国家拆计划，先跑 1—2 个"]],
-    checklist: ["每个计划只有一个目标", "同计划内产品和词语义一致", "预算由目标倒推得出，且能覆盖 7 天以上", "只投主推国家 + 1 个验证国", "上线前六项一致性已逐条检查", "有固定时间看搜索词报告", "改动有记录，一次只改一个变量", "本季度已按规则清单核对一次"],
+    checklist: ["清楚国际站广告三大板块（品牌/全站推/标准推广）的分工", "同计划内产品和词语义一致，且未混入推工厂已出商机的品", "预算由目标倒推得出，且能覆盖 7 天以上", "只投主推国家 + 1 个验证国，排查业务员反馈守住三步法", "上线前六项一致性已逐条检查", "执行词维淘汰三红线（0曝/高曝0点0商机/高曝高耗1月0商机必删）", "以消耗速度为核心监控投放时段，避免深夜时区倒挂", "改动有记录，一次只改一个变量，本季度已按规则清单核对一次"],
     assignment: "搭一个计划草案：写清目标、产品、词组与意图分组、国家、由目标倒推出的预算与周期，以及三种数据异常下的处理动作。再对照第 08 步的六项，标注哪些规则你已在本季度核对过。",
     sources: [{label:"直通车认识与建计划（会员）",url:"https://t.zsxq.com/phtMs"},{label:"直通车注意事项（会员）",url:"https://t.zsxq.com/XWl1S"},{label:"标准推广实操（会员）",url:"https://t.zsxq.com/PfSND"},{label:"营销能力分官方说明",url:"https://www.yuque.com/chaike/yingxiao/pxb7k642147fp0m3"}]
   },
@@ -999,14 +1054,21 @@ lessons.push(
     quick: "全站推的特点是系统帮你扩量：你给产品和预算，系统去找需求。代价是流量结构变模糊——所以它比直通车更依赖「先排除无效、再调结构、最后调价」这个顺序。顺序一乱，就越调越看不出原因。",
     steps: [
       ["先分清它和直通车的分工", "两个工具买的不是同一样东西：直通车买的是明确的搜索意图，全站推买的是系统判断的潜在需求。混着用又不分开看，等于两个都没法归因。",
-        `<details class="step-more"><summary>展开看两者怎么分工</summary><div class="step-more-body">
-          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>维度</th><th>直通车（关键词）</th><th>全站推（智能投放）</th></tr></thead><tbody>
+        `<details class="step-more"><summary>展开看两者怎么分工与全站推三大形态</summary><div class="step-more-body">
+          <p class="step-more-label">全站推的三大产品形态</p>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>计划形态</th><th>核心逻辑与机制</th><th>适用场景与商机保护</th></tr></thead><tbody>
+            <tr><td><strong>推工厂</strong></td><td>依托企业验厂报告、定制资质与产能实力，定向撮合具备大单采购需求与验厂意向的高净值定制买家</td><td>工厂型店铺核心获客阵地。<strong>硬性红线：已在推工厂稳定出商机的品，绝对不移入其他标准推广计划，避免多计划互抢权重</strong></td></tr>
+            <tr><td><strong>日预算</strong></td><td>设定每日消耗预算上限，系统算法在全天流量波动中自动平滑消耗，智能捕捉高意向进店时段</td><td>预算可控、全天持续在线吸量，避免因出价过猛在半天内被耗光</td></tr>
+            <tr><td><strong>智能推</strong></td><td>全自动化「以品寻客」，系统多维度解析商品属性与类目特征，全域匹配潜在买家群体</td><td>全店商品长尾补量、测款扩量，适合覆盖自然流量拿不到的长尾商机</td></tr>
+          </tbody></table></div>
+          <p class="step-more-label">直通车（标准推广）与全站推广的核心差异</p>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>维度</th><th>直通车（标准推广）</th><th>全站推（智能投放）</th></tr></thead><tbody>
             <tr><td>买什么</td><td>明确的搜索意图</td><td>系统判断的潜在需求</td></tr>
-            <tr><td>可控性</td><td>高：词、匹配、出价都能控</td><td>较低：更多交给系统</td></tr>
-            <tr><td>适合</td><td>测词、精准拿单、控成本</td><td>补量、拓新客、放大成熟品</td></tr>
+            <tr><td>可控性</td><td>高：词、匹配、出价、国、时都能控</td><td>较低：更多交给系统算法</td></tr>
+            <tr><td>适合</td><td>测词、精准拿单、控成本、打核心词</td><td>推工厂拿大客、补量、拓新客、放大成熟品</td></tr>
             <tr><td>主要风险</td><td>词选错就没量</td><td>流量结构变模糊，归因变难</td></tr>
           </tbody></table></div>
-          <div class="method-note"><strong>顺序建议：</strong>新品和新词先用直通车验证清楚「词对不对、图行不行、承接够不够」，再用全站推放量。反过来做，等于把还没验证的东西交给系统去扩张。</div>
+          <div class="method-note"><strong>顺序建议：</strong>新品和新词先用直通车标准推广验证清楚「词对不对、图行不行、承接够不够」，再用全站推放量。反过来做，等于把还没验证的东西交给系统去扩张。</div>
         </div></details>`],
       ["定这次要解决什么", "全站推能解决四件事，但一次只做一件：补量、拓新、放大成熟品、验证国家。目标不同，看的指标也不同。",
         `<details class="step-more"><summary>展开看四种目标</summary><div class="step-more-body">
@@ -1026,7 +1088,7 @@ lessons.push(
        ["上线前确认三个基础", "产品范围、落地一致性、追踪口径，这三样在上线前定好，上线后就不要再动——否则数据没法归因。",
         `<details class="step-more"><summary>展开看三个基础怎么定</summary><div class="step-more-body">
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>基础</th><th>怎么定</th><th>没定好的后果</th></tr></thead><tbody>
-            <tr><td>产品范围</td><td>只放已通过链接检查的重点产品，3—5 个起步</td><td>把未验证的新品全丢进去，跑出来的结论没有指向</td></tr>
+            <tr><td>产品范围</td><td>只放已通过链接检查的重点产品，3—5 个起步；<strong>已在推工厂出商机的品保持稳定，不与标准计划混跑</strong></td><td>把未验证的新品全丢进去，跑出来的结论没有指向</td></tr>
             <tr><td>落地一致性</td><td>按第 08 课六项逐条检查</td><td>买来流量但页面接不住</td></tr>
             <tr><td>追踪口径</td><td>自然、直通车、全站推三条线分开记</td><td>三笔钱混在一起，谁有效说不清</td></tr>
           </tbody></table></div>
