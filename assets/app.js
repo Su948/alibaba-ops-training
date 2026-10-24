@@ -1294,6 +1294,11 @@ lessons.push(
             <img src="assets/lesson-11-inquiry-list.png" alt="商机沟通下的商机列表，左侧为询价单管理菜单，中间为状态页签与询价单列表，右侧为状态与操作" loading="lazy">
             <figcaption>上面那排就是全部六个状态页签，<strong>找「待跟进」会找不到</strong>。左侧竖排是这一块的菜单：询价单管理、接待设置、服务数据看板、消息管理、常用功能（起草意向合同、RFQ 推荐、所有订单都在这里）。列表右侧只有两个动作：<strong>「立即回复」</strong>和<strong>「查看详情」</strong>——回复和判断是两件事，先判断再回。</figcaption>
           </figure>
+          <figure class="course-figure">
+            <div class="figure-head"><span>02</span><div><strong>商机详情与买家特征全屏页</strong><p>点击列表「查看详情」后新开的全屏工作台（买家隐私信息已遮蔽）</p></div></div>
+            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看商机详情截图"><img src="assets/lesson-11-inquiry-detail.png" alt="商机详情全屏页，含左侧咨询产品与对话框，右侧买家信息、买家特征与最近采购行业" loading="lazy"></div>
+            <figcaption>这一页脱离了左侧菜单，是<strong>全屏独立页</strong>。看三部分：<strong>① 左侧主区</strong>是买家点进来的「最近询盘产品」和双方对话；<strong>② 右侧上半截</strong>是买家背景（公司、邮箱、注册时间、国家标签与买家特征）；<strong>③ 右侧下半截</strong>是「客户行为数据」（最近搜索的词、最近采购行业、最近询盘产品缩略图、累计线上交易笔数与金额）。<strong>业务员初判客户实力，主要看右侧下半截的行为数据</strong>，看他平时采购什么体量的产品，再决定首次回复的报价梯度。</figcaption>
+          </figure>
         </div></details>`],
       ["按信号给询盘分级", "分级不是为了挑客户，是为了分配时间。A 类当天深度跟，C 类用模板回，中间的时间才够用。",
         `<details class="step-more"><summary>展开看分级的五个信号</summary><div class="step-more-body">
