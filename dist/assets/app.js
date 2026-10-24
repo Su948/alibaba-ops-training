@@ -1268,212 +1268,104 @@ lessons.push(
   {
     id: 11,
     stage: "转化",
-    title: "询盘、RFQ 与订单转化",
-    summary: "让业务从收到线索、判断客户、报价和跟进，到信保下单形成标准动作；三种商机来源要用三套打法。",
-    duration: "65 分钟",
+    title: "运营看盘、客户质检与业务协同",
+    summary: "从运营视角看清真实询盘与买家国别，四步过滤垃圾线索，建立 A/B/C 三档客户质量评估，并与业务建立低阻力的对账沟通机制。",
+    duration: "45 分钟",
     updated: "2026-10",
-    prerequisites: "第 01—02 课",
-    outcomes: ["按信号给询盘分级，把时间花在值得的客户上", "写一条能推进下一步的首次回复", "做一份客户能直接拿去比价的报价", "诊断报价后沉默的真实原因", "把成单和丢单原因回传给运营"],
-    quick: "转化不是回复越快越好，而是快的基础上给出具体信息。第一次回复就写「请告知详细需求」是最常见的错误——客户已经把需求说了一遍，你还让他再说一遍。先给一个具体信息（价格区间、交期、认证），再问两三个关键问题。",
+    prerequisites: "第 01—02 课、第 10 课",
+    outcomes: ["掌握后台商机列表与全屏详情的查盘路径，精准定位买家国家与真实诉求", "用四步过滤法剔除虚假账号、泛函群发与钓鱼探价等垃圾线索", "建立运营级 A/B/C 三档客户分级模型，反向追查高产词并给低质流量加否", "掌握「日常异步工单 + 每周 30 分钟对账会」协同机制，现场删词闭环"],
+    quick: "运营的核心职责不是直接谈单，而是看懂线索质量、过滤垃圾干扰、诊断流量有效性，并与业务团队建立低摩擦的高效反馈闭环。不以主观感觉扯皮，拿真实后台数据说话。",
     steps: [
-      ["先分清三种商机来源", "询盘、TM 咨询、RFQ，转化逻辑完全不同。用同一套模板打三种来源，等于用同一种方式追三种不同的客户。",
-        `<details class="step-more"><summary>展开看三种来源怎么打</summary><div class="step-more-body">
-          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>来源</th><th>特点</th><th>打法</th></tr></thead><tbody>
-            <tr><td>询盘（站内信）</td><td>产品指向明确，信息量较大</td><td>先确认需求，再给结构化报价</td></tr>
-            <tr><td>TM 咨询</td><td>即时、碎片，意向强弱差别很大</td><td>先判断是不是采购，再抓关键信息，别一上来甩报价单</td></tr>
-            <tr><td>RFQ</td><td>买家发需求，多方同时竞争</td><td>拼匹配度、响应速度和差异化，慢一步就出局</td></tr>
+      ["查盘查国：精准定位询盘内容与买家国家", "运营查商机不只看数字，必须穿透到具体买家的原始需求和画像。通过商机列表与全屏详情，精准核查国家与诉求。",
+        `<details class="step-more"><summary>展开看后台真实路径与核查四要素</summary><div class="step-more-body">
+          <p class="step-more-label">后台准确查阅路径</p>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>步骤</th><th>路径</th><th>操作与注意点</th></tr></thead><tbody>
+            <tr><td>① 列表入口</td><td>商机沟通 → 询价单管理 → 所有询价单</td><td>官方页面标题为「<strong>商机列表</strong>」，单位叫「<strong>询价单</strong>」。状态只有 6 个（全部、待回复、新询价、已下单、待支付、待确认），<strong>没有「待跟进」状态</strong>；右上角为「未读商机」复选框。</td></tr>
+            <tr><td>② 详情入口</td><td>列表右侧操作栏点击「查看详情」</td><td>系统会在新浏览器标签页打开<strong>全屏独立商机工作台</strong>（脱离左侧菜单）。</td></tr>
           </tbody></table></div>
-          <div class="method-note"><strong>最常见的错配：</strong>拿 RFQ 的长报价单去回 TM 咨询。买家只是想先问一句，收到一大段条款，通常就退出了。TM 要短、要快、要一句话钩住；RFQ 要完整、要显得读过需求。</div>
-          <div class="method-note"><strong>三种来源在后台不是一个地方，别找错门。</strong><br><strong>询价单（站内信询盘）：</strong>商机沟通 → 询价单管理 → 所有询价单。注意页面标题写的是「<strong>商机列表</strong>」，列表里的单位叫「<strong>询价单</strong>」——课程口语说的「询盘」，后台用的是这两个词。<br><strong>状态页签只有六个：</strong>全部、待回复、新询价、已下单、待支付、待确认。<strong>没有「待跟进」这个状态</strong>；「未读商机」是右上角的一个复选框，不是页签。<br><strong>点开一条会新开一个全屏页</strong>，没有左侧导航，和列表不是同一套布局——第一次用的人常以为自己点错了。</div>
           <figure class="course-figure">
             <div class="figure-head"><span>01</span><div><strong>商机列表长什么样</strong><p>商机沟通 → 询价单管理 → 所有询价单（买家名与内容已隐去）</p></div></div>
             <img src="assets/lesson-11-inquiry-list.png" alt="商机沟通下的商机列表，左侧为询价单管理菜单，中间为状态页签与询价单列表，右侧为状态与操作" loading="lazy">
-            <figcaption>上面那排就是全部六个状态页签，<strong>找「待跟进」会找不到</strong>。左侧竖排是这一块的菜单：询价单管理、接待设置、服务数据看板、消息管理、常用功能（起草意向合同、RFQ 推荐、所有订单都在这里）。列表右侧只有两个动作：<strong>「立即回复」</strong>和<strong>「查看详情」</strong>——回复和判断是两件事，先判断再回。</figcaption>
+            <figcaption>上面那排就是全部六个状态页签，<strong>找「待跟进」会找不到</strong>。左侧竖排是这一块的菜单：询价单管理、接待设置、服务数据看板、消息管理、常用功能（起草意向合同、RFQ 推荐、所有订单都在这里）。列表右侧只有两个动作：<strong>「立即回复」</strong>和<strong>「查看详情」</strong>——运营要核实买家背景，必须点击「查看详情」进入全屏页。</figcaption>
           </figure>
           <figure class="course-figure">
             <div class="figure-head"><span>02</span><div><strong>商机详情与买家特征全屏页</strong><p>点击列表「查看详情」后新开的全屏工作台（买家隐私信息已遮蔽）</p></div></div>
             <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看商机详情截图"><img src="assets/lesson-11-inquiry-detail.png" alt="商机详情全屏页，含左侧咨询产品与对话框，右侧买家信息、买家特征与最近采购行业" loading="lazy"></div>
-            <figcaption>这一页脱离了左侧菜单，是<strong>全屏独立页</strong>。看三部分：<strong>① 左侧主区</strong>是买家点进来的「最近询盘产品」和双方对话；<strong>② 右侧上半截</strong>是买家背景（公司、邮箱、注册时间、国家标签与买家特征）；<strong>③ 右侧下半截</strong>是「客户行为数据」（最近搜索的词、最近采购行业、最近询盘产品缩略图、累计线上交易笔数与金额）。<strong>业务员初判客户实力，主要看右侧下半截的行为数据</strong>，看他平时采购什么体量的产品，再决定首次回复的报价梯度。</figcaption>
+            <figcaption>全屏独立工作台核实四要素：<strong>① 左侧主区</strong>看买家咨询的具体产品链接与第一段原始留言，确认是主推款还是偶发款，看诉求是具体还是泛泛而谈；<strong>② 右侧上半截</strong>核实买家所属<strong>国家与地区（国旗与英文名）</strong>，对照目标国家矩阵看是否偏离；同时查看公司名、企业邮箱后缀、注册年限（老号还是白号）及买家等级标签；<strong>③ 右侧下半截</strong>查看「客户行为数据」（最近搜索词、最近采购行业、历史交易笔数与金额），快速印证其是否属于本店目标行业客群。</figcaption>
           </figure>
+          <div class="method-note"><strong>看盘原则：</strong>运营看商机不是为了去回复，而是为了<strong>核验流量匹配度</strong>。如果连续来的商机所属国家、采购行业都与店铺主攻方向不符，说明前端词库或推广人群设置已产生偏差，必须及时纠偏。</div>
         </div></details>`],
-      ["按信号给询盘分级", "分级不是为了挑客户，是为了分配时间。A 类当天深度跟，C 类用模板回，中间的时间才够用。",
-        `<details class="step-more"><summary>展开看分级的五个信号</summary><div class="step-more-body">
-          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>信号</th><th>A 类</th><th>B 类</th><th>C 类</th></tr></thead><tbody>
-            <tr><td>产品指向</td><td>明确型号或规格</td><td>只到品类</td><td>只问价格</td></tr>
-            <tr><td>数量</td><td>给了数量或区间</td><td>笼统提一句</td><td>没提</td></tr>
-            <tr><td>用途与市场</td><td>说明了用途和目的国</td><td>部分说明</td><td>完全没有</td></tr>
-            <tr><td>联系方式</td><td>公司域名邮箱或电话</td><td>个人邮箱</td><td>只有平台内消息</td></tr>
-            <tr><td>时间要求</td><td>给了交期或采购时间</td><td>模糊</td><td>没提</td></tr>
+      ["真伪甄别：真假客户与垃圾线索四步过滤", "运营在向业务同步线索或分析数据前，先要做第一道脱水，避免把垃圾或欺诈流量当作有效商机。",
+        `<details class="step-more"><summary>展开看真假客户四步过滤对照表</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>检查维度</th><th>真实采购客户特征</th><th>垃圾／虚假／钓鱼线索特征</th></tr></thead><tbody>
+            <tr><td>1. 留言内容与诉求</td><td>提及具体产品参数、功能要求、采购数量（如 200/500 件）、交期、包装或认证要求（CE/UL/RoHS 等）。</td><td>纯系统模板通用打招呼（如 "Dear, send me catalog/price" 无具体型号）；或发送外部钓鱼链接、诱导下载未知压缩包。</td></tr>
+            <tr><td>2. 账号注册痕迹</td><td>注册时间较长（半月以上至数年），有历史采购浏览、咨询或订单交易痕迹。</td><td>当天刚注册的纯白号、无历史采购痕迹、无公司名、无任何标签，且短时间内跨多品类到处群发。</td></tr>
+            <tr><td>3. 邮箱与企业背景</td><td>使用企业独立域名邮箱（如 <code>@company.com</code> 可通过官网溯源真实实体）；个人 Gmail/Yahoo/Outlook 若诉求具体也属正常（多为电商小 B）。</td><td>带有欺诈嫌疑的临时随机匿名邮箱；或冒充 Alibaba 官方、银行风控人员发送催费、账户冻结警示。</td></tr>
+            <tr><td>4. 商业动机判断</td><td>围绕买卖双方合作展开，询问付款方式、打样政策、起订量。</td><td>国内 IP 跳板、同行探价（只反复追问阶梯最低底价/模具费，但绝不透露自身公司信息与采购用途）。</td></tr>
           </tbody></table></div>
-          <div class="method-note"><strong>五个信号里中三条以上算 A。</strong>A 类当天回、给具体方案、可安排背调；B 类 24 小时内回、补问关键信息；C 类用固定模板回，不投入过多时间。分级标准要写下来固定用，不能凭当天心情。</div>
+          <div class="method-note"><strong>脱水纪律：</strong>遇到钓鱼链接、虚假官方通知或纯同行套价，直接在后台标记垃圾并屏蔽，<strong>绝不能计入运营有效商机统计</strong>，否则会得出虚假的转化率判断。</div>
         </div></details>`],
-      ["首次回复给具体信息", "首响不是「已收到，请告知详情」，而是「你要的这件事，我现在能给你什么」。三段式：确认 + 给一个具体信息 + 问两三个问题。",
-        `<details class="step-more"><summary>展开看三段式怎么写</summary><div class="step-more-body">
-          <div class="mindmap"><div class="mm-root">第一条回复的三段</div><ul class="mm-list">
-            <li><strong>第一段：一句话复述他要什么</strong><span>让他确认你读懂了，不是群发模板</span></li>
-            <li><strong>第二段：先给一个具体信息</strong><span>价格区间、常规交期、持有的认证，任选一个给出来。先给，再问</span></li>
-            <li><strong>第三段：问两三个关键问题</strong><span>数量、目的国、认证要求，挑最影响报价的三个。问七个问题等于没问</span></li>
-          </ul></div>
-          <div class="method-note"><strong>两句话的差别：</strong>「请告知详细需求」和「这款我们的常规交期是 30 天，FOB 报价区间 45—70 美元，取决于数量。您大概要多少台、发到哪个国家？」——前者把问题推回给客户，后者证明你已经准备好了。</div>
-          <div class="method-note"><strong>首响的时效：</strong>A 类当天，B 类 24 小时内，RFQ 越快越好。速度本身就是竞争力，但只快不给信息，等于催客户再问一遍。</div>
-        </div></details>`],
-      ["报价要让客户能直接比价", "报价不是报一个价格，是报一组条件。缺条件的报价，客户没法横向比，只能回来再问你一遍——这一轮沟通就是白花的。",
-        `<details class="step-more"><summary>展开看报价必须包含什么</summary><div class="step-more-body">
-          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>字段</th><th>为什么必须有</th></tr></thead><tbody>
-            <tr><td>产品与规格</td><td>同名产品参数差很多，不写清就是在给自己埋纠纷</td></tr>
-            <tr><td>阶梯价</td><td>客户要拿不同数量算成本</td></tr>
-            <tr><td>MOQ</td><td>决定他能不能试单</td></tr>
-            <tr><td>样品政策</td><td>样品费和运费谁承担，是最常见的卡点</td></tr>
-            <tr><td>交期</td><td>写常规交期，不写最快纪录</td></tr>
-            <tr><td>包装方式</td><td>影响运费和清关</td></tr>
-            <tr><td>贸易术语</td><td>FOB／CIF 不同，价格不能直接比</td></tr>
-            <tr><td>有效期</td><td>原材料和汇率会变，不设有效期等于无限承诺</td></tr>
-          </tbody></table></div>
-          <div class="method-note"><strong>不要报「面议」。</strong>面议看起来留了余地，实际上是把决策成本推给客户。真想留空间，就报区间加条件——「1000 台以上可谈到 X，具体看包装要求」。</div>
-        </div></details>`],
-      ["RFQ 是抢的，不是等的", "RFQ 广场上同一需求有多个供应商在看。买家决定回谁，通常只看前两条消息。",
-        `<details class="step-more"><summary>展开看怎么挑、怎么报与真实 RFQ 卡片</summary><div class="step-more-body">
-          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>环节</th><th>标准</th></tr></thead><tbody>
-            <tr><td>挑 RFQ</td><td>产品匹配、需求具体、国家在主推市场、竞争席位还没满</td></tr>
-            <tr><td>消息开头</td><td>前两句话给结论：能不能做、价格区间、交期</td></tr>
-            <tr><td>差异化</td><td>认证、样品政策、小单能力、交期——挑你最占优的那个说</td></tr>
-            <tr><td>结尾</td><td>一个明确的下一步，比如「确认数量后我把详细报价和样品方案发您」</td></tr>
+      ["客户质量分级：A/B/C 三档模型与运营溯源", "不需要运营像资深业务员那样做深层资信背调，运营根据后台特征建立轻量分级，并执行对应的运营端动作。",
+        `<details class="step-more"><summary>展开看三档分级标准与 RFQ 席位判断</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>客户分级</th><th>核心特征</th><th>运营端首要动作</th></tr></thead><tbody>
+            <tr><td>A 级：高潜核心买家</td><td>欧美/重点主推国；数量明确且符合批量 MOQ（如 500~2000 台）；企业域名邮箱或 L2+ 标签；要求定制或认证。</td><td><strong>反查来源词与计划：</strong>查明其是通过哪个关键词、哪条计划进店，把该词记入「高产金词库」，作为后续加预算的凭据。</td></tr>
+            <tr><td>B 级：潜力中小买家</td><td>海外电商卖家（Amazon/Shopify 等）或区域小批发商；多从打样（1~5 台）或小单试水（20~100 台）开始，在意交期与现货。</td><td><strong>检查页面承接力：</strong>若此类买家占比高，运营应在详情页和主图中强化「现货直发、支持小批量定制包装」的承接表达。</td></tr>
+            <tr><td>C 级：散客／无效流量</td><td>个人自用买 1 件；跨类目闲聊；预算极低；或处于无法履约的偏远边缘国家。</td><td><strong>直通车现场加否：</strong>连续多天涌入 C 类散客，说明词库混入了「零售词、维修词、免费词」，立即在直通车后台<strong>添加否定词</strong>。</td></tr>
           </tbody></table></div>
           <figure class="course-figure">
             <div class="figure-head"><span>03</span><div><strong>RFQ 推荐商机卡片结构与席位时效</strong><p>商机沟通 → 常用功能 →「RFQ 推荐」卡片流（买家隐私信息已脱敏）</p></div></div>
             <img src="assets/lesson-11-rfq-market.png" alt="阿里国际站后台 RFQ 推荐单卡，展示金牌商机徽标、求购标题、采购量 50 Pieces、发布地点丹麦、剩余 3 个报价席位与发布时效" loading="lazy">
             <figcaption>入口在后台<strong>「商机沟通 → 常用功能 → RFQ 推荐」</strong>。单张 RFQ 卡片包含核心判读维度：① <strong>商机标签</strong>（如金牌商机、优选商机徽标）；② <strong>求购标题</strong>（明确品类与规格，如无线遥控真空拔罐器带内置电池）；③ <strong>采购量与发布地点</strong>（如 <code>采购量：50 Piece/Pieces</code>，<code>发布地点：Denmark</code> 与国旗）；④ <strong>剩余席位与时效</strong>（如<code>剩余3个报价席位</code>、<code>发布日期：11 小时前</code>）。<strong>注意：RFQ 报价席位通常有限（常见为 5—10 个），高价值金牌商机席位消耗极快；只要席位大于 0 且与自身品类匹配，务必第一时间组织定制化精准报价，抢占买家前两条有效触达窗口。</strong></figcaption>
           </figure>
-          <div class="method-note"><strong>要让买家看出你读了他的需求。</strong>复制粘贴的通用报价，买家一眼能认出来。开头提一句他写的具体条件（数量、用途、目的国），回复率会明显不一样。</div>
+          <div class="method-note"><strong>分级的本质是资源分配。</strong>把 A 类客户交给资深业务深度跟进，B 类标准化快打，C 类模板应付或运营端加否，团队的时间才不会被稀释。</div>
         </div></details>`],
-      ["跟进要有节奏，不是想起来才发", "跟进不是「催」，是每次带一个新的、对他有用的信息。空催三次，客户就把你静音了。",
-        `<details class="step-more"><summary>展开看跟进节奏</summary><div class="step-more-body">
-          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>节点</th><th>目的</th><th>带什么</th></tr></thead><tbody>
-            <tr><td>D0</td><td>首响 + 报价</td><td>确认需求、给具体信息、问关键问题</td></tr>
-            <tr><td>D1—D2</td><td>补证据</td><td>认证、检测报告、包装方案、同类案例（匿名）</td></tr>
-            <tr><td>D3—D4</td><td>降低决策门槛</td><td>样品政策、小批量试单方案</td></tr>
-            <tr><td>D7</td><td>推动决策</td><td>只问一个问题 + 给一个明确动作</td></tr>
-            <tr><td>D14 及以后</td><td>长期维护</td><td>新品、价格变动、行业信息，别再重复报价</td></tr>
-          </tbody></table></div>
-          <div class="method-note"><strong>每次跟进只问一个问题。</strong>列五个问题，客户通常一个都不回；问一个具体的「这批大概什么时候要」，反而容易得到答案。</div>
-        </div></details>`],
-      ["报价后沉默，先分清是哪一类卡点", "沉默有四种原因，处理方式完全不同。用同一招（比如降价）打四种原因，只有一种会奏效。",
-        `<details class="step-more"><summary>展开看四类卡点怎么分辨</summary><div class="step-more-body">
-          <div class="mindmap"><div class="mm-root">报价后没下文，卡在哪</div><ul class="mm-list">
-            <li><strong>一、价格</strong><span>他还在问细节、但反复提价格 → 用总成本对比（运费、不良率、返工），不要直接降价</span></li>
-            <li><strong>二、信任</strong><span>问认证、问验厂、问老客户 → 给报告、给流程、给匿名案例</span></li>
-            <li><strong>三、时机</strong><span>说「项目还在评估」「明年再采购」→ 转长期维护，别硬推</span></li>
-            <li><strong>四、对接人不对</strong><span>回复很慢、只转达不决策 → 想办法触达决策链，而不是催他</span></li>
-          </tbody></table></div>
-          <div class="method-note"><strong>三个快速判断：</strong>还在问细节＝有意向但没定；只回价格、不回其他＝在比价；完全不回＝时机或对接人问题。<strong>对着症状选动作</strong>，不要一律降价。</div>
-        </div></details>`],
-      ["成交与回传（起草信用保障订单）", "意向谈定后在后台起草信保订单，订单条款必须与聊天记录逐项一致；成交与丢单反馈必须闭环回传给运营。",
-        `<details class="step-more"><summary>展开看订单检查、信保表单结构与回传清单</summary><div class="step-more-body">
-          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>环节</th><th>必须一致／必须回传的内容</th></tr></thead><tbody>
-            <tr><td>订单一致性</td><td>产品、数量、单价、运费、交期、贸易条款与聊天记录逐项对得上</td></tr>
-            <tr><td>特殊费用</td><td>运费、附加费、样品费的处理方式留书面说明，别只在口头说</td></tr>
-            <tr><td>回传运营①</td><td>这条询盘是有效还是无效，无效的原因</td></tr>
-            <tr><td>回传运营②</td><td>丢单原因：价格、交期、认证、信任，还是没下文</td></tr>
-            <tr><td>回传运营③</td><td>客户对价格的真实反馈：贵多少、和谁比</td></tr>
-            <tr><td>回传运营④</td><td>成交的产品、国家和数量，用来校正主推判断</td></tr>
+      ["运业协同机制：去找业务开会还是啥？", "运营找业务不是天天开会扯皮，而是建立「日常异步预警 + 每周 30 分钟对账会」的高效协同机制。",
+        `<details class="step-more"><summary>展开看运业协同机制、信保表单与导出入口</summary><div class="step-more-body">
+          <p class="step-more-label">1. 日常不用开会：用「高潜预警」建立信任</p>
+          <div class="mindmap"><div class="mm-root">日常异步工单机制</div><ul class="mm-list">
+            <li><strong>运营主动预警</strong><span>巡店发现 A 级客户（大国家、大数量、带定制），直接截图私信负责业务员，附上买家官网背景，提示重点攻坚</span></li>
+            <li><strong>业务轻量标记</strong><span>业务处理完在共享台账轻量勾选状态：<code>[已回复/已报价] / [寄样推进中] / [已死掉+原因]</code>，杜绝长篇汇报负担</span></li>
+          </ul></div>
+          <p class="step-more-label">2. 每周固定 30 分钟「运业协同复盘会」（只看三件事，现场拿结论）</p>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>议题</th><th>核心内容</th><th>现场输出动作（谁闭环）</th></tr></thead><tbody>
+            <tr><td>① 对高潜客户进展</td><td>盘点上周 A 类客户卡在什么环节（价格偏高？交期太长？还是同行有现货？）。</td><td><strong>运营端动作：</strong>根据真实丢单反馈，校准下一轮产品定价策略或详情页卖点。</td></tr>
+            <tr><td>② 现场抓“鬼”归因垃圾词</td><td>请业务挑出上周他们觉得最差、最水、最离谱的 3~5 条询盘。运营现场反查来源词。</td><td><strong>运营端动作（当场闭环）：</strong>若是引流词偏差，<strong>运营当场在直通车后台删词或加否定词</strong>。业务看到运营当场解决问题，配合度立刻提升。</td></tr>
+            <tr><td>③ 同步一线买家新痛点</td><td>业务同步最近买家频繁问到的功能细节、包装或新认证（如 Type-C 快充、特定检测证书）。</td><td><strong>运营端动作：</strong>作为下周上新发品、标题扩词与素材优化的核心依据。</td></tr>
           </tbody></table></div>
           <figure class="course-figure">
             <div class="figure-head"><span>04</span><div><strong>起草信用保障订单表单全貌</strong><p>交易管理总览 →「起草信用保障订单」表单全貌（字段结构展示）</p></div></div>
             <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看信保订单表单截图"><img src="assets/lesson-11-trade-assurance-order.png" alt="阿里国际站起草信用保障订单全貌，包含交易设置、买家信息、产品信息、运输信息、出口方式、交易保障服务与支付条款七大区块" loading="lazy"></div>
             <figcaption>入口在后台 <code>biz.alibaba.com</code> 交易管理总览，点击<strong>「起草信用保障订单」</strong>。整张表单严格分为七大区块：<strong>① 交易设置</strong>（结算方式汇款/信用卡/信用证，币种选 USD 或 CNY）；<strong>② 买家信息</strong>（买家邮箱、姓名与收货地址）；<strong>③ 产品信息</strong>（点击添加产品，录入数量、单价与规格）；<strong>④ 运输信息</strong>（拆为三项：运输方式、发货日期、贸易术语 FOB／CIF／EXW 等）；<strong>⑤ 出口方式</strong>（自营出口／便捷发货等）；<strong>⑥ 交易保障服务</strong>（信保额度与保障范围）；<strong>⑦ 支付条款</strong>（总价、预付款与尾款比例）。<strong>起草前必须对照聊天记录逐字核实产品型号、总价与贸易术语</strong>，确认无误再提交，严防口头承诺与线上合同不一致导致的违约纠纷。</figcaption>
           </figure>
-          <div class="method-note"><strong>回传不是走流程，是给运营纠错。</strong>没有回传，运营只能靠猜：猜词好不好、猜图行不行、猜国家对不对。猜出来的优化方向，大概率是错的。</div>
-        </div></details>`],
-      ["日、周、月各管一件事", "三级节奏混乱，最常见的表现是「用日级动作解决月级问题」：每天都在改，一个月过去结构没动过。",
-        `<details class="step-more"><summary>展开看三级各做什么、不做什么</summary><div class="step-more-body">
-          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>周期</th><th>只看什么</th><th>产出</th><th>这一级不该做的</th></tr></thead><tbody>
-            <tr><td>日</td><td>异常：花费突变、询盘断档、差评、库存告急</td><td>日报：五个数 + 一句话</td><td>不做策略调整，不因一天数据改计划</td></tr>
-            <tr><td>周</td><td>词、产品、广告的优化效果</td><td>周报：变化 + 归因 + 下周动作</td><td>不做架构级改动（类目、主推结构）</td></tr>
-            <tr><td>月</td><td>漏斗结构、资源分配、目标差距</td><td>月报：结构判断 + 下月计划</td><td>不做日常救火</td></tr>
-          </tbody></table></div>
-          <div class="method-note"><strong>一句话记法：</strong>日看异常、周看优化、月看结构。三件事混在一天里做，等于每件都没做到位。</div>
-        </div></details>`],
-      ["日报：五个数加一句话", "日报不是流水账。五个固定数字，加一句「今天的异常是什么、明天第一件事做什么」，就够了。",
-        `<details class="step-more"><summary>展开看五个数与那句话</summary><div class="step-more-body">
-          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>字段</th><th>说明</th></tr></thead><tbody>
-            <tr><td>访客数</td><td>当天店铺访问人数</td></tr>
-            <tr><td>询盘人数</td><td>当天发询盘的买家数</td></tr>
-            <tr><td>TM 咨询人数</td><td>当天发起即时沟通的人数</td></tr>
-            <tr><td>花费</td><td>当天推广花费</td></tr>
-            <tr><td>商机数或成交额</td><td>当天产生的商机数，或成交金额</td></tr>
-          </tbody></table></div>
-          <div class="method-note"><strong>那句话的格式：</strong>「今天异常是＿＿＿，明天第一件事是＿＿＿」。写不出这句话，说明还在抄数字，没在看数据。</div>
-           <div class="method-note"><strong>日报不追责，追异常。</strong>把日报做成考核表，团队会开始修饰数字；做成异常提示，大家才愿意说真话。</div>
-           <figure class="course-figure">
-             <div class="figure-head"><span>01</span><div><strong>店铺数据的导出入口</strong><p>数据参谋 → 数据总览（数值已隐去）</p></div></div>
-             <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看数据总览顶部截图"><img src="assets/lesson-12-report-export.png" alt="数据参谋数据总览顶部，含实时数据与日周月数据切换、日期与全店数据筛选、运营常用模式、图形与三列表切换、下载按钮" loading="lazy"></div>
-             <figcaption>这一条筛选栏上有三样东西要认：<strong>「实时数据／日周月数据」</strong>决定看的是当下还是结算后的数、<strong>「运营常用」</strong>是模式、<strong>「下载」</strong>才是导出。先切模式再下载，否则导出来的还是默认那几列。</figcaption>
-           </figure>
-           <div class="method-note"><strong>这五个数去哪取，两个入口别混。</strong><br><strong>① 店铺经营数据：</strong>数据参谋 → 数据概览 → 右上「下载」，导出的是店铺整体数据；注意默认模式下没有访客、曝光、点击，<strong>先在顶部「自定义列」把这三项加上</strong>，下载出来才齐。<br><strong>② 广告报告：</strong>营销中心 → 直通车报告 → 右上「导出」，导的是投放数据（分全站推广／标准推广两组）。<br>两条线的口径不同，别把广告报告里的询盘和店铺总询盘直接相加，也别用同一张表算全店转化率——第 10 课第 1 步讲的口径问题，在取数这一步就要守住。</div>
-         </div></details>`],
-      ["周报：变化、归因、动作", "周报的核心是归因。没有归因的周报，只是把后台数字搬到 PPT 上。",
-        `<details class="step-more"><summary>展开看三段怎么写</summary><div class="step-more-body">
-          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>段落</th><th>写什么</th><th>不合格的样子</th></tr></thead><tbody>
-            <tr><td>一、变化</td><td>和上周比，同一口径，哪些数变了多少</td><td>只写本周数字，没有对比</td></tr>
-            <tr><td>二、归因</td><td>变化是哪个渠道、哪个产品、哪个词带来的</td><td>写「流量涨了」但不说为什么涨</td></tr>
-            <tr><td>三、动作</td><td>下周做哪几条，谁做，什么时候看结果</td><td>写「继续优化」这类无法执行的话</td></tr>
-          </tbody></table></div>
-          <div class="method-note"><strong>归因写不出来时，先别写周报。</strong>说明数据还没拆到能解释的层级，这时候写出来的「原因」都是猜的，下周动作也会跟着错。</div>
-        </div></details>`],
-      ["月报：回答「证明了什么」", "月报不是把四周周报拼起来。它要回答两个问题：这个月证明了什么，下个月改什么。",
-        `<details class="step-more"><summary>展开看月报的四个部分</summary><div class="step-more-body">
-          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>部分</th><th>内容</th></tr></thead><tbody>
-            <tr><td>目标与差距</td><td>目标多少、实际多少、差在哪一环</td></tr>
-            <tr><td>结构判断</td><td>是流量结构、产品结构，还是转化结构的问题</td></tr>
-            <tr><td>已验证与未验证</td><td>这个月哪些假设被证实、哪些被推翻</td></tr>
-            <tr><td>资源需求</td><td>要人、要钱，还是要时间——写清要什么、用来解决哪个问题</td></tr>
-          </tbody></table></div>
-          <div class="method-note"><strong>「结构判断」是月报和日报最大的区别。</strong>日报看单点异常，月报要能说出「问题在结构上」——比如询盘不少但都集中在一个产品，那下个月的重点就不是加流量，是补第二增长点。</div>
-        </div></details>`],
-      ["AI 用在哪、不用在哪", "AI 能省时间，不能替你做业务判断。分清这两件事，才不会把「生成得很快」当成「做得对」。",
-        `<details class="step-more"><summary>展开看六个场景的分工</summary><div class="step-more-body">
-          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>场景</th><th>AI 做什么</th><th>人必须做什么</th></tr></thead><tbody>
-            <tr><td>收词与分类</td><td>批量归类、去重、扩同义</td><td>判断词的真实采购意图</td></tr>
-            <tr><td>卖点草稿</td><td>按参数生成候选表达</td><td>核实参数与认证真实性</td></tr>
-            <tr><td>图片方案</td><td>给构图和信息层级建议</td><td>确认产品形态不能被改</td></tr>
-            <tr><td>数据解释</td><td>把报表变化写成文字</td><td>判断归因是否成立</td></tr>
-            <tr><td>报告初稿</td><td>搭结构、填框架</td><td>补归因、定动作</td></tr>
-            <tr><td>翻译与本地化</td><td>初译、语气调整</td><td>核对行业术语和合规表述</td></tr>
-          </tbody></table></div>
-          <div class="method-note"><strong>一条底线：</strong>AI 不能替你判断「这个市场要不要做」「这个客户值不值得跟」。这类判断涉及成本和风险，必须由人负责。</div>
-        </div></details>`],
-      ["提示词四件套与验收", "AI 输出空泛，九成不是模型不行，是输入不真实、约束不清楚。",
-        `<details class="step-more"><summary>展开看四件套与五项验收</summary><div class="step-more-body">
-          <div class="mindmap"><div class="mm-root">写提示词的四件套</div><ul class="mm-list">
-            <li><strong>角色</strong><span>让它以什么身份输出：采购决策编辑、行业分析师、客服主管</span></li>
-            <li><strong>输入</strong><span>真实参数、认证、目标国家、客户类型。不真实的输入一定产出空泛的话</span></li>
-            <li><strong>输出格式</strong><span>表格还是段落、几条、多少字、要不要中英对照</span></li>
-            <li><strong>限制条件</strong><span>不许编造参数、不许用无法证明的绝对化表达、重复要合并</span></li>
-          </ul></div>
-          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>验收项</th><th>查什么</th></tr></thead><tbody>
-            <tr><td>事实</td><td>参数、认证、交期是否真实存在</td></tr>
-            <tr><td>合规</td><td>有没有绝对化表述、侵权词、夸大功效</td></tr>
-            <tr><td>语气</td><td>是否符合目标市场的商务习惯</td></tr>
-            <tr><td>可用性</td><td>能不能直接放到页面、广告或邮件里</td></tr>
-            <tr><td>敏感信息</td><td>输入里有没有不该外发的客户或经营数据</td></tr>
-          </tbody></table></div>
-          <div class="method-note"><strong>本课下方有一张可直接复制的商品卖点任务卡</strong>，就是按这四件套写的，可以直接改成自己的产品。</div>
-        </div></details>`],
-      ["交接与版本管理", "SOP 过期比没有 SOP 更危险——新人会照着错的做法执行，还以为这是标准。",
-        `<details class="step-more"><summary>展开看交接要交什么</summary><div class="step-more-body">
-          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>交接项</th><th>要求</th></tr></thead><tbody>
-            <tr><td>SOP 文档</td><td>带版本号和修改日期，写清这一版改了什么</td></tr>
-            <tr><td>账号与权限</td><td>哪些后台、什么角色、谁审批，列成清单</td></tr>
-            <tr><td>历史记录</td><td>近三个月的报表、优化记录、规则变更日志</td></tr>
-            <tr><td>边界与例外</td><td>哪些情况 SOP 不适用，该找谁</td></tr>
-          </tbody></table></div>
-          <div class="method-note"><strong>季度复核一次。</strong>平台规则变、主推产品变、团队分工变，SOP 里至少有一处会过期。复核时只问一句：这条现在还能照着做吗？</div>
+          <figure class="course-figure">
+            <div class="figure-head"><span>05</span><div><strong>店铺数据的导出入口</strong><p>数据参谋 → 数据总览（数值已隐去）</p></div></div>
+            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看数据总览顶部截图"><img src="assets/lesson-12-report-export.png" alt="数据参谋数据总览顶部，含实时数据与日周月数据切换、日期与全店数据筛选、运营常用模式、图形与三列表切换、下载按钮" loading="lazy"></div>
+            <figcaption>这一条筛选栏上有三样东西要认：<strong>「实时数据／日周月数据」</strong>决定看的是当下还是结算后的数、<strong>「运营常用」</strong>是模式、<strong>「下载」</strong>才是导出。先切模式再下载，否则导出来的还是默认那几列。</figcaption>
+          </figure>
+          <div class="method-note"><strong>这五个数去哪取，两个入口别混。</strong><br><strong>① 店铺经营数据：</strong>数据参谋 → 数据概览 → 右上「下载」，导出的是店铺整体数据；注意默认模式下没有访客、曝光、点击，先在顶部切模式或加列，下载出来才齐。<br><strong>② 广告报告：</strong>营销中心 → 直通车报告 → 右上「导出」，导的是投放数据（分全站推广／标准推广两组）。<br>两条线的口径不同，别把广告报告里的询盘和店铺总询盘直接相加，也别用同一张表算全店转化率——在取数这一步就要守住口径红线。</div>
         </div></details>`]
     ],
-    decisions: [["报告很长但无动作", "缺少目标和优先级", "每个问题只保留证据、动作、负责人、复查指标"],["团队执行不一致", "SOP 缺输入或验收标准", "用真实案例补齐边界条件"],["AI 输出空泛", "输入资料与约束不足", "补产品证据、目标客户和输出示例"],["日报变成流水账", "没有固定字段和判断句", "只留五个数 + 一句异常与明日动作"],["周报写不出归因", "数据没拆到可解释的层级", "先按渠道／产品／词拆一层，再写结论"]],
-    checklist: ["每条 SOP 都有触发条件、输入和验收标准", "日周月三级边界写清，不混用", "日报固定五个数 + 一句话", "周报有归因，不只是罗列数字", "月报能说出结构性问题", "AI 用在有输入标准的场景，不涉及未授权数据", "AI 输出经过事实、合规、语气、可用性四项复核", "SOP 有版本号且本季度复核过"],
-    assignment: "写一条真实 SOP（照六要素补齐），再用本课的方法做一次周报：变化、归因、下周三条动作。最后把下方那张商品卖点任务卡改成自己产品的版本，跑一次并做五项验收。",
-    sources: [{label:"运营每天的工作（会员）",url:"https://t.zsxq.com/PlMGd"},{label:"运营工作清单（待校对）",url:"https://t.zsxq.com/h1Yuw"},{label:"月数据报告（会员）",url:"https://t.zsxq.com/mns1l"},{label:"平台诊断报告（会员）",url:"https://t.zsxq.com/elo8T"},{label:"运营年终报告（会员）",url:"https://t.zsxq.com/l8r09"},{label:"AI 商品卖点案例",url:"https://www.yuque.com/liangdan-5gae1/kenyau/oce1ba29ygbulc29"}]
+    decisions: [
+      ["询盘很多但业务反馈全是垃圾", "引流词太泛，引入了个人自用或零售客群", "让业务挑出 3 条最水询盘，运营现场查来源词并在直通车加否定词"],
+      ["买家国家偏离目标市场", "投放地域定向或系统智能扩量跑偏", "核查买家参谋国家分布，收缩直通车地域定向至重点主推国"],
+      ["高潜买家报价后集体沉默", "价格带或起订量门槛卡壳", "收集业务丢单反馈（贵多少、和谁比），反推详情页与阶梯定价策略"],
+      ["业务抱怨运营不给好客户", "缺少统一客观的分级标准", "落地 A/B/C 三档分级台账，A 类由资深业务优先攻坚"],
+      ["运业例会总是沦为互相甩锅", "缺少数据凭证与闭环机制", "每次例会只对三件事：高潜进展、垃圾词现场加否、买家新诉求"]
+    ],
+    checklist: [
+      "掌握商机列表与全屏详情两级后台路径",
+      "能通过国旗与买家档案核对目标市场匹配度",
+      "掌握真假客户四步过滤，能识别钓鱼与同行探价",
+      "清晰区分 A/B/C 三档客户并执行对应的运营动作",
+      "每周与业务固定 30 分钟对账会，现场完成垃圾词加否",
+      "掌握信保订单七大区块一致性与数据导出双入口"
+    ],
+    assignment: "选出最近 1 周店铺收到的 5 条真实询盘，在全屏商机页核对其买家国家、注册年限与原始诉求；用四步过滤法做一次真伪脱水，并按 A/B/C 评定等级。针对评为 C 级的线索，反查其进店来源词，在直通车后台完成一次否定词添加操作。",
+    sources: [
+      {label:"运营每天的工作（会员）",url:"https://t.zsxq.com/PlMGd"},
+      {label:"平台诊断报告（会员）",url:"https://t.zsxq.com/elo8T"},
+      {label:"月数据报告（会员）",url:"https://t.zsxq.com/mns1l"}
+    ]
   }
 );
 
