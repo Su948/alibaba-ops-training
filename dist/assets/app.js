@@ -964,6 +964,11 @@ lessons.push(
             <li><strong>第四步：季度动态换绑升级款</strong><span>每 1～2 个月盘点一次：若店铺发布了最新代次升级款或遇到季节更替，<strong>在列表中点击「更换商品」换绑最新款</strong>，坚决不让淘汰旧款霸占首位</span></li>
             <li><strong>第五步：CTR 监控与承接页优化</strong><span>进「品牌报告」监控首位点击率：<strong>若 CTR 跌破 2.5%（正常 3%～6%），立刻更换首图与视频</strong>；大词建议将落地页配置为多品矩阵场景承接页，降低单品跳出</span></li>
           </ul></div>
+          <figure class="course-figure">
+            <div class="figure-head"><span>04</span><div><strong>品牌广告管理台：顶展与问鼎词品管理</strong><p>营销中心 → 品牌推广 → 品牌关键词 →「已购词推广管理」（关键词、缩略图与具体数据已脱敏）</p></div></div>
+            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看品牌推广管理截图"><img src="assets/lesson-08-brand-ads-manage.png" alt="阿里国际站品牌推广管理界面，含问鼎/顶展/明星展位切换、数据汇总栏、关键词与创意列表、近30天平均点击率、管理创意与商品设置操作栏" loading="lazy"></div>
+            <figcaption>品牌广告日常调优的四大核心抓手：<strong>① 问鼎／顶展／明星展位自由切换</strong>：顶部清晰展示已购词生效周期与终端（PC端／移动端独立排期）。<strong>② 右侧操作四件套（日常调优抓手）</strong>：点击<strong>「管理创意」</strong>随时更换主图与 4K 场景视频进行 A/B 测试；点击<strong>「商品设置」</strong>随季度上新随时换绑最新旗舰款；配备<strong>「地域定向」</strong>与<strong>「查看数据」</strong>。<strong>③ 核心监控指标</strong>：表格倒数第二列为<strong>「近 30 天平均点击率」</strong>，顶展作为首位正常应维持在 3%～6%，若跌破 2.5% 必须立刻更换素材。<strong>④ 场景化承接页</strong>：右上角直通<strong>「承接页管理」</strong>，可将大词落地页配置为多品矩阵场景页，显著提高大词留存率。</figcaption>
+          </figure>
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>调控阶段</th><th>核心操作与考核指标</th><th>执行动作与处置要点</th></tr></thead><tbody>
             <tr><td><strong>投前：绑定门面旗舰款</strong></td><td><strong>只绑全店资质最硬、画质最高的门面天花板款</strong>；绝不绑测款新品或薄利款</td><td>买家搜行业大词第一眼看到的是你的品牌门面。必须配备 4K 高清主图/视频、全套认证徽标、Verified 工厂验真</td></tr>
             <tr><td><strong>投中：动态换绑主推款</strong></td><td>随季度上新与产品迭代，<strong>每 1～2 个月评估一次绑定的主推品</strong></td><td>店铺出了全新升级代次款，必须在后台及时换绑最新旗舰品，坚决不让淘汰旧款长期霸占黄金首位</td></tr>
@@ -1000,7 +1005,7 @@ lessons.push(
              <tr><td>排除词</td><td>零售、维修、配件词提前屏蔽</td><td>这类流量点得再多也不会询价</td></tr>
            </tbody></table></div>
             <figure class="course-figure">
-              <div class="figure-head"><span>04</span><div><strong>关键词页与匹配方式的位置</strong><p>标准推广 → 某个计划 → 「关键词」页签（计划名、出价、数字均已隐去）</p></div></div>
+              <div class="figure-head"><span>05</span><div><strong>关键词页与匹配方式的位置</strong><p>标准推广 → 某个计划 → 「关键词」页签（计划名、出价、数字均已隐去）</p></div></div>
              <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看关键词页截图"><img src="assets/lesson-08-ads-keyword-match.png" alt="标准推广计划的关键词页签，含关键词、出价、近1小时最佳排名、24小时排名分布、抢位状态、推广评分、同行平均出价、搜索热度" loading="lazy"></div>
              <figcaption>三个要点：<strong>① 右上角「匹配方式」是计划级设置</strong>，不是在每个词后面单独选——点开改一次，这个计划里所有词一起变。<strong>② 表头那一排</strong>才是逐词看的：出价、近1小时最佳排名、24小时排名分布、抢位状态、推广评分、同行平均出价、搜索热度。判断一个词「能不能抢」看排名与同行出价，判断「值不值得抢」看推广评分与搜索热度。<strong>③ 因为匹配方式是整计划统一</strong>，精准词和宽泛词必须拆到两个计划里，否则只能二选一。</figcaption>
            </figure>
@@ -1068,7 +1073,7 @@ lessons.push(
             <li><strong>第四步：成交与复购</strong><span>成本低但客户质量差，一样是亏</span></li>
           </ul></div>
             <figure class="course-figure">
-              <div class="figure-head"><span>05</span><div><strong>搜索词报告长什么样</strong><p>营销中心 → 直通车报告 → 搜索词报告（数字已隐去）</p></div></div>
+              <div class="figure-head"><span>06</span><div><strong>搜索词报告长什么样</strong><p>营销中心 → 直通车报告 → 搜索词报告（数字已隐去）</p></div></div>
               <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看搜索词报告截图"><img src="assets/lesson-08-ads-search-terms.png" alt="直通车报告的搜索词报告页签，含买家搜索词、点击占比、曝光占比三列" loading="lazy"></div>
               <figcaption><strong>先认清楚它只有三列</strong>：买家搜索词、点击占比、曝光占比。<strong>没有花费、没有点击次数、没有展现量的绝对值</strong>——所以想在这一页回答「哪个词烧了多少钱」是做不到的。这一页能做的是两件事：① 看买家到底在搜什么（发现跑偏的词）；② 看点击占比和曝光占比的落差（曝光高、点击占比低＝人家看到你没点，问题在词与图的匹配）。要算钱，回计划列表用花费对着关键词数拆，别指望这一页。<br>另外注意顶部要先选组：<strong>「全站推广」和「标准推广」是两组报告</strong>，页签不同数据不同。本店标准推广组当期无数据，这张取自全站推广组——所以三列结构以自己后台为准。</figcaption>
             </figure>
@@ -1081,7 +1086,7 @@ lessons.push(
               <tr><td><strong>每半月必看<br>（双周复盘）</strong></td><td><strong>买家地域流向与商机成本</strong></td><td>核对直通车与买家参谋的地域分布，确认 60% 以上的花费是否流向欧美等可履约、高利润的目标国家；若大量预算流向偏远国，立即配置地域溢价</td></tr>
             </tbody></table></div>
             <figure class="course-figure">
-              <div class="figure-head"><span>06</span><div><strong>自定义列：搭建日常监控看板</strong><p>标准推广 → 计划列表右上角「自定义列」配置面板（纯字段设置，无敏感数据）</p></div></div>
+              <div class="figure-head"><span>07</span><div><strong>自定义列：搭建日常监控看板</strong><p>标准推广 → 计划列表右上角「自定义列」配置面板（纯字段设置，无敏感数据）</p></div></div>
               <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看自定义列配置截图"><img src="assets/lesson-08-ads-custom-columns.png" alt="直通车自定义列配置弹层，含状态、计划、诊断状态、预算、出价、投放渠道、推广商品数、推广关键词数、花费、商机量等字段勾选" loading="lazy"></div>
               <figcaption><strong>直通车不是没有数据监控，关键看你会不会配「自定义列」：</strong>后台默认视图只有几个笼统的汇总数字，要想掌握精细盯盘主动权，必须点击表格右上角<strong>「自定义列」</strong>。<br><strong>牢记后台真实字段名</strong>：后台没有所谓「平均点击花费（CPC）」，官方字段名叫<strong>「点击成本」</strong>；也没有复杂的阶梯算法，直接关注<strong>「商机成本」</strong>。<br><strong>推荐必勾 8 大核心监控指标</strong>：① <code>诊断状态</code>（排查扣分/受限）；② <code>预算</code> 与 <code>出价</code>；③ <code>花费</code>；④ <code>点击成本</code>；⑤ <code>点击率（CTR）</code>；⑥ <code>商机量</code>；⑦ <code>商机成本</code>；⑧ <code>L1+商机量</code>。勾齐这 8 项并上下拖动排序，你的直通车列表才真正具备了商业监控看板的能力。</figcaption>
             </figure>
