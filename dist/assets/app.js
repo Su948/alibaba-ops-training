@@ -932,8 +932,21 @@ lessons.push(
             <tr><td><strong>删品红线 ③</strong></td><td>各项核心数据显著低迷，持续无商机</td><td><strong>及时止损移出</strong>，停止无效试错</td></tr>
           </tbody></table></div>
 
-          <p class="step-more-label">板块二：全站推广调控机制（推工厂／日预算／智能推）</p>
+          <p class="step-more-label">板块二：全站推广调控机制与实操步骤（推工厂／日预算／智能推）</p>
           <div class="method-note"><strong>全站推调控本质：</strong>全站推是算法黑盒模型，没有手动选词和关键词出价。运营调控全站推不是靠改词，而是靠<strong>「选品准入过滤、预算平稳微调、关闭自动加品、负向商品汰换」</strong>四大阀门。</div>
+          <figure class="course-figure">
+            <div class="figure-head"><span>03</span><div><strong>全站推计划设置与核心调控阀门</strong><p>营销中心 → 全站推广 → 新建计划设置页（日预算与计划名已脱敏）</p></div></div>
+            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看全站推计划设置截图"><img src="assets/lesson-09-p4p-plan-setup.png" alt="全站推广新建计划设置界面，含推广方式、选择商品、商品自动更新开关、流量设置多地域投放、设置出价和预算" loading="lazy"></div>
+            <figcaption>全站推调控的四大真实视觉锚点：<strong>①「商品自动更新」开关</strong>：位于「选择商品」正下方，<strong>默认是蓝色开启状态（极度危险！）</strong>，运营必须手动点击切换为灰色关闭，防止系统私自加品全店混烧。<strong>②「多地域投放 设置」</strong>：点击进入勾选欧美高客单可履约主力国，排除边缘无效国。<strong>③「出价设置」</strong>：提供「目标商机成本」与「商机价值最大化」，建议成熟品选价值最大化，起步预算给稳。<strong>④ 左侧六步导航</strong>：推广方式 → 选择商品 → 流量设置 → 设置出价和预算 → 偏好设置 → 计划名称，每一步都需要人工前置把控。</figcaption>
+          </figure>
+          <div class="mindmap"><div class="mm-root">全站推广标准操作 6 步流程</div><ul class="mm-list">
+            <li><strong>第一步：入口与目标</strong><span>进入「营销中心 → 全站推广 → 新建推广计划」，选择「全站商机」作为投放目标</span></li>
+            <li><strong>第二步：严选成熟爆品</strong><span>点击「选择商品」，仅勾选在标准推广或自然流量中已有稳定询盘的成熟款（未测新品坚决不勾）</span></li>
+            <li><strong>第三步：关闭自动更新（生死线）</strong><span>在商品列表下方，<strong>立刻将「商品自动更新」开关点为关闭（灰色）</strong>，锁定商品资产，禁止系统自动加品</span></li>
+            <li><strong>第四步：配置多地域投放</strong><span>点击「流量设置 → 多地域投放 设置」，勾选欧美等核心主力国，取消勾选偏远或无履约能力国家</span></li>
+            <li><strong>第五步：出价与平稳预算</strong><span>出价方式首选「商机价值最大化」，设定初始日均预算；后续每次调整预算<strong>幅度严禁超过 25%</strong></span></li>
+            <li><strong>第六步：投后负向商品汰换</strong><span>每周一进入计划内「推广商品明细」，若某单品消耗占比超 30% 且持续 14 天 0 商机，<strong>直接点击该商品设为「暂停」或「移除」</strong></span></li>
+          </ul></div>
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>调控环节</th><th>核心规则与操作标准</th><th>为什么这么调（底层逻辑）</th></tr></thead><tbody>
             <tr><td><strong>全站推选品准入</strong></td><td><strong>只进标准推广或自然流量已跑通的成熟爆品</strong>、大众通用款、工厂产能充沛的实力款；<strong>未经验证的新品坚决不进</strong></td><td>全站推是算法在全站猜买家。新品没有画像积累，算法只能全网盲猜乱投，造成巨额无效消耗</td></tr>
             <tr><td><strong>阀门 ①：日预算微调</strong></td><td>单次预算调整幅度<strong>严禁超过 20%～30%</strong>，保持消耗节奏平稳；<strong>严禁单日突然翻倍</strong></td><td>算法对预算极其敏感。突然翻倍会打破原有的竞价寻客模型，迫使系统向低质流量池放量，导致单商机成本飙升</td></tr>
@@ -942,8 +955,15 @@ lessons.push(
             <tr><td><strong>阀门 ④：负向汰换</strong></td><td>若某商品连续 7～14 天消耗占比超 30% 却<strong>持续 0 商机</strong>，立即在计划中<strong>移除或暂停该品</strong></td><td>全站推算法容易「偏食」。及时踢掉吸血不转化的品，逼迫算法把流量重新分配给其他真正出单的潜力品</td></tr>
           </tbody></table></div>
 
-          <p class="step-more-label">板块三：品牌广告动态调优（问鼎／顶展／聚量）</p>
+          <p class="step-more-label">板块三：品牌广告动态调优与实操步骤（问鼎／顶展／聚量）</p>
           <div class="method-note"><strong>品牌广告调控本质：</strong>问鼎和顶展买的是行业超级大词的 PC/App 首位独占。它不是「买了不管」的静态包年广告，调控核心在<strong>「投前门面款绑定、投中素材与落地页动态迭代、投后全店溢出评估」</strong>。</div>
+          <div class="mindmap"><div class="mm-root">品牌广告（顶展/问鼎）实操 5 步流程</div><ul class="mm-list">
+            <li><strong>第一步：后台管理入口</strong><span>登录后台 → 营销中心 → 查看左侧导航「品牌推广」组，点击进入「顶级展位」或「品牌聚量 / 品牌关键词」管理后台</span></li>
+            <li><strong>第二步：核心大词词品绑定</strong><span>在已购词列表中定位目标超级大词，点击「绑定商品」，<strong>必须绑定全店资质最硬、画质最高、带 Verified 工厂验真和权威认证的门面天花板款</strong></span></li>
+            <li><strong>第三步：定制创意与主图视频</strong><span>点击「创意管理 / 素材设置」，上传 1:1 及横版高精度实景大图，关联 4K 主图视频，副标题提炼精准差异化认证与起订量优势，提交审核</span></li>
+            <li><strong>第四步：季度动态换绑升级款</strong><span>每 1～2 个月盘点一次：若店铺发布了最新代次升级款或遇到季节更替，<strong>在列表中点击「更换商品」换绑最新款</strong>，坚决不让淘汰旧款霸占首位</span></li>
+            <li><strong>第五步：CTR 监控与承接页优化</strong><span>进「品牌报告」监控首位点击率：<strong>若 CTR 跌破 2.5%（正常 3%～6%），立刻更换首图与视频</strong>；大词建议将落地页配置为多品矩阵场景承接页，降低单品跳出</span></li>
+          </ul></div>
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>调控阶段</th><th>核心操作与考核指标</th><th>执行动作与处置要点</th></tr></thead><tbody>
             <tr><td><strong>投前：绑定门面旗舰款</strong></td><td><strong>只绑全店资质最硬、画质最高的门面天花板款</strong>；绝不绑测款新品或薄利款</td><td>买家搜行业大词第一眼看到的是你的品牌门面。必须配备 4K 高清主图/视频、全套认证徽标、Verified 工厂验真</td></tr>
             <tr><td><strong>投中：动态换绑主推款</strong></td><td>随季度上新与产品迭代，<strong>每 1～2 个月评估一次绑定的主推品</strong></td><td>店铺出了全新升级代次款，必须在后台及时换绑最新旗舰品，坚决不让淘汰旧款长期霸占黄金首位</td></tr>
@@ -980,7 +1000,7 @@ lessons.push(
              <tr><td>排除词</td><td>零售、维修、配件词提前屏蔽</td><td>这类流量点得再多也不会询价</td></tr>
            </tbody></table></div>
             <figure class="course-figure">
-              <div class="figure-head"><span>03</span><div><strong>关键词页与匹配方式的位置</strong><p>标准推广 → 某个计划 → 「关键词」页签（计划名、出价、数字均已隐去）</p></div></div>
+              <div class="figure-head"><span>04</span><div><strong>关键词页与匹配方式的位置</strong><p>标准推广 → 某个计划 → 「关键词」页签（计划名、出价、数字均已隐去）</p></div></div>
              <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看关键词页截图"><img src="assets/lesson-08-ads-keyword-match.png" alt="标准推广计划的关键词页签，含关键词、出价、近1小时最佳排名、24小时排名分布、抢位状态、推广评分、同行平均出价、搜索热度" loading="lazy"></div>
              <figcaption>三个要点：<strong>① 右上角「匹配方式」是计划级设置</strong>，不是在每个词后面单独选——点开改一次，这个计划里所有词一起变。<strong>② 表头那一排</strong>才是逐词看的：出价、近1小时最佳排名、24小时排名分布、抢位状态、推广评分、同行平均出价、搜索热度。判断一个词「能不能抢」看排名与同行出价，判断「值不值得抢」看推广评分与搜索热度。<strong>③ 因为匹配方式是整计划统一</strong>，精准词和宽泛词必须拆到两个计划里，否则只能二选一。</figcaption>
            </figure>
@@ -1048,7 +1068,7 @@ lessons.push(
             <li><strong>第四步：成交与复购</strong><span>成本低但客户质量差，一样是亏</span></li>
           </ul></div>
             <figure class="course-figure">
-              <div class="figure-head"><span>04</span><div><strong>搜索词报告长什么样</strong><p>营销中心 → 直通车报告 → 搜索词报告（数字已隐去）</p></div></div>
+              <div class="figure-head"><span>05</span><div><strong>搜索词报告长什么样</strong><p>营销中心 → 直通车报告 → 搜索词报告（数字已隐去）</p></div></div>
               <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看搜索词报告截图"><img src="assets/lesson-08-ads-search-terms.png" alt="直通车报告的搜索词报告页签，含买家搜索词、点击占比、曝光占比三列" loading="lazy"></div>
               <figcaption><strong>先认清楚它只有三列</strong>：买家搜索词、点击占比、曝光占比。<strong>没有花费、没有点击次数、没有展现量的绝对值</strong>——所以想在这一页回答「哪个词烧了多少钱」是做不到的。这一页能做的是两件事：① 看买家到底在搜什么（发现跑偏的词）；② 看点击占比和曝光占比的落差（曝光高、点击占比低＝人家看到你没点，问题在词与图的匹配）。要算钱，回计划列表用花费对着关键词数拆，别指望这一页。<br>另外注意顶部要先选组：<strong>「全站推广」和「标准推广」是两组报告</strong>，页签不同数据不同。本店标准推广组当期无数据，这张取自全站推广组——所以三列结构以自己后台为准。</figcaption>
             </figure>
@@ -1061,7 +1081,7 @@ lessons.push(
               <tr><td><strong>每半月必看<br>（双周复盘）</strong></td><td><strong>买家地域流向与商机成本</strong></td><td>核对直通车与买家参谋的地域分布，确认 60% 以上的花费是否流向欧美等可履约、高利润的目标国家；若大量预算流向偏远国，立即配置地域溢价</td></tr>
             </tbody></table></div>
             <figure class="course-figure">
-              <div class="figure-head"><span>05</span><div><strong>自定义列：搭建日常监控看板</strong><p>标准推广 → 计划列表右上角「自定义列」配置面板（纯字段设置，无敏感数据）</p></div></div>
+              <div class="figure-head"><span>06</span><div><strong>自定义列：搭建日常监控看板</strong><p>标准推广 → 计划列表右上角「自定义列」配置面板（纯字段设置，无敏感数据）</p></div></div>
               <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看自定义列配置截图"><img src="assets/lesson-08-ads-custom-columns.png" alt="直通车自定义列配置弹层，含状态、计划、诊断状态、预算、出价、投放渠道、推广商品数、推广关键词数、花费、商机量等字段勾选" loading="lazy"></div>
               <figcaption><strong>直通车不是没有数据监控，关键看你会不会配「自定义列」：</strong>后台默认视图只有几个笼统的汇总数字，要想掌握精细盯盘主动权，必须点击表格右上角<strong>「自定义列」</strong>。<br><strong>牢记后台真实字段名</strong>：后台没有所谓「平均点击花费（CPC）」，官方字段名叫<strong>「点击成本」</strong>；也没有复杂的阶梯算法，直接关注<strong>「商机成本」</strong>。<br><strong>推荐必勾 8 大核心监控指标</strong>：① <code>诊断状态</code>（排查扣分/受限）；② <code>预算</code> 与 <code>出价</code>；③ <code>花费</code>；④ <code>点击成本</code>；⑤ <code>点击率（CTR）</code>；⑥ <code>商机量</code>；⑦ <code>商机成本</code>；⑧ <code>L1+商机量</code>。勾齐这 8 项并上下拖动排序，你的直通车列表才真正具备了商业监控看板的能力。</figcaption>
             </figure>
