@@ -1229,15 +1229,23 @@ lessons.push(
             <tr><td><strong>投中：动态换绑主推款</strong></td><td>随季度上新与产品迭代，<strong>每 1～2 个月评估一次绑定的主推品</strong></td><td>店铺出了全新升级代次款，在列表中点击「商品设置」及时换绑最新旗舰品，坚决不让淘汰旧款长期霸占黄金首位</td></tr>
           </tbody></table></div>
         </div></details>`],
-      ["操作创意与修改创意：入口定位与制作规范", "顶展与问鼎作为高投入的头部独占资源，其点击率（CTR）直接决定流量产出效益。创意不是页面全局按钮，必须在目标词所在行的右侧「操作」列点击「管理创意」进入对应词的编辑界面。",
+      ["操作创意与修改创意：入口定位与制作规范", "顶展与问鼎作为高投入的头部独占资源，其点击率（CTR）直接决定流量产出效益。创意不是页面全局按钮，必须在目标词所在行的右侧「操作」列点击「管理创意」进入对应词的二级创意管理页。",
         `<details class="step-more"><summary>展开看创意操作动线与 4 项制作规范</summary><div class="step-more-body">
           <figure class="course-figure">
-            <div class="figure-head"><span>02</span><div><strong>创意设置开关与管理操作入口定位</strong><p>已购词推广管理表格 → 智能创意列与操作列（红框标注关键操作位）</p></div></div>
-            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看创意设置开关与操作入口截图"><img src="assets/lesson-10-creative-entry.png" alt="阿里国际站品牌推广已购词列表局部，红框标注中间智能创意开关与右侧操作栏管理创意按钮" loading="lazy"></div>
-            <figcaption>创意设置与日常管理的两个核心操作位（如红框所示）：<br>
-            • <strong>① 创意管理入口（右侧红框）</strong>：位于目标已购词最右侧「操作」列第一项<strong>「管理创意」</strong>。点击后打开弹层，可上传 4K 场景图、主图视频、填写副标题并提交官方审核，或对已有素材进行编辑与停用。<br>
-            • <strong>② 创意设置开关（中间红框）</strong>：位于第 5 列<strong>「智能创意」</strong>（每行独立的蓝色滑块开关）。开启时系统算法自动抓取商品详情页素材拼装展示；关闭时则严格固定展示运营手动上传并审核通过的创意。<br>
-            • <strong>③ 创意预览与数量</strong>：第 6 列展示当前生效的素材缩略图，第 7 列「创意个数」显示该词名下已过审的创意总数。</figcaption>
+            <div class="figure-head"><span>02</span><div><strong>已购词列表：定位目标词与「管理创意」入口</strong><p>营销中心 → 品牌推广 → 品牌关键词 →「已购词推广管理」（大红箭头与绿框标注操作动线）</p></div></div>
+            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看已购词列表管理创意入口截图"><img src="assets/lesson-10-creative-entry.png" alt="阿里国际站品牌推广已购词列表，大红箭头从顶部问鼎指向右下角绿框圈出的管理创意按钮" loading="lazy"></div>
+            <figcaption>从列表定位到目标词的创意管理入口（如红箭头与绿框所示）：<br>
+            • <strong>第一步：锁定页面层级</strong>：左侧导航选择「品牌推广 → 品牌关键词」，进入「已购词推广管理」页签。<br>
+            • <strong>第二步：选择渠道与词类型</strong>：在顶部次级页签选择「问鼎」或「顶展」，在下方选择「关键词」列表。<br>
+            • <strong>第三步：定位目标词行并点击进入</strong>：顺着大红箭头，在目标词所在行的最右侧「操作」列第一项，点击绿框圈出的<strong>「管理创意」</strong>，进入该词专属的二级创意管理后台。</figcaption>
+          </figure>
+          <figure class="course-figure">
+            <div class="figure-head"><span>03</span><div><strong>创意管理详情页：素材上传、智能创意与审核状态</strong><p>点击「管理创意」进入的二级详情页（含添加创意、智能创意开关、审核状态与操作栏）</p></div></div>
+            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看二级创意管理详情页截图"><img src="assets/lesson-10-creative-detail.png" alt="品牌广告二级创意管理界面，含添加创意蓝色按钮、人工与系统绑定创意数、智能创意开关、审核通过状态及操作栏" loading="lazy"></div>
+            <figcaption>进入二级「创意管理」详情页的核心功能分布（如绿框所示）：<br>
+            • <strong>① 添加创意按钮（左侧绿框）</strong>：点击蓝色<strong>「添加创意」</strong>按钮，即可上传 4K 场景图、主图视频，并填写对应副标题提交官方审核。<br>
+            • <strong>② 创意配额与智能开关</strong>：顶部清晰展示「人工绑定创意数（如 6/10套）」与「系统绑定创意数（如 7/10套）」，并配备每词独立的「问鼎智能创意」蓝色滑块开关。<br>
+            • <strong>③ 审核状态与素材管理（右侧绿框）</strong>：列表中展示已绑定的创意缩略图与「审核通过」状态；最右侧操作栏提供<strong>「复制」</strong>、<strong>「解绑」</strong>、<strong>「暂停」</strong>以及针对单素材的<strong>「地域定向」</strong>功能。</figcaption>
           </figure>
           <div class="mindmap"><div class="mm-root">创意操作与视觉规范 4 步</div><ul class="mm-list">
             <li><strong>一、添加与修改动线（按词操作）</strong><span>在目标已购词右侧「操作」列，点击第二组第一项<strong>「管理创意」</strong> → 点击「新增创意」或已有素材上的「编辑」 → 上传 4K 场景素材与副标题 → 点击「提交审核」（官方机审加人审，24小时内审核完成）</span></li>
