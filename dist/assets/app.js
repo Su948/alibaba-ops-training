@@ -895,43 +895,71 @@ lessons.push(
           </tbody></table></div>
           <div class="method-note"><strong>判断标准不一样，就不能放一个计划里。</strong>测品看的是「有没有人问」，拿询盘看的是「成本多少」。同一个计划里两个标准并存，最后一定是拿成本去否定一个还没验证完的品。</div>
         </div></details>`],
-      ["控制计划粒度与加品/删品规则（品维调控）", "产品和词都要同构：同形态的产品放一起，同意图的词放一起。同时建立严格的加品准入和删品淘汰红线，避免预算浪费和多计划左右互搏。",
-        `<details class="step-more"><summary>展开看拆分原则与加删品红线</summary><div class="step-more-body">
-          <div class="mindmap"><div class="mm-root">按三个维度拆计划</div><ul class="mm-list">
+      ["三大广告板块选品准入与调控机制（品维调控：标准推广 vs 全站推 vs 品牌广告）", "标准推广靠人工手动控词控盘，全站推靠算法全域寻客，品牌广告靠首位独占心智。三大板块的选品标准、禁忌红线与调控手段截然不同，必须建立分板块的调控体系。",
+        `<details class="step-more"><summary>展开看三大广告板块的选品画像与调控抓手</summary><div class="step-more-body">
+          <p class="step-more-label">板块一：标准推广品维调控（新品加速／关键词推广／爆品助推）</p>
+          <div class="mindmap"><div class="mm-root">标准推广按三个维度拆计划</div><ul class="mm-list">
             <li><strong>一、按产品形态</strong><span>不同形态不共预算。台式款和便携款的点击成本和转化率本来就不一样</span></li>
             <li><strong>二、按搜索意图</strong><span>品类词、采购意图词（OEM／wholesale）、长尾场景词分组。意图不同，出价逻辑不同</span></li>
             <li><strong>三、按国家</strong><span>重点国家单独成计划。多国混跑，每个国家都拿不到足够样本</span></li>
           </ul></div>
-           <div class="method-note"><strong>可执行的粒度参考：</strong>一个计划里产品控制在 3 个以内且同形态，词控制在几十个以内且同意图。这是经验阈值，不是平台规则——目标是让每个计划跑一周后能看出方向。</div>
-           <figure class="course-figure">
-             <div class="figure-head"><span>01</span><div><strong>计划列表长什么样</strong><p>营销中心 → 标准推广（金额与计划名已隐去）</p></div></div>
-             <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看计划列表截图"><img src="assets/lesson-08-ads-plan-list.png" alt="标准推广的计划列表，含状态、计划、诊断状态、预算、出价、投放渠道、推广商品数、推广关键词数、花费等列" loading="lazy"></div>
+          <div class="method-note"><strong>可执行的粒度参考：</strong>一个计划里产品控制在 3 个以内且同形态，词控制在几十个以内且同意图。这是经验阈值，不是平台规则——目标是让每个计划跑一周后能看出方向。</div>
+          <figure class="course-figure">
+            <div class="figure-head"><span>01</span><div><strong>计划列表长什么样</strong><p>营销中心 → 标准推广（金额与计划名已隐去）</p></div></div>
+            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看计划列表截图"><img src="assets/lesson-08-ads-plan-list.png" alt="标准推广的计划列表，含状态、计划、诊断状态、预算、出价、投放渠道、推广商品数、推广关键词数、花费等列" loading="lazy"></div>
             <figcaption>这张表就是你判断「粒度对不对」的地方。<strong>「推广商品数」和「推广关键词数」两列并排看</strong>：商品数很多、词也很多，几乎一定混烧；商品数 1—3、词几十个，才是一个能归因的计划。右边「预算」「出价」「花费」挨在一起，是用来对照「预算给了多少、实际花了多少」的——三个数一起看才有意义，单看花费没有判断价值。左侧「状态」与「诊断状态」是平台给的提示，不等于你的结论。</figcaption>
-            </figure>
-            <div class="method-note"><strong>后台真相：直通车不是没有数据，而是「只给数据素材、不给商业判断」。</strong>添加商品弹层里，平台给出的信息非常丰富：从推荐投广品、商机品、机会品等平台标签，到近 90 天搜索曝光、点击、订单、询盘的自然数据应有尽有，右上角甚至给了一个极具诱惑的「一键添加」按钮。但平台<strong>绝不会告诉你这个品该不该投、投多少算合理、什么样的数据算异常</strong>。没有准入标准，一键添加点下去就是批量盲目烧钱。直通车是<strong>付费流量放大器</strong>，用来放大原本就有转化潜力的品，绝不是用来「抢救死链接」的。</div>
-            <figure class="course-figure">
-              <div class="figure-head"><span>02</span><div><strong>添加商品弹层与选品真相</strong><p>标准推广 → 进入计划 →「添加商品」弹层（商品标题与具体数据已隐去）</p></div></div>
-              <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看添加商品弹层截图"><img src="assets/lesson-08-ads-product-select.png" alt="直通车添加商品弹层，含全部商品/爆品/优品/潜力优品页签、一键添加按钮、商品标签与近90天数据列" loading="lazy"></div>
-              <figcaption>观察弹层的三大真实细节：<strong>① 平台标签与一键添加</strong>：顶部显眼提示「推荐投广品可享流量加速」，右侧紧跟「一键添加」——新手最容易在这里直接全选，把未经验证的品全塞进计划。<strong>② 横向很宽需要滚动</strong>：表格向右延伸包含近 90 天搜索曝光、点击、订单数、询盘数、TM 咨询数等自然数据，<strong>在标准视口下必须向右拖动滚动条才能看全</strong>。<strong>③ 必须前置筛选</strong>：左侧勾选框只有配合运营自己的准入标准（看近 90 天是否有自然微光转化），才能把真正值得投的品挑出来，绝不依赖平台的自动推荐。</figcaption>
-            </figure>
-            <p class="step-more-label">产品准入画像：什么产品应该加入直通车</p>
-            <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>准入类型</th><th>数据与基建特征</th><th>投放逻辑与目标</th></tr></thead><tbody>
-              <tr><td><strong>① 自然转化「微光品」<br>（首选必推）</strong></td><td>数据参谋近 90 天内，自然流量下已有 <strong>1～10 个 TM 或询盘</strong>，点击率（CTR）处于同行业平均线以上</td><td>已被真实买家货币与需求验证过，主图、价格与参数完全正确，唯独缺少规模曝光。加推直通车起量最快</td></tr>
-              <tr><td><strong>② 战略测重「达标新品」<br>（门槛极严）</strong></td><td><strong>基建必须达标</strong>：具备白底+场景主图、高清主图视频、属性填满无误、质量分达良好/优品、且明确展示资质认证（CE/RoHS 等）</td><td>新品冷启动需要 14～30 天数据窗口快速积累买家画像与搜索标签，验证市场接受度；基建不全坚决不推</td></tr>
-              <tr><td><strong>③ 差异化「高毛利款」</strong></td><td>针对欧美等核心目标市场痛点做过差异化改进（如特定电压、便携新结构、专供包装），毛利空间足够覆盖单次点击成本</td><td>高毛利款能承受单次较高的竞价门槛，适合打核心大词与采购意图词，换取高客单商机</td></tr>
-            </tbody></table></div>
-            <p class="step-more-label">产品维度的日常调控：删品与加品硬性红线</p>
-            <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>调整动作</th><th>触发条件（硬性红线）</th><th>处理方式与执行原则</th></tr></thead><tbody>
-              <tr><td><strong>加品红线<br>（资产防撞车）</strong></td><td><strong>已在「全站推·推工厂」产生过商机的产品</strong></td><td><strong>绝对禁止加入标准推广计划！</strong>避免同一款产品在不同计划里互抢曝光、重复消耗费用，破坏推工厂原本已建立的算法模型</td></tr>
-              <tr><td><strong>加品禁忌 ①<br>（三无死链接）</strong></td><td>上架超 3 个月，曝光大几千甚至过万，但 <strong>0 点击、0 询盘</strong></td><td><strong>坚决禁止入库</strong>。说明产品形态或主图有致命伤，进直通车纯属白白送钱</td></tr>
-              <tr><td><strong>加品禁忌 ②<br>（超薄毛利品）</strong></td><td>单件利润极低、无连带溢价能力的跑量款</td><td><strong>禁止加入直通车</strong>。单件利润无法覆盖平均 1～3 美元的单次点击成本</td></tr>
-              <tr><td><strong>加品禁忌 ③<br>（资质存疑品）</strong></td><td>无合规证书、涉嫌外观侵权或平台违规风险品</td><td><strong>禁止推广</strong>。极易触发广告审核驳回甚至店铺合规扣分处罚</td></tr>
-              <tr><td><strong>删品红线 ①</strong></td><td>连续 30 天无商机，且有持续花费消耗</td><td><strong>坚决移出计划</strong>。说明该品在现有出价和人群下无法转化，继续放着纯属浪费预算</td></tr>
-              <tr><td><strong>删品红线 ②</strong></td><td>仅有曝光，0 点击、0 商机</td><td><strong>坚决移出计划</strong>。买家毫无点击欲望，说明主图吸睛度或产品形态严重不过关，必须回第 06 课重修视觉</td></tr>
-              <tr><td><strong>删品红线 ③</strong></td><td>各项核心数据显著低迷，持续无商机</td><td><strong>及时止损移出</strong>，停止无效试错</td></tr>
-            </tbody></table></div>
-         </div></details>`],
-       ["用倒推法定预算与周期", "预算不是「今天想花多少」，是从目标倒推出来的：想要几条询盘、能接受多少成本、需要多少点击、需要多少钱。",
+          </figure>
+          <div class="method-note"><strong>后台真相：直通车不是没有数据，而是「只给数据素材、不给商业判断」。</strong>添加商品弹层里，平台给出的信息非常丰富：从推荐投广品、商机品、机会品等平台标签，到近 90 天搜索曝光、点击、订单、询盘的自然数据应有尽有，右上角甚至给了一个极具诱惑的「一键添加」按钮。但平台<strong>绝不会告诉你这个品该不该投、投多少算合理、什么样的数据算异常</strong>。没有准入标准，一键添加点下去就是批量盲目烧钱。直通车是<strong>付费流量放大器</strong>，用来放大原本就有转化潜力的品，绝不是用来「抢救死链接」的。</div>
+          <figure class="course-figure">
+            <div class="figure-head"><span>02</span><div><strong>添加商品弹层与选品真相</strong><p>标准推广 → 进入计划 →「添加商品」弹层（商品标题与具体数据已隐去）</p></div></div>
+            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看添加商品弹层截图"><img src="assets/lesson-08-ads-product-select.png" alt="直通车添加商品弹层，含全部商品/爆品/优品/潜力优品页签、一键添加按钮、商品标签与近90天数据列" loading="lazy"></div>
+            <figcaption>观察弹层的三大真实细节：<strong>① 平台标签与一键添加</strong>：顶部显眼提示「推荐投广品可享流量加速」，右侧紧跟「一键添加」——新手最容易在这里直接全选，把未经验证的品全塞进计划。<strong>② 横向很宽需要滚动</strong>：表格向右延伸包含近 90 天搜索曝光、点击、订单数、询盘数、TM 咨询数等自然数据，<strong>在标准视口下必须向右拖动滚动条才能看全</strong>。<strong>③ 必须前置筛选</strong>：左侧勾选框只有配合运营自己的准入标准（看近 90 天是否有自然微光转化），才能把真正值得投的品挑出来，绝不依赖平台的自动推荐。</figcaption>
+          </figure>
+          <p class="step-more-label">标准推广产品准入画像：什么产品应该加入直通车</p>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>准入类型</th><th>数据与基建特征</th><th>投放逻辑与目标</th></tr></thead><tbody>
+            <tr><td><strong>① 自然转化「微光品」<br>（首选必推）</strong></td><td>数据参谋近 90 天内，自然流量下已有 <strong>1～10 个 TM 或询盘</strong>，点击率（CTR）处于同行业平均线以上</td><td>已被真实买家货币与需求验证过，主图、价格与参数完全正确，唯独缺少规模曝光。加推直通车起量最快</td></tr>
+            <tr><td><strong>② 战略测重「达标新品」<br>（门槛极严）</strong></td><td><strong>基建必须达标</strong>：具备白底+场景主图、高清主图视频、属性填满无误、质量分达良好/优品、且明确展示资质认证（CE/RoHS 等）</td><td>新品冷启动需要 14～30 天数据窗口快速积累买家画像与搜索标签，验证市场接受度；基建不全坚决不推</td></tr>
+            <tr><td><strong>③ 差异化「高毛利款」</strong></td><td>针对欧美等核心目标市场痛点做过差异化改进（如特定电压、便携新结构、专供包装），毛利空间足够覆盖单次点击成本</td><td>高毛利款能承受单次较高的竞价门槛，适合打核心大词与采购意图词，换取高客单商机</td></tr>
+          </tbody></table></div>
+          <p class="step-more-label">标准推广日常调控：删品与加品硬性红线</p>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>调整动作</th><th>触发条件（硬性红线）</th><th>处理方式与执行原则</th></tr></thead><tbody>
+            <tr><td><strong>加品红线<br>（资产防撞车）</strong></td><td><strong>已在「全站推·推工厂」产生过商机的产品</strong></td><td><strong>绝对禁止加入标准推广计划！</strong>避免同一款产品在不同计划里互抢曝光、重复消耗费用，破坏推工厂原本已建立的算法模型</td></tr>
+            <tr><td><strong>加品禁忌 ①<br>（三无死链接）</strong></td><td>上架超 3 个月，曝光大几千甚至过万，但 <strong>0 点击、0 询盘</strong></td><td><strong>坚决禁止入库</strong>。说明产品形态或主图有致命伤，进直通车纯属白白送钱</td></tr>
+            <tr><td><strong>加品禁忌 ②<br>（超薄毛利品）</strong></td><td>单件利润极低、无连带溢价能力的跑量款</td><td><strong>禁止加入直通车</strong>。单件利润无法覆盖平均 1～3 美元的单次点击成本</td></tr>
+            <tr><td><strong>加品禁忌 ③<br>（资质存疑品）</strong></td><td>无合规证书、涉嫌外观侵权或平台违规风险品</td><td><strong>禁止推广</strong>。极易触发广告审核驳回甚至店铺合规扣分处罚</td></tr>
+            <tr><td><strong>删品红线 ①</strong></td><td>连续 30 天无商机，且有持续花费消耗</td><td><strong>坚决移出计划</strong>。说明该品在现有出价和人群下无法转化，继续放着纯属浪费预算</td></tr>
+            <tr><td><strong>删品红线 ②</strong></td><td>仅有曝光，0 点击、0 商机</td><td><strong>坚决移出计划</strong>。买家毫无点击欲望，说明主图吸睛度或产品形态严重不过关，必须回第 06 课重修视觉</td></tr>
+            <tr><td><strong>删品红线 ③</strong></td><td>各项核心数据显著低迷，持续无商机</td><td><strong>及时止损移出</strong>，停止无效试错</td></tr>
+          </tbody></table></div>
+
+          <p class="step-more-label">板块二：全站推广调控机制（推工厂／日预算／智能推）</p>
+          <div class="method-note"><strong>全站推调控本质：</strong>全站推是算法黑盒模型，没有手动选词和关键词出价。运营调控全站推不是靠改词，而是靠<strong>「选品准入过滤、预算平稳微调、关闭自动加品、负向商品汰换」</strong>四大阀门。</div>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>调控环节</th><th>核心规则与操作标准</th><th>为什么这么调（底层逻辑）</th></tr></thead><tbody>
+            <tr><td><strong>全站推选品准入</strong></td><td><strong>只进标准推广或自然流量已跑通的成熟爆品</strong>、大众通用款、工厂产能充沛的实力款；<strong>未经验证的新品坚决不进</strong></td><td>全站推是算法在全站猜买家。新品没有画像积累，算法只能全网盲猜乱投，造成巨额无效消耗</td></tr>
+            <tr><td><strong>阀门 ①：日预算微调</strong></td><td>单次预算调整幅度<strong>严禁超过 20%～30%</strong>，保持消耗节奏平稳；<strong>严禁单日突然翻倍</strong></td><td>算法对预算极其敏感。突然翻倍会打破原有的竞价寻客模型，迫使系统向低质流量池放量，导致单商机成本飙升</td></tr>
+            <tr><td><strong>阀门 ②：关闭自动更新<br>（核心防漏开关）</strong></td><td>在全站推计划设置中，找到<strong>「商品自动更新」开关，坚决设为「关闭」</strong></td><td>若开启，只要店铺发布新品或平台判定有潜力，系统会自动将其塞入计划，把你精选的计划打回「全店混烧」</td></tr>
+            <tr><td><strong>阀门 ③：多地域过滤</strong></td><td>配置多地域投放，排除历史无转化或履约困难的偏远边缘国</td><td>把全域撮合的流量强制收拢到欧美等高客单、高利润的主力市场</td></tr>
+            <tr><td><strong>阀门 ④：负向汰换</strong></td><td>若某商品连续 7～14 天消耗占比超 30% 却<strong>持续 0 商机</strong>，立即在计划中<strong>移除或暂停该品</strong></td><td>全站推算法容易「偏食」。及时踢掉吸血不转化的品，逼迫算法把流量重新分配给其他真正出单的潜力品</td></tr>
+          </tbody></table></div>
+
+          <p class="step-more-label">板块三：品牌广告动态调优（问鼎／顶展／聚量）</p>
+          <div class="method-note"><strong>品牌广告调控本质：</strong>问鼎和顶展买的是行业超级大词的 PC/App 首位独占。它不是「买了不管」的静态包年广告，调控核心在<strong>「投前门面款绑定、投中素材与落地页动态迭代、投后全店溢出评估」</strong>。</div>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>调控阶段</th><th>核心操作与考核指标</th><th>执行动作与处置要点</th></tr></thead><tbody>
+            <tr><td><strong>投前：绑定门面旗舰款</strong></td><td><strong>只绑全店资质最硬、画质最高的门面天花板款</strong>；绝不绑测款新品或薄利款</td><td>买家搜行业大词第一眼看到的是你的品牌门面。必须配备 4K 高清主图/视频、全套认证徽标、Verified 工厂验真</td></tr>
+            <tr><td><strong>投中：动态换绑主推款</strong></td><td>随季度上新与产品迭代，<strong>每 1～2 个月评估一次绑定的主推品</strong></td><td>店铺出了全新升级代次款，必须在后台及时换绑最新旗舰品，坚决不让淘汰旧款长期霸占黄金首位</td></tr>
+            <tr><td><strong>投中：创意素材 A/B 迭代</strong></td><td>盯紧首位<strong>点击率（CTR）</strong>：行业正常顶展 CTR 应在 <strong>3.0% ～ 6.0%</strong></td><td>若 CTR 跌破 2.5%，说明买家视觉疲劳，必须<strong>立刻更换首屏动态视频或新场景主图</strong>，副标题更新最新卖点</td></tr>
+            <tr><td><strong>投中：场景落地页优化</strong></td><td>大词买家意图宽泛，从单一 SKU 详情页升级为<strong>多品矩阵场景承接页</strong></td><td>定制专属承接页，一屏展示多款主流型号与定制选项，承接不同买家需求，显著降低大词跳出率</td></tr>
+            <tr><td><strong>投后：续费与去留评估</strong></td><td>综合核算：首位 CTR、全店品牌词搜索溢出效应、L1+ 大买家触达率</td><td>到期前 1 个月核算：若直接与间接带动的总商机成本优于全店行均，继续续约独占；若转化长期低迷则换词</td></tr>
+          </tbody></table></div>
+
+          <p class="step-more-label">三大广告板块选品准入与调控总览对照表</p>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>广告板块</th><th>包含工具</th><th>选品准入核心标准</th><th>日常调控核心抓手</th><th>异常核心诊断与处理</th></tr></thead><tbody>
+            <tr><td><strong>品牌广告</strong></td><td>问鼎、顶展、聚量</td><td><strong>全店门面天花板款</strong><br>顶级画质、全套认证、工厂实力</td><td>定期换绑升级款；迭代主图视频保 CTR；配置场景化承接页</td><td><strong>CTR &lt; 2.5%</strong>：视觉疲劳立即换素材；<br><strong>高点无转化</strong>：换绑更具性价比或支持小批量的旗舰品</td></tr>
+            <tr><td><strong>全站推广</strong></td><td>推工厂、日预算、智能推</td><td><strong>已验证的成熟爆品</strong><br>大众通用款、工厂产能充足款</td><td>单次微调预算（&le;25%）；<strong>坚决关闭自动更新</strong>；多地域筛选；踢掉吸血不转化品</td><td><strong>单商机成本飙升</strong>：降预算 20%，剔除跑偏品；<br><strong>单品吸血垄断</strong>：不出单果断剔除，出单好单独设日预算</td></tr>
+            <tr><td><strong>标准推广</strong></td><td>新品加速、关键词推广、爆品助推</td><td><strong>近 90 天自然微光品（1～10商机）</strong><br>基建达标的新品、高毛利款</td><td>「词、品、国、时」四维手动精准调优；设置精准匹配与地域溢价；配置自定义列看板</td><td><strong>高曝低点</strong>：降价或换图；<br><strong>高耗0商机</strong>：加否定词，超50刀删品；<br><strong>1小时秒光</strong>：转精准，吸血词单价减半</td></tr>
+          </tbody></table></div>
+        </div></details>`],
+      ["用倒推法定预算与周期", "预算不是「今天想花多少」，是从目标倒推出来的：想要几条询盘、能接受多少成本、需要多少点击、需要多少钱。",
         `<details class="step-more"><summary>展开看倒推四步</summary><div class="step-more-body">
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>步骤</th><th>怎么算</th><th>没有历史数据时怎么办</th></tr></thead><tbody>
             <tr><td>一、定目标询盘数</td><td>这一轮想验证出几条询盘</td><td>先定 3—5 条，够判断趋势即可</td></tr>
