@@ -932,87 +932,12 @@ lessons.push(
             <tr><td><strong>删品红线 ③</strong></td><td>各项核心数据显著低迷，持续无商机</td><td><strong>及时止损移出</strong>，停止无效试错</td></tr>
           </tbody></table></div>
 
-          <p class="step-more-label">板块二：全站推广调控机制与实操步骤（推工厂／日预算／智能推）</p>
-          <div class="method-note"><strong>全站推调控本质：</strong>全站推是算法黑盒模型，没有手动选词和关键词出价。运营调控全站推不是靠改词，而是靠<strong>「选品准入过滤、预算平稳微调、关闭自动加品、负向商品汰换」</strong>四大阀门。</div>
-          <figure class="course-figure">
-            <div class="figure-head"><span>03</span><div><strong>全站推计划设置与核心调控阀门</strong><p>营销中心 → 全站推广 → 新建计划设置页（日预算与计划名已脱敏）</p></div></div>
-            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看全站推计划设置截图"><img src="assets/lesson-09-p4p-plan-setup.png" alt="全站推广新建计划设置界面，含推广方式、选择商品、商品自动更新开关、流量设置多地域投放、设置出价和预算" loading="lazy"></div>
-            <figcaption>全站推调控的四大真实视觉锚点：<strong>①「商品自动更新」开关</strong>：位于「选择商品」正下方，<strong>默认是蓝色开启状态（极度危险！）</strong>，运营必须手动点击切换为灰色关闭，防止系统私自加品全店混烧。<strong>②「多地域投放 设置」</strong>：点击进入勾选欧美高客单可履约主力国，排除边缘无效国。<strong>③「出价设置」</strong>：提供「目标商机成本」与「商机价值最大化」，建议成熟品选价值最大化，起步预算给稳。<strong>④ 左侧六步导航</strong>：推广方式 → 选择商品 → 流量设置 → 设置出价和预算 → 偏好设置 → 计划名称，每一步都需要人工前置把控。</figcaption>
-          </figure>
-          <div class="mindmap"><div class="mm-root">全站推广标准操作 6 步流程</div><ul class="mm-list">
-            <li><strong>第一步：入口与目标</strong><span>进入「营销中心 → 全站推广 → 新建推广计划」，选择「全站商机」作为投放目标</span></li>
-            <li><strong>第二步：严选成熟爆品</strong><span>点击「选择商品」，仅勾选在标准推广或自然流量中已有稳定询盘的成熟款（未测新品坚决不勾）</span></li>
-            <li><strong>第三步：关闭自动更新（生死线）</strong><span>在商品列表下方，<strong>立刻将「商品自动更新」开关点为关闭（灰色）</strong>，锁定商品资产，禁止系统自动加品</span></li>
-            <li><strong>第四步：配置多地域投放</strong><span>点击「流量设置 → 多地域投放 设置」，勾选欧美等核心主力国，取消勾选偏远或无履约能力国家</span></li>
-            <li><strong>第五步：出价与平稳预算</strong><span>出价方式首选「商机价值最大化」，设定初始日均预算；后续每次调整预算<strong>幅度严禁超过 25%</strong></span></li>
-            <li><strong>第六步：投后负向商品汰换</strong><span>每周一进入计划内「推广商品明细」，若某单品消耗占比超 30% 且持续 14 天 0 商机，<strong>直接点击该商品设为「暂停」或「移除」</strong></span></li>
-          </ul></div>
-          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>调控环节</th><th>核心规则与操作标准</th><th>为什么这么调（底层逻辑）</th></tr></thead><tbody>
-            <tr><td><strong>全站推选品准入</strong></td><td><strong>只进标准推广或自然流量已跑通的成熟爆品</strong>、大众通用款、工厂产能充沛的实力款；<strong>未经验证的新品坚决不进</strong></td><td>全站推是算法在全站猜买家。新品没有画像积累，算法只能全网盲猜乱投，造成巨额无效消耗</td></tr>
-            <tr><td><strong>阀门 ①：日预算微调</strong></td><td>单次预算调整幅度<strong>严禁超过 20%～30%</strong>，保持消耗节奏平稳；<strong>严禁单日突然翻倍</strong></td><td>算法对预算极其敏感。突然翻倍会打破原有的竞价寻客模型，迫使系统向低质流量池放量，导致单商机成本飙升</td></tr>
-            <tr><td><strong>阀门 ②：关闭自动更新<br>（核心防漏开关）</strong></td><td>在全站推计划设置中，找到<strong>「商品自动更新」开关，坚决设为「关闭」</strong></td><td>若开启，只要店铺发布新品或平台判定有潜力，系统会自动将其塞入计划，把你精选的计划打回「全店混烧」</td></tr>
-            <tr><td><strong>阀门 ③：多地域过滤</strong></td><td>配置多地域投放，排除历史无转化或履约困难的偏远边缘国</td><td>把全域撮合的流量强制收拢到欧美等高客单、高利润的主力市场</td></tr>
-            <tr><td><strong>阀门 ④：负向汰换</strong></td><td>若某商品连续 7～14 天消耗占比超 30% 却<strong>持续 0 商机</strong>，立即在计划中<strong>移除或暂停该品</strong></td><td>全站推算法容易「偏食」。及时踢掉吸血不转化的品，逼迫算法把流量重新分配给其他真正出单的潜力品</td></tr>
-          </tbody></table></div>
-
-          <p class="step-more-label">板块三：品牌广告深度实操体系（问鼎／顶展／聚量）</p>
-          <div class="method-note"><strong>品牌广告调控本质：</strong>问鼎和顶展买的是行业超级大词的 PC/App 首位独占。它不是「买了不管」的静态包年广告，调控核心在<strong>「投前门面款绑定、投中素材与落地页动态迭代、投后全店溢出评估」</strong>。</div>
-          <figure class="course-figure">
-            <div class="figure-head"><span>04</span><div><strong>品牌广告管理台：顶展与问鼎词品管理</strong><p>营销中心 → 品牌推广 → 品牌关键词 →「已购词推广管理」（关键词、缩略图与具体数据已脱敏）</p></div></div>
-            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看品牌推广管理截图"><img src="assets/lesson-08-brand-ads-manage.png" alt="阿里国际站品牌推广管理界面，含问鼎/顶展/明星展位切换、数据汇总栏、关键词与创意列表、近30天平均点击率、管理创意与商品设置操作栏" loading="lazy"></div>
-            <figcaption>品牌广告日常调优的四大核心抓手：<strong>① 问鼎／顶展／明星展位自由切换</strong>：顶部清晰展示已购词生效周期与终端（PC端／移动端独立排期）。<strong>② 右侧操作四件套（日常调优抓手）</strong>：点击<strong>「管理创意」</strong>随时更换主图与 4K 场景视频进行 A/B 测试；点击<strong>「商品设置」</strong>随季度上新随时换绑最新旗舰款；配备<strong>「地域定向」</strong>与<strong>「查看数据」</strong>。<strong>③ 核心监控指标</strong>：表格倒数第二列为<strong>「近 30 天平均点击率」</strong>，顶展作为首位正常应维持在 3%～6%，若跌破 2.5% 必须立刻更换素材。<strong>④ 场景化承接页与排行榜</strong>：右上角直通<strong>「承接页管理」</strong>与<strong>「创意排行榜」</strong>，配置多品矩阵承接页，对标行业顶级视觉。</figcaption>
-          </figure>
-
-          <p class="step-more-label">1. 操作创意与修改创意（手动创意保姆级规范）</p>
-          <div class="mindmap"><div class="mm-root">创意操作与视觉规范 4 步</div><ul class="mm-list">
-            <li><strong>一、添加与修改动线</strong><span>在已购词右侧点击<strong>「管理创意」</strong> → 点击「新增创意」或已有素材上的「编辑」 → 上传素材与副标题 → 点击「提交审核」（24小时内审核完成）</span></li>
-            <li><strong>二、构图与主体占比</strong><span><strong>主体必须占画面 60%～70%</strong>，居中或偏右；必须是真实场景化实拍（欧美办公/家居/医疗场景），严禁纯白底小图或廉价牛皮癣</span></li>
-            <li><strong>三、权威背书徽标</strong><span>画面角落必须压印 2～3 个硬核背书徽标（如 CE / FDA / ISO9001 认证标，或 "Verified Supplier / 15-Year Factory"），瞬间建立大买家信任</span></li>
-            <li><strong>四、4K 主图视频「前 3 秒黄金律」</strong><span>视频时长 15～30 秒，1080P/4K 高清；<strong>前 3 秒必须直奔主题展示核心动态功能</strong>（如揉捏动作、气囊起伏），严禁放冗长无意义的公司大门</span></li>
-          </ul></div>
-
-          <p class="step-more-label">2. 智能创意 vs 手动创意：怎么选、怎么配？</p>
-          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>对比维度</th><th>智能创意（列表开关开启）</th><th>手动创意（列表开关关闭）</th></tr></thead><tbody>
-            <tr><td><strong>运作机制</strong></td><td>系统算法根据搜索买家的历史偏好、语言与终端，自动抓取绑定商品的详情图与素材，动态拼接生成多套创意轮播展示</td><td>运营人工手动上传精心打磨的高清场景大图、4K 视频、精雕细琢的定制副标题与认证文案，锁定静态精准展示</td></tr>
-            <tr><td><strong>核心优点</strong></td><td>省时省力；千人千面；能匹配买家语言和特定偏好</td><td><strong>品牌调性极高、信息传达极其精准</strong>；完全可控，杜绝系统乱拼接丑图；能把最核心的差异化卖点直接砸在买家脸上</td></tr>
-            <tr><td><strong>致命缺点</strong></td><td>容易抓取到详情页里的次要细节图，画面缺乏整体设计感与高级工业质感</td><td>制作成本高，需要美工专门定制多套尺寸；无法自动做多语言自适应</td></tr>
-            <tr><td><strong>最佳实操策略</strong></td><td><strong>新词刚上线前 7 天可开启测试</strong>：让系统先跑数据，观察哪些素材片段被点击最多</td><td><strong>第 2 周起坚决切换为手动精细化创意！</strong> 由美工根据测试反馈，定制 2～3 套顶级手动创意进行轮播。黄金广告位绝不能依赖系统随缘拼图</td></tr>
-          </tbody></table></div>
-
-          <p class="step-more-label">3. 地域设置：精准定向，拒当全球慈善家</p>
-          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>地域调控环节</th><th>操作路径与标准</th><th>为什么这么调（底层逻辑）</th></tr></thead><tbody>
-            <tr><td><strong>后台操作入口</strong></td><td>在已购词列表右侧，点击<strong>「地域定向」</strong>按钮</td><td>进入国家/地区选择面板，进行精准的买家国别准入设置</td></tr>
-            <tr><td><strong>主力目标国重点曝光</strong></td><td>将欧美核心国（美、德、英、加、澳等）设为优先倾斜或重点投放</td><td>根据第 02 课定位的主力市场，让几十万买下的超级大词曝光集中在能下大单的高净值买家面前</td></tr>
-            <tr><td><strong>剔除无履约能力国家</strong></td><td>对于物流无法送达、关税极高、或历史上 100% 已读不回的边缘偏远国，<strong>直接取消勾选（不投放）</strong></td><td>预算虽是包年包月，但如果放任偏远国随意点击，业务员每天会被大量无效垃圾咨询拖垮</td></tr>
-            <tr><td><strong>终端时区差异化</strong></td><td>关注 PC 端与移动端的国家偏好与排期</td><td>欧美大 B 采购习惯在工作时间用 PC 查验资质与证书，东南亚或中东买家多用 App 移动沟通，按终端结合时区投放</td></tr>
-          </tbody></table></div>
-
-          <p class="step-more-label">4. 善用「创意排行榜」：偷师行业 Top 1% 视觉与文案</p>
-          <div class="mindmap"><div class="mm-root">创意排行榜对标 3 步法</div><ul class="mm-list">
-            <li><strong>一、入口位置</strong><span>已购词管理页右上角，点击<strong>「创意排行榜」</strong>，查看全行业同类目下<strong>点击率（CTR）排名前 10% 的顶级同行创意</strong></span></li>
-            <li><strong>二、拆解配色与调性</strong><span>观察榜单同行都在用深蓝+白科技风，还是原木+浅灰健康风？对标榜单主流审美，避免自制素材与国际大买家审美脱节</span></li>
-            <li><strong>三、提取文案痛点钩子</strong><span>看高 CTR 同行副标题强调的是 "Ready to Ship"（现货）、"Customized Logo 50pcs"（小单定制），还是 "Medical CE Certified"（医疗认证），直接借鉴文案结构并截图作为美工改图需求单</span></li>
-          </ul></div>
-
-          <p class="step-more-label">5. 承接页管理：矩阵场景承接，终结大词跳出率</p>
-          <div class="method-note"><strong>大词千万别只连单一 SKU：</strong>大词（如 <code>neck massager</code>）买家意图极度发散，有要揉捏的、有要气囊的、有要便携的。点进单一死板的 SKU 发现不是自己要的形态，1 秒钟就会关闭网页。必须点击右上角<strong>「承接页管理」</strong>，搭建专属品牌场景承接页：<br>
-          • <strong>第一屏（实力背书）</strong>：Verified 验厂全貌、研发专利数、全球合作大牌 Logo；<br>
-          • <strong>第二屏（产品矩阵一站式选型）</strong>：分列【便携轻巧系列】、【深度揉捏系列】、【商务礼品系列】，买家一眼能找到适合自己的型号；<br>
-          • <strong>第三屏（定制与交期承诺）</strong>：支持小单激光打标、样品 3 天发出、验厂报告下载入口。</div>
-
-          <p class="step-more-label">6. 品牌广告日常运营巡检周期表</p>
-          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>检查周期</th><th>核心检查项目</th><th>行业正常标准</th><th>异常处理动作</th></tr></thead><tbody>
-            <tr><td><strong>每周必看</strong></td><td><strong>首位点击率（CTR）监控</strong></td><td>维持在 <strong>3.0% ～ 6.0%</strong> 之间</td><td><strong>CTR &lt; 2.5%</strong>：视觉审美疲劳，立即打开「管理创意」更换新场景大图或新视频</td></tr>
-            <tr><td><strong>每月必看</strong></td><td><strong>主推品与升级款换绑</strong></td><td>绑定的是店铺当季最新代次款</td><td>出厂了全新升级款，点击「商品设置」<strong>立刻换绑最新款</strong>，坚决不让老旧品占首位</td></tr>
-            <tr><td><strong>每季度复盘</strong></td><td><strong>对标「创意排行榜」</strong></td><td>创意水准领先同行业均值</td><td>进排行榜复盘同行最新视觉趋势，重新设计 2 套手动创意做 A/B 测试</td></tr>
-            <tr><td><strong>到期前 1 月</strong></td><td><strong>总商机与溢出效应核算</strong></td><td>综合商机成本优于全店行均</td><td>评估是否续费原词，或转战搜索量更大、买家意图更精准的替代大词</td></tr>
-          </tbody></table></div>
-
-          <p class="step-more-label">三大广告板块选品准入与调控总览对照表</p>
-          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>广告板块</th><th>包含工具</th><th>选品准入核心标准</th><th>日常调控核心抓手</th><th>异常核心诊断与处理</th></tr></thead><tbody>
-            <tr><td><strong>品牌广告</strong></td><td>问鼎、顶展、聚量</td><td><strong>全店门面天花板款</strong><br>顶级画质、全套认证、工厂实力</td><td>定期换绑升级款；迭代主图视频保 CTR；配置场景化承接页</td><td><strong>CTR &lt; 2.5%</strong>：视觉疲劳立即换素材；<br><strong>高点无转化</strong>：换绑更具性价比或支持小批量的旗舰品</td></tr>
-            <tr><td><strong>全站推广</strong></td><td>推工厂、日预算、智能推</td><td><strong>已验证的成熟爆品</strong><br>大众通用款、工厂产能充足款</td><td>单次微调预算（&le;25%）；<strong>坚决关闭自动更新</strong>；多地域筛选；踢掉吸血不转化品</td><td><strong>单商机成本飙升</strong>：降预算 20%，剔除跑偏品；<br><strong>单品吸血垄断</strong>：不出单果断剔除，出单好单独设日预算</td></tr>
-            <tr><td><strong>标准推广</strong></td><td>新品加速、关键词推广、爆品助推</td><td><strong>近 90 天自然微光品（1～10商机）</strong><br>基建达标的新品、高毛利款</td><td>「词、品、国、时」四维手动精准调优；设置精准匹配与地域溢价；配置自定义列看板</td><td><strong>高曝低点</strong>：降价或换图；<br><strong>高耗0商机</strong>：加否定词，超50刀删品；<br><strong>1小时秒光</strong>：转精准，吸血词单价减半</td></tr>
+          <p class="step-more-label">三大广告板块选品准入与调控协同总览</p>
+          <div class="method-note"><strong>广告板块各司其职，不要单打独斗：</strong>标准推广用于「自主测款与精准控盘」（本课核心）；全站推用于「成熟爆品全域寻客放量」（详见<strong>第 09 课</strong>）；品牌广告用于「行业核心大词首位独占与门面背书」（详见<strong>第 10 课</strong>）。</div>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>广告板块</th><th>包含工具</th><th>选品准入核心标准</th><th>日常调控核心抓手</th><th>对应深度课程</th></tr></thead><tbody>
+            <tr><td><strong>标准推广</strong><br>（自主控盘）</td><td>新品加速、关键词推广、爆品助推</td><td><strong>近 90 天自然微光品（1～10商机）</strong><br>基建达标的新品、高毛利款</td><td>「词、品、国、时」四维手动精准调优；设置精准匹配与地域溢价；配置自定义列看板</td><td><strong>第 08 课（本课）</strong></td></tr>
+            <tr><td><strong>全站推广</strong><br>（算法放量）</td><td>推工厂、日预算、智能推</td><td><strong>已验证的成熟爆品</strong><br>大众通用款、工厂产能充足款</td><td>单次微调预算（&le;25%）；<strong>坚决关闭自动更新</strong>；多地域筛选；踢掉吸血不转化品</td><td><strong><a href="#lesson-9">第 09 课《全站推优化与排查》</a></strong></td></tr>
+            <tr><td><strong>品牌广告</strong><br>（首位独占）</td><td>问鼎、顶展、聚量</td><td><strong>全店门面天花板款</strong><br>顶级画质、全套认证、工厂实力</td><td>定期换绑升级款；做 A/B 创意与主图视频保 CTR；对标榜单；配置场景化承接页</td><td><strong><a href="#lesson-10">第 10 课《品牌广告深度运营》</a></strong></td></tr>
           </tbody></table></div>
         </div></details>`],
       ["用倒推法定预算与周期", "预算不是「今天想花多少」，是从目标倒推出来的：想要几条询盘、能接受多少成本、需要多少点击、需要多少钱。",
@@ -1036,7 +961,7 @@ lessons.push(
              <tr><td>排除词</td><td>零售、维修、配件词提前屏蔽</td><td>这类流量点得再多也不会询价</td></tr>
            </tbody></table></div>
             <figure class="course-figure">
-              <div class="figure-head"><span>05</span><div><strong>关键词页与匹配方式的位置</strong><p>标准推广 → 某个计划 → 「关键词」页签（计划名、出价、数字均已隐去）</p></div></div>
+              <div class="figure-head"><span>03</span><div><strong>关键词页与匹配方式的位置</strong><p>标准推广 → 某个计划 → 「关键词」页签（计划名、出价、数字均已隐去）</p></div></div>
              <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看关键词页截图"><img src="assets/lesson-08-ads-keyword-match.png" alt="标准推广计划的关键词页签，含关键词、出价、近1小时最佳排名、24小时排名分布、抢位状态、推广评分、同行平均出价、搜索热度" loading="lazy"></div>
              <figcaption>三个要点：<strong>① 右上角「匹配方式」是计划级设置</strong>，不是在每个词后面单独选——点开改一次，这个计划里所有词一起变。<strong>② 表头那一排</strong>才是逐词看的：出价、近1小时最佳排名、24小时排名分布、抢位状态、推广评分、同行平均出价、搜索热度。判断一个词「能不能抢」看排名与同行出价，判断「值不值得抢」看推广评分与搜索热度。<strong>③ 因为匹配方式是整计划统一</strong>，精准词和宽泛词必须拆到两个计划里，否则只能二选一。</figcaption>
            </figure>
@@ -1104,7 +1029,7 @@ lessons.push(
             <li><strong>第四步：成交与复购</strong><span>成本低但客户质量差，一样是亏</span></li>
           </ul></div>
             <figure class="course-figure">
-              <div class="figure-head"><span>06</span><div><strong>搜索词报告长什么样</strong><p>营销中心 → 直通车报告 → 搜索词报告（数字已隐去）</p></div></div>
+              <div class="figure-head"><span>04</span><div><strong>搜索词报告长什么样</strong><p>营销中心 → 直通车报告 → 搜索词报告（数字已隐去）</p></div></div>
               <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看搜索词报告截图"><img src="assets/lesson-08-ads-search-terms.png" alt="直通车报告的搜索词报告页签，含买家搜索词、点击占比、曝光占比三列" loading="lazy"></div>
               <figcaption><strong>先认清楚它只有三列</strong>：买家搜索词、点击占比、曝光占比。<strong>没有花费、没有点击次数、没有展现量的绝对值</strong>——所以想在这一页回答「哪个词烧了多少钱」是做不到的。这一页能做的是两件事：① 看买家到底在搜什么（发现跑偏的词）；② 看点击占比和曝光占比的落差（曝光高、点击占比低＝人家看到你没点，问题在词与图的匹配）。要算钱，回计划列表用花费对着关键词数拆，别指望这一页。<br>另外注意顶部要先选组：<strong>「全站推广」和「标准推广」是两组报告</strong>，页签不同数据不同。本店标准推广组当期无数据，这张取自全站推广组——所以三列结构以自己后台为准。</figcaption>
             </figure>
@@ -1117,7 +1042,7 @@ lessons.push(
               <tr><td><strong>每半月必看<br>（双周复盘）</strong></td><td><strong>买家地域流向与商机成本</strong></td><td>核对直通车与买家参谋的地域分布，确认 60% 以上的花费是否流向欧美等可履约、高利润的目标国家；若大量预算流向偏远国，立即配置地域溢价</td></tr>
             </tbody></table></div>
             <figure class="course-figure">
-              <div class="figure-head"><span>07</span><div><strong>自定义列：搭建日常监控看板</strong><p>标准推广 → 计划列表右上角「自定义列」配置面板（纯字段设置，无敏感数据）</p></div></div>
+              <div class="figure-head"><span>05</span><div><strong>自定义列：搭建日常监控看板</strong><p>标准推广 → 计划列表右上角「自定义列」配置面板（纯字段设置，无敏感数据）</p></div></div>
               <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看自定义列配置截图"><img src="assets/lesson-08-ads-custom-columns.png" alt="直通车自定义列配置弹层，含状态、计划、诊断状态、预算、出价、投放渠道、推广商品数、推广关键词数、花费、商机量等字段勾选" loading="lazy"></div>
               <figcaption><strong>直通车不是没有数据监控，关键看你会不会配「自定义列」：</strong>后台默认视图只有几个笼统的汇总数字，要想掌握精细盯盘主动权，必须点击表格右上角<strong>「自定义列」</strong>。<br><strong>牢记后台真实字段名</strong>：后台没有所谓「平均点击花费（CPC）」，官方字段名叫<strong>「点击成本」</strong>；也没有复杂的阶梯算法，直接关注<strong>「商机成本」</strong>。<br><strong>推荐必勾 8 大核心监控指标</strong>：① <code>诊断状态</code>（排查扣分/受限）；② <code>预算</code> 与 <code>出价</code>；③ <code>花费</code>；④ <code>点击成本</code>；⑤ <code>点击率（CTR）</code>；⑥ <code>商机量</code>；⑦ <code>商机成本</code>；⑧ <code>L1+商机量</code>。勾齐这 8 项并上下拖动排序，你的直通车列表才真正具备了商业监控看板的能力。</figcaption>
             </figure>
@@ -1278,12 +1203,91 @@ lessons.push(
   },
   {
     id: 10,
+    stage: "增长",
+    title: "品牌广告深度运营（问鼎、顶展与聚量）",
+    summary: "掌握阿里国际站最昂贵的头部独占资源，从词品绑定、创意操作与审核、智能与手动创意权衡，到地域定向、创意排行榜对标与矩阵承接页管理全流程。",
+    duration: "50 分钟",
+    updated: "2026-10",
+    prerequisites: "第 02 课、第 08 课、第 09 课",
+    outcomes: ["掌握顶级展位与问鼎的后台管理路径与已购词推广控制台", "学会操作与修改创意，掌握主体 60%~70%、场景实拍与 4K 视频前 3 秒黄金律", "理清智能创意与手动创意的优缺点与‘前 7 天测素材、第 2 周切手动’策略", "配置精准地域定向，排除无效边缘偏远国，避免大词预算浪费", "善用「创意排行榜」对标行业 Top 1% 构图文案，搭建三屏矩阵场景承接页"],
+    quick: "品牌广告买的是行业核心大词的绝对统治力。它不是「买了不管」的静态包年广告牌，必须把它当作一个活的动态阵地来运营：定期换绑最新升级款，盯住点击率（CTR）跌破 2.5% 立即换新素材，用多品矩阵场景承接页终结大词跳出率。",
+    steps: [
+      ["后台管理总览与词品绑定（只绑门面天花板款）", "问鼎和顶展买的是行业超级大词的 PC/App 首位独占。入口位于「营销中心 → 品牌推广 → 顶级展位／品牌关键词」，词品绑定直接决定流量承接效果。",
+        `<details class="step-more"><summary>展开看控制台全貌与选词绑品原则</summary><div class="step-more-body">
+          <figure class="course-figure">
+            <div class="figure-head"><span>01</span><div><strong>品牌广告管理台：顶展与问鼎词品管理</strong><p>营销中心 → 品牌推广 → 品牌关键词 →「已购词推广管理」（关键词、缩略图与具体数据已脱敏）</p></div></div>
+            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看品牌推广管理截图"><img src="assets/lesson-10-brand-ads-manage.png" alt="阿里国际站品牌推广管理界面，含问鼎/顶展/明星展位切换、数据汇总栏、关键词与创意列表、近30天平均点击率、管理创意与商品设置操作栏" loading="lazy"></div>
+            <figcaption>品牌广告日常调优的四大核心抓手：<strong>① 问鼎／顶展／明星展位自由切换</strong>：顶部清晰展示已购词生效周期与终端（PC端／移动端独立排期）。<strong>② 右侧操作四件套（日常调优抓手）</strong>：点击<strong>「管理创意」</strong>随时更换主图与 4K 场景视频进行 A/B 测试；点击<strong>「商品设置」</strong>随季度上新随时换绑最新旗舰款；配备<strong>「地域定向」</strong>与<strong>「查看数据」</strong>。<strong>③ 核心监控指标</strong>：表格倒数第二列为<strong>「近 30 天平均点击率」</strong>，顶展作为首位正常应维持在 3%～6%，若跌破 2.5% 必须立刻更换素材。<strong>④ 场景化承接页与排行榜</strong>：右上角直通<strong>「承接页管理」</strong>与<strong>「创意排行榜」</strong>，配置多品矩阵承接页，对标行业顶级视觉。</figcaption>
+          </figure>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>调控阶段</th><th>核心操作与考核指标</th><th>执行动作与处置要点</th></tr></thead><tbody>
+            <tr><td><strong>投前：选词原则</strong></td><td>行业超级大词、核心大品类词（如 neck massager）</td><td>搜索量极大、全行业买家必搜；绝不拿长尾偏门词做顶展包年</td></tr>
+            <tr><td><strong>投前：绑定门面旗舰款</strong></td><td><strong>只绑全店资质最硬、画质最高的门面天花板款</strong>；绝不绑测款新品或薄利款</td><td>买家搜行业大词第一眼看到的是你的品牌门面。必须配备 4K 高清主图/视频、全套认证徽标、Verified 工厂验真</td></tr>
+            <tr><td><strong>投中：动态换绑主推款</strong></td><td>随季度上新与产品迭代，<strong>每 1～2 个月评估一次绑定的主推品</strong></td><td>店铺出了全新升级代次款，在列表中点击「商品设置」及时换绑最新旗舰品，坚决不让淘汰旧款长期霸占黄金首位</td></tr>
+          </tbody></table></div>
+        </div></details>`],
+      ["操作创意与修改创意（手动创意保姆级规范）", "顶展/问鼎的点击率直接决定巨资能否变现。创意不是美工随手做图，必须严格执行视觉与视频制作规范。",
+        `<details class="step-more"><summary>展开看创意操作动线与 4 项制作规范</summary><div class="step-more-body">
+          <div class="mindmap"><div class="mm-root">创意操作与视觉规范 4 步</div><ul class="mm-list">
+            <li><strong>一、添加与修改动线</strong><span>在已购词右侧点击<strong>「管理创意」</strong> → 点击「新增创意」或已有素材上的「编辑」 → 上传素材与副标题 → 点击「提交审核」（官方机审加人审，24小时内审核完成）</span></li>
+            <li><strong>二、构图与主体占比</strong><span><strong>主体必须占画面 60%～70%</strong>，居中或偏右；必须是真实场景化实拍（欧美办公/家居/医疗场景），严禁纯白底小图或廉价牛皮癣</span></li>
+            <li><strong>三、权威背书徽标</strong><span>画面角落必须压印 2～3 个硬核背书徽标（如 CE / FDA / ISO9001 认证标，或 "Verified Supplier / 15-Year Factory"），瞬间建立大买家信任</span></li>
+            <li><strong>四、4K 主图视频「前 3 秒黄金律」</strong><span>视频时长 15～30 秒，1080P/4K 高清；<strong>前 3 秒必须直奔主题展示核心动态功能</strong>（如揉捏机芯动作、气囊起伏），严禁放冗长无意义的公司大门</span></li>
+          </ul></div>
+        </div></details>`],
+      ["智能创意 vs 手动创意：怎么选、怎么配？", "列表正中间的「智能创意」开关是很多运营的误区。两者底层机制完全不同，必须按周期组合搭配。",
+        `<details class="step-more"><summary>展开看智能与手动创意对比表与组合策略</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>对比维度</th><th>智能创意（列表开关开启）</th><th>手动创意（列表开关关闭）</th></tr></thead><tbody>
+            <tr><td><strong>运作机制</strong></td><td>系统算法根据搜索买家的历史偏好、语言与终端，自动抓取绑定商品的详情图与素材，动态拼接生成多套创意轮播展示</td><td>运营人工手动上传精心打磨的高清场景大图、4K 视频、精雕细琢的定制副标题与认证文案，锁定静态精准展示</td></tr>
+            <tr><td><strong>核心优点</strong></td><td>省时省力；千人千面；能匹配买家语言和特定偏好</td><td><strong>品牌调性极高、信息传达极其精准</strong>；完全可控，杜绝系统乱拼接丑图；能把最核心的差异化卖点直接砸在买家脸上</td></tr>
+            <tr><td><strong>致命缺点</strong></td><td>容易抓取到详情页里的次要细节图，画面缺乏整体设计感与高级工业质感</td><td>制作成本高，需要美工专门定制多套尺寸；无法自动做多语言自适应</td></tr>
+            <tr><td><strong>最佳实操策略</strong></td><td><strong>新词刚上线前 7 天可开启测试</strong>：让系统先跑数据，观察哪些素材片段被点击最多</td><td><strong>第 2 周起坚决切换为手动精细化创意！</strong> 由美工根据测试反馈，定制 2～3 套顶级手动创意进行轮播。黄金广告位绝不能依赖系统随缘拼图</td></tr>
+          </tbody></table></div>
+        </div></details>`],
+      ["地域设置：精准定向，拒当全球慈善家", "大词每天有成千上万来自全球的点击。不做地域定向，即使包年包月，业务员也会被大量无履约能力的垃圾咨询拖垮。",
+        `<details class="step-more"><summary>展开看地域设置三大原则</summary><div class="step-more-body">
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>地域调控环节</th><th>操作路径与标准</th><th>为什么这么调（底层逻辑）</th></tr></thead><tbody>
+            <tr><td><strong>后台操作入口</strong></td><td>在已购词列表右侧，点击<strong>「地域定向」</strong>按钮</td><td>进入国家/地区选择面板，进行精准的买家国别准入设置</td></tr>
+            <tr><td><strong>主力目标国重点曝光</strong></td><td>将欧美核心国（美、德、英、加、澳等）设为优先倾斜或重点投放</td><td>根据第 02 课定位的主力市场，让几十万买下的超级大词曝光集中在能下大单的高净值买家面前</td></tr>
+            <tr><td><strong>剔除无履约能力国家</strong></td><td>对于物流无法送达、关税极高、或历史上 100% 已读不回的边缘偏远国，<strong>直接取消勾选（不投放）</strong></td><td>预算虽是包年包月，但如果放任偏远国随意点击，业务员每天会被大量无效垃圾咨询拖垮</td></tr>
+            <tr><td><strong>终端时区差异化</strong></td><td>关注 PC 端与移动端的国家偏好与排期</td><td>欧美大 B 采购习惯在工作时间用 PC 查验资质与证书，东南亚或中东买家多用 App 移动沟通，按终端结合时区投放</td></tr>
+          </tbody></table></div>
+        </div></details>`],
+      ["善用「创意排行榜」：偷师行业 Top 1% 视觉与文案", "右上角的「创意排行榜」是免费的高级美工灵感库，展示全行业同类目下点击率（CTR）排名前 10% 的顶级同行创意。",
+        `<details class="step-more"><summary>展开看排行榜对标三步法</summary><div class="step-more-body">
+          <div class="mindmap"><div class="mm-root">创意排行榜对标 3 步法</div><ul class="mm-list">
+            <li><strong>一、入口位置</strong><span>已购词管理页右上角，点击<strong>「创意排行榜」</strong>，查看全行业同类目下<strong>点击率（CTR）排名前 10% 的顶级同行创意</strong></span></li>
+            <li><strong>二、拆解配色与调性</strong><span>观察榜单同行都在用深蓝+白科技风，还是原木+浅灰健康风？对标榜单主流审美，避免自制素材与国际大买家审美脱节</span></li>
+            <li><strong>三、提取文案痛点钩子</strong><span>看高 CTR 同行副标题强调的是 "Ready to Ship"（现货）、"Customized Logo 50pcs"（小单定制），还是 "Medical CE Certified"（医疗认证），直接借鉴文案结构并截图作为美工改图需求单</span></li>
+          </ul></div>
+        </div></details>`],
+      ["承接页管理与月度巡检：终结大词跳出率", "大词买家意图极度发散，直接连单一 SKU 详情页极易跳出。必须搭建专属三屏场景承接页，并建立月度巡检机制。",
+        `<details class="step-more"><summary>展开看三屏承接法则与月度巡检表</summary><div class="step-more-body">
+          <div class="method-note"><strong>大词千万别只连单一 SKU：</strong>大词（如 <code>neck massager</code>）买家意图极度发散，有要揉捏的、有要气囊的、有要便携的。点进单一死板的 SKU 发现不是自己要的形态，1 秒钟就会关闭网页。必须点击右上角<strong>「承接页管理」</strong>，搭建专属品牌场景承接页：<br>
+          • <strong>第一屏（实力背书）</strong>：Verified 验厂全貌、研发专利数、全球合作大牌 Logo；<br>
+          • <strong>第二屏（产品矩阵一站式选型）</strong>：分列【便携轻巧系列】、【深度揉捏系列】、【商务礼品系列】，买家一眼能找到适合自己的型号；<br>
+          • <strong>第三屏（定制与交期承诺）</strong>：支持小单激光打标、样品 3 天发出、验厂报告下载入口。</div>
+          <p class="step-more-label">品牌广告日常运营巡检周期表</p>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>检查周期</th><th>核心检查项目</th><th>行业正常标准</th><th>异常处理动作</th></tr></thead><tbody>
+            <tr><td><strong>每周必看</strong></td><td><strong>首位点击率（CTR）监控</strong></td><td>维持在 <strong>3.0% ～ 6.0%</strong> 之间</td><td><strong>CTR &lt; 2.5%</strong>：视觉审美疲劳，立即打开「管理创意」更换新场景大图或新视频</td></tr>
+            <tr><td><strong>每月必看</strong></td><td><strong>主推品与升级款换绑</strong></td><td>绑定的是店铺当季最新代次款</td><td>出厂了全新升级款，点击「商品设置」<strong>立刻换绑最新款</strong>，坚决不让老旧品占首位</td></tr>
+            <tr><td><strong>每季度复盘</strong></td><td><strong>对标「创意排行榜」</strong></td><td>创意水准领先同行业均值</td><td>进排行榜复盘同行最新视觉趋势，重新设计 2 套手动创意做 A/B 测试</td></tr>
+            <tr><td><strong>到期前 1 月</strong></td><td><strong>总商机与溢出效应核算</strong></td><td>综合商机成本优于全店行均</td><td>评估是否续费原词，或转战搜索量更大、买家意图更精准的替代大词</td></tr>
+          </tbody></table></div>
+        </div></details>`]
+    ],
+    decisions: [["顶展点击率（CTR）持续低于 2.5%", "主图视觉疲劳，或构图缺乏大买家品质感", "打开「创意排行榜」对标行业前 10% 构图，在「管理创意」中更换场景化实拍图与前 3 秒功能视频"],["顶展点击量很大但询盘转化极少", "单一 SKU 承接断层，无法满足大词买家的多样需求", "在「承接页管理」中搭建多品矩阵场景承接页，一屏展示多款主流型号与定制选项"],["大量预算被偏远国家无效点击浪费", "未配置地域定向，流量被低价边缘国稀释", "点击「地域定向」，取消勾选无履约能力或历史低质国家，将曝光聚焦在欧美主力国"],["开着智能创意但画面混乱被买家质疑", "系统算法抓取了详情页的次要零件图，拉低品牌调性", "果断关闭「智能创意」开关，由美工制作 2～3 套带权威认证的高清手动创意轮播"],["店铺出厂了全新升级代次款", "旧款继续霸占首位造成黄金广告位资产贬值", "在已购词列表点击「商品设置」，立即换绑最新旗舰款"]],
+    checklist: ["清楚品牌推广后台入口（营销中心 → 品牌推广 → 顶级展位/品牌关键词）", "掌握「管理创意」添加与修改流程，视觉符合主体 60%~70% 与场景实拍规范", "主图视频符合前 3 秒黄金律，直奔核心功能", "掌握智能创意与手动创意优劣，执行‘前 7 天测试、第 2 周切手动’策略", "完成「地域定向」配置，排除无效偏远国，聚焦欧美主力大区", "能通过「创意排行榜」拆解同行 Top 创意并输出美工需求单", "配置三屏多品矩阵「承接页」，每周监控 CTR（保持在 3%~6% 正常区间）"],
+    assignment: "查看店铺当前是否有在投或已购的品牌大词（若无，使用课程图 01 控制台界面），对照本课规范完成一次全面审查：① 检查当前绑定的商品是否为全店最新代次门面款；② 检查主图与视频是否符合 4K 场景化与前 3 秒黄金律；③ 检查「智能创意」状态，制定手动创意轮播方案；④ 在「地域定向」中列出需重点倾斜的 5 个主力国与需排除的 3 个非目标国。",
+    sources: [{label:"品牌推广与顶展运营指南",url:"https://articles.zsxq.com/id_c4bndqjwmlw6.html"}]
+  },
+  {
+    id: 11,
     stage: "管理",
     title: "数据诊断与链接优化",
     summary: "从店铺总览下钻到国家、渠道、产品和搜索词，把报表转化成下一步动作；给一张症状速查表，遇到问题直接定位到该看哪一课。",
     duration: "75 分钟",
     updated: "2026-10",
-    prerequisites: "第 01、05、07—09 课",
+    prerequisites: "第 01、05、07—10 课",
     outcomes: ["统一口径后再做判断，不出「拿 7 天比 30 天」的错", "从结果倒推，定位问题卡在哪一层", "分清是店铺级问题还是单链接问题", "用速查表把症状直接映射到动作和对应课程"],
     quick: "数据分析不等于罗列数字。先确认口径，再从成交往回倒推：成交 → 询盘 → 点击 → 曝光。因为下游的问题经常伪装成上游的问题——成交差，你会以为是流量少，其实可能是报价贵。每个结论都必须落到一个动作、一个负责人、一个复查日期。",
     steps: [
@@ -1391,13 +1395,13 @@ lessons.push(
     sources: [{label:"数据分析课程（会员）",url:"https://t.zsxq.com/X6Q73"},{label:"低转化产品排查（会员）",url:"https://t.zsxq.com/QxtRl"},{label:"贸易记录下的链接分析（会员）",url:"https://t.zsxq.com/kqWZj"},{label:"汽车方向盘案例（会员）",url:"https://t.zsxq.com/QbIFO"}]
   },
   {
-    id: 11,
+    id: 12,
     stage: "转化",
     title: "运营看盘、客户质检与业务协同",
     summary: "从运营视角看清真实询盘与买家国别，四步过滤垃圾线索，建立 A/B/C 三档客户质量评估，并与业务建立低阻力的对账沟通机制。",
     duration: "45 分钟",
     updated: "2026-10",
-    prerequisites: "第 01—02 课、第 10 课",
+    prerequisites: "第 01—02 课、第 11 课",
     outcomes: ["掌握后台商机列表与全屏详情的查盘路径，精准定位买家国家与真实诉求", "用四步过滤法剔除虚假账号、泛函群发与钓鱼探价等垃圾线索", "建立运营级 A/B/C 三档客户分级模型，反向追查高产词并给低质流量加否", "掌握「日常异步工单 + 每周 30 分钟对账会」协同机制，现场删词闭环"],
     quick: "运营的核心职责不是直接谈单，而是看懂线索质量、过滤垃圾干扰、诊断流量有效性，并与业务团队建立低摩擦的高效反馈闭环。不以主观感觉扯皮，拿真实后台数据说话。",
     steps: [
