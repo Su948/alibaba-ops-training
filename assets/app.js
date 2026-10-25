@@ -908,7 +908,12 @@ lessons.push(
              <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看计划列表截图"><img src="assets/lesson-08-ads-plan-list.png" alt="标准推广的计划列表，含状态、计划、诊断状态、预算、出价、投放渠道、推广商品数、推广关键词数、花费等列" loading="lazy"></div>
             <figcaption>这张表就是你判断「粒度对不对」的地方。<strong>「推广商品数」和「推广关键词数」两列并排看</strong>：商品数很多、词也很多，几乎一定混烧；商品数 1—3、词几十个，才是一个能归因的计划。右边「预算」「出价」「花费」挨在一起，是用来对照「预算给了多少、实际花了多少」的——三个数一起看才有意义，单看花费没有判断价值。左侧「状态」与「诊断状态」是平台给的提示，不等于你的结论。</figcaption>
             </figure>
-            <div class="method-note"><strong>直通车后台真相：它没有选品雷达，只有一张商品勾选框。</strong>营销中心新建计划时，系统只展示一个干瘪的商品列表和勾选框，根本不会主动告诉你哪款产品能推、哪款不能推。如果运营没有前置准入标准，看见商品就打钩，直通车就会沦为花钱最快的「碎钞机」。直通车是<strong>付费流量放大器</strong>，用来放大原本就有转化潜力的品，绝不是用来「抢救死链接」的。</div>
+            <div class="method-note"><strong>后台真相：直通车不是没有数据，而是「只给数据素材、不给商业判断」。</strong>添加商品弹层里，平台给出的信息非常丰富：从推荐投广品、商机品、机会品等平台标签，到近 90 天搜索曝光、点击、订单、询盘的自然数据应有尽有，右上角甚至给了一个极具诱惑的「一键添加」按钮。但平台<strong>绝不会告诉你这个品该不该投、投多少算合理、什么样的数据算异常</strong>。没有准入标准，一键添加点下去就是批量盲目烧钱。直通车是<strong>付费流量放大器</strong>，用来放大原本就有转化潜力的品，绝不是用来「抢救死链接」的。</div>
+            <figure class="course-figure">
+              <div class="figure-head"><span>02</span><div><strong>添加商品弹层与选品真相</strong><p>标准推广 → 进入计划 →「添加商品」弹层（商品标题与具体数据已隐去）</p></div></div>
+              <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看添加商品弹层截图"><img src="assets/lesson-08-ads-product-select.png" alt="直通车添加商品弹层，含全部商品/爆品/优品/潜力优品页签、一键添加按钮、商品标签与近90天数据列" loading="lazy"></div>
+              <figcaption>观察弹层的三大真实细节：<strong>① 平台标签与一键添加</strong>：顶部显眼提示「推荐投广品可享流量加速」，右侧紧跟「一键添加」——新手最容易在这里直接全选，把未经验证的品全塞进计划。<strong>② 横向很宽需要滚动</strong>：表格向右延伸包含近 90 天搜索曝光、点击、订单数、询盘数、TM 咨询数等自然数据，<strong>在标准视口下必须向右拖动滚动条才能看全</strong>。<strong>③ 必须前置筛选</strong>：左侧勾选框只有配合运营自己的准入标准（看近 90 天是否有自然微光转化），才能把真正值得投的品挑出来，绝不依赖平台的自动推荐。</figcaption>
+            </figure>
             <p class="step-more-label">产品准入画像：什么产品应该加入直通车</p>
             <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>准入类型</th><th>数据与基建特征</th><th>投放逻辑与目标</th></tr></thead><tbody>
               <tr><td><strong>① 自然转化「微光品」<br>（首选必推）</strong></td><td>数据参谋近 90 天内，自然流量下已有 <strong>1～10 个 TM 或询盘</strong>，点击率（CTR）处于同行业平均线以上</td><td>已被真实买家货币与需求验证过，主图、价格与参数完全正确，唯独缺少规模曝光。加推直通车起量最快</td></tr>
@@ -946,8 +951,8 @@ lessons.push(
              <tr><td>采购意图词</td><td>单独一组，单独定预算</td><td>想买货的人和想看产品的人，点击成本不一样</td></tr>
              <tr><td>排除词</td><td>零售、维修、配件词提前屏蔽</td><td>这类流量点得再多也不会询价</td></tr>
            </tbody></table></div>
-           <figure class="course-figure">
-             <div class="figure-head"><span>02</span><div><strong>关键词页与匹配方式的位置</strong><p>标准推广 → 某个计划 → 「关键词」页签（计划名、出价、数字均已隐去）</p></div></div>
+            <figure class="course-figure">
+              <div class="figure-head"><span>03</span><div><strong>关键词页与匹配方式的位置</strong><p>标准推广 → 某个计划 → 「关键词」页签（计划名、出价、数字均已隐去）</p></div></div>
              <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看关键词页截图"><img src="assets/lesson-08-ads-keyword-match.png" alt="标准推广计划的关键词页签，含关键词、出价、近1小时最佳排名、24小时排名分布、抢位状态、推广评分、同行平均出价、搜索热度" loading="lazy"></div>
              <figcaption>三个要点：<strong>① 右上角「匹配方式」是计划级设置</strong>，不是在每个词后面单独选——点开改一次，这个计划里所有词一起变。<strong>② 表头那一排</strong>才是逐词看的：出价、近1小时最佳排名、24小时排名分布、抢位状态、推广评分、同行平均出价、搜索热度。判断一个词「能不能抢」看排名与同行出价，判断「值不值得抢」看推广评分与搜索热度。<strong>③ 因为匹配方式是整计划统一</strong>，精准词和宽泛词必须拆到两个计划里，否则只能二选一。</figcaption>
            </figure>
@@ -1014,24 +1019,29 @@ lessons.push(
             <li><strong>第三步：询盘成本</strong><span>前两步干净了，成本才有比较意义</span></li>
             <li><strong>第四步：成交与复购</strong><span>成本低但客户质量差，一样是亏</span></li>
           </ul></div>
-           <figure class="course-figure">
-             <div class="figure-head"><span>03</span><div><strong>搜索词报告长什么样</strong><p>营销中心 → 直通车报告 → 搜索词报告（数字已隐去）</p></div></div>
-             <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看搜索词报告截图"><img src="assets/lesson-08-ads-search-terms.png" alt="直通车报告的搜索词报告页签，含买家搜索词、点击占比、曝光占比三列" loading="lazy"></div>
-             <figcaption><strong>先认清楚它只有三列</strong>：买家搜索词、点击占比、曝光占比。<strong>没有花费、没有点击次数、没有展现量的绝对值</strong>——所以想在这一页回答「哪个词烧了多少钱」是做不到的。这一页能做的是两件事：① 看买家到底在搜什么（发现跑偏的词）；② 看点击占比和曝光占比的落差（曝光高、点击占比低＝人家看到你没点，问题在词与图的匹配）。要算钱，回计划列表用花费对着关键词数拆，别指望这一页。<br>另外注意顶部要先选组：<strong>「全站推广」和「标准推广」是两组报告</strong>，页签不同数据不同。本店标准推广组当期无数据，这张取自全站推广组——所以三列结构以自己后台为准。</figcaption>
-           </figure>
-           <div class="method-note"><strong>标准推广组的搜索词报告是空的，先别怀疑报表坏了。</strong>按顺序查三件事：① 这个计划近 7 天到底有没有在投（有预算不等于有在跑）；② 统计周期是不是选得太短；③ 词是不是窄到根本没人搜。三件都正常还空，才去后台报问题。</div>
-           <div class="method-note"><strong>一次只改一个变量，改完至少观察 3 天，并记录改动时间和内容。</strong>没有修改记录，两周后你无法解释成本为什么变了，也无法复制成功的做法。</div>
+            <figure class="course-figure">
+              <div class="figure-head"><span>04</span><div><strong>搜索词报告长什么样</strong><p>营销中心 → 直通车报告 → 搜索词报告（数字已隐去）</p></div></div>
+              <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看搜索词报告截图"><img src="assets/lesson-08-ads-search-terms.png" alt="直通车报告的搜索词报告页签，含买家搜索词、点击占比、曝光占比三列" loading="lazy"></div>
+              <figcaption><strong>先认清楚它只有三列</strong>：买家搜索词、点击占比、曝光占比。<strong>没有花费、没有点击次数、没有展现量的绝对值</strong>——所以想在这一页回答「哪个词烧了多少钱」是做不到的。这一页能做的是两件事：① 看买家到底在搜什么（发现跑偏的词）；② 看点击占比和曝光占比的落差（曝光高、点击占比低＝人家看到你没点，问题在词与图的匹配）。要算钱，回计划列表用花费对着关键词数拆，别指望这一页。<br>另外注意顶部要先选组：<strong>「全站推广」和「标准推广」是两组报告</strong>，页签不同数据不同。本店标准推广组当期无数据，这张取自全站推广组——所以三列结构以自己后台为准。</figcaption>
+            </figure>
+            <div class="method-note"><strong>标准推广组的搜索词报告是空的，先别怀疑报表坏了。</strong>按顺序查三件事：① 这个计划近 7 天到底有没有在投（有预算不等于有在跑）；② 统计周期是不是选得太短；③ 词是不是窄到根本没人搜。三件都正常还空，才去后台报问题。</div>
+            <div class="method-note"><strong>一次只改一个变量，改完至少观察 3 天，并记录改动时间和内容。</strong>没有修改记录，两周后你无法解释成本为什么变了，也无法复制成功的做法。</div>
             <p class="step-more-label">数据怎么看、怎么盯：日常盯盘三级动线</p>
             <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>盯盘频次</th><th>核心关注点</th><th>操作动线与排查要点</th></tr></thead><tbody>
               <tr><td><strong>每日必看<br>（早 9:00）</strong></td><td><strong>预算消耗速度与时段</strong></td><td>上午看昨夜美西核心白天的消耗进度。<strong>警惕瞬间烧光</strong>：若日预算在 1～2 小时内被迅速打满，必有超大词或智能泛匹配在吸血，必须当场降价或收紧匹配方式；预算能平稳匀速消耗至晚间则正常</td></tr>
               <tr><td><strong>每周必看<br>（周一上午）</strong></td><td><strong>搜索词真实意图与产品转化</strong></td><td>进「直通车报告 → 搜索词报告」，核对买家实际搜索词，抓出零售/自用等跑偏词当场加否定词；进计划商品明细执行<strong>淘汰三红线</strong>（0曝删、高曝0点0商机删、持续30天高耗0商机必删）</td></tr>
               <tr><td><strong>每半月必看<br>（双周复盘）</strong></td><td><strong>买家地域流向与商机成本</strong></td><td>核对直通车与买家参谋的地域分布，确认 60% 以上的花费是否流向欧美等可履约、高利润的目标国家；若大量预算流向偏远国，立即配置地域溢价</td></tr>
             </tbody></table></div>
+            <figure class="course-figure">
+              <div class="figure-head"><span>05</span><div><strong>自定义列：搭建日常监控看板</strong><p>标准推广 → 计划列表右上角「自定义列」配置面板（纯字段设置，无敏感数据）</p></div></div>
+              <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看自定义列配置截图"><img src="assets/lesson-08-ads-custom-columns.png" alt="直通车自定义列配置弹层，含状态、计划、诊断状态、预算、出价、投放渠道、推广商品数、推广关键词数、花费、商机量等字段勾选" loading="lazy"></div>
+              <figcaption><strong>直通车不是没有数据监控，关键看你会不会配「自定义列」：</strong>后台默认视图只有几个笼统的汇总数字，要想掌握精细盯盘主动权，必须点击表格右上角<strong>「自定义列」</strong>。<br><strong>牢记后台真实字段名</strong>：后台没有所谓「平均点击花费（CPC）」，官方字段名叫<strong>「点击成本」</strong>；也没有复杂的阶梯算法，直接关注<strong>「商机成本」</strong>。<br><strong>推荐必勾 8 大核心监控指标</strong>：① <code>诊断状态</code>（排查扣分/受限）；② <code>预算</code> 与 <code>出价</code>；③ <code>花费</code>；④ <code>点击成本</code>；⑤ <code>点击率（CTR）</code>；⑥ <code>商机量</code>；⑦ <code>商机成本</code>；⑧ <code>L1+商机量</code>。勾齐这 8 项并上下拖动排序，你的直通车列表才真正具备了商业监控看板的能力。</figcaption>
+            </figure>
             <p class="step-more-label">怎么样算一般：行业常态基准指标表</p>
             <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>核心指标</th><th>一般水平（常态基准线）</th><th>优秀水平</th><th>运营判断逻辑</th></tr></thead><tbody>
               <tr><td><strong>点击率（CTR）</strong></td><td><strong>1.2% ～ 2.2%</strong></td><td>&gt; 2.5%</td><td>低于 1.0% 说明主图缺少吸睛卖点、价格偏离行情或词不匹配</td></tr>
               <tr><td><strong>点击转商机率</strong></td><td><strong>1.5% ～ 3.0%</strong></td><td>&gt; 4.0%</td><td>相当于 <strong>35 ～ 65 次真实点击应产出 1 个询盘或 TM</strong>；低于 1.0% 严重异常</td></tr>
-              <tr><td><strong>平均点击成本（CPC）</strong></td><td>处于行业参考底价 1.1 ～ 1.4 倍</td><td>稳定低位波动</td><td>结合客单价测算，只要单次商机成本在产品毛利承受范围内即可</td></tr>
+              <tr><td><strong>点击成本<br>（后台正式字段）</strong></td><td>处于行业参考底价 1.1 ～ 1.4 倍</td><td>稳定低位波动</td><td>结合客单价测算，只要单次商机成本在产品毛利承受范围内即可</td></tr>
               <tr><td><strong>主推国点击占比</strong></td><td><strong>&gt; 55%</strong></td><td>&gt; 75%</td><td>流量必须高度集中在主力目标国，杜绝预算被边缘低价国家稀释</td></tr>
               <tr><td><strong>预算消耗节奏</strong></td><td>平稳覆盖目标市场 8～12 小时</td><td>全天均匀可控</td><td>坚决避免 1 小时内被泛词秒光或整天花不出去</td></tr>
             </tbody></table></div>
