@@ -1812,3 +1812,36 @@ document.querySelector(".menu-button").onclick=()=>document.body.classList.add("
 document.querySelector(".mobile-close").onclick=()=>document.body.classList.remove("nav-open");
 window.addEventListener("hashchange",route);
 if(!location.hash) location.hash="home"; else route();
+
+// 全屏图片灯箱 (Lightbox) 交互：支持点击任意截图全屏放大查看，ESC/点击关闭
+(function initLightbox(){
+  const box = document.createElement("div");
+  box.className = "image-lightbox";
+  box.setAttribute("role", "dialog");
+  box.setAttribute("aria-label", "图片全屏预览");
+  box.innerHTML = `
+    <button class="image-lightbox-close" aria-label="关闭预览" title="按 ESC 或点击关闭">✕</button>
+    <div class="image-lightbox-wrap"><img src="" alt="全屏大图预览"></div>
+    <div class="image-lightbox-tip">点击大图、任意空白处或按 ESC 键即可退出</div>
+  `;
+  document.body.appendChild(box);
+  const bigImg = box.querySelector("img");
+  const close = () => {
+    box.classList.remove("active");
+    setTimeout(()=>{ if(!box.classList.contains("active")) bigImg.src = ""; }, 220);
+  };
+  box.onclick = (e) => { close(); };
+  window.addEventListener("keydown", (e) => {
+    if(e.key === "Escape" && box.classList.contains("active")) close();
+  });
+
+  document.addEventListener("click", (e) => {
+    const target = e.target;
+    if(target && target.tagName === "IMG" && (target.closest(".screenshot-scroll") || target.closest(".course-figure"))){
+      e.preventDefault();
+      bigImg.src = target.src;
+      box.classList.add("active");
+    }
+  });
+})();
+
