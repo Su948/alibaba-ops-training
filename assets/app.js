@@ -1215,9 +1215,13 @@ lessons.push(
       ["后台管理总览与词品绑定（只绑门面天花板款）", "问鼎和顶展买的是行业超级大词的 PC/App 首位独占。入口位于「营销中心 → 品牌推广 → 顶级展位／品牌关键词」，词品绑定直接决定流量承接效果。",
         `<details class="step-more"><summary>展开看控制台全貌与选词绑品原则</summary><div class="step-more-body">
           <figure class="course-figure">
-            <div class="figure-head"><span>01</span><div><strong>品牌广告管理台：顶展与问鼎词品管理</strong><p>营销中心 → 品牌推广 → 品牌关键词 →「已购词推广管理」（关键词、缩略图与具体数据已脱敏）</p></div></div>
+            <div class="figure-head"><span>01</span><div><strong>品牌广告管理台：顶展与问鼎词品管理全貌</strong><p>营销中心 → 品牌推广 → 品牌关键词 →「已购词推广管理」（关键词、缩略图与真实数据已严格脱敏补遮）</p></div></div>
             <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看品牌推广管理截图"><img src="assets/lesson-10-brand-ads-manage.png" alt="阿里国际站品牌推广管理界面，含问鼎/顶展/明星展位切换、数据汇总栏、关键词与创意列表、近30天平均点击率、管理创意与商品设置操作栏" loading="lazy"></div>
-            <figcaption>品牌广告日常调优的四大核心抓手：<strong>① 问鼎／顶展／明星展位自由切换</strong>：顶部清晰展示已购词生效周期与终端（PC端／移动端独立排期）。<strong>② 右侧操作四件套（日常调优抓手）</strong>：点击<strong>「管理创意」</strong>随时更换主图与 4K 场景视频进行 A/B 测试；点击<strong>「商品设置」</strong>随季度上新随时换绑最新旗舰款；配备<strong>「地域定向」</strong>与<strong>「查看数据」</strong>。<strong>③ 核心监控指标</strong>：表格倒数第二列为<strong>「近 30 天平均点击率」</strong>，顶展作为首位正常应维持在 3%～6%，若跌破 2.5% 必须立刻更换素材。<strong>④ 场景化承接页与排行榜</strong>：右上角直通<strong>「承接页管理」</strong>与<strong>「创意排行榜」</strong>，配置多品矩阵承接页，对标行业顶级视觉。</figcaption>
+            <figcaption>品牌广告控制台的真实页面层级与关键操作入口：<br>
+            • <strong>页面标题与六大页签</strong>：页面官方标题为「<strong>品牌关键词</strong>」，一级六个页签依次为：<code>查问鼎/顶展词</code>、<code>问鼎/顶展词竞价</code>、<code>买明星展位词</code>、<code>已购词推广管理</code>（默认进入）、<code>问鼎/明星展位权益</code>、<code>订单记录</code>。<br>
+            • <strong>二级渠道与终端切换</strong>：次级支持在「<strong>问鼎／顶展／明星展位</strong>」间自由切换，表格清晰展示每个词的投放终端（PC端／移动端独立排期与生效周期）。<br>
+            • <strong>表格十个真实列名</strong>：依次为 <code>投放状态</code>、<code>关键词</code>、<code>投放终端</code>、<code>投放时间</code>、<code>智能创意</code>、<code>创意</code>、<code>创意个数</code>、<code>拓流状态</code>、<code>近30天平均点击率</code>、<code>操作</code>。<br>
+            • <strong>四大关键操作动线</strong>：① <strong>「管理创意」</strong>位于每一行右侧「操作」列（按词逐行操作，非全局按钮）；② <strong>「地域定向」</strong>在工具栏（批量设置）与每行操作列（单词设置）均有入口；③ <strong>「智能创意」</strong>是第 5 列的蓝色开关（默认开启），按词控制；④ <strong>「创意排行榜↗」</strong>与<strong>「承接页管理↗」</strong>位于页签行最右侧，带外链图标，属于页面级全局工具。</figcaption>
           </figure>
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>调控阶段</th><th>核心操作与考核指标</th><th>执行动作与处置要点</th></tr></thead><tbody>
             <tr><td><strong>投前：选词原则</strong></td><td>行业超级大词、核心大品类词（如 neck massager）</td><td>搜索量极大、全行业买家必搜；绝不拿长尾偏门词做顶展包年</td></tr>
@@ -1225,18 +1229,18 @@ lessons.push(
             <tr><td><strong>投中：动态换绑主推款</strong></td><td>随季度上新与产品迭代，<strong>每 1～2 个月评估一次绑定的主推品</strong></td><td>店铺出了全新升级代次款，在列表中点击「商品设置」及时换绑最新旗舰品，坚决不让淘汰旧款长期霸占黄金首位</td></tr>
           </tbody></table></div>
         </div></details>`],
-      ["操作创意与修改创意（手动创意保姆级规范）", "顶展/问鼎的点击率直接决定巨资能否变现。创意不是美工随手做图，必须严格执行视觉与视频制作规范。",
+      ["操作创意与修改创意（手动创意保姆级规范）", "顶展/问鼎的点击率直接决定巨资能否变现。创意不是全局统一按钮，必须在目标词所在行的右侧「操作」列点击「管理创意」进入对应词的创意编辑弹层。",
         `<details class="step-more"><summary>展开看创意操作动线与 4 项制作规范</summary><div class="step-more-body">
           <div class="mindmap"><div class="mm-root">创意操作与视觉规范 4 步</div><ul class="mm-list">
-            <li><strong>一、添加与修改动线</strong><span>在已购词右侧点击<strong>「管理创意」</strong> → 点击「新增创意」或已有素材上的「编辑」 → 上传素材与副标题 → 点击「提交审核」（官方机审加人审，24小时内审核完成）</span></li>
+            <li><strong>一、添加与修改动线（按词操作）</strong><span>在目标已购词右侧「操作」列，点击第二组第一项<strong>「管理创意」</strong> → 点击「新增创意」或已有素材上的「编辑」 → 上传 4K 场景素材与副标题 → 点击「提交审核」（官方机审加人审，24小时内审核完成）</span></li>
             <li><strong>二、构图与主体占比</strong><span><strong>主体必须占画面 60%～70%</strong>，居中或偏右；必须是真实场景化实拍（欧美办公/家居/医疗场景），严禁纯白底小图或廉价牛皮癣</span></li>
             <li><strong>三、权威背书徽标</strong><span>画面角落必须压印 2～3 个硬核背书徽标（如 CE / FDA / ISO9001 认证标，或 "Verified Supplier / 15-Year Factory"），瞬间建立大买家信任</span></li>
             <li><strong>四、4K 主图视频「前 3 秒黄金律」</strong><span>视频时长 15～30 秒，1080P/4K 高清；<strong>前 3 秒必须直奔主题展示核心动态功能</strong>（如揉捏机芯动作、气囊起伏），严禁放冗长无意义的公司大门</span></li>
           </ul></div>
         </div></details>`],
-      ["智能创意 vs 手动创意：怎么选、怎么配？", "列表正中间的「智能创意」开关是很多运营的误区。两者底层机制完全不同，必须按周期组合搭配。",
+      ["智能创意 vs 手动创意：怎么选、怎么配？", "列表第 5 列的「智能创意」开关是很多运营的误区。它不是全局总开关，而是每行独立的蓝色滑块（默认开启 ON）。两者底层机制完全不同，必须按周期组合搭配。",
         `<details class="step-more"><summary>展开看智能与手动创意对比表与组合策略</summary><div class="step-more-body">
-          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>对比维度</th><th>智能创意（列表开关开启）</th><th>手动创意（列表开关关闭）</th></tr></thead><tbody>
+          <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>对比维度</th><th>智能创意（行内开关设为 ON 开启）</th><th>手动创意（行内开关设为 OFF 关闭）</th></tr></thead><tbody>
             <tr><td><strong>运作机制</strong></td><td>系统算法根据搜索买家的历史偏好、语言与终端，自动抓取绑定商品的详情图与素材，动态拼接生成多套创意轮播展示</td><td>运营人工手动上传精心打磨的高清场景大图、4K 视频、精雕细琢的定制副标题与认证文案，锁定静态精准展示</td></tr>
             <tr><td><strong>核心优点</strong></td><td>省时省力；千人千面；能匹配买家语言和特定偏好</td><td><strong>品牌调性极高、信息传达极其精准</strong>；完全可控，杜绝系统乱拼接丑图；能把最核心的差异化卖点直接砸在买家脸上</td></tr>
             <tr><td><strong>致命缺点</strong></td><td>容易抓取到详情页里的次要细节图，画面缺乏整体设计感与高级工业质感</td><td>制作成本高，需要美工专门定制多套尺寸；无法自动做多语言自适应</td></tr>
@@ -1246,7 +1250,7 @@ lessons.push(
       ["地域设置：精准定向，拒当全球慈善家", "大词每天有成千上万来自全球的点击。不做地域定向，即使包年包月，业务员也会被大量无履约能力的垃圾咨询拖垮。",
         `<details class="step-more"><summary>展开看地域设置三大原则</summary><div class="step-more-body">
           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>地域调控环节</th><th>操作路径与标准</th><th>为什么这么调（底层逻辑）</th></tr></thead><tbody>
-            <tr><td><strong>后台操作入口</strong></td><td>在已购词列表右侧，点击<strong>「地域定向」</strong>按钮</td><td>进入国家/地区选择面板，进行精准的买家国别准入设置</td></tr>
+            <tr><td><strong>后台操作入口</strong></td><td><strong>支持批量与单词双入口</strong>：① 勾选多个词后点击列表上方工具栏第二个按钮<strong>「地域定向」</strong>；② 在某个词右侧「操作」列点击第三项<strong>「地域定向」</strong></td><td>进入国家/地区选择面板，进行精准的买家国别准入设置</td></tr>
             <tr><td><strong>主力目标国重点曝光</strong></td><td>将欧美核心国（美、德、英、加、澳等）设为优先倾斜或重点投放</td><td>根据第 02 课定位的主力市场，让几十万买下的超级大词曝光集中在能下大单的高净值买家面前</td></tr>
             <tr><td><strong>剔除无履约能力国家</strong></td><td>对于物流无法送达、关税极高、或历史上 100% 已读不回的边缘偏远国，<strong>直接取消勾选（不投放）</strong></td><td>预算虽是包年包月，但如果放任偏远国随意点击，业务员每天会被大量无效垃圾咨询拖垮</td></tr>
             <tr><td><strong>终端时区差异化</strong></td><td>关注 PC 端与移动端的国家偏好与排期</td><td>欧美大 B 采购习惯在工作时间用 PC 查验资质与证书，东南亚或中东买家多用 App 移动沟通，按终端结合时区投放</td></tr>
@@ -1255,7 +1259,7 @@ lessons.push(
       ["善用「创意排行榜」：偷师行业 Top 1% 视觉与文案", "右上角的「创意排行榜」是免费的高级美工灵感库，展示全行业同类目下点击率（CTR）排名前 10% 的顶级同行创意。",
         `<details class="step-more"><summary>展开看排行榜对标三步法</summary><div class="step-more-body">
           <div class="mindmap"><div class="mm-root">创意排行榜对标 3 步法</div><ul class="mm-list">
-            <li><strong>一、入口位置</strong><span>已购词管理页右上角，点击<strong>「创意排行榜」</strong>，查看全行业同类目下<strong>点击率（CTR）排名前 10% 的顶级同行创意</strong></span></li>
+            <li><strong>一、入口位置</strong><span>位于「关键词／创意」页签行最右侧，点击<strong>「创意排行榜↗」</strong>（与「承接页管理↗」并排），在新标签页查看全行业同类目下<strong>点击率（CTR）排名前 10% 的顶级同行创意</strong></span></li>
             <li><strong>二、拆解配色与调性</strong><span>观察榜单同行都在用深蓝+白科技风，还是原木+浅灰健康风？对标榜单主流审美，避免自制素材与国际大买家审美脱节</span></li>
             <li><strong>三、提取文案痛点钩子</strong><span>看高 CTR 同行副标题强调的是 "Ready to Ship"（现货）、"Customized Logo 50pcs"（小单定制），还是 "Medical CE Certified"（医疗认证），直接借鉴文案结构并截图作为美工改图需求单</span></li>
           </ul></div>
