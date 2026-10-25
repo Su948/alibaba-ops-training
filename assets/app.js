@@ -906,16 +906,25 @@ lessons.push(
            <figure class="course-figure">
              <div class="figure-head"><span>01</span><div><strong>计划列表长什么样</strong><p>营销中心 → 标准推广（金额与计划名已隐去）</p></div></div>
              <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看计划列表截图"><img src="assets/lesson-08-ads-plan-list.png" alt="标准推广的计划列表，含状态、计划、诊断状态、预算、出价、投放渠道、推广商品数、推广关键词数、花费等列" loading="lazy"></div>
-             <figcaption>这张表就是你判断「粒度对不对」的地方。<strong>「推广商品数」和「推广关键词数」两列并排看</strong>：商品数很多、词也很多，几乎一定混烧；商品数 1—3、词几十个，才是一个能归因的计划。右边「预算」「出价」「花费」挨在一起，是用来对照「预算给了多少、实际花了多少」的——三个数一起看才有意义，单看花费没有判断价值。左侧「状态」与「诊断状态」是平台给的提示，不等于你的结论。</figcaption>
-           </figure>
-           <p class="step-more-label">产品维度的日常调控：删品与加品硬性红线</p>
-           <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>调整动作</th><th>触发条件（硬性红线）</th><th>处理方式与执行原则</th></tr></thead><tbody>
-             <tr><td><strong>删品红线 ①</strong></td><td>连续 30 天无商机，且有持续花费消耗</td><td><strong>坚决移出计划</strong>。说明该品在现有出价和人群下无法转化，继续放着纯属浪费预算</td></tr>
-             <tr><td><strong>删品红线 ②</strong></td><td>仅有曝光，0 点击、0 商机</td><td><strong>坚决移出计划</strong>。买家毫无点击欲望，说明主图吸睛度或产品形态严重不过关，必须回第 06 课重修视觉</td></tr>
-             <tr><td><strong>删品红线 ③</strong></td><td>各项核心数据显著低迷，持续无商机</td><td><strong>及时止损移出</strong>，停止无效试错</td></tr>
-             <tr><td><strong>加品红线<br>（资产防撞车）</strong></td><td><strong>已在「全站推·推工厂」产生过商机的产品</strong></td><td><strong>绝对禁止加入标准推广计划！</strong>避免同一款产品在不同计划里互抢曝光、重复消耗费用，破坏推工厂原本已建立的算法模型</td></tr>
-             <tr><td><strong>加品准入标准</strong></td><td>推工厂与其他计划中未产生商机的潜力品</td><td>在产品参谋/产品运营工作台筛选「优品」：<strong>近 90 天内 TM + 询盘在 1～10 之间</strong>（有基础转化信号，尚未打透的潜力款）。单计划单次最多添加 5 个，严格同品类</td></tr>
-           </tbody></table></div>
+            <figcaption>这张表就是你判断「粒度对不对」的地方。<strong>「推广商品数」和「推广关键词数」两列并排看</strong>：商品数很多、词也很多，几乎一定混烧；商品数 1—3、词几十个，才是一个能归因的计划。右边「预算」「出价」「花费」挨在一起，是用来对照「预算给了多少、实际花了多少」的——三个数一起看才有意义，单看花费没有判断价值。左侧「状态」与「诊断状态」是平台给的提示，不等于你的结论。</figcaption>
+            </figure>
+            <div class="method-note"><strong>直通车后台真相：它没有选品雷达，只有一张商品勾选框。</strong>营销中心新建计划时，系统只展示一个干瘪的商品列表和勾选框，根本不会主动告诉你哪款产品能推、哪款不能推。如果运营没有前置准入标准，看见商品就打钩，直通车就会沦为花钱最快的「碎钞机」。直通车是<strong>付费流量放大器</strong>，用来放大原本就有转化潜力的品，绝不是用来「抢救死链接」的。</div>
+            <p class="step-more-label">产品准入画像：什么产品应该加入直通车</p>
+            <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>准入类型</th><th>数据与基建特征</th><th>投放逻辑与目标</th></tr></thead><tbody>
+              <tr><td><strong>① 自然转化「微光品」<br>（首选必推）</strong></td><td>数据参谋近 90 天内，自然流量下已有 <strong>1～10 个 TM 或询盘</strong>，点击率（CTR）处于同行业平均线以上</td><td>已被真实买家货币与需求验证过，主图、价格与参数完全正确，唯独缺少规模曝光。加推直通车起量最快</td></tr>
+              <tr><td><strong>② 战略测重「达标新品」<br>（门槛极严）</strong></td><td><strong>基建必须达标</strong>：具备白底+场景主图、高清主图视频、属性填满无误、质量分达良好/优品、且明确展示资质认证（CE/RoHS 等）</td><td>新品冷启动需要 14～30 天数据窗口快速积累买家画像与搜索标签，验证市场接受度；基建不全坚决不推</td></tr>
+              <tr><td><strong>③ 差异化「高毛利款」</strong></td><td>针对欧美等核心目标市场痛点做过差异化改进（如特定电压、便携新结构、专供包装），毛利空间足够覆盖单次点击成本</td><td>高毛利款能承受单次较高的竞价门槛，适合打核心大词与采购意图词，换取高客单商机</td></tr>
+            </tbody></table></div>
+            <p class="step-more-label">产品维度的日常调控：删品与加品硬性红线</p>
+            <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>调整动作</th><th>触发条件（硬性红线）</th><th>处理方式与执行原则</th></tr></thead><tbody>
+              <tr><td><strong>加品红线<br>（资产防撞车）</strong></td><td><strong>已在「全站推·推工厂」产生过商机的产品</strong></td><td><strong>绝对禁止加入标准推广计划！</strong>避免同一款产品在不同计划里互抢曝光、重复消耗费用，破坏推工厂原本已建立的算法模型</td></tr>
+              <tr><td><strong>加品禁忌 ①<br>（三无死链接）</strong></td><td>上架超 3 个月，曝光大几千甚至过万，但 <strong>0 点击、0 询盘</strong></td><td><strong>坚决禁止入库</strong>。说明产品形态或主图有致命伤，进直通车纯属白白送钱</td></tr>
+              <tr><td><strong>加品禁忌 ②<br>（超薄毛利品）</strong></td><td>单件利润极低、无连带溢价能力的跑量款</td><td><strong>禁止加入直通车</strong>。单件利润无法覆盖平均 1～3 美元的单次点击成本</td></tr>
+              <tr><td><strong>加品禁忌 ③<br>（资质存疑品）</strong></td><td>无合规证书、涉嫌外观侵权或平台违规风险品</td><td><strong>禁止推广</strong>。极易触发广告审核驳回甚至店铺合规扣分处罚</td></tr>
+              <tr><td><strong>删品红线 ①</strong></td><td>连续 30 天无商机，且有持续花费消耗</td><td><strong>坚决移出计划</strong>。说明该品在现有出价和人群下无法转化，继续放着纯属浪费预算</td></tr>
+              <tr><td><strong>删品红线 ②</strong></td><td>仅有曝光，0 点击、0 商机</td><td><strong>坚决移出计划</strong>。买家毫无点击欲望，说明主图吸睛度或产品形态严重不过关，必须回第 06 课重修视觉</td></tr>
+              <tr><td><strong>删品红线 ③</strong></td><td>各项核心数据显著低迷，持续无商机</td><td><strong>及时止损移出</strong>，停止无效试错</td></tr>
+            </tbody></table></div>
          </div></details>`],
        ["用倒推法定预算与周期", "预算不是「今天想花多少」，是从目标倒推出来的：想要几条询盘、能接受多少成本、需要多少点击、需要多少钱。",
         `<details class="step-more"><summary>展开看倒推四步</summary><div class="step-more-body">
@@ -1012,7 +1021,29 @@ lessons.push(
            </figure>
            <div class="method-note"><strong>标准推广组的搜索词报告是空的，先别怀疑报表坏了。</strong>按顺序查三件事：① 这个计划近 7 天到底有没有在投（有预算不等于有在跑）；② 统计周期是不是选得太短；③ 词是不是窄到根本没人搜。三件都正常还空，才去后台报问题。</div>
            <div class="method-note"><strong>一次只改一个变量，改完至少观察 3 天，并记录改动时间和内容。</strong>没有修改记录，两周后你无法解释成本为什么变了，也无法复制成功的做法。</div>
-           <p class="step-more-label">标准推广计划日常调控周期与四维动作总表</p>
+            <p class="step-more-label">数据怎么看、怎么盯：日常盯盘三级动线</p>
+            <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>盯盘频次</th><th>核心关注点</th><th>操作动线与排查要点</th></tr></thead><tbody>
+              <tr><td><strong>每日必看<br>（早 9:00）</strong></td><td><strong>预算消耗速度与时段</strong></td><td>上午看昨夜美西核心白天的消耗进度。<strong>警惕瞬间烧光</strong>：若日预算在 1～2 小时内被迅速打满，必有超大词或智能泛匹配在吸血，必须当场降价或收紧匹配方式；预算能平稳匀速消耗至晚间则正常</td></tr>
+              <tr><td><strong>每周必看<br>（周一上午）</strong></td><td><strong>搜索词真实意图与产品转化</strong></td><td>进「直通车报告 → 搜索词报告」，核对买家实际搜索词，抓出零售/自用等跑偏词当场加否定词；进计划商品明细执行<strong>淘汰三红线</strong>（0曝删、高曝0点0商机删、持续30天高耗0商机必删）</td></tr>
+              <tr><td><strong>每半月必看<br>（双周复盘）</strong></td><td><strong>买家地域流向与商机成本</strong></td><td>核对直通车与买家参谋的地域分布，确认 60% 以上的花费是否流向欧美等可履约、高利润的目标国家；若大量预算流向偏远国，立即配置地域溢价</td></tr>
+            </tbody></table></div>
+            <p class="step-more-label">怎么样算一般：行业常态基准指标表</p>
+            <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>核心指标</th><th>一般水平（常态基准线）</th><th>优秀水平</th><th>运营判断逻辑</th></tr></thead><tbody>
+              <tr><td><strong>点击率（CTR）</strong></td><td><strong>1.2% ～ 2.2%</strong></td><td>&gt; 2.5%</td><td>低于 1.0% 说明主图缺少吸睛卖点、价格偏离行情或词不匹配</td></tr>
+              <tr><td><strong>点击转商机率</strong></td><td><strong>1.5% ～ 3.0%</strong></td><td>&gt; 4.0%</td><td>相当于 <strong>35 ～ 65 次真实点击应产出 1 个询盘或 TM</strong>；低于 1.0% 严重异常</td></tr>
+              <tr><td><strong>平均点击成本（CPC）</strong></td><td>处于行业参考底价 1.1 ～ 1.4 倍</td><td>稳定低位波动</td><td>结合客单价测算，只要单次商机成本在产品毛利承受范围内即可</td></tr>
+              <tr><td><strong>主推国点击占比</strong></td><td><strong>&gt; 55%</strong></td><td>&gt; 75%</td><td>流量必须高度集中在主力目标国，杜绝预算被边缘低价国家稀释</td></tr>
+              <tr><td><strong>预算消耗节奏</strong></td><td>平稳覆盖目标市场 8～12 小时</td><td>全天均匀可控</td><td>坚决避免 1 小时内被泛词秒光或整天花不出去</td></tr>
+            </tbody></table></div>
+            <p class="step-more-label">怎么样算异常：五大异常诊断与即时处理动作总表</p>
+            <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>异常现象</th><th>根本原因诊断</th><th>运营即时处理动作（当天执行）</th></tr></thead><tbody>
+              <tr><td><strong>异常 ①：高曝光、极低点击<br>（CTR &lt; 0.8%）</strong></td><td>词太宽（如搜 massager 出了眼部仪）；主图缺乏实物品质感；价格显著偏高</td><td>在计划中将低于 0.8% 的大词<strong>降价 30% 或暂停</strong>；重新排查并替换首图；校准起步价格带</td></tr>
+              <tr><td><strong>异常 ②：高点击、高消耗、0 商机<br>（50次点击0转化）</strong></td><td>引来 C 端零售或白嫖样品流量；详情页缺少参数与认证；运费模板标了天价</td><td><strong>查搜索词报告</strong>：凡带 free/retail/repair 词<strong>立即加否定词</strong>；补齐参数认证；消耗超 50 刀仍 0 转化<strong>果断删品</strong></td></tr>
+              <tr><td><strong>异常 ③：日预算 1 小时内被秒光</strong></td><td>开启了广泛/全网智能匹配；行业顶级词被系统集中扣费；未设出价上限</td><td>立即将计划的匹配方式<strong>转为精准匹配</strong>；查分时报表锁定吸血词<strong>单价直接砍半</strong>；开启分时折扣</td></tr>
+              <tr><td><strong>异常 ④：点击全是非目标国<br>（边缘偏远国占大头）</strong></td><td>未设置地域溢价；算法为消耗预算自动向低竞价的边缘国家灌水</td><td>在标准推广中配置<strong>地域溢价</strong>：欧美核心国拉高至 <code>+50%～100%</code>，非目标国拉低至 <code>-50%</code> 或直接不投</td></tr>
+              <tr><td><strong>异常 ⑤：原本出单爆品流量腰斩</strong></td><td>同行上架同款并打价格战；直通车质量分下滑或合规受限；账户欠费重热期</td><td>前台排查同行竞品动态；检查后台商品合规助手与质量分；适度小幅提价抢回核心排位</td></tr>
+            </tbody></table></div>
+            <p class="step-more-label">标准推广计划日常调控周期与四维动作总表</p>
            <div class="source-table-wrap"><table class="decision-table compare-table"><thead><tr><th>调控维度</th><th>核心依据与指标</th><th>标准操作周期</th><th>触发动作与红线</th></tr></thead><tbody>
              <tr><td><strong>词（关键词）</strong></td><td>曝光、点击率、商机产出、意图匹配</td><td>每半个月至 1 个月</td><td>0 曝光删、高曝 0 点 0 商机删、高曝高耗持续 1 月 0 商机必删；持续补充访客来源词与询盘登记词</td></tr>
              <tr><td><strong>品（推广产品）</strong></td><td>商机量、消耗额、点击率、推工厂状态</td><td>每 30 天复盘一次</td><td>30 天无商机有消耗删、仅曝光 0 点 0 商机删；<strong>推工厂出商机品坚决不入</strong>；加品限 90 天优品（1&lt;TM+询盘&lt;10），单次≤5个</td></tr>
