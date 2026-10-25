@@ -119,7 +119,7 @@ const lessons = [
            </figure>
            <figure class="course-figure">
              <div class="figure-head"><span>02</span><div><strong>同一页怎么切出四种口径</strong><p>买家参谋顶部：两个页签 ＋ 买家类型五个选项</p></div></div>
-             <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看完整筛选栏截图"><img src="assets/lesson-02-buyer-type-switch.png" alt="买家参谋顶部的本店买家与行业买家页签，以及买家类型、时间范围、买家分层、去重开关" loading="lazy"></div>
+             <img src="assets/lesson-02-buyer-type-switch.png" alt="买家参谋顶部的本店买家与行业买家页签，以及买家类型、时间范围、买家分层、去重开关" loading="lazy">
              <figcaption>最上面两个并排的大块，就是「本店买家」和「行业买家」——<strong>换页签换的是数据来源，不是筛选条件</strong>。往下那一排才是筛选：「买家类型」五个选项（访问／询盘／TM／订单／自定义客群）决定你看漏斗的哪一段，「时间范围」三档，「买家分层」全部或 L1+，「去重」开着时一个买家只算一次。四个一起动，国家分布就会整块重排，所以每次截图记录都要把这几个状态写下来，否则两张图没法比。</figcaption>
            </figure>
            <p class="step-more-label">先定「强」和「高」怎么判，否则四象限没法用</p>
@@ -337,7 +337,7 @@ const lessons = [
           </tbody></table></div>
           <figure class="course-figure">
             <div class="figure-head"><span>01</span><div><strong>买家端搜索结果卡片与价格带分布</strong><p>国际站买家端搜索页（以 neck massager 为例，供应商已匿名）</p></div></div>
-            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看买家搜索卡片截图"><img src="assets/lesson-03-price-band.png" alt="国际站买家搜索端真实产品卡片，展示价格区间、最低起订量、已售件数以及顶部属性筛选栏" loading="lazy"></div>
+            <img src="assets/lesson-03-price-band.png" alt="国际站买家搜索端真实产品卡片，展示价格区间、最低起订量、已售件数以及顶部属性筛选栏" loading="lazy">
             <figcaption>买家端搜索结果卡片结构：① <strong>价格带区间</strong>（注意：卡片价格符号由买家端或当前账号的站点币种决定，图中 <code>₩</code> 为韩元显示，交货地设为 CA 加拿大，日常对标时请核对自己顶栏的货币设置并统一折算为 USD 美元或 RMB 记账）；② <strong>起订量字段</strong>（国际站卡片上显示的正式字段名是<strong>「最低起订量：N piece」</strong>，不要在页面上硬找英文缩写 MOQ）；③ <strong>已售笔数与评价数量</strong>（验证真实市场热度与采购动销）；④ <strong>顶部属性与认证标签</strong>（如 CE 认证、快速定制、Verified 供应商等，反映买家高频筛选意图与准入门槛）。</figcaption>
           </figure>
           <div class="method-note"><strong>20 个产品怎么记才不白记：</strong>按「形态 × 价格带」交叉着记，每个格子至少 2 个样本。如果 20 个里 15 个都落在同一档，说明你其实只拆了 1 个结论，回去补样本。</div>
@@ -352,7 +352,7 @@ const lessons = [
           </tbody></table></div>
           <figure class="course-figure">
             <div class="figure-head"><span>02</span><div><strong>同行对标旺铺结构与分类陈列</strong><p>同行旺铺「全部商品」页（店招与账号信息已脱敏处理）</p></div></div>
-            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看同行旺铺截图"><img src="assets/lesson-03-competitor-shop.png" alt="同行旺铺全部商品页，展示顶部导航、精选橱窗、产品分类树以及商品网格陈列" loading="lazy"></div>
+            <img src="assets/lesson-03-competitor-shop.png" alt="同行旺铺全部商品页，展示顶部导航、精选橱窗、产品分类树以及商品网格陈列" loading="lazy">
             <figcaption>同行对标旺铺结构：<strong>同行旺铺首页通常包含纵深长达数千像素的全屏品牌大 Banner，若要在单屏内看清其主推款、价格分布与产品分类，应直接点击顶部导航的「产品 / 全部商品」页签。</strong>左侧为细分品类树，中间为主推产品与网格陈列。</figcaption>
           </figure>
           <p class="step-more-label">同行优秀旺铺的标准动线拆解（从上到下）</p>
@@ -565,7 +565,7 @@ lessons.push(
           <div class="method-note"><strong>自查方法：</strong>把这个类目的 Top 20 产品打开看一遍，如果至少 15 个和你的产品形态一致，类目就是对的。少于一半，回去重选。</div>
           <figure class="course-figure">
             <div class="figure-head"><span>01</span><div><strong>发品后台的类目匹配与推荐</strong><p>商品管理 → 商品发布 →「类目发品」页面</p></div></div>
-            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看类目选择截图"><img src="assets/lesson-05-publish-category.png" alt="商品发布后台的类目发品页面，包含商品图片、商品名称、搜索类目输入框及匹配的三层类目列表" loading="lazy"></div>
+            <img src="assets/lesson-05-publish-category.png" alt="商品发布后台的类目发品页面，包含商品图片、商品名称、搜索类目输入框及匹配的三层类目列表" loading="lazy">
             <figcaption>入口叫<strong>「商品管理 → 商品发布」</strong>，落地页叫<strong>「类目发品」</strong>。看核心操作流：① 在<strong>「搜索类目」</strong>框输入你的核心产品英文词（如 <code>neck massager</code>）；② 系统会在下方列出匹配的三层类目树（如 <code>健康护理 >> 按摩用品 >> 按摩枕／肩颈部按摩仪</code>）；③ 点击选中最吻合的底层类目，页面最底部会显示「已选类目」，点击「我已阅读如上规则，现在发布产品」进入属性填写页。<strong>不要凭主观感觉随便挂大类</strong>，类目一旦放错，后面质量助手会直接报黄标判定为「较差」。</figcaption>
           </figure>
         </div></details>`],
@@ -579,7 +579,7 @@ lessons.push(
           </tbody></table></div>
           <figure class="course-figure">
             <div class="figure-head"><span>02</span><div><strong>属性与阶梯价格长什么样</strong><p>发品后台 → 商品属性与交易信息设置区</p></div></div>
-            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看属性与价格设置截图"><img src="assets/lesson-05-product-attributes-price.png" alt="商品发布后台中的商品属性、商品规格、根据数量设置阶梯价、发货期设置区" loading="lazy"></div>
+            <img src="assets/lesson-05-product-attributes-price.png" alt="商品发布后台中的商品属性、商品规格、根据数量设置阶梯价、发货期设置区" loading="lazy">
             <figcaption>看两个关键区：<strong>① 上半部「商品属性」</strong>：分为 4 项必填属性（功能、售后、原产地、适用部位）和其他属性（品牌、型号、尺寸、类型等）。<strong>注意：品牌和型号是文本输入框，不是勾选框；型号不能当规格填</strong>。<strong>② 下半部「交易信息」</strong>：支持勾选商品规格（颜色/材质传图）；下方<strong>「根据数量设置阶梯价」</strong>支持多区间设置（最小起订量、单件价格）；最底部<strong>「发货期」</strong>根据不同订货量区间明确填写预计发货天数。阶梯价和交期必须和业务员口径完全对齐，严防前台写 7 天、实际生产要 30 天导致的违约纠纷。</figcaption>
           </figure>
         </div></details>`],
@@ -636,7 +636,7 @@ lessons.push(
           </tbody></table></div>
           <figure class="course-figure">
             <div class="figure-head"><span>03</span><div><strong>商品质量助手与错放类目报错</strong><p>发品后台左侧悬浮的「商品质量助手」与报错反馈面板</p></div></div>
-            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看商品质量助手截图"><img src="assets/lesson-05-quality-score.png" alt="商品发布后台中的商品质量助手面板，展示质量评级、类目错放优化建议与报错反馈" loading="lazy"></div>
+            <img src="assets/lesson-05-quality-score.png" alt="商品发布后台中的商品质量助手面板，展示质量评级、类目错放优化建议与报错反馈" loading="lazy">
             <figcaption>看左侧悬浮的两个面板：<strong>① 上方橙色「报错反馈」</strong>：指出物流提供方式等未达标项，有红标直接无法提交。<strong>② 下方「商品质量助手」</strong>：展示当前的质量综合评级。截图直观展示了类目放错的后果——如果标题写了手部按摩器却错挂到「足部按摩器」，系统会立刻标红警告<strong>「类目错放：商品信息与当前类目不匹配」</strong>，并判定为<strong>「较差 · 商品曝光受限」</strong>，同时给出建议修正的底层类目。<strong>必须按照质量助手的优化建议逐条消除黄红标</strong>，做到各项合规、评级优良后再提交发布。</figcaption>
           </figure>
         </div></details>`],
@@ -826,7 +826,7 @@ lessons.push(
           <div class="method-note"><strong>开广告的正确起点：</strong>先写一句假设，比如「换成场景首图后，点击率能追上类目中位数，所以值得用精准词加速验证」。写不出这句，说明还没到开的时机。</div>
           <figure class="course-figure">
             <div class="figure-head"><span>01</span><div><strong>开计划的第一屏长这样</strong><p>营销中心 → 首页「计划监测」区（计划名与数值已隐去）</p></div></div>
-            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看计划监测截图"><img src="assets/lesson-07-promotion-entry.png" alt="营销中心首页的计划监测区，含消耗最高、最新创建、商机最高三个排序页签和右上角的新建推广计划按钮" loading="lazy"></div>
+            <img src="assets/lesson-07-promotion-entry.png" alt="营销中心首页的计划监测区，含消耗最高、最新创建、商机最高三个排序页签和右上角的新建推广计划按钮" loading="lazy">
             <figcaption>冷启动那 7 天要盯的就是这一屏。<strong>三个排序页签</strong>是现成的三种视角：按「消耗最高」查钱花在哪、按「最新创建」看你新开的那个计划、按「商机最高」看谁在出结果。右上角「新建推广计划」是这一课的终点动作，但<strong>五道闸门没过之前，这个按钮先别按</strong>。</figcaption>
           </figure>
         </div></details>`],
@@ -906,13 +906,13 @@ lessons.push(
           <div class="method-note"><strong>可执行的粒度参考：</strong>一个计划里产品控制在 3 个以内且同形态，词控制在几十个以内且同意图。这是经验阈值，不是平台规则——目标是让每个计划跑一周后能看出方向。</div>
           <figure class="course-figure">
             <div class="figure-head"><span>01</span><div><strong>计划列表长什么样</strong><p>营销中心 → 标准推广（金额与计划名已隐去）</p></div></div>
-            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看计划列表截图"><img src="assets/lesson-08-ads-plan-list.png" alt="标准推广的计划列表，含状态、计划、诊断状态、预算、出价、投放渠道、推广商品数、推广关键词数、花费等列" loading="lazy"></div>
+            <img src="assets/lesson-08-ads-plan-list.png" alt="标准推广的计划列表，含状态、计划、诊断状态、预算、出价、投放渠道、推广商品数、推广关键词数、花费等列" loading="lazy">
             <figcaption>这张表就是你判断「粒度对不对」的地方。<strong>「推广商品数」和「推广关键词数」两列并排看</strong>：商品数很多、词也很多，几乎一定混烧；商品数 1—3、词几十个，才是一个能归因的计划。右边「预算」「出价」「花费」挨在一起，是用来对照「预算给了多少、实际花了多少」的——三个数一起看才有意义，单看花费没有判断价值。左侧「状态」与「诊断状态」是平台给的提示，不等于你的结论。</figcaption>
           </figure>
           <div class="method-note"><strong>后台真相：直通车不是没有数据，而是「只给数据素材、不给商业判断」。</strong>添加商品弹层里，平台给出的信息非常丰富：从推荐投广品、商机品、机会品等平台标签，到近 90 天搜索曝光、点击、订单、询盘的自然数据应有尽有，右上角甚至给了一个极具诱惑的「一键添加」按钮。但平台<strong>绝不会告诉你这个品该不该投、投多少算合理、什么样的数据算异常</strong>。没有准入标准，一键添加点下去就是批量盲目烧钱。直通车是<strong>付费流量放大器</strong>，用来放大原本就有转化潜力的品，绝不是用来「抢救死链接」的。</div>
           <figure class="course-figure">
             <div class="figure-head"><span>02</span><div><strong>添加商品弹层与选品真相</strong><p>标准推广 → 进入计划 →「添加商品」弹层（商品标题与具体数据已隐去）</p></div></div>
-            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看添加商品弹层截图"><img src="assets/lesson-08-ads-product-select.png" alt="直通车添加商品弹层，含全部商品/爆品/优品/潜力优品页签、一键添加按钮、商品标签与近90天数据列" loading="lazy"></div>
+            <img src="assets/lesson-08-ads-product-select.png" alt="直通车添加商品弹层，含全部商品/爆品/优品/潜力优品页签、一键添加按钮、商品标签与近90天数据列" loading="lazy">
             <figcaption>观察弹层的三大真实细节：<strong>① 平台标签与一键添加</strong>：顶部显眼提示「推荐投广品可享流量加速」，右侧紧跟「一键添加」——新手最容易在这里直接全选，把未经验证的品全塞进计划。<strong>② 横向很宽需要滚动</strong>：表格向右延伸包含近 90 天搜索曝光、点击、订单数、询盘数、TM 咨询数等自然数据，<strong>在标准视口下必须向右拖动滚动条才能看全</strong>。<strong>③ 必须前置筛选</strong>：左侧勾选框只有配合运营自己的准入标准（看近 90 天是否有自然微光转化），才能把真正值得投的品挑出来，绝不依赖平台的自动推荐。</figcaption>
           </figure>
           <p class="step-more-label">标准推广产品准入画像：什么产品应该加入直通车</p>
@@ -962,7 +962,7 @@ lessons.push(
            </tbody></table></div>
             <figure class="course-figure">
               <div class="figure-head"><span>03</span><div><strong>关键词页与匹配方式的位置</strong><p>标准推广 → 某个计划 → 「关键词」页签（计划名、出价、数字均已隐去）</p></div></div>
-             <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看关键词页截图"><img src="assets/lesson-08-ads-keyword-match.png" alt="标准推广计划的关键词页签，含关键词、出价、近1小时最佳排名、24小时排名分布、抢位状态、推广评分、同行平均出价、搜索热度" loading="lazy"></div>
+             <img src="assets/lesson-08-ads-keyword-match.png" alt="标准推广计划的关键词页签，含关键词、出价、近1小时最佳排名、24小时排名分布、抢位状态、推广评分、同行平均出价、搜索热度" loading="lazy">
              <figcaption>三个要点：<strong>① 右上角「匹配方式」是计划级设置</strong>，不是在每个词后面单独选——点开改一次，这个计划里所有词一起变。<strong>② 表头那一排</strong>才是逐词看的：出价、近1小时最佳排名、24小时排名分布、抢位状态、推广评分、同行平均出价、搜索热度。判断一个词「能不能抢」看排名与同行出价，判断「值不值得抢」看推广评分与搜索热度。<strong>③ 因为匹配方式是整计划统一</strong>，精准词和宽泛词必须拆到两个计划里，否则只能二选一。</figcaption>
            </figure>
            <div class="method-note"><strong>这处最容易被写错，记牢：</strong>匹配方式<strong>不是逐词设置</strong>，是计划级统一设置，入口在关键词页右上角（文案形如「匹配方式：短语匹配」）。所以「这个计划用精准、那个计划用宽泛」是拆计划的理由之一，而不是在同一个计划里混着设。</div>
@@ -1030,7 +1030,7 @@ lessons.push(
           </ul></div>
             <figure class="course-figure">
               <div class="figure-head"><span>04</span><div><strong>搜索词报告长什么样</strong><p>营销中心 → 直通车报告 → 搜索词报告（数字已隐去）</p></div></div>
-              <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看搜索词报告截图"><img src="assets/lesson-08-ads-search-terms.png" alt="直通车报告的搜索词报告页签，含买家搜索词、点击占比、曝光占比三列" loading="lazy"></div>
+              <img src="assets/lesson-08-ads-search-terms.png" alt="直通车报告的搜索词报告页签，含买家搜索词、点击占比、曝光占比三列" loading="lazy">
               <figcaption><strong>先认清楚它只有三列</strong>：买家搜索词、点击占比、曝光占比。<strong>没有花费、没有点击次数、没有展现量的绝对值</strong>——所以想在这一页回答「哪个词烧了多少钱」是做不到的。这一页能做的是两件事：① 看买家到底在搜什么（发现跑偏的词）；② 看点击占比和曝光占比的落差（曝光高、点击占比低＝人家看到你没点，问题在词与图的匹配）。要算钱，回计划列表用花费对着关键词数拆，别指望这一页。<br>另外注意顶部要先选组：<strong>「全站推广」和「标准推广」是两组报告</strong>，页签不同数据不同。本店标准推广组当期无数据，这张取自全站推广组——所以三列结构以自己后台为准。</figcaption>
             </figure>
             <div class="method-note"><strong>标准推广组的搜索词报告是空的，先别怀疑报表坏了。</strong>按顺序查三件事：① 这个计划近 7 天到底有没有在投（有预算不等于有在跑）；② 统计周期是不是选得太短；③ 词是不是窄到根本没人搜。三件都正常还空，才去后台报问题。</div>
@@ -1043,7 +1043,7 @@ lessons.push(
             </tbody></table></div>
             <figure class="course-figure">
               <div class="figure-head"><span>05</span><div><strong>自定义列：搭建日常监控看板</strong><p>标准推广 → 计划列表右上角「自定义列」配置面板（纯字段设置，无敏感数据）</p></div></div>
-              <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看自定义列配置截图"><img src="assets/lesson-08-ads-custom-columns.png" alt="直通车自定义列配置弹层，含状态、计划、诊断状态、预算、出价、投放渠道、推广商品数、推广关键词数、花费、商机量等字段勾选" loading="lazy"></div>
+              <img src="assets/lesson-08-ads-custom-columns.png" alt="直通车自定义列配置弹层，含状态、计划、诊断状态、预算、出价、投放渠道、推广商品数、推广关键词数、花费、商机量等字段勾选" loading="lazy">
               <figcaption><strong>直通车不是没有数据监控，关键看你会不会配「自定义列」：</strong>后台默认视图只有几个笼统的汇总数字，要想掌握精细盯盘主动权，必须点击表格右上角<strong>「自定义列」</strong>。<br><strong>牢记后台真实字段名</strong>：后台没有所谓「平均点击花费（CPC）」，官方字段名叫<strong>「点击成本」</strong>；也没有复杂的阶梯算法，直接关注<strong>「商机成本」</strong>。<br><strong>推荐必勾 8 大核心监控指标</strong>：① <code>诊断状态</code>（排查扣分/受限）；② <code>预算</code> 与 <code>出价</code>；③ <code>花费</code>；④ <code>点击成本</code>；⑤ <code>点击率（CTR）</code>；⑥ <code>商机量</code>；⑦ <code>商机成本</code>；⑧ <code>L1+商机量</code>。勾齐这 8 项并上下拖动排序，你的直通车列表才真正具备了商业监控看板的能力。</figcaption>
             </figure>
             <p class="step-more-label">怎么样算一般：行业常态基准指标表</p>
@@ -1151,7 +1151,7 @@ lessons.push(
            <div class="method-note"><strong>第四层是全站推独有的判断题。</strong>系统扩量的价值在于「拿到你原本拿不到的人」，如果新客占比很低、搜索词全是你自己已经在投的词，那这笔钱大概率只是把自然流量买了一遍。</div>
            <figure class="course-figure">
              <div class="figure-head"><span>02</span><div><strong>全站推报表的列结构</strong><p>全站推广 → 数据报告 → 详细数据（数字已隐去）</p></div></div>
-             <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看全站推报表截图"><img src="assets/lesson-09-p4p-report.png" alt="全站推广详细数据报表，按日期列出花费、全站商机量、商机成本、L1+商机量、商机转化率、点击量、点击成本等列" loading="lazy"></div>
+             <img src="assets/lesson-09-p4p-report.png" alt="全站推广详细数据报表，按日期列出花费、全站商机量、商机成本、L1+商机量、商机转化率、点击量、点击成本等列" loading="lazy">
              <figcaption>这张表按日期一行，列从左到右正好对着上面四层：<strong>花费 → 商机量 → 商机成本 → 商机转化率 → 点击量 → 点击成本</strong>，再往右是 <strong>L1+</strong> 那三列（L1+ 商机量、L1+ 点击量、L1+ 买家点击占比）。<strong>「L1+」这一组是你判断买家质量的地方</strong>——同样的商机成本，L1+ 占比高说明来的是像样的采购商，占比低说明只是有人来问。横着读一行看不出好坏，要连读七天看趋势。</figcaption>
            </figure>
          </div></details>`],
@@ -1216,7 +1216,7 @@ lessons.push(
         `<details class="step-more"><summary>展开看控制台全貌与选词绑品原则</summary><div class="step-more-body">
           <figure class="course-figure">
             <div class="figure-head"><span>01</span><div><strong>品牌广告管理台：顶展与问鼎词品管理全貌</strong><p>营销中心 → 品牌推广 → 品牌关键词 →「已购词推广管理」（关键词、缩略图与真实数据已严格脱敏补遮）</p></div></div>
-            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看品牌推广管理截图"><img src="assets/lesson-10-brand-ads-manage.png" alt="阿里国际站品牌推广管理界面，含问鼎/顶展/明星展位切换、数据汇总栏、关键词与创意列表、近30天平均点击率、管理创意与商品设置操作栏" loading="lazy"></div>
+            <img src="assets/lesson-10-brand-ads-manage.png" alt="阿里国际站品牌推广管理界面，含问鼎/顶展/明星展位切换、数据汇总栏、关键词与创意列表、近30天平均点击率、管理创意与商品设置操作栏" loading="lazy">
             <figcaption>品牌广告控制台的真实页面层级与关键操作入口：<br>
             • <strong>页面标题与六大页签</strong>：页面官方标题为「<strong>品牌关键词</strong>」，一级六个页签依次为：<code>查问鼎/顶展词</code>、<code>问鼎/顶展词竞价</code>、<code>买明星展位词</code>、<code>已购词推广管理</code>（默认进入）、<code>问鼎/明星展位权益</code>、<code>订单记录</code>。<br>
             • <strong>二级渠道与终端切换</strong>：次级支持在「<strong>问鼎／顶展／明星展位</strong>」间自由切换，表格清晰展示每个词的投放终端（PC端／移动端独立排期与生效周期）。<br>
@@ -1233,7 +1233,7 @@ lessons.push(
         `<details class="step-more"><summary>展开看创意操作动线与 4 项制作规范</summary><div class="step-more-body">
           <figure class="course-figure">
             <div class="figure-head"><span>02</span><div><strong>已购词列表：定位目标词与「管理创意」入口</strong><p>营销中心 → 品牌推广 → 品牌关键词 →「已购词推广管理」（大红箭头与绿框标注操作动线）</p></div></div>
-            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看已购词列表管理创意入口截图"><img src="assets/lesson-10-creative-entry.png" alt="阿里国际站品牌推广已购词列表，大红箭头从顶部问鼎指向右下角绿框圈出的管理创意按钮" loading="lazy"></div>
+            <img src="assets/lesson-10-creative-entry.png" alt="阿里国际站品牌推广已购词列表，大红箭头从顶部问鼎指向右下角绿框圈出的管理创意按钮" loading="lazy">
             <figcaption>从列表定位到目标词的创意管理入口（如红箭头与绿框所示）：<br>
             • <strong>第一步：锁定页面层级</strong>：左侧导航选择「品牌推广 → 品牌关键词」，进入「已购词推广管理」页签。<br>
             • <strong>第二步：选择渠道与词类型</strong>：在顶部次级页签选择「问鼎」或「顶展」，在下方选择「关键词」列表。<br>
@@ -1241,7 +1241,7 @@ lessons.push(
           </figure>
           <figure class="course-figure">
             <div class="figure-head"><span>03</span><div><strong>创意管理详情页：素材上传、智能创意与审核状态</strong><p>点击「管理创意」进入的二级详情页（含添加创意、智能创意开关、审核状态与操作栏）</p></div></div>
-            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看二级创意管理详情页截图"><img src="assets/lesson-10-creative-detail.png" alt="品牌广告二级创意管理界面，含添加创意蓝色按钮、人工与系统绑定创意数、智能创意开关、审核通过状态及操作栏" loading="lazy"></div>
+            <img src="assets/lesson-10-creative-detail.png" alt="品牌广告二级创意管理界面，含添加创意蓝色按钮、人工与系统绑定创意数、智能创意开关、审核通过状态及操作栏" loading="lazy">
             <figcaption>进入二级「创意管理」详情页的核心功能分布（如绿框所示）：<br>
             • <strong>① 添加创意按钮（左侧绿框）</strong>：点击蓝色<strong>「添加创意」</strong>按钮，即可上传 4K 场景图、主图视频，并填写对应副标题提交官方审核。<br>
             • <strong>② 创意配额与智能开关</strong>：顶部清晰展示「人工绑定创意数（如 6/10套）」与「系统绑定创意数（如 7/10套）」，并配备每词独立的「问鼎智能创意」蓝色滑块开关。<br>
@@ -1331,7 +1331,7 @@ lessons.push(
            <div class="method-note"><strong>为什么倒着看：</strong>成交差的时候，最直觉的反应是「流量不够」，于是加预算。但如果卡在报价，加预算只会让更多人来问、然后同样谈不成——问题没解决，钱花了。</div>
            <figure class="course-figure">
              <div class="figure-head"><span>01</span><div><strong>数据概览的趋势区与口径切换</strong><p>数据参谋 → 数据概览（纵轴与数值已隐去）</p></div></div>
-             <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看数据概览趋势区截图"><img src="assets/lesson-10-data-overview.png" alt="数据参谋数据概览的趋势分析区，右上有全部、询盘人数、TM咨询人数三个口径切换，图例为我的效果、行业平均、同行优秀" loading="lazy"></div>
+             <img src="assets/lesson-10-data-overview.png" alt="数据参谋数据概览的趋势分析区，右上有全部、询盘人数、TM咨询人数三个口径切换，图例为我的效果、行业平均、同行优秀" loading="lazy">
              <figcaption>右上三个圆点是<strong>口径切换</strong>：全部／询盘人数／TM咨询人数——同一段时间换口径，曲线的形状就变了，所以对比之前先确认对方看的是哪个口径。图例里<strong>「我的效果／行业平均／同行优秀」</strong>三条线是这页最有用的东西：只看自己的曲线在涨没用，要跟行业平均比。</figcaption>
            </figure>
            <div class="method-note"><strong>这里有个坑，先讲清楚：数据概览默认看不到曝光、点击和访客。</strong>默认「运营常用」模式下，指标行给的是<strong>商机人数、全店商机量、TM咨询人数、询盘人数、信保交易订单个数、信保交易金额</strong>——全是结果层，没有曝光、没有点击、没有访客。想看完整的「曝光→点击→访客→询盘→商机」漏斗，要先把这一页的视图和模式换掉：筛选行右边有<strong>「图形／三列表」</strong>切换和<strong>「运营常用」</strong>模式下拉，切到三列表能一次看到这一页到底提供了哪些指标，缺哪一项再从模式里换。<strong>别去这一页找「自定义列」</strong>——那个按钮在营销中心的推广页（第 08 课图 01 右上角就有），这两处不是同一个东西。</div>
@@ -1347,7 +1347,7 @@ lessons.push(
            <div class="method-note"><strong>一个快速算法：</strong>把询盘按产品排序，看前 20% 的产品贡献了多少询盘。如果超过 70%，属正常集中；如果不到 40%，说明没有主推，资源撒得太散。</div>
            <figure class="course-figure">
              <div class="figure-head"><span>02</span><div><strong>产品分析列表：判断「是哪一个链接」的地方</strong><p>数据参谋 → 产品参谋 → 产品分析（产品名与数值已隐去）</p></div></div>
-             <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看产品分析列表截图"><img src="assets/lesson-10-product-analysis.png" alt="产品分析列表，含产品、访问人数、询盘人数、TM咨询人数、全店曝光次数、全店点击次数、产品360、操作八列，行末有分析与诊断按钮" loading="lazy"></div>
+             <img src="assets/lesson-10-product-analysis.png" alt="产品分析列表，含产品、访问人数、询盘人数、TM咨询人数、全店曝光次数、全店点击次数、产品360、操作八列，行末有分析与诊断按钮" loading="lazy">
              <figcaption><strong>一行一个产品，八列一次看完</strong>：产品、访问人数、询盘人数、TM 咨询人数、全店曝光次数、全店点击次数、产品360、操作。要不要拆到单链接，就看这张表——如果<a href="#lesson-10">第 3 步</a>说的「多数链接点击率都低」成立，这里逐行都低；如果只有一两行低，问题就锁在那两条。行末两个按钮别混：<strong>「分析」进的是产品360 抽屉</strong>（词、访客地域、竞品对标都在里面），<strong>「诊断」是平台给的体检结论</strong>，两者要看的是不同东西。</figcaption>
            </figure>
          </div></details>`],
@@ -1439,7 +1439,7 @@ lessons.push(
           </figure>
           <figure class="course-figure">
             <div class="figure-head"><span>02</span><div><strong>商机详情与买家特征全屏页</strong><p>点击列表「查看详情」后新开的全屏工作台（买家隐私信息已遮蔽）</p></div></div>
-            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看商机详情截图"><img src="assets/lesson-11-inquiry-detail.png" alt="商机详情全屏页，含左侧咨询产品与对话框，右侧买家信息、买家特征与最近采购行业" loading="lazy"></div>
+            <img src="assets/lesson-11-inquiry-detail.png" alt="商机详情全屏页，含左侧咨询产品与对话框，右侧买家信息、买家特征与最近采购行业" loading="lazy">
             <figcaption>全屏独立工作台核实四要素：<strong>① 左侧主区</strong>看买家咨询的具体产品链接与第一段原始留言，确认是主推款还是偶发款，看诉求是具体还是泛泛而谈；<strong>② 右侧上半截</strong>核实买家所属<strong>国家与地区（国旗与英文名）</strong>，对照目标国家矩阵看是否偏离；同时查看公司名、企业邮箱后缀、注册年限（老号还是白号）及买家等级标签；<strong>③ 右侧下半截</strong>查看「客户行为数据」（最近搜索词、最近采购行业、历史交易笔数与金额），快速印证其是否属于本店目标行业客群。</figcaption>
           </figure>
           <div class="method-note"><strong>看盘原则：</strong>运营看商机不是为了去回复，而是为了<strong>核验流量匹配度</strong>。如果连续来的商机所属国家、采购行业都与店铺主攻方向不符，说明前端词库或推广人群设置已产生偏差，必须及时纠偏。</div>
@@ -1483,12 +1483,12 @@ lessons.push(
           </tbody></table></div>
           <figure class="course-figure">
             <div class="figure-head"><span>04</span><div><strong>起草信用保障订单表单全貌</strong><p>交易管理总览 →「起草信用保障订单」表单全貌（字段结构展示）</p></div></div>
-            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看信保订单表单截图"><img src="assets/lesson-11-trade-assurance-order.png" alt="阿里国际站起草信用保障订单全貌，包含交易设置、买家信息、产品信息、运输信息、出口方式、交易保障服务与支付条款七大区块" loading="lazy"></div>
+            <img src="assets/lesson-11-trade-assurance-order.png" alt="阿里国际站起草信用保障订单全貌，包含交易设置、买家信息、产品信息、运输信息、出口方式、交易保障服务与支付条款七大区块" loading="lazy">
             <figcaption>入口在后台 <code>biz.alibaba.com</code> 交易管理总览，点击<strong>「起草信用保障订单」</strong>。整张表单严格分为七大区块：<strong>① 交易设置</strong>（结算方式汇款/信用卡/信用证，币种选 USD 或 CNY）；<strong>② 买家信息</strong>（买家邮箱、姓名与收货地址）；<strong>③ 产品信息</strong>（点击添加产品，录入数量、单价与规格）；<strong>④ 运输信息</strong>（拆为三项：运输方式、发货日期、贸易术语 FOB／CIF／EXW 等）；<strong>⑤ 出口方式</strong>（自营出口／便捷发货等）；<strong>⑥ 交易保障服务</strong>（信保额度与保障范围）；<strong>⑦ 支付条款</strong>（总价、预付款与尾款比例）。<strong>起草前必须对照聊天记录逐字核实产品型号、总价与贸易术语</strong>，确认无误再提交，严防口头承诺与线上合同不一致导致的违约纠纷。</figcaption>
           </figure>
           <figure class="course-figure">
             <div class="figure-head"><span>05</span><div><strong>店铺数据的导出入口</strong><p>数据参谋 → 数据总览（数值已隐去）</p></div></div>
-            <div class="screenshot-scroll zoom-wide" tabindex="0" aria-label="可左右滚动查看数据总览顶部截图"><img src="assets/lesson-12-report-export.png" alt="数据参谋数据总览顶部，含实时数据与日周月数据切换、日期与全店数据筛选、运营常用模式、图形与三列表切换、下载按钮" loading="lazy"></div>
+            <img src="assets/lesson-12-report-export.png" alt="数据参谋数据总览顶部，含实时数据与日周月数据切换、日期与全店数据筛选、运营常用模式、图形与三列表切换、下载按钮" loading="lazy">
             <figcaption>这一条筛选栏上有三样东西要认：<strong>「实时数据／日周月数据」</strong>决定看的是当下还是结算后的数、<strong>「运营常用」</strong>是模式、<strong>「下载」</strong>才是导出。先切模式再下载，否则导出来的还是默认那几列。</figcaption>
           </figure>
           <div class="method-note"><strong>这五个数去哪取，两个入口别混。</strong><br><strong>① 店铺经营数据：</strong>数据参谋 → 数据概览 → 右上「下载」，导出的是店铺整体数据；注意默认模式下没有访客、曝光、点击，先在顶部切模式或加列，下载出来才齐。<br><strong>② 广告报告：</strong>营销中心 → 直通车报告 → 右上「导出」，导的是投放数据（分全站推广／标准推广两组）。<br>两条线的口径不同，别把广告报告里的询盘和店铺总询盘直接相加，也别用同一张表算全店转化率——在取数这一步就要守住口径红线。</div>
@@ -1670,7 +1670,7 @@ function trafficSourcePrimer(){
     </figure>
     <figure class="course-figure">
       <div class="figure-head"><span>02</span><div><strong>后台有哪些流量来源</strong><p>这张表就是店铺实际可见的流量入口清单，数字已隐去，先看每一行的名称。</p></div></div>
-      <div class="screenshot-scroll" tabindex="0" aria-label="可上下滚动查看完整流量来源截图"><img src="assets/lesson-1-traffic-sources.png" alt="国际站后台常见流量来源清单" loading="lazy"></div>
+      <img src="assets/lesson-1-traffic-sources.png" alt="国际站后台常见流量来源清单" loading="lazy">
       <figcaption>上下滚动可查看完整清单；下面用新人能懂的话逐项解释。</figcaption>
     </figure>
     <div class="source-guide" aria-label="流量入口解释">
