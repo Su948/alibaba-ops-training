@@ -1588,17 +1588,48 @@ const tracks = {
   manager: {label:"主管 / 老板", ids:[1,2,10,12]}
 };
 
-const completed = new Set(JSON.parse(localStorage.getItem("is-course-progress") || "[]"));
+const salesUsers = [
+  { account: "Eric", name: "桑小川" },
+  { account: "Jasper", name: "李伟鸿" },
+  { account: "Liu Jing", name: "刘静" },
+  { account: "Huang Xiuju", name: "黄秀菊" },
+  { account: "Yang Guiping", name: "杨桂萍" },
+  { account: "Yang Meiqing", name: "杨美清" }
+];
+let currentAccount = localStorage.getItem("jamooz_current_user") || "Eric";
+function getProgressKey(acc){ return `jamooz-progress-${acc}`; }
+let completed = new Set(JSON.parse(localStorage.getItem(getProgressKey(currentAccount)) || "[]"));
 let selectedTrack = "all";
 const app = document.querySelector("#app");
 const nav = document.querySelector("#lessonNav");
 const crumbs = document.querySelector("#breadcrumbs");
 
 function pad(n){ return String(n).padStart(2,"0"); }
-function saveProgress(){ localStorage.setItem("is-course-progress", JSON.stringify([...completed])); updateProgress(); renderNav(); }
+function saveProgress(){
+  localStorage.setItem(getProgressKey(currentAccount), JSON.stringify([...completed]));
+  updateProgress();
+  renderNav();
+}
 function updateProgress(){
+  const user = salesUsers.find(u => u.account === currentAccount) || { name: currentAccount, account: currentAccount };
   document.querySelector("#sideProgress").textContent = `${completed.size} / 12`;
   document.querySelector("#sideProgressBar").style.width = `${completed.size/12*100}%`;
+  const userSelect = document.querySelector("#userSelect");
+  if(userSelect && userSelect.value !== currentAccount) userSelect.value = currentAccount;
+}
+
+// 监听子账号切换
+const userSelectElem = document.querySelector("#userSelect");
+if(userSelectElem){
+  userSelectElem.value = currentAccount;
+  userSelectElem.addEventListener("change", (e)=>{
+    currentAccount = e.target.value;
+    localStorage.setItem("jamooz_current_user", currentAccount);
+    completed = new Set(JSON.parse(localStorage.getItem(getProgressKey(currentAccount)) || "[]"));
+    updateProgress();
+    renderNav();
+    route();
+  });
 }
 function renderNav(){
   nav.innerHTML = `<button class="nav-link ${location.hash==="#home"||!location.hash?"active":""}" data-home><span class="nav-num">⌂</span><span>课程地图</span></button><div class="nav-group-title">CORE LESSONS</div>` + lessons.map(l=>`<button class="nav-link ${location.hash===`#lesson-${l.id}`?"active":""}" data-id="${l.id}"><span class="nav-num">${pad(l.id)}</span><span>${l.title}</span><span class="nav-check">${completed.has(l.id)?"✓":""}</span></button>`).join("") + `<div class="nav-group-title">RESOURCE LIBRARY</div>${Object.entries(libraries).map(([key,lib])=>`<button class="nav-link ${location.hash===`#library-${key}`?"active":""}" data-library="${key}"><span class="nav-num">＋</span><span>${lib.title}</span></button>`).join("")}<button class="nav-link ${location.hash==="#source-map"?"active":""}" data-source-map><span class="nav-num">≡</span><span>资料来源</span></button>`;
@@ -1749,6 +1780,48 @@ function lessonSupplement(lessonId){
   return "";
 }
 
+const DINGTALK_FORM_URL = "https://alidocs.dingtalk.com/notable/share/form/v01LbnjLyr0bBKByOaN_9fg2cDW_OgZ3HpC?source=link";
+
+function showCheckinModal(lesson){
+  const user = salesUsers.find(u => u.account === currentAccount) || { name: currentAccount, account: currentAccount };
+  const now = new Date();
+  const timeStr = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')} ${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}`;
+  const progressStr = `${completed.size} / 12`;
+  const statusStr = completed.size >= 11 ? "全部已学完" : "学习中";
+  const lessonTitle = `第 ${pad(lesson.id)} 课 ${lesson.title}`;
+
+  let modal = document.querySelector("#checkinModal");
+  if(!modal){
+    modal = document.createElement("div");
+    modal.id = "checkinModal";
+    modal.className = "checkin-modal";
+    document.body.appendChild(modal);
+  }
+  modal.innerHTML = `
+    <div class="checkin-card">
+      <div class="checkin-head">
+        <h3>🎉 恭喜完成本课！打卡数据已生成</h3>
+        <button type="button" aria-label="关闭" onclick="document.querySelector('#checkinModal').classList.remove('active')">✕</button>
+      </div>
+      <div class="checkin-body">
+        <div class="checkin-item"><span>业务员姓名：</span><strong>${user.name}</strong></div>
+        <div class="checkin-item"><span>国际站子账号：</span><strong>${user.account}</strong></div>
+        <div class="checkin-item"><span>完成课时：</span><strong>${lessonTitle}</strong></div>
+        <div class="checkin-item"><span>打卡时间：</span><span>${timeStr}</span></div>
+        <div class="checkin-item"><span>当前进度：</span><strong style="color:var(--teal,#258b86);">${progressStr}</strong></div>
+        <div class="checkin-item"><span>学习状态：</span><span>${statusStr}</span></div>
+        <p style="margin:14px 0 0;font-size:0.82rem;color:#64748b;line-height:1.4;">打卡信息已同步复制，点击下方按钮直达钉钉表格一键上报！</p>
+      </div>
+      <div class="checkin-foot">
+        <button type="button" class="btn-close" onclick="document.querySelector('#checkinModal').classList.remove('active')">关闭</button>
+        <a href="${DINGTALK_FORM_URL}" target="_blank" rel="noopener" class="btn-dingtalk">直达钉钉进度表 ↗</a>
+      </div>
+    </div>
+  `;
+  modal.classList.add("active");
+  modal.onclick = (e) => { if(e.target === modal) modal.classList.remove("active"); };
+}
+
 function lessonPage(lesson){
   crumbs.textContent=`第 ${pad(lesson.id)} 课 / ${lesson.title}`;
   const rows=lesson.decisions.map(r=>`<tr>${r.map(c=>`<td>${c}</td>`).join("")}</tr>`).join("");
@@ -1767,7 +1840,17 @@ function lessonPage(lesson){
      </article><aside class="lesson-aside">
        <div class="aside-card"><h3>学习状态</h3><button class="complete-button ${completed.has(lesson.id)?"done":""}" data-complete>${completed.has(lesson.id)?"✓ 已完成":"标记为已完成"}</button></div>
      </aside></div>`;
-  app.querySelector("[data-complete]").onclick=()=>{completed.has(lesson.id)?completed.delete(lesson.id):completed.add(lesson.id);saveProgress();lessonPage(lesson);};
+  app.querySelector("[data-complete]").onclick=()=>{
+    const wasDone = completed.has(lesson.id);
+    if(wasDone){
+      completed.delete(lesson.id);
+    } else {
+      completed.add(lesson.id);
+      showCheckinModal(lesson);
+    }
+    saveProgress();
+    lessonPage(lesson);
+  };
   const copyPrompt=app.querySelector("[data-copy-prompt]");
   if(copyPrompt){
     copyPrompt.onclick=async()=>{
