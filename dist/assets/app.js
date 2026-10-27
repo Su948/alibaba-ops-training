@@ -1589,14 +1589,11 @@ const tracks = {
 };
 
 const salesUsers = [
-  { account: "Eric", name: "桑小川" },
-  { account: "Jasper", name: "李伟鸿" },
-  { account: "Liu Jing", name: "刘静" },
-  { account: "Huang Xiuju", name: "黄秀菊" },
-  { account: "Yang Guiping", name: "杨桂萍" },
-  { account: "Yang Meiqing", name: "杨美清" }
+  { account: "杨艳琼", name: "杨艳琼", title: "运营助理" },
+  { account: "孙利君", name: "孙利君", title: "运营助理" },
+  { account: "王舒奇", name: "王舒奇", title: "运营助理" }
 ];
-let currentAccount = localStorage.getItem("jamooz_current_user") || "Eric";
+let currentAccount = localStorage.getItem("jamooz_current_user") || "杨艳琼";
 function getProgressKey(acc){ return `jamooz-progress-${acc}`; }
 let completed = new Set(JSON.parse(localStorage.getItem(getProgressKey(currentAccount)) || "[]"));
 let selectedTrack = "all";
@@ -1804,8 +1801,8 @@ function showCheckinModal(lesson){
         <button type="button" aria-label="关闭" onclick="document.querySelector('#checkinModal').classList.remove('active')">✕</button>
       </div>
       <div class="checkin-body">
-        <div class="checkin-item"><span>业务员姓名：</span><strong>${user.name}</strong></div>
-        <div class="checkin-item"><span>国际站子账号：</span><strong>${user.account}</strong></div>
+        <div class="checkin-item"><span>运营姓名：</span><strong>${user.name}</strong></div>
+        <div class="checkin-item"><span>岗位职能：</span><strong>${user.title || "运营助理"}</strong></div>
         <div class="checkin-item"><span>完成课时：</span><strong>${lessonTitle}</strong></div>
         <div class="checkin-item"><span>打卡时间：</span><span>${timeStr}</span></div>
         <div class="checkin-item"><span>当前进度：</span><strong style="color:var(--teal,#258b86);">${progressStr}</strong></div>
