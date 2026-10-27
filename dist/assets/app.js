@@ -1963,37 +1963,41 @@ if(!location.hash) location.hash="home"; else route();
   const grid = modal.querySelector(".welcome-user-grid");
 
   // 尝试钉钉静默免登：如果是钉钉内置环境打开，自动换取真实姓名并直接绑定
-  if(window.dd && dd.runtime && dd.runtime.permission){
-    try {
-      dd.runtime.permission.requestAuthCode({
-        corpId: "ding0c50faf1571a82cbffe93478753d9884",
-        onSuccess: function(info){
-          if(info && info.code){
-            fetch(`/api/user?code=${encodeURIComponent(info.code)}`)
-              .then(r => r.json())
-              .then(data => {
-                if(data && data.success && data.name){
-                  console.log("DingTalk Silent Auth Success:", data.name);
-                  // 自动匹配或者录入学员
-                  currentAccount = data.name;
-                  localStorage.setItem("jamooz_current_user", currentAccount);
-                  completed = new Set(JSON.parse(localStorage.getItem(getProgressKey(currentAccount)) || "[]"));
-                  updateProgress();
-                  renderNav();
-                  route();
-                  modal.classList.remove("active");
-                }
-              }).catch(e => console.warn("DingTalk userinfo error:", e));
+  function tryDingTalkAuth(){
+    if(window.dd && dd.runtime && dd.runtime.permission){
+      const runAuth = () => {
+        dd.runtime.permission.requestAuthCode({
+          corpId: "ding0c50faf1571a82cbffe93478753d9884",
+          onSuccess: function(info){
+            if(info && info.code){
+              fetch(`/api/user?code=${encodeURIComponent(info.code)}`)
+                .then(r => r.json())
+                .then(data => {
+                  if(data && data.success && data.name){
+                    currentAccount = data.name;
+                    localStorage.setItem("jamooz_current_user", currentAccount);
+                    completed = new Set(JSON.parse(localStorage.getItem(getProgressKey(currentAccount)) || "[]"));
+                    updateProgress();
+                    renderNav();
+                    route();
+                    modal.classList.remove("active");
+                  }
+                }).catch(e => console.warn("DingTalk userinfo error:", e));
+            }
+          },
+          onFail: function(err){
+            console.warn("DingTalk requestAuthCode failed:", err);
           }
-        },
-        onFail: function(err){
-          console.warn("DingTalk requestAuthCode failed:", err);
-        }
-      });
-    } catch(e) {
-      console.warn("dd.runtime exception:", e);
+        });
+      };
+      if(dd.ready) dd.ready(runAuth);
+      else runAuth();
     }
   }
+
+  // 延迟检测并执行，确保钉钉 JSAPI 注入完成
+  setTimeout(tryDingTalkAuth, 50);
+  window.addEventListener("load", tryDingTalkAuth);
 
   grid.querySelectorAll(".welcome-user-btn").forEach(btn=>{
     btn.onclick = () => {
