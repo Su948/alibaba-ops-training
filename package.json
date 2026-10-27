@@ -1,0 +1,9 @@
+{
+  "name": "alibaba-ops-training",
+  "version": "1.0.0",
+  "description": "外贸经营学习中心（钉钉内训免登与静默打卡系统）",
+  "scripts": {
+    "start": "node api/index.js"
+  },
+  "dependencies": {}
+}
