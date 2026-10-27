@@ -101,6 +101,7 @@ module.exports = async (req, res) => {
           success: true,
           name: userRes.result.name,
           userid: userRes.result.userid,
+          unionid: userRes.result.unionid,
           avatar: userRes.result.avatar
         });
       }
@@ -110,19 +111,21 @@ module.exports = async (req, res) => {
     // 2. 静默打卡写入 AI 表格: /api/checkin (POST)
     if (path === 'checkin' || path === 'dingtalk-checkin') {
       const { operatorId, name, lessonTitle, progress, status, time } = req.body || {};
-      // 写入 Notable 记录
+      const targetSheetId = '9fg2cDW'; // 学员进度监控 表格ID
+      const opId = operatorId || 'Bzhd3tcSE5xIBuwNba6CIQiEiE'; // 默认保底操作人：苏菲菲的 unionid
+
       const appendRes = await postJson(
-        `https://api.dingtalk.com/v1.0/notable/bases/${BASE_ID}/sheets/Sheet1/records?operatorId=${encodeURIComponent(operatorId || 'system')}`,
+        `https://api.dingtalk.com/v1.0/notable/bases/${BASE_ID}/sheets/${targetSheetId}/records?operatorId=${encodeURIComponent(opId)}`,
         {
           records: [
             {
               fields: {
-                "打卡时间": time || new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' }),
                 "运营姓名": name,
-                "岗位职能": "运营助理",
+                "打卡时间": time || new Date().toLocaleString('zh-CN', { timeZone: 'Asia/Shanghai' }),
                 "完成课时": lessonTitle,
                 "当前进度": progress,
-                "学习状态": status || "已完成"
+                "国际站子账号": name,
+                "学习状态": status || "学习中"
               }
             }
           ]
