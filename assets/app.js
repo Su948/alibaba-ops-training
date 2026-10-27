@@ -1591,7 +1591,8 @@ const tracks = {
 const salesUsers = [
   { account: "杨艳琼", name: "杨艳琼", title: "运营助理" },
   { account: "孙利君", name: "孙利君", title: "运营助理" },
-  { account: "王舒奇", name: "王舒奇", title: "运营助理" }
+  { account: "王舒奇", name: "王舒奇", title: "运营助理" },
+  { account: "苏菲菲", name: "苏菲菲", title: "运营助理" }
 ];
 let currentAccount = localStorage.getItem("jamooz_current_user") || "杨艳琼";
 function getProgressKey(acc){ return `jamooz-progress-${acc}`; }
