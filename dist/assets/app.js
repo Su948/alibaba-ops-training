@@ -1811,8 +1811,7 @@ function showCheckinModal(lesson){
         <p style="margin:14px 0 0;font-size:0.82rem;color:#64748b;line-height:1.4;">系统已全自动将学习进度写入公司钉钉 AI 进度表，无需手动上报。</p>
       </div>
       <div class="checkin-foot">
-        <button type="button" class="btn-close" onclick="document.querySelector('#checkinModal').classList.remove('active')">完成</button>
-        <a href="${DINGTALK_FORM_URL}" target="_blank" rel="noopener" class="btn-dingtalk" style="background:#64748b;border-color:#64748b;">查看进度表 ↗</a>
+        <button type="button" class="btn-close" style="flex:1;background:var(--teal,#258b86);color:#fff;border-color:var(--teal,#258b86);padding:10px;" onclick="document.querySelector('#checkinModal').classList.remove('active')">完成打卡</button>
       </div>
     </div>
   `;
