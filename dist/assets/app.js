@@ -1934,7 +1934,7 @@ if(!location.hash) location.hash="home"; else route();
         <p>国际站日常运营与广告操盘实训系统</p>
       </div>
       <div class="welcome-body">
-        <div class="welcome-prompt">请选择您的真实姓名进行身份绑定（首次进入确认）：</div>
+        <div class="welcome-prompt" id="welcomePromptText">请选择您的真实姓名进行身份绑定（首次进入确认）：</div>
         <div class="welcome-user-grid">
           ${salesUsers.map(u=>`
             <button class="welcome-user-btn" data-account="${u.account}" data-name="${u.name}">
@@ -1959,7 +1959,41 @@ if(!location.hash) location.hash="home"; else route();
   let pendingAccount = null;
   const confirmBox = modal.querySelector("#welcomeConfirmBox");
   const confirmText = modal.querySelector("#welcomeConfirmText");
+  const promptText = modal.querySelector("#welcomePromptText");
   const grid = modal.querySelector(".welcome-user-grid");
+
+  // 尝试钉钉静默免登：如果是钉钉内置环境打开，自动换取真实姓名并直接绑定
+  if(window.dd && dd.runtime && dd.runtime.permission){
+    try {
+      dd.runtime.permission.requestAuthCode({
+        corpId: "ding0c50faf1571a82cbffe93478753d9884",
+        onSuccess: function(info){
+          if(info && info.code){
+            fetch(`/api/user?code=${encodeURIComponent(info.code)}`)
+              .then(r => r.json())
+              .then(data => {
+                if(data && data.success && data.name){
+                  console.log("DingTalk Silent Auth Success:", data.name);
+                  // 自动匹配或者录入学员
+                  currentAccount = data.name;
+                  localStorage.setItem("jamooz_current_user", currentAccount);
+                  completed = new Set(JSON.parse(localStorage.getItem(getProgressKey(currentAccount)) || "[]"));
+                  updateProgress();
+                  renderNav();
+                  route();
+                  modal.classList.remove("active");
+                }
+              }).catch(e => console.warn("DingTalk userinfo error:", e));
+          }
+        },
+        onFail: function(err){
+          console.warn("DingTalk requestAuthCode failed:", err);
+        }
+      });
+    } catch(e) {
+      console.warn("dd.runtime exception:", e);
+    }
+  }
 
   grid.querySelectorAll(".welcome-user-btn").forEach(btn=>{
     btn.onclick = () => {
