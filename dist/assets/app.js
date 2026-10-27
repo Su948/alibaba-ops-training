@@ -1894,6 +1894,77 @@ document.querySelector(".mobile-close").onclick=()=>document.body.classList.remo
 window.addEventListener("hashchange",route);
 if(!location.hash) location.hash="home"; else route();
 
+// 首次进入强防呆绑定弹窗与钉钉环境检测
+(function initUserBinding(){
+  const boundUser = localStorage.getItem("jamooz_current_user");
+  const modal = document.createElement("div");
+  modal.className = "welcome-modal-overlay" + (boundUser ? "" : " active");
+  modal.innerHTML = `
+    <div class="welcome-modal" role="dialog" aria-modal="true">
+      <div class="welcome-header">
+        <h3>🎓 外贸经营学习中心</h3>
+        <p>国际站日常运营与广告操盘实训系统</p>
+      </div>
+      <div class="welcome-body">
+        <div class="welcome-prompt">请选择您的真实姓名进行身份绑定（首次进入确认）：</div>
+        <div class="welcome-user-grid">
+          ${salesUsers.map(u=>`
+            <button class="welcome-user-btn" data-account="${u.account}" data-name="${u.name}">
+              <span class="btn-avatar">👤</span>
+              <span class="btn-name">${u.name}</span>
+              <span class="btn-title">${u.title}</span>
+            </button>
+          `).join("")}
+        </div>
+        <div class="welcome-confirm-box" id="welcomeConfirmBox">
+          <p id="welcomeConfirmText">请确认：您是【杨艳琼】本人吗？</p>
+          <div class="welcome-confirm-actions">
+            <button class="btn-reselect" id="btnReselect">点错了，重新选</button>
+            <button class="btn-bind-ok" id="btnBindOk">确认是我，进入学习</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  `;
+  document.body.appendChild(modal);
+
+  let pendingAccount = null;
+  const confirmBox = modal.querySelector("#welcomeConfirmBox");
+  const confirmText = modal.querySelector("#welcomeConfirmText");
+  const grid = modal.querySelector(".welcome-user-grid");
+
+  grid.querySelectorAll(".welcome-user-btn").forEach(btn=>{
+    btn.onclick = () => {
+      pendingAccount = btn.dataset.account;
+      confirmText.textContent = `请确认：您是【${btn.dataset.name}】本人吗？`;
+      confirmBox.classList.add("show");
+    };
+  });
+
+  modal.querySelector("#btnReselect").onclick = () => {
+    pendingAccount = null;
+    confirmBox.classList.remove("show");
+  };
+
+  modal.querySelector("#btnBindOk").onclick = () => {
+    if(!pendingAccount) return;
+    currentAccount = pendingAccount;
+    localStorage.setItem("jamooz_current_user", currentAccount);
+    completed = new Set(JSON.parse(localStorage.getItem(getProgressKey(currentAccount)) || "[]"));
+    updateProgress();
+    renderNav();
+    route();
+    modal.classList.remove("active");
+  };
+
+  // 暴露全局唤起重新绑定接口
+  window.rebindUser = function(){
+    confirmBox.classList.remove("show");
+    pendingAccount = null;
+    modal.classList.add("active");
+  };
+})();
+
 // 全屏图片灯箱 (Lightbox) 交互：支持点击任意截图全屏放大查看，ESC/点击关闭
 (function initLightbox(){
   const box = document.createElement("div");
