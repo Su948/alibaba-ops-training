@@ -98,6 +98,47 @@ a { color: inherit; }
 .search-box:focus-within { outline: 2px solid rgba(37,139,134,.2); border-color: var(--teal); }
 .search-box input { width: 100%; border: 0; outline: 0; color: var(--ink); background: transparent; }
 
+/* 双轨系统切换导航条 (Track Tab Switcher) */
+.system-tabs {
+  display: inline-flex;
+  background: rgba(16, 43, 67, 0.08);
+  padding: 4px;
+  border-radius: 8px;
+  gap: 4px;
+}
+.system-tab-btn {
+  border: 0;
+  background: transparent;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 0.85rem;
+  font-weight: 700;
+  color: var(--navy);
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+.system-tab-btn:hover {
+  background: rgba(255, 255, 255, 0.6);
+}
+.system-tab-btn.active {
+  background: var(--navy);
+  color: #ffffff;
+  box-shadow: 0 2px 6px rgba(11, 31, 51, 0.2);
+}
+.system-tab-btn .tab-badge {
+  font-size: 0.72rem;
+  padding: 1px 6px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.2);
+}
+.system-tab-btn.active .tab-badge {
+  background: var(--gold);
+  color: var(--navy);
+}
+
 /* 业务员子账号切换器 */
 .user-picker-wrap {
   display: flex;

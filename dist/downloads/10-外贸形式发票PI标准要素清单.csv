@@ -1,0 +1,12 @@
+类别,核心要素,标准英文条款示范,防漏洞与避坑指引,是否必填
+单据抬头,公司中英文全称与地址,Jamooz (Xiamen) Technology Co. Ltd. / Unit 502 No. 88 Huli Ave Xiamen China,必须与公司营业执照及美金收款对公账户名称完全保持一致,是
+单据标识,PI编号与日期,PI No.: JMZ-20261028-01 / Date: Oct 28 2026,唯一编号格式，便于业务、财务与客户多方归档对账,是
+报价效期,有效时间窗口,Validity: Valid until Nov 28 2026 (30 Days),必须注明！避免半年后原料或海运费暴涨客户强行按旧价下单,是
+买方信息,客户全名/公司/地址/邮箱,Bill to: ABC Wellness Inc / Contact: Mr. David Miller / Tel: +1-...,收货地址必须详细至门牌号与邮编，用于核算真实运费,是
+商品明细,型号/描述/图文/单价,Model JMZ-N08 Neck Massager with Heat / 1000 pcs @ $12.50 / Total $12500,必须附产品缩略图与电压规格(如110V US Plug)，防产线做错,是
+包装物流,外箱尺寸/毛重/总体积,Carton: 52*38*42cm / 20 pcs per CTN / Total 50 CTNs / 4.15 CBM / GW: 620kg,用于客户计算关税清关费及拼箱/整柜装箱率,是
+贸易术语,交货方式及港口,Trade Terms: FOB Xiamen Port China (Incoterms 2020),明确港口名称；若是CIF必须注明运费以订舱周实际费率为准,是
+付款方式,定金比例与尾款节点,Payment: 30% T/T deposit in advance 70% balance before shipment,老客户可谈提单副本见票即付；新客坚决执行款清发货,是
+交期说明,生产交期与起算节点,Lead Time: 25-30 days upon receipt of 30% deposit and artwork confirmation,严防死守：交期必须自“收到定金且设计定稿”之日起算,是
+银行信息,受益人/开户行/Swift/账号,Beneficiary: ... / Bank Name: ... / Swift: ... / Account No.: ...,正规对公账户，拼写必须100%无误，避免境外退汇扣费,是
+防黑客声明,反欺诈法律声明,Notice: Our bank account will NEVER change via email. Verify via phone before wire.,生命线条款！粗体标红展示，免除邮件被黑篡改账号的法律责任,是

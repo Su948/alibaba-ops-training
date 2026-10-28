@@ -35,6 +35,10 @@
           <span aria-hidden="true">⌕</span>
           <input id="searchInput" type="search" placeholder="搜索课程或步骤" aria-label="搜索课程">
         </label>
+        <div class="system-tabs" id="systemTabs" aria-label="课程体系切换">
+          <button class="system-tab-btn active" data-sys="ops">🎯 运营体系 <span class="tab-badge">12课</span></button>
+          <button class="system-tab-btn" data-sys="sales">💼 业务实战 <span class="tab-badge">6课</span></button>
+        </div>
         <div class="user-picker-wrap">
           <span class="user-avatar" aria-hidden="true">👤</span>
           <div class="user-info">
@@ -51,6 +55,7 @@
       <div id="app" tabindex="-1"></div>
     </main>
   </div>
+  <script src="assets/biz-lessons.js"></script>
   <script src="assets/app.js"></script>
 </body>
 </html>

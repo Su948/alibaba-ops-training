@@ -1540,7 +1540,10 @@ const libraries = {
       ["月度运营复盘", "目标、结果、漏斗、国家、产品、行动和复查指标。", "downloads/05-月度运营复盘.csv", "CSV 模板"],
       ["业务新人培训计划", "按四周组织产品、询盘、背调、报价、跟进和信保训练。", "downloads/06-业务新人培训计划.csv", "CSV 模板"],
       ["产品国家矩阵", "按产品和国家的组合打分，排出核心、验证、暂缓三类市场。", "downloads/07-产品国家矩阵.csv", "CSV 模板"],
-      ["访客来源词台账", "把访客明细按词和国家汇总，标出有商机词与处理动作。", "downloads/08-访客来源词台账.csv", "CSV 模板"]
+      ["访客来源词台账", "把访客明细按词和国家汇总，标出有商机词与处理动作。", "downloads/08-访客来源词台账.csv", "CSV 模板"],
+      ["RFQ高转化报价策略表", "包含五大行业高回复率RFQ报价实战案例与切入角度。", "downloads/09-RFQ高转化报价策略表.csv", "业务模板"],
+      ["外贸形式发票PI标准要素清单", "防漏洞防钓鱼的10大核心要素与法律声明对照表。", "downloads/10-外贸形式发票PI标准要素清单.csv", "单证模板"],
+      ["业务员样品跟进闭环台账", "第0/3/7天样品追踪看板与客户反馈转化台账。", "downloads/11-业务员样品跟进闭环台账.csv", "业务模板"]
     ]
   },
   tools: {
@@ -1588,14 +1591,38 @@ const tracks = {
   manager: {label:"主管 / 老板", ids:[1,2,10,12]}
 };
 
+let activeSystem = localStorage.getItem("jamooz_active_system") || "ops"; // "ops" | "sales"
+
 const salesUsers = [
-  { account: "杨艳琼", name: "杨艳琼", title: "运营助理" },
-  { account: "孙利君", name: "孙利君", title: "运营助理" },
-  { account: "王舒奇", name: "王舒奇", title: "运营助理" },
-  { account: "苏菲菲", name: "苏菲菲", title: "运营助理" }
+  { account: "杨艳琼", name: "杨艳琼", title: "运营助理", role: "ops" },
+  { account: "孙利君", name: "孙利君", title: "运营助理", role: "ops" },
+  { account: "王舒奇", name: "王舒奇", title: "运营助理", role: "ops" },
+  { account: "苏菲菲", name: "苏菲菲", title: "运营助理", role: "ops" },
+  { account: "刘静", name: "刘静", title: "外贸业务员", role: "sales" },
+  { account: "黄秀菊", name: "黄秀菊", title: "外贸业务员", role: "sales" },
+  { account: "杨桂萍", name: "杨桂萍", title: "外贸业务员", role: "sales" },
+  { account: "杨美清", name: "杨美清", title: "外贸业务员", role: "sales" },
+  { account: "桑小川", name: "桑小川 (Eric)", title: "外贸业务员", role: "sales" },
+  { account: "李伟鸿", name: "李伟鸿 (Jasper)", title: "外贸业务员", role: "sales" }
 ];
 let currentAccount = localStorage.getItem("jamooz_current_user") || "杨艳琼";
-function getProgressKey(acc){ return `jamooz-progress-${acc}`; }
+
+// 如果当前账号是业务员且没有手动指定过体系，默认进入 sales
+const initUserObj = salesUsers.find(u => u.account === currentAccount);
+if(initUserObj && initUserObj.role === "sales" && !localStorage.getItem("jamooz_active_system")){
+  activeSystem = "sales";
+}
+
+function getCurrentLessons(){
+  return activeSystem === "sales" && typeof bizLessons !== "undefined" ? bizLessons : lessons;
+}
+function getTotalLessonsCount(){
+  return getCurrentLessons().length;
+}
+
+function getProgressKey(acc, sys = activeSystem){ 
+  return `jamooz-progress-${sys}-${acc}`; 
+}
 let completed = new Set(JSON.parse(localStorage.getItem(getProgressKey(currentAccount)) || "[]"));
 let selectedTrack = "all";
 const app = document.querySelector("#app");
@@ -1609,20 +1636,60 @@ function saveProgress(){
   renderNav();
 }
 function updateProgress(){
-  const user = salesUsers.find(u => u.account === currentAccount) || { name: currentAccount, account: currentAccount };
-  document.querySelector("#sideProgress").textContent = `${completed.size} / 12`;
-  document.querySelector("#sideProgressBar").style.width = `${completed.size/12*100}%`;
+  const total = getTotalLessonsCount();
+  document.querySelector("#sideProgress").textContent = `${completed.size} / ${total}`;
+  document.querySelector("#sideProgressBar").style.width = `${total > 0 ? (completed.size / total * 100) : 0}%`;
+  
+  // 更新顶部 Tab 高亮
+  document.querySelectorAll(".system-tab-btn").forEach(btn => {
+    btn.classList.toggle("active", btn.dataset.sys === activeSystem);
+  });
+  
+  // 更新品牌 Logo 标题
+  const brandSub = document.querySelector(".brand div strong");
+  if(brandSub){
+    brandSub.textContent = activeSystem === "sales" ? "外贸业务实战" : "国际站运营";
+  }
+
+  // 更新用户选择下拉框
   const userSelect = document.querySelector("#userSelect");
-  if(userSelect && userSelect.value !== currentAccount) userSelect.value = currentAccount;
+  if(userSelect){
+    userSelect.innerHTML = salesUsers.map(u => 
+      `<option value="${u.account}" data-role="${u.role}" ${u.account===currentAccount?'selected':''}>${u.name} (${u.title})</option>`
+    ).join("");
+  }
 }
+
+// 绑定体系切换按钮事件
+document.querySelectorAll(".system-tab-btn").forEach(btn => {
+  btn.onclick = () => {
+    const sys = btn.dataset.sys;
+    if(sys === activeSystem) return;
+    activeSystem = sys;
+    localStorage.setItem("jamooz_active_system", activeSystem);
+    completed = new Set(JSON.parse(localStorage.getItem(getProgressKey(currentAccount)) || "[]"));
+    selectedTrack = "all";
+    location.hash = "home";
+    updateProgress();
+    renderNav();
+    route();
+  };
+});
 
 // 监听子账号切换
 const userSelectElem = document.querySelector("#userSelect");
 if(userSelectElem){
-  userSelectElem.value = currentAccount;
   userSelectElem.addEventListener("change", (e)=>{
     currentAccount = e.target.value;
     localStorage.setItem("jamooz_current_user", currentAccount);
+    
+    // 切换用户时，根据该用户的岗位角色智能联动体系
+    const u = salesUsers.find(x => x.account === currentAccount);
+    if(u && u.role && u.role !== activeSystem){
+      activeSystem = u.role;
+      localStorage.setItem("jamooz_active_system", activeSystem);
+    }
+    
     completed = new Set(JSON.parse(localStorage.getItem(getProgressKey(currentAccount)) || "[]"));
     updateProgress();
     renderNav();
@@ -1630,7 +1697,9 @@ if(userSelectElem){
   });
 }
 function renderNav(){
-  nav.innerHTML = `<button class="nav-link ${location.hash==="#home"||!location.hash?"active":""}" data-home><span class="nav-num">⌂</span><span>课程地图</span></button><div class="nav-group-title">CORE LESSONS</div>` + lessons.map(l=>`<button class="nav-link ${location.hash===`#lesson-${l.id}`?"active":""}" data-id="${l.id}"><span class="nav-num">${pad(l.id)}</span><span>${l.title}</span><span class="nav-check">${completed.has(l.id)?"✓":""}</span></button>`).join("") + `<div class="nav-group-title">RESOURCE LIBRARY</div>${Object.entries(libraries).map(([key,lib])=>`<button class="nav-link ${location.hash===`#library-${key}`?"active":""}" data-library="${key}"><span class="nav-num">＋</span><span>${lib.title}</span></button>`).join("")}<button class="nav-link ${location.hash==="#source-map"?"active":""}" data-source-map><span class="nav-num">≡</span><span>资料来源</span></button>`;
+  const curLessons = getCurrentLessons();
+  const subTitle = activeSystem === "sales" ? "SALES BIZ LESSONS" : "CORE LESSONS";
+  nav.innerHTML = `<button class="nav-link ${location.hash==="#home"||!location.hash?"active":""}" data-home><span class="nav-num">⌂</span><span>课程地图</span></button><div class="nav-group-title">${subTitle}</div>` + curLessons.map(l=>`<button class="nav-link ${location.hash===`#lesson-${l.id}`?"active":""}" data-id="${l.id}"><span class="nav-num">${pad(l.id)}</span><span>${l.title}</span><span class="nav-check">${completed.has(l.id)?"✓":""}</span></button>`).join("") + `<div class="nav-group-title">RESOURCE LIBRARY</div>${Object.entries(libraries).map(([key,lib])=>`<button class="nav-link ${location.hash===`#library-${key}`?"active":""}" data-library="${key}"><span class="nav-num">＋</span><span>${lib.title}</span></button>`).join("")}<button class="nav-link ${location.hash==="#source-map"?"active":""}" data-source-map><span class="nav-num">≡</span><span>资料来源</span></button>`;
   nav.querySelector("[data-home]").onclick=()=>{location.hash="home";};
   nav.querySelectorAll("[data-id]").forEach(b=>b.onclick=()=>{location.hash=`lesson-${b.dataset.id}`;});
   nav.querySelectorAll("[data-library]").forEach(b=>b.onclick=()=>{location.hash=`library-${b.dataset.library}`;});
@@ -1639,19 +1708,37 @@ function renderNav(){
 
 function dashboard(){
   crumbs.textContent="课程地图";
-  const query=document.querySelector("#searchInput").value.trim().toLowerCase();
-  const visible=lessons.filter(l=>tracks[selectedTrack].ids.includes(l.id)&&(`${l.title}${l.summary}${l.stage}${l.outcomes.join("")}${l.steps.flat().join("")}`).toLowerCase().includes(query));
+  const curLessons = getCurrentLessons();
+  const total = curLessons.length;
+  const query = document.querySelector("#searchInput").value.trim().toLowerCase();
+  
+  let visible = curLessons;
+  if(activeSystem === "ops" && tracks[selectedTrack]){
+    visible = visible.filter(l => tracks[selectedTrack].ids.includes(l.id));
+  }
+  if(query){
+    visible = visible.filter(l => (`${l.title}${l.summary}${l.stage}${l.outcomes.join("")}${l.steps.flat().join("")}`).toLowerCase().includes(query));
+  }
+
+  const isSales = activeSystem === "sales";
+  const headEyebrow = isSales ? "Global Trade B2B Sales" : "Alibaba.com Operations";
+  const headH1 = isSales ? "从商机线索到履约成交，<br>外贸业务员全流程实战。" : "把流量变成订单，<br>从一张清晰的课程地图开始。";
+  const headLede = isSales ? "6 个核心实战关卡，覆盖 RFQ 抢单、询盘转化、样品推进、PI 制作、信保/e收汇订单起草与老客二次营销。" : "12 个实战章节，覆盖产品定位、链接建设、推广、诊断与业务转化。核心内容可直接阅读，原始会员资料仅作为延伸。";
+
   app.innerHTML=`
-    <section class="dashboard-head"><p class="eyebrow">Alibaba.com Operations</p><h1>把流量变成订单，<br>从一张清晰的课程地图开始。</h1><p class="lede">12 个实战章节，覆盖产品定位、链接建设、推广、诊断与业务转化。核心内容可直接阅读，原始会员资料仅作为延伸。</p></section>
+    <section class="dashboard-head"><p class="eyebrow">${headEyebrow}</p><h1>${headH1}</h1><p class="lede">${headLede}</p></section>
     <section class="summary-grid" aria-label="学习概览">
-      <div class="summary-card accent"><span>当前进度</span><strong>${completed.size}<small> / 12</small></strong><p>${completed.size?"继续完成下一课，把方法落实到店铺。":"从第 01 课开始建立统一运营框架。"}</p></div>
-      <div class="summary-card"><span>核心课程</span><strong>12</strong><p>按完整运营闭环重新编排</p></div>
-      <div class="summary-card"><span>学习方式</span><strong>4</strong><p>按岗位选择路径</p></div>
+      <div class="summary-card accent"><span>当前进度</span><strong>${completed.size}<small> / ${total}</small></strong><p>${completed.size?"继续完成下一课，把方法落实到日常跟进。":"从第 01 课开始建立统一业务规范。"}</p></div>
+      <div class="summary-card"><span>核心课程</span><strong>${total}</strong><p>${isSales?"六阶业务通关流":"按完整运营闭环重新编排"}</p></div>
+      <div class="summary-card"><span>实操板块</span><strong>${isSales?"6 关卡":"4 路径"}</strong><p>${isSales?"覆盖拓客/转化/单证/履约":"按岗位选择学习路径"}</p></div>
     </section>
-    <section class="path-strip"><p class="eyebrow">选择学习路径</p><div class="path-buttons">${Object.entries(tracks).map(([k,v])=>`<button class="path-button ${selectedTrack===k?"active":""}" data-track="${k}">${v.label}</button>`).join("")}</div></section>
+    ${!isSales ? `<section class="path-strip"><p class="eyebrow">选择学习路径</p><div class="path-buttons">${Object.entries(tracks).map(([k,v])=>`<button class="path-button ${selectedTrack===k?"active":""}" data-track="${k}">${v.label}</button>`).join("")}</div></section>` : ""}
     <section><h2>${query?`搜索结果 · ${visible.length}`:"课程章节"}</h2>${visible.length?`<div class="course-grid">${visible.map(l=>`<article class="course-card" data-stage="${l.stage}"><div class="meta"><span>LESSON ${pad(l.id)}</span><span>${l.stage}</span></div><h3>${l.title}</h3><p>${l.summary}</p><button class="card-action" data-open="${l.id}">${completed.has(l.id)?"重新学习":"开始学习"} →</button></article>`).join("")}</div>`:`<div class="empty"><h3>没有找到相关课程</h3><p>换一个关键词试试。</p></div>`}</section>
     <section class="library-strip"><div><p class="eyebrow">RESOURCE LIBRARY</p><h2>案例、模板与工具</h2><p>主课程负责教方法，资料库负责随用随查。</p></div><div class="library-buttons">${Object.entries(libraries).map(([key,lib])=>`<button data-library-open="${key}"><strong>${lib.title}</strong><span>${lib.items.length} 项资源</span></button>`).join("")}</div></section>`;
-  app.querySelectorAll("[data-track]").forEach(b=>b.onclick=()=>{selectedTrack=b.dataset.track;dashboard();});
+  
+  if(!isSales){
+    app.querySelectorAll("[data-track]").forEach(b=>b.onclick=()=>{selectedTrack=b.dataset.track;dashboard();});
+  }
   app.querySelectorAll("[data-open]").forEach(b=>b.onclick=()=>{location.hash=`lesson-${b.dataset.open}`;});
   app.querySelectorAll("[data-library-open]").forEach(b=>b.onclick=()=>{location.hash=`library-${b.dataset.libraryOpen}`;});
 }
@@ -1781,12 +1868,14 @@ function lessonSupplement(lessonId){
 const DINGTALK_FORM_URL = "https://alidocs.dingtalk.com/notable/share/form/v01LbnjLyr0bBKByOaN_9fg2cDW_OgZ3HpC?source=link";
 
 function showCheckinModal(lesson){
-  const user = salesUsers.find(u => u.account === currentAccount) || { name: currentAccount, account: currentAccount };
+  const user = salesUsers.find(u => u.account === currentAccount) || { name: currentAccount, account: currentAccount, role: activeSystem };
   const now = new Date();
   const timeStr = `${now.getFullYear()}-${String(now.getMonth()+1).padStart(2,'0')}-${String(now.getDate()).padStart(2,'0')} ${String(now.getHours()).padStart(2,'0')}:${String(now.getMinutes()).padStart(2,'0')}`;
-  const progressStr = `${completed.size} / 12`;
-  const statusStr = completed.size >= 11 ? "全部已学完" : "学习中";
-  const lessonTitle = `第 ${pad(lesson.id)} 课 ${lesson.title}`;
+  const total = getTotalLessonsCount();
+  const progressStr = `${completed.size} / ${total}`;
+  const statusStr = completed.size >= (total - 1) ? "全部已学完" : "学习中";
+  const sysPrefix = activeSystem === "sales" ? "【业务实战】" : "【运营体系】";
+  const lessonTitle = `${sysPrefix} 第 ${pad(lesson.id)} 课 ${lesson.title}`;
 
   let modal = document.querySelector("#checkinModal");
   if(!modal){
@@ -1802,8 +1891,8 @@ function showCheckinModal(lesson){
         <button type="button" aria-label="关闭" onclick="document.querySelector('#checkinModal').classList.remove('active')">✕</button>
       </div>
       <div class="checkin-body">
-        <div class="checkin-item"><span>运营姓名：</span><strong>${user.name}</strong></div>
-        <div class="checkin-item"><span>岗位职能：</span><strong>${user.title || "运营助理"}</strong></div>
+        <div class="checkin-item"><span>学员姓名：</span><strong>${user.name}</strong></div>
+        <div class="checkin-item"><span>岗位职能：</span><strong>${user.title || (activeSystem==="sales"?"外贸业务员":"运营助理")}</strong></div>
         <div class="checkin-item"><span>完成课时：</span><strong>${lessonTitle}</strong></div>
         <div class="checkin-item"><span>打卡时间：</span><span>${timeStr}</span></div>
         <div class="checkin-item"><span>当前进度：</span><strong style="color:var(--teal,#258b86);">${progressStr}</strong></div>
@@ -1909,7 +1998,11 @@ function sourceMapPage(){
 function route(){
   const match=location.hash.match(/^#lesson-(\d+)$/);
   const libraryMatch=location.hash.match(/^#library-(\w+)$/);
-  if(match){const lesson=lessons.find(x=>x.id===Number(match[1]));lesson?lessonPage(lesson):dashboard();}
+  const curLessons = getCurrentLessons();
+  if(match){
+    const lesson=curLessons.find(x=>x.id===Number(match[1]));
+    lesson?lessonPage(lesson):dashboard();
+  }
   else if(libraryMatch) libraryPage(libraryMatch[1]);
   else if(location.hash==="#source-map") sourceMapPage();
   else dashboard();
@@ -1975,6 +2068,11 @@ if(!location.hash) location.hash="home"; else route();
                   if(data && data.success && data.name){
                     currentAccount = data.name;
                     localStorage.setItem("jamooz_current_user", currentAccount);
+                    const matchedUser = salesUsers.find(u => u.account === currentAccount);
+                    if(matchedUser && matchedUser.role){
+                      activeSystem = matchedUser.role;
+                      localStorage.setItem("jamooz_active_system", activeSystem);
+                    }
                     completed = new Set(JSON.parse(localStorage.getItem(getProgressKey(currentAccount)) || "[]"));
                     updateProgress();
                     renderNav();
@@ -2015,6 +2113,11 @@ if(!location.hash) location.hash="home"; else route();
     if(!pendingAccount) return;
     currentAccount = pendingAccount;
     localStorage.setItem("jamooz_current_user", currentAccount);
+    const matchedUser = salesUsers.find(u => u.account === currentAccount);
+    if(matchedUser && matchedUser.role){
+      activeSystem = matchedUser.role;
+      localStorage.setItem("jamooz_active_system", activeSystem);
+    }
     completed = new Set(JSON.parse(localStorage.getItem(getProgressKey(currentAccount)) || "[]"));
     updateProgress();
     renderNav();
