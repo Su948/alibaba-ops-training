@@ -2019,9 +2019,9 @@ function lessonPage(lesson){
       <section class="lesson-section"><h2>学完你能做到</h2><ul class="outcomes">${lesson.outcomes.map(x=>`<li>${x}</li>`).join("")}</ul></section>
       <section class="lesson-section"><h2>3 分钟先看懂</h2><div class="quick-read"><strong>核心判断</strong><p>${lesson.quick}</p>${lesson.id===1?`<div class="funnel beginner-flow"><span>被看见</span><span>愿意点</span><span>看懂产品</span><span>愿意咨询</span></div>`:""}</div></section>
       ${lesson.steps.length?`<section class="lesson-section"><h2>实操 SOP</h2><div class="steps">${lesson.steps.map(s=>`<div class="step"><h3>${s[0]}</h3><p>${s[1]}</p>${s[2]||""}</div>`).join("")}</div></section>`:""}
-      ${lessonSupplement(lesson.id)}
+      ${activeSystem==="ops" ? lessonSupplement(lesson.id) : ""}
       ${lesson.decisions.length?`<section class="lesson-section"><h2>${lesson.decisionTitle||"数据表现与判断方法"}</h2><table class="decision-table"><thead><tr><th>${lesson.id===1?"阶段":"表现"}</th><th>${lesson.id===1?"是什么意思":"可能原因"}</th><th>${lesson.id===1?"新人先问什么":"优先动作"}</th></tr></thead><tbody>${rows}</tbody></table></section>`:""}
-      ${lesson.id===1?trafficSourcePrimer():""}
+      ${activeSystem==="ops" && lesson.id===1 ? trafficSourcePrimer() : ""}
       ${lesson.checklist.length?`<section class="lesson-section"><h2>本课检查表</h2><ul class="checklist">${lesson.checklist.map(x=>`<li>${x}</li>`).join("")}</ul></section>`:""}
       <section class="lesson-section"><h2>课后任务</h2><div class="assignment">${lesson.assignment}</div></section>
      </article><aside class="lesson-aside">
