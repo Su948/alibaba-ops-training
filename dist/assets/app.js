@@ -1594,10 +1594,10 @@ const tracks = {
 let activeSystem = localStorage.getItem("jamooz_active_system") || "ops"; // "ops" | "sales"
 
 const salesUsers = [
+  { account: "苏菲菲", name: "苏菲菲", title: "负责人 / 超级管理员", role: "admin" },
   { account: "杨艳琼", name: "杨艳琼", title: "运营助理", role: "ops" },
   { account: "孙利君", name: "孙利君", title: "运营助理", role: "ops" },
   { account: "王舒奇", name: "王舒奇", title: "运营助理", role: "ops" },
-  { account: "苏菲菲", name: "苏菲菲", title: "运营助理", role: "ops" },
   { account: "刘静", name: "刘静", title: "外贸业务员", role: "sales" },
   { account: "黄秀菊", name: "黄秀菊", title: "外贸业务员", role: "sales" },
   { account: "杨桂萍", name: "杨桂萍", title: "外贸业务员", role: "sales" },
@@ -1605,7 +1605,7 @@ const salesUsers = [
   { account: "桑小川", name: "桑小川 (Eric)", title: "外贸业务员", role: "sales" },
   { account: "李伟鸿", name: "李伟鸿 (Jasper)", title: "外贸业务员", role: "sales" }
 ];
-let currentAccount = localStorage.getItem("jamooz_current_user") || "杨艳琼";
+let currentAccount = localStorage.getItem("jamooz_current_user") || "苏菲菲";
 
 // 如果当前账号是业务员且没有手动指定过体系，默认进入 sales
 const initUserObj = salesUsers.find(u => u.account === currentAccount);
@@ -1658,6 +1658,34 @@ function updateProgress(){
       `<option value="${u.account}" data-role="${u.role}" ${u.account===currentAccount?'selected':''}>${u.name} (${u.title})</option>`
     ).join("");
   }
+  // 更新体系 Tab 显隐与选中状态
+  updateSystemTabsUI();
+}
+
+function updateSystemTabsUI(){
+  const currentUserObj = salesUsers.find(u => u.account === currentAccount);
+  const isAdmin = currentUserObj && currentUserObj.role === "admin";
+  const tabsWrap = document.querySelector("#systemTabs");
+  
+  if(tabsWrap){
+    if(!isAdmin && currentUserObj && currentUserObj.role){
+      // 普通员工强制只展示自己岗位的一侧 Tab，隐藏另一侧（彻底杜绝交叉）
+      tabsWrap.querySelectorAll(".system-tab-btn").forEach(btn => {
+        if(btn.dataset.sys !== currentUserObj.role){
+          btn.style.display = "none";
+        } else {
+          btn.style.display = "inline-flex";
+          btn.classList.add("active");
+        }
+      });
+    } else {
+      // 超级管理员 苏菲菲：完整展示双轨 Tab，自由随意切换
+      tabsWrap.querySelectorAll(".system-tab-btn").forEach(btn => {
+        btn.style.display = "inline-flex";
+        btn.classList.toggle("active", btn.dataset.sys === activeSystem);
+      });
+    }
+  }
 }
 
 // 绑定体系切换按钮事件
@@ -1665,6 +1693,15 @@ document.querySelectorAll(".system-tab-btn").forEach(btn => {
   btn.onclick = () => {
     const sys = btn.dataset.sys;
     if(sys === activeSystem) return;
+    
+    // 权限校验拦截
+    const currentUserObj = salesUsers.find(u => u.account === currentAccount);
+    const isAdmin = currentUserObj && currentUserObj.role === "admin";
+    if(!isAdmin && currentUserObj && currentUserObj.role && currentUserObj.role !== sys){
+      alert(`⚠️ 权限提示：您当前岗位是【${currentUserObj.title}】，该板块为【${sys==='ops'?'运营':'业务'}】专属培训。如有需要请联系管理员 苏菲菲。`);
+      return;
+    }
+
     activeSystem = sys;
     localStorage.setItem("jamooz_active_system", activeSystem);
     completed = new Set(JSON.parse(localStorage.getItem(getProgressKey(currentAccount)) || "[]"));
@@ -2027,7 +2064,17 @@ if(!location.hash) location.hash="home"; else route();
       </div>
       <div class="welcome-body">
         <div class="welcome-prompt" id="welcomePromptText">请选择您的真实姓名进行身份绑定（首次进入确认）：</div>
-        <div style="font-size:0.78rem;font-weight:700;color:#64748b;margin:0 0 8px;text-align:left;">运营团队：</div>
+        <div style="font-size:0.78rem;font-weight:700;color:#0b1f33;margin:0 0 8px;text-align:left;">👑 团队负责人 / 管理员：</div>
+        <div class="welcome-user-grid" style="margin-bottom:14px;">
+          ${salesUsers.filter(u=>u.role==='admin').map(u=>`
+            <button class="welcome-user-btn" data-account="${u.account}" data-name="${u.name}" style="border-color:#f4b942;background:#fffdfa;">
+              <span class="btn-avatar">👑</span>
+              <span class="btn-name" style="font-weight:800;color:#0b1f33;">${u.name}</span>
+              <span class="btn-title" style="color:#d97706;font-weight:600;">${u.title}</span>
+            </button>
+          `).join("")}
+        </div>
+        <div style="font-size:0.78rem;font-weight:700;color:#64748b;margin:0 0 8px;text-align:left;">🎯 运营团队：</div>
         <div class="welcome-user-grid" style="margin-bottom:14px;">
           ${salesUsers.filter(u=>u.role==='ops').map(u=>`
             <button class="welcome-user-btn" data-account="${u.account}" data-name="${u.name}">
@@ -2037,7 +2084,7 @@ if(!location.hash) location.hash="home"; else route();
             </button>
           `).join("")}
         </div>
-        <div style="font-size:0.78rem;font-weight:700;color:#64748b;margin:0 0 8px;text-align:left;">外贸业务团队：</div>
+        <div style="font-size:0.78rem;font-weight:700;color:#64748b;margin:0 0 8px;text-align:left;">💼 外贸业务团队：</div>
         <div class="welcome-user-grid">
           ${salesUsers.filter(u=>u.role==='sales').map(u=>`
             <button class="welcome-user-btn" data-account="${u.account}" data-name="${u.name}">
