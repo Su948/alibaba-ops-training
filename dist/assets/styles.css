@@ -105,6 +105,7 @@ a { color: inherit; }
   padding: 4px;
   border-radius: 8px;
   gap: 4px;
+  flex-shrink: 0;
 }
 .system-tab-btn {
   border: 0;
@@ -119,6 +120,7 @@ a { color: inherit; }
   display: flex;
   align-items: center;
   gap: 6px;
+  white-space: nowrap;
 }
 .system-tab-btn:hover {
   background: rgba(255, 255, 255, 0.6);
@@ -137,6 +139,36 @@ a { color: inherit; }
 .system-tab-btn.active .tab-badge {
   background: var(--gold);
   color: var(--navy);
+}
+
+@media (max-width: 768px) {
+  .topbar {
+    height: auto;
+    padding: 10px 16px;
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+  .system-tabs {
+    order: 3;
+    width: 100%;
+    justify-content: center;
+    margin-top: 4px;
+  }
+  .system-tab-btn {
+    flex: 1;
+    justify-content: center;
+    padding: 8px 10px;
+    font-size: 0.82rem;
+  }
+  .search-box {
+    order: 4;
+    width: 100%;
+    max-width: 100%;
+  }
+  .user-picker-wrap {
+    order: 2;
+    margin-left: auto;
+  }
 }
 
 /* 业务员子账号切换器 */
@@ -567,7 +599,10 @@ p { margin: 0 0 1em; }
   background: #ffffff;
   border-radius: 12px;
   width: 100%;
-  max-width: 460px;
+  max-width: 520px;
+  max-height: 88vh;
+  display: flex;
+  flex-direction: column;
   box-shadow: 0 25px 60px rgba(0, 0, 0, 0.4);
   overflow: hidden;
   border: 1px solid var(--line);
@@ -581,7 +616,8 @@ p { margin: 0 0 1em; }
 .welcome-header {
   background: linear-gradient(135deg, var(--navy, #112233) 0%, #1e3a58 100%);
   color: #fff;
-  padding: 26px 20px 22px;
+  padding: 22px 20px 18px;
+  flex-shrink: 0;
 }
 .welcome-header h3 {
   margin: 0;
@@ -596,7 +632,9 @@ p { margin: 0 0 1em; }
   font-weight: 600;
 }
 .welcome-body {
-  padding: 24px 22px 28px;
+  padding: 20px 22px 24px;
+  overflow-y: auto;
+  flex: 1;
 }
 .welcome-prompt {
   font-size: 0.95rem;
