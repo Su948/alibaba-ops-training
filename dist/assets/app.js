@@ -2023,14 +2023,25 @@ if(!location.hash) location.hash="home"; else route();
     <div class="welcome-modal" role="dialog" aria-modal="true">
       <div class="welcome-header">
         <h3>🎓 外贸经营学习中心</h3>
-        <p>国际站日常运营与广告操盘实训系统</p>
+        <p>国际站日常运营与业务实战实训系统</p>
       </div>
       <div class="welcome-body">
         <div class="welcome-prompt" id="welcomePromptText">请选择您的真实姓名进行身份绑定（首次进入确认）：</div>
-        <div class="welcome-user-grid">
-          ${salesUsers.map(u=>`
+        <div style="font-size:0.78rem;font-weight:700;color:#64748b;margin:0 0 8px;text-align:left;">运营团队：</div>
+        <div class="welcome-user-grid" style="margin-bottom:14px;">
+          ${salesUsers.filter(u=>u.role==='ops').map(u=>`
             <button class="welcome-user-btn" data-account="${u.account}" data-name="${u.name}">
               <span class="btn-avatar">👤</span>
+              <span class="btn-name">${u.name}</span>
+              <span class="btn-title">${u.title}</span>
+            </button>
+          `).join("")}
+        </div>
+        <div style="font-size:0.78rem;font-weight:700;color:#64748b;margin:0 0 8px;text-align:left;">外贸业务团队：</div>
+        <div class="welcome-user-grid">
+          ${salesUsers.filter(u=>u.role==='sales').map(u=>`
+            <button class="welcome-user-btn" data-account="${u.account}" data-name="${u.name}">
+              <span class="btn-avatar">💼</span>
               <span class="btn-name">${u.name}</span>
               <span class="btn-title">${u.title}</span>
             </button>
