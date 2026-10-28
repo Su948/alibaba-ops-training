@@ -1518,70 +1518,103 @@ lessons.push(
   }
 );
 
-const libraries = {
+const librariesOps = {
   cases: {
-    title: "案例库",
-    intro: "用统一框架拆解不同行业，不照搬结论，重点学习判断过程。",
+    title: "运营案例库",
+    intro: "用统一框架拆解不同行业，不照搬结论，重点学习类目、关键词与投流判断过程。",
     items: [
-      ["汽车方向盘", "类目、市场、关键词、链接与推广方向的完整拆解。", "https://t.zsxq.com/QbIFO", "会员视频"],
-      ["消费电子 · 互动板", "消费电子产品的真实运营经验。", "https://t.zsxq.com/RgLyX", "嘉宾分享"],
-      ["监控摄像头", "安防类目运营经验与注意点。", "https://t.zsxq.com/HN9BN", "嘉宾分享"],
-      ["礼品纸盒", "包装类产品运营经验。", "https://t.zsxq.com/M3tyz", "嘉宾分享"]
+      ["汽车方向盘", "类目、市场、关键词、链接与推广方向的完整拆解。", "https://t.zsxq.com/QbIFO", "运营视频"],
+      ["消费电子 · 互动板", "消费电子产品的真实运营经验与测品打法。", "https://t.zsxq.com/RgLyX", "嘉宾分享"],
+      ["监控摄像头", "安防类目运营经验与关键词布局要点。", "https://t.zsxq.com/HN9BN", "嘉宾分享"],
+      ["礼品纸盒", "包装类产品选品与规格定制运营经验。", "https://t.zsxq.com/M3tyz", "嘉宾分享"]
     ]
   },
   templates: {
-    title: "模板库",
-    intro: "把课程结论变成团队可直接使用的检查表和报告。下面的模板无需登录，可直接下载后填写。",
+    title: "运营模板库",
+    intro: "国际站店铺操盘必备的 8 大运营台账，涵盖选品、发布、关键词与直通车排查。",
     items: [
-      ["竞品拆解表", "记录店铺、产品、价格、交易信号、视觉和机会判断。", "downloads/01-竞品拆解表.csv", "CSV 模板"],
-      ["关键词词库", "统一管理词源、意图、使用位置和投放结果。", "downloads/02-关键词词库.csv", "CSV 模板"],
-      ["产品发布检查表", "发布前检查类目、属性、标题、主图、详情和转化入口。", "downloads/03-产品发布检查表.csv", "CSV 模板"],
-      ["直通车排查表", "把计划、搜索词、国家、商机质量和处理动作放在同一表格。", "downloads/04-直通车排查表.csv", "CSV 模板"],
-      ["月度运营复盘", "目标、结果、漏斗、国家、产品、行动和复查指标。", "downloads/05-月度运营复盘.csv", "CSV 模板"],
-      ["业务新人培训计划", "按四周组织产品、询盘、背调、报价、跟进和信保训练。", "downloads/06-业务新人培训计划.csv", "CSV 模板"],
-      ["产品国家矩阵", "按产品和国家的组合打分，排出核心、验证、暂缓三类市场。", "downloads/07-产品国家矩阵.csv", "CSV 模板"],
-      ["访客来源词台账", "把访客明细按词和国家汇总，标出有商机词与处理动作。", "downloads/08-访客来源词台账.csv", "CSV 模板"],
+      ["竞品拆解表", "记录店铺、产品、价格、交易信号、视觉和机会判断。", "downloads/01-竞品拆解表.csv", "运营模板"],
+      ["关键词词库", "统一管理词源、意图、使用位置和投放结果。", "downloads/02-关键词词库.csv", "运营模板"],
+      ["产品发布检查表", "发布前检查类目、属性、标题、主图、详情和转化入口。", "downloads/03-产品发布检查表.csv", "运营模板"],
+      ["直通车排查表", "把计划、搜索词、国家、商机质量和处理动作放在同一表格。", "downloads/04-直通车排查表.csv", "运营核心模板"],
+      ["月度运营复盘", "目标、结果、漏斗、国家、产品、行动和复查指标。", "downloads/05-月度运营复盘.csv", "运营模板"],
+      ["业务新人培训计划", "按四周组织产品、询盘、背调、报价、跟进和信保训练。", "downloads/06-业务新人培训计划.csv", "培训方案"],
+      ["产品国家矩阵", "按产品和国家的组合打分，排出核心、验证、暂缓三类市场。", "downloads/07-产品国家矩阵.csv", "运营模板"],
+      ["访客来源词台账", "把访客明细按词和国家汇总，标出有商机词与处理动作。", "downloads/08-访客来源词台账.csv", "运营模板"]
+    ]
+  },
+  tools: {
+    title: "运营工具库",
+    intro: "运营日常采集、修图、关键词挖掘与测款工具推荐。",
+    items: [
+      ["国际站常用插件汇总", "同行分析、信息采集和运营辅助工具集合（瞬悉、来搜、SuperAli 等）。", "https://t.zsxq.com/zypwP", "插件合集"],
+      ["一键抹除工具", "清理图片元素，辅助制作去品牌白底产品图。", "https://t.zsxq.com/BDh5D", "作图"],
+      ["AliPrice", "跨境平台价格与历史信息辅助查看。", "https://t.zsxq.com/2EiHI", "浏览器插件"],
+      ["店鲸灵", "店铺与产品流量深度分析。", "https://t.zsxq.com/jlj2P", "浏览器插件"],
+      ["图片翻译", "把中文图片信息转换为英文素材。", "https://t.zsxq.com/Epago", "图片工具"],
+      ["SEO 外贸关键词工具", "站外关键词收集入口。", "https://seowaimao.com", "公开网站"],
+      ["通义万相", "产品视觉与创意背景图生成。", "https://tongyi.aliyun.com/wanxiang/creation", "AI 作图"],
+      ["即梦 AI", "模特上身图与多场景效果图生成。", "https://jimeng.jianying.com/", "AI 作图"]
+    ]
+  },
+  further: {
+    title: "运营进阶学习",
+    intro: "补充平台算法、流量转化、实验与增长思维。",
+    items: [
+      ["我在阿里做运营", "理解平台运营底层工作方法。", "", "书籍"],
+      ["运营之光", "建立运营全局思维与工作框架。", "", "书籍"],
+      ["超级转化率", "补充高转化页面设计与文案提炼方法。", "", "书籍"],
+      ["增长黑客", "理解实验迭代与用户留存增长体系。", "", "书籍"]
+    ]
+  }
+};
+
+const librariesSales = {
+  cases: {
+    title: "业务实战案例库",
+    intro: "聚焦真实 B2B 客户谈判破冰、打样转化与丢单挽回实操案例。",
+    items: [
+      ["欧美大客户首单突破案例", "从 500 台试单到年采 10 万台的跟进节奏复盘。", "", "实战案例"],
+      ["高回复率 RFQ 抢单拆解", "利用三段式报价信，在 15 个竞手夹击中拿下买家回复。", "", "实操案例"],
+      ["样品寄出已读不回破冰复盘", "第 3 天外观与第 7 天性能视频精准切入，激活沉睡买家。", "", "话术案例"],
+      ["客户抱怨海运暴涨改单应对", "巧妙运用 Valid Until 有效期条款与分批锁舱策略化解纠纷。", "", "风控案例"]
+    ]
+  },
+  templates: {
+    title: "业务专属模板库",
+    intro: "外贸业务员从找客、报价到单证履约的实战表格，下载即用。",
+    items: [
       ["RFQ高转化报价策略表", "包含五大行业高回复率RFQ报价实战案例与切入角度。", "downloads/09-RFQ高转化报价策略表.csv", "业务模板"],
       ["外贸形式发票PI标准要素清单", "防漏洞防钓鱼的10大核心要素与法律声明对照表。", "downloads/10-外贸形式发票PI标准要素清单.csv", "单证模板"],
       ["业务员样品跟进闭环台账", "第0/3/7天样品追踪看板与客户反馈转化台账。", "downloads/11-业务员样品跟进闭环台账.csv", "业务模板"]
     ]
   },
   tools: {
-    title: "工具库",
-    intro: "工具按使用场景归类。插件只辅助采集和加工，最终判断仍以业务与数据为准。",
+    title: "业务拓客与单证工具",
+    intro: "外贸业务员必备的免费海关数据、WhatsApp客户反查与合规单证查询通道。",
     items: [
-      ["国际站常用插件汇总", "同行分析、信息采集和运营辅助工具集合，包含瞬悉、来搜、SuperAli 等使用方向。", "https://t.zsxq.com/zypwP", "会员资料"],
-      ["一键抹除工具", "清理图片元素，辅助制作产品图。", "https://t.zsxq.com/BDh5D", "作图"],
-      ["AliPrice", "跨境平台价格与历史信息辅助查看。", "https://t.zsxq.com/2EiHI", "浏览器插件"],
-      ["店鲸灵", "店铺与产品信息辅助分析。", "https://t.zsxq.com/jlj2P", "浏览器插件"],
-      ["图片翻译", "把中文图片信息转换为英文素材。", "https://t.zsxq.com/Epago", "图片工具"],
-      ["SEO 外贸关键词工具", "站外关键词收集入口。", "https://seowaimao.com", "公开网站"],
-      ["豆包", "卖点、文案、表格与信息整理。", "https://www.doubao.com/", "AI"],
-      ["DeepSeek", "内容分析、结构化整理与报告草稿。", "https://www.deepseek.com/", "AI"],
-      ["即梦 AI", "服装模特、场景图和产品视觉生成。", "https://jimeng.jianying.com/", "AI 作图"],
-      ["通义千问", "文本与多模态任务。", "https://tongyi.aliyun.com/", "AI"],
-      ["通义万相", "产品视觉与创意图生成。", "https://tongyi.aliyun.com/wanxiang/creation", "AI 作图"],
-      ["Kimi", "长文档阅读与整理。", "https://kimi.moonshot.cn/", "AI"],
-      ["遨虾", "选品与报告分析辅助。", "https://www.alphashop.cn/", "选品"],
-      ["AI 工具集合", "查找不同类型 AI 工具的导航站。", "https://ai-bot.cn/", "公开网站"]
+      ["免费海关数据查询平台", "查询欧美及全球买家采购历史、提单记录与进口频次。", "https://customs.trade.gov", "拓客工具"],
+      ["WhatsApp 精准找客通道", "通过企业官网、社媒逆向反查买家老板/采购负责人手机号。", "https://web.whatsapp.com", "即时沟通"],
+      ["中国外汇交易中心牌价", "实时查询美金中行折算价，精准核算汇率波动风险。", "https://www.chinamoney.com.cn", "金融工具"],
+      ["DeepSeek 外贸英文润色", "专业商务邮件改写、地道谈判措辞与语法防错辅助。", "https://www.deepseek.com/", "AI 助手"],
+      ["全球黄页与名录汇总", "欧洲与美洲本地专业行业黄页商机直接挖掘入口。", "", "黄页资料"]
     ]
   },
   further: {
-    title: "拓展学习",
-    intro: "补充运营、定位、增长、销售与外贸创业的底层能力。",
+    title: "业务销冠必读",
+    intro: "提升 B2B 谈判博弈、大客户心智攻坚与客户关系经营能力。",
     items: [
-      ["我在阿里做运营", "理解平台运营工作方法。", "", "书籍"],
-      ["运营之光", "建立运营思维与工作框架。", "", "书籍"],
-      ["从零开始做运营", "适合新人系统学习。", "", "书籍"],
-      ["超级转化率", "补充转化设计方法。", "", "书籍"],
-      ["定位", "理解品类、心智和差异化。", "", "书籍"],
-      ["增长黑客", "理解实验与增长体系。", "", "书籍"],
-      ["营销心理战", "补充营销心理与表达。", "", "书籍"],
-      ["大客户销售：谋攻之道", "适合 B2B 业务与管理者。", "", "书籍"],
-      ["一个人的外贸江湖", "适合外贸业务和 SOHO 创业者。", "", "书籍"]
+      ["大客户销售：谋攻之道", "适合高客单价 B2B 业务员的组织销售与项目推进。", "", "书籍"],
+      ["一个人的外贸江湖", "外贸实战从询盘到成交的全生命周期心得。", "", "书籍"],
+      ["营销心理战", "洞察海外采购商的决策心理与疑虑化解。", "", "书籍"],
+      ["定位", "在报价沟通中清晰表达自身差异化竞争壁垒。", "", "书籍"]
     ]
   }
 };
+
+function getActiveLibraries(){
+  return activeSystem === "sales" ? librariesSales : librariesOps;
+}
 
 const tracks = {
   all: {label:"全部课程", ids: lessons.map(x=>x.id)},
@@ -1735,8 +1768,10 @@ if(userSelectElem){
 }
 function renderNav(){
   const curLessons = getCurrentLessons();
+  const curLibs = getActiveLibraries();
   const subTitle = activeSystem === "sales" ? "SALES BIZ LESSONS" : "CORE LESSONS";
-  nav.innerHTML = `<button class="nav-link ${location.hash==="#home"||!location.hash?"active":""}" data-home><span class="nav-num">⌂</span><span>课程地图</span></button><div class="nav-group-title">${subTitle}</div>` + curLessons.map(l=>`<button class="nav-link ${location.hash===`#lesson-${l.id}`?"active":""}" data-id="${l.id}"><span class="nav-num">${pad(l.id)}</span><span>${l.title}</span><span class="nav-check">${completed.has(l.id)?"✓":""}</span></button>`).join("") + `<div class="nav-group-title">RESOURCE LIBRARY</div>${Object.entries(libraries).map(([key,lib])=>`<button class="nav-link ${location.hash===`#library-${key}`?"active":""}" data-library="${key}"><span class="nav-num">＋</span><span>${lib.title}</span></button>`).join("")}<button class="nav-link ${location.hash==="#source-map"?"active":""}" data-source-map><span class="nav-num">≡</span><span>资料来源</span></button>`;
+  const libTitle = activeSystem === "sales" ? "SALES RESOURCE" : "OPS RESOURCE";
+  nav.innerHTML = `<button class="nav-link ${location.hash==="#home"||!location.hash?"active":""}" data-home><span class="nav-num">⌂</span><span>课程地图</span></button><div class="nav-group-title">${subTitle}</div>` + curLessons.map(l=>`<button class="nav-link ${location.hash===`#lesson-${l.id}`?"active":""}" data-id="${l.id}"><span class="nav-num">${pad(l.id)}</span><span>${l.title}</span><span class="nav-check">${completed.has(l.id)?"✓":""}</span></button>`).join("") + `<div class="nav-group-title">${libTitle}</div>${Object.entries(curLibs).map(([key,lib])=>`<button class="nav-link ${location.hash===`#library-${key}`?"active":""}" data-library="${key}"><span class="nav-num">＋</span><span>${lib.title}</span></button>`).join("")}<button class="nav-link ${location.hash==="#source-map"?"active":""}" data-source-map><span class="nav-num">≡</span><span>资料来源</span></button>`;
   nav.querySelector("[data-home]").onclick=()=>{location.hash="home";};
   nav.querySelectorAll("[data-id]").forEach(b=>b.onclick=()=>{location.hash=`lesson-${b.dataset.id}`;});
   nav.querySelectorAll("[data-library]").forEach(b=>b.onclick=()=>{location.hash=`library-${b.dataset.library}`;});
@@ -1762,6 +1797,7 @@ function dashboard(){
   const headH1 = isSales ? "从商机线索到履约成交，<br>外贸业务员全流程实战。" : "把流量变成订单，<br>从一张清晰的课程地图开始。";
   const headLede = isSales ? "6 个核心实战关卡，覆盖 RFQ 抢单、询盘转化、样品推进、PI 制作、信保/e收汇订单起草与老客二次营销。" : "12 个实战章节，覆盖产品定位、链接建设、推广、诊断与业务转化。核心内容可直接阅读，原始会员资料仅作为延伸。";
 
+  const curLibs = getActiveLibraries();
   app.innerHTML=`
     <section class="dashboard-head"><p class="eyebrow">${headEyebrow}</p><h1>${headH1}</h1><p class="lede">${headLede}</p></section>
     <section class="summary-grid" aria-label="学习概览">
@@ -1771,7 +1807,7 @@ function dashboard(){
     </section>
     ${!isSales ? `<section class="path-strip"><p class="eyebrow">选择学习路径</p><div class="path-buttons">${Object.entries(tracks).map(([k,v])=>`<button class="path-button ${selectedTrack===k?"active":""}" data-track="${k}">${v.label}</button>`).join("")}</div></section>` : ""}
     <section><h2>${query?`搜索结果 · ${visible.length}`:"课程章节"}</h2>${visible.length?`<div class="course-grid">${visible.map(l=>`<article class="course-card" data-stage="${l.stage}"><div class="meta"><span>LESSON ${pad(l.id)}</span><span>${l.stage}</span></div><h3>${l.title}</h3><p>${l.summary}</p><button class="card-action" data-open="${l.id}">${completed.has(l.id)?"重新学习":"开始学习"} →</button></article>`).join("")}</div>`:`<div class="empty"><h3>没有找到相关课程</h3><p>换一个关键词试试。</p></div>`}</section>
-    <section class="library-strip"><div><p class="eyebrow">RESOURCE LIBRARY</p><h2>案例、模板与工具</h2><p>主课程负责教方法，资料库负责随用随查。</p></div><div class="library-buttons">${Object.entries(libraries).map(([key,lib])=>`<button data-library-open="${key}"><strong>${lib.title}</strong><span>${lib.items.length} 项资源</span></button>`).join("")}</div></section>`;
+    <section class="library-strip"><div><p class="eyebrow">${isSales?"SALES RESOURCE":"OPS RESOURCE"}</p><h2>${isSales?"业务案例、模板与实操工具":"运营案例、模板与工具"}</h2><p>${isSales?"专为外贸业务员打造的谈单话术、PI单证与跟进看板。":"主课程负责教方法，资料库负责随用随查。"}</p></div><div class="library-buttons">${Object.entries(curLibs).map(([key,lib])=>`<button data-library-open="${key}"><strong>${lib.title}</strong><span>${lib.items.length} 项资源</span></button>`).join("")}</div></section>`;
   
   if(!isSales){
     app.querySelectorAll("[data-track]").forEach(b=>b.onclick=()=>{selectedTrack=b.dataset.track;dashboard();});
@@ -2014,20 +2050,21 @@ function lessonPage(lesson){
 }
 
 function libraryPage(key){
-  const lib=libraries[key];
+  const curLibs = getActiveLibraries();
+  const lib=curLibs[key];
   if(!lib){ dashboard(); return; }
   crumbs.textContent=lib.title;
   app.innerHTML=`
     <a class="back-link" href="#home">← 返回课程地图</a>
-    <header class="lesson-header"><div class="lesson-kicker"><span>RESOURCE</span>随用随查</div><h1>${lib.title}</h1><p class="lede">${lib.intro}</p></header>
-    <section class="resource-grid">${lib.items.map((item,i)=>`<article class="resource-card"><div class="resource-top"><span>${String(i+1).padStart(2,"0")}</span><em>${item[3]}</em></div><h2>${item[0]}</h2><p>${item[1]}</p>${item[2]?`<a href="${item[2]}" ${item[2].startsWith("http")?'target="_blank" rel="noopener"':'download'}>${item[2].startsWith("http")?"查看原始资料 ↗":"直接下载模板 ↓"}</a>`:`<span class="resource-note">建议通过微信读书或正规渠道阅读</span>`}</article>`).join("")}</section>`;
+    <header class="lesson-header"><div class="lesson-kicker"><span>${activeSystem==="sales"?"SALES RESOURCE":"OPS RESOURCE"}</span>资料库</div><h1>${lib.title}</h1><p class="lede">${lib.intro}</p></header>
+    <div class="resource-grid">${lib.items.map(i=>`<article class="resource-card"><div class="meta"><span>${i[3]}</span></div><h3>${i[0]}</h3><p>${i[1]}</p>${i[2]?`<a href="${i[2]}" target="_blank" rel="noopener">${i[2].endsWith(".csv")?"下载文件":"打开链接"} →</a>`:""}</article>`).join("")}</div>`;
 }
 
 function sourceMapPage(){
   crumbs.textContent="资料来源";
   const records=[];
-  lessons.forEach(l=>l.sources.forEach(s=>records.push([`第 ${pad(l.id)} 课`,s.label,s.url])));
-  Object.values(libraries).forEach(lib=>lib.items.filter(i=>i[2]&&i[2].startsWith("http")).forEach(i=>records.push([lib.title,i[0],i[2]])));
+  const curLibs = getActiveLibraries();
+  Object.values(curLibs).forEach(lib=>lib.items.filter(i=>i[2]&&i[2].startsWith("http")).forEach(i=>records.push([lib.title,i[0],i[2]])));
   const unique=[...new Map(records.map(r=>[r[2],r])).values()];
   app.innerHTML=`<a class="back-link" href="#home">← 返回课程地图</a><header class="lesson-header"><div class="lesson-kicker"><span>SOURCE MAP</span>维护台账</div><h1>资料来源</h1><p class="lede">核心课程正文可直接阅读。这里集中保留原始资料和公开工具入口，用于查证、观看完整视频或跟进内容更新。</p></header><div class="source-summary"><strong>${unique.length}</strong><span>个已纳入课程的唯一外部来源</span><em>“会员”标记表示原始页面可能要求知识星球登录，不影响主课程学习。</em></div><div class="source-table-wrap"><table class="decision-table source-table"><thead><tr><th>归属</th><th>资料</th><th>访问状态</th></tr></thead><tbody>${unique.map(r=>`<tr><td>${r[0]}</td><td><a href="${r[2]}" target="_blank" rel="noopener">${r[1]}</a></td><td>${/会员|待校对/.test(r[1])?"需会员登录":"公开 / 第三方"}</td></tr>`).join("")}</tbody></table></div>`;
 }
